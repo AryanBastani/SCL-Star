@@ -1,0 +1,14 @@
+## Benchmarks and results Parameters
+benchmarks_base_dir = resources/
+benchmarks_file = resources/Benchmarks/All_Benchmarks.txt
+result_path = data/Results.csv
+benchmarks_file = data/experiment_benchmarks.txt
+fsm_dir = data/sample_fsm.dot
+
+## Learning parameters
+# options for equivalence queries: wp, w, wrnd, rndWords, rndWordsBig, rndWalk,
+eq_query = rndWords
+final_check_mode = false
+
+## Experiment parameters
+repeat  = 3

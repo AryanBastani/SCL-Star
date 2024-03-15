@@ -1,0 +1,4 @@
+s0 -> s0 [label="pw_but_dn  / 1"];
+s0 -> s1 [label="finger_detected  /  fp_on"];
+s1 -> s0 [label="pw_but_dn  /  fp_off"];
+s1 -> s1 [label="finger_detected  / 1"];

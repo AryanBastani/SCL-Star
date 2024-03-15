@@ -1,0 +1,9 @@
+/target/
+/out/
+/bin/
+/logs/
+
+*.smt2
+.Rhistory
+.idea/
+

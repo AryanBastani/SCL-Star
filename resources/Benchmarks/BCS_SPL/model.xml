@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="legendposition" value="628,21"/>
+		<graphics key="legendautolayout" value="false"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="BCS">
+			<and mandatory="true" name="Human_Machine_Interface">
+				<or name="Status_LED">
+					<feature name="LED_Finger_Protection"/>
+					<feature name="LED_Power_Window"/>
+				</or>
+			</and>
+			<and mandatory="true" name="Door_System">
+				<and mandatory="true" name="Power_Window">
+					<feature mandatory="true" name="Finger_Protection"/>
+					<or mandatory="true" name="Window">
+						<graphics key="collapsed" value="false"/>
+						<feature name="Manual_Power_Window"/>
+						<feature name="Automatic_Power_Window"/>
+					</or>
+				</and>
+			</and>
+			<feature name="Central_Locking_System"/>
+		</and>
+	</struct>
+</featureModel>

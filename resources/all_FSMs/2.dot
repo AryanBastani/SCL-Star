@@ -1,0 +1,16 @@
+s0 -> s0 [label="heating_off  /  1"];
+s0 -> s1 [label="heating_on  /  led_em_heating_on"];
+s0 -> s0 [label="em_pos_hor_pend  /  1"];
+s0 -> s2 [label="em_pos_hor_right  /  led_em_right_on"];
+s1 -> s0 [label="heating_off  /  led_em_heating_off"];
+s1 -> s1 [label="heating_on  /  1"];
+s1 -> s1 [label="em_pos_hor_pend  /  1"];
+s1 -> s3 [label="em_pos_hor_right  /  led_em_right_on"];
+s2 -> s2 [label="heating_off  /  1"];
+s2 -> s3 [label="heating_on  /  led_em_heating_on"];
+s2 -> s0 [label="em_pos_hor_pend  /  led_em_right_off"];
+s2 -> s2 [label="em_pos_hor_right  /  1"];
+s3 -> s2 [label="heating_off  /  led_em_heating_off"];
+s3 -> s3 [label="heating_on  /  1"];
+s3 -> s1 [label="em_pos_hor_pend  /  led_em_right_off"];
+s3 -> s3 [label="em_pos_hor_right  /  1"];
