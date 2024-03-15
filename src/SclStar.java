@@ -53,7 +53,7 @@ public class SclStar {
     public CompactMealy<String, Word<String>> run(StatisticSUL<String, Word<String>> eq_sym_counter,
                                                   EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle){
 
-
+    //Initialize starts:
         List<Alphabet<String>> initialSimaF = new ArrayList<>();
         for (String action : this.alphabet) {
             Alphabet<String> sigmai = new ListAlphabet<String>(Arrays.asList(action));
@@ -63,6 +63,9 @@ public class SclStar {
         round_counter.increment();
         List<CompactMealy<String, Word<String>>> learnedParts = new ArrayList<>();
         ProductMealy productMealy = null;
+    //Initialize ends!
+
+    //LearnInParts starts:
         for(Alphabet<String> sigmai : sigmaFamily ){
             ExtensibleLStarMealyBuilder<String, Word<String>> builder = new ExtensibleLStarMealyBuilder<String, Word<String>>();
             builder.setAlphabet(sigmai);
@@ -91,12 +94,19 @@ public class SclStar {
 
         assert productMealy != null;
         CompactMealy<String, Word<String>> hypothesis = productMealy.getMachine();
+    //LearnInParts ends!
+
         @Nullable DefaultQuery<String, Word<Word<String>>> ce;
         @Nullable DefaultQuery<String, Word<Word<String>>> ce2;
 
         Long pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
         Long post_eq_sym;
+
+    //Equivalence-Query starts:
         ce = eqOracle.findCounterExample(hypothesis,alphabet);
+    //Equivalence-Query ends!
+
+    //MainLoop starts:
         while (ce != null) {
 //            System.out.println("******************$$$$$$$$$$$$$$$$$$************$$$$$$$$$$$$************");
 //            logger.info("round " + round_counter.getCount() + "  counterexample:  " + ce);
@@ -109,8 +119,11 @@ public class SclStar {
 //            logger.info("Search for ce,  " + hypothesis.size() + " states,   " +
 //                    (post_eq_sym - pre_eq_sym) + " symbols" );
 
+            //InvolvedSet starts:
             List<Alphabet<String>> dependentSets = dependent_sets(ce.getInput(), sigmaFamily, hypothesis);
+            //InvolvedSet ends!
 
+            //Composition starts:
             ArrayList<String> mergedSet = new ArrayList<>();
             ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
 
@@ -126,8 +139,9 @@ public class SclStar {
 //            System.out.println();
 
             Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
+            //Composition ends!
 
-            // Learn the single merged component
+            // LearnInParts starts(Learn the single merged):
             pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
             ExtensibleLStarMealyBuilder<String, Word<String>> builder = new ExtensibleLStarMealyBuilder<String, Word<String>>();
             builder.setAlphabet(mergedAlphabet);
@@ -157,7 +171,12 @@ public class SclStar {
                 else productMealy.mergeFSMs(component);
             }
             hypothesis = productMealy.getMachine();
+            //LearnInParts ends(Learn the single merged)!
+
+            //Equivalence-Query starts:
             ce = eqOracle.findCounterExample(hypothesis, alphabet);
+            //Equivalence-Query ends!
+            
             if(ce == null && testEqOracle!= null){
                 for (CompactMealy<String, Word<String>> comp: learnedParts){
                     ce2 = testEqOracle.findCounterExample(comp, comp.getInputAlphabet());
@@ -174,6 +193,8 @@ public class SclStar {
 //            Visualization.visualize(productDFA.getDfa(), productDFA.getDfa().getInputAlphabet());
             pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
         }
+    //MainLoop ends!
+
         CompactMealy final_H = productMealy.getMachine();
         logger.info("___ Decomposed Learning finished ___");
 //        logger.info(sigmaFamily.toString());
