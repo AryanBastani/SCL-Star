@@ -65,6 +65,13 @@ public class SclStar {
         ProductMealy productMealy = null;
     //Initialize ends!
 
+    //Sync starts:
+        ArrayList<String> sync = new ArrayList<>();
+        for (Alphabet<String> sigmai : initialSimaF){
+            sync.addAll(sigmai);
+        }
+    //Sync ends!
+
     //LearnInParts starts:
         for(Alphabet<String> sigmai : sigmaFamily ){
             ExtensibleLStarMealyBuilder<String, Word<String>> builder = new ExtensibleLStarMealyBuilder<String, Word<String>>();
@@ -119,11 +126,11 @@ public class SclStar {
 //            logger.info("Search for ce,  " + hypothesis.size() + " states,   " +
 //                    (post_eq_sym - pre_eq_sym) + " symbols" );
 
-            //InvolvedSet starts:
+        //InvolvedSet starts:
             List<Alphabet<String>> dependentSets = dependent_sets(ce.getInput(), sigmaFamily, hypothesis);
-            //InvolvedSet ends!
+        //InvolvedSet ends!
 
-            //Composition starts:
+        //Composition starts:
             ArrayList<String> mergedSet = new ArrayList<>();
             ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
 
@@ -139,9 +146,9 @@ public class SclStar {
 //            System.out.println();
 
             Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
-            //Composition ends!
+        //Composition ends!
 
-            // LearnInParts starts(Learn the single merged):
+        //LearnInParts starts(Learn the single merged):
             pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
             ExtensibleLStarMealyBuilder<String, Word<String>> builder = new ExtensibleLStarMealyBuilder<String, Word<String>>();
             builder.setAlphabet(mergedAlphabet);
@@ -171,12 +178,12 @@ public class SclStar {
                 else productMealy.mergeFSMs(component);
             }
             hypothesis = productMealy.getMachine();
-            //LearnInParts ends(Learn the single merged)!
+        //LearnInParts ends(Learn the single merged)!
 
-            //Equivalence-Query starts:
+        //Equivalence-Query starts:
             ce = eqOracle.findCounterExample(hypothesis, alphabet);
-            //Equivalence-Query ends!
-            
+        //Equivalence-Query ends!
+
             if(ce == null && testEqOracle!= null){
                 for (CompactMealy<String, Word<String>> comp: learnedParts){
                     ce2 = testEqOracle.findCounterExample(comp, comp.getInputAlphabet());
