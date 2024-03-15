@@ -23,7 +23,7 @@ import de.learnlib.api.oracle.MembershipOracle;
 import java.util.*;
 import java.util.logging.Logger;
 
-public class MealyLearnInParts {
+public class ClStar {
     private Alphabet<String> alphabet;
     private EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> eqOracle ;
     private EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> partialEqOracle ;
@@ -34,7 +34,7 @@ public class MealyLearnInParts {
     private Logger logger;
 
 
-    public MealyLearnInParts(Alphabet<String> alphabet,
+    public ClStar(Alphabet<String> alphabet,
                              MembershipOracle<String, Word<Word<String>>> mqOracle,
                              EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> eqOracle,
                              EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> partialEqOracle,

@@ -200,7 +200,7 @@ public class Learn_single_FSM {
         eqOracle = buildEqOracle(eq_sul, eq_method);
 
 
-        MealyLearnInParts Mealy_LIP = new MealyLearnInParts(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
+        ClStar Mealy_LIP = new ClStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
         @Nullable CompactMealy result;
         if (!test_mode) {
             result = Mealy_LIP.run(eq_sym, null);

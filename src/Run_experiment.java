@@ -177,7 +177,7 @@ public class Run_experiment {
                 result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode);
 
                 if (result == null) {
-                    logger.warning("the  SUL is not learned completely");
+                    logger.warning("the  SUL is not learned completely (CL-Star)");
                 } else {
                     Utils.writeDataLineByLine(RESULTS_PATH, data);
                 }
@@ -237,7 +237,7 @@ public class Run_experiment {
 
 
 
-        MealyLearnInParts Mealy_LIP = new MealyLearnInParts(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
+        ClStar Mealy_LIP = new ClStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
         @Nullable CompactMealy result;
         if (!test_mode ){
             result = Mealy_LIP.run(eq_sym, null);
