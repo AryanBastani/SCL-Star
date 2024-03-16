@@ -218,7 +218,7 @@ public class SclStar {
                     }
                 }
             }
-
+            List<Alphabet<String>> iD = dependSets(ceInput, sigmaFamily, sync);
         //ProcessCE ends!
 
         //InvolvedSet starts:
@@ -375,6 +375,32 @@ public class SclStar {
             }
         }
         return SetsIncluding;
+    }
+
+    private List<Alphabet<String>> dependSets(Word<String> ce, List<Alphabet<String>> sigmaFamily, ArrayList<String> sync){
+        List<Alphabet<String>> dependSetsList = new ArrayList<>();
+        for (Alphabet<String> sigmai : sigmaFamily) {
+            for(String alphai :sigmai){
+                boolean isDepend = false;
+                for(String ceAlpha : ce){
+                    if(alphai.equals(ceAlpha)){
+                        isDepend = true;
+                        for(String syncAlpha : sync){
+                            if(syncAlpha.equals(alphai)){
+                                isDepend = false;
+                                break;
+                            }
+                        }
+                        break;
+                    }
+                }
+                if(isDepend){
+                    dependSetsList.add(sigmai);
+                    break;
+                }
+            }
+        }
+        return(dependSetsList);
     }
 
     private Word<String> cut_ce(Word<String> ce, CompactMealy hypothesis){
