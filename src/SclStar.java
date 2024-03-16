@@ -167,7 +167,6 @@ public class SclStar {
         //ProcessCE starts:
             //Building outCe:
             Word<String> ceInput = ce.getInput();
-            ceInput = this.cut_ce(ceInput, hypothesis);
             List<String> ceList = ceInput.asList();
             int state = 0;
             int nextState;
@@ -187,7 +186,7 @@ public class SclStar {
                 boolean isInCe = false;
                 int ceIndex = 0;
                 for(String ceSync : ceList){
-                    if(ceSync == syncAlpha){
+                    if(ceSync.equals(syncAlpha)){
                         isInCe = true;
                         ceIndex = ceList.indexOf(ceSync);
                         break;
