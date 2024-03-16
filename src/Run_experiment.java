@@ -237,7 +237,7 @@ public class Run_experiment {
 
 
 
-        ClStar Mealy_LIP = new ClStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
+        SclStar Mealy_LIP = new SclStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
         @Nullable CompactMealy result;
         if (!test_mode ){
             result = Mealy_LIP.run(eq_sym, null);

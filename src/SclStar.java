@@ -57,6 +57,7 @@ public class SclStar {
     //Initialize starts:
         List<Alphabet<String>> initialSimaF = new ArrayList<>();
         for (String action : this.alphabet) {
+            System.out.println(action);
             Alphabet<String> sigmai = new ListAlphabet<String>(Arrays.asList(action));
             initialSimaF.add(sigmai);
         }
@@ -153,7 +154,7 @@ public class SclStar {
 
     //MainLoop starts:
         while (ce != null) {
-//            System.out.println("******************$$$$$$$$$$$$$$$$$$************$$$$$$$$$$$$************");
+            System.out.println("******************$$$$$$$$$$$$$$$$$$************$$$$$$$$$$$$************");
 //            logger.info("round " + round_counter.getCount() + "  counterexample:  " + ce);
 //            System.out.println("round " + round_counter.getCount() + "  counterexample:  " + ce);
 //            System.out.println();
@@ -182,6 +183,7 @@ public class SclStar {
             }
 
             //Implementing the for loop:
+            ArrayList<String> toRemoveSync = new ArrayList<>();
             for(String syncAlpha : sync){
                 boolean isInCe = false;
                 int ceIndex = 0;
@@ -195,8 +197,7 @@ public class SclStar {
                 if(isInCe){
                     for (Map.Entry<String, Word<String>> current_map : outSync.entrySet()) {
                         if (current_map.getKey().equals(syncAlpha) && current_map.getValue() != outCe.get(ceIndex)) {
-                            sync.remove(syncAlpha);
-                            outSync.remove(syncAlpha);
+                            toRemoveSync.add(syncAlpha);
                             List<Alphabet<String>> iStar = this.findSetsIncluding(sigmaFamily, syncAlpha);
 
                             ArrayList<String> mergedSet = new ArrayList<>();
@@ -206,7 +207,7 @@ public class SclStar {
                 //                System.out.println("merging set " + sigmai);
                 //                System.out.println();
                                 sigmaFamily.remove(sigmai);
-                                trashParts.add(learnedParts.remove(i));
+//                                trashParts.add(learnedParts.remove(i));
                                 mergedSet.addAll(sigmai);
                             }
                 //            System.out.println("merged sets :  " + mergedSet);
@@ -218,6 +219,10 @@ public class SclStar {
                     }
                 }
             }
+            for(String toRemove : toRemoveSync){
+                sync.remove(toRemove);
+                outSync.remove(toRemove);
+            }
             List<Alphabet<String>> iD = dependSets(ceInput, sigmaFamily, sync);
             ArrayList<String> mergedSet = new ArrayList<>();
             ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
@@ -226,7 +231,9 @@ public class SclStar {
                 //                System.out.println("merging set " + sigmai);
                 //                System.out.println();
                 sigmaFamily.remove(sigmai);
-                trashParts.add(learnedParts.remove(i));
+//                if(i < learnedParts.size()) {
+//                    trashParts.add(learnedParts.remove(i));
+//                }
                 mergedSet.addAll(sigmai);
             }
             for(String syncAlpha : sync){
@@ -265,34 +272,34 @@ public class SclStar {
 //        //Composition ends!
 
         //LearnInParts starts(Learn the single merged):
-            pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
-            ExtensibleLStarMealyBuilder<String, Word<String>> builder = new ExtensibleLStarMealyBuilder<String, Word<String>>();
-            builder.setAlphabet(mergedAlphabet);
-            builder.setOracle(mqOracle);
-            ExtensibleLStarMealy<String, Word<String>> learner = builder.create();
-            // The experiment will execute the main loop of active learning
-            Experiment.MealyExperiment<String, Word<String>> experiment =
-                    new Experiment.MealyExperiment<String, Word<String>>(learner, partialEqOracle, mergedAlphabet);
-            experiment.run();
-            // get learned model
-            CompactMealy<String, Word<String>> partialH = (CompactMealy<String, Word<String>>) experiment.getFinalHypothesis();
-            eq_counter.increment(experiment.getRounds().getCount());
-            post_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
-//            logger.info("Learned partialH with " + partialH.size() + "states,   " +
-//                    (post_eq_sym - pre_eq_sym) + "  symbols in " + experiment.getRounds().getCount() + " rounds" );
-
-
-            sigmaFamily.add(mergedAlphabet);
-            learnedParts.add(partialH);
-
             productMealy = null;
-            for (CompactMealy<String, Word<String>>component : Lists.reverse(learnedParts)){
-//                Visualization.visualize(component, component.getInputAlphabet());
+            learnedParts.clear();
+            for(Alphabet<String> sigmai : sigmaFamily ){
+                pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
+                ExtensibleLStarMealyBuilder<String, Word<String>> builder = new ExtensibleLStarMealyBuilder<String, Word<String>>();
+                builder.setAlphabet(sigmai);
+                builder.setOracle(mqOracle);
+                ExtensibleLStarMealy<String, Word<String>> learner = builder.create();
+                // The experiment will execute the main loop of active learning
+                Experiment.MealyExperiment<String, Word<String>> experiment =
+                        new Experiment.MealyExperiment<String, Word<String>>(learner, partialEqOracle, sigmai);
+                experiment.run();
+
+                // get learned model
+                CompactMealy<String, Word<String>> partialH = (CompactMealy<String, Word<String>>) experiment.getFinalHypothesis();
+
+                eq_counter.increment(experiment.getRounds().getCount());
+                post_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
+//            logger.info("Learned partialH with " + partialH.size() + " states,   " +
+//                    (post_eq_sym - pre_eq_sym) + " symbols in " + experiment.getRounds().getCount() + " rounds" );
+
+                learnedParts.add(partialH);
                 if (productMealy== null){
-                    productMealy = new ProductMealy(component);
+                    productMealy = new ProductMealy(partialH);
                 }
-                else productMealy.mergeFSMs(component);
+                else productMealy.mergeFSMs(partialH);
             }
+
             hypothesis = productMealy.getMachine();
         //LearnInParts ends(Learn the single merged)!
 
