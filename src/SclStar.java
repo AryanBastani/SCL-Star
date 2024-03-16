@@ -197,6 +197,7 @@ public class SclStar {
                         if (current_map.getKey().equals(syncAlpha) && current_map.getValue() != outCe.get(ceIndex)) {
                             sync.remove(syncAlpha);
                             outSync.remove(syncAlpha);
+                            List<Alphabet<String>> iStar = this.findSetsIncluding(sigmaFamily, syncAlpha);
                             break;
                         }
                     }
@@ -346,6 +347,19 @@ public class SclStar {
             }
         }
         return dependentSets;
+    }
+
+    private List<Alphabet<String>> findSetsIncluding(List<Alphabet<String>> sigmaFamily, String currentAlpha){
+        List<Alphabet<String>> SetsIncluding = new ArrayList<>();
+        for (Alphabet<String> sigmai: sigmaFamily){
+            for (String action : sigmai){
+                if (action.equals(currentAlpha)){
+                    SetsIncluding.add(sigmai);
+                    break;
+                }
+            }
+        }
+        return SetsIncluding;
     }
 
     private Word<String> cut_ce(Word<String> ce, CompactMealy hypothesis){
