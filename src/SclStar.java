@@ -10,6 +10,7 @@ import de.learnlib.oracle.membership.SULOracle;
 import de.learnlib.util.Experiment;
 import net.automatalib.automata.transducers.MealyMachine;
 import net.automatalib.automata.transducers.impl.compact.CompactMealy;
+import net.automatalib.automata.transducers.impl.compact.CompactMealyTransition;
 import net.automatalib.words.Alphabet;
 import net.automatalib.words.Word;
 import net.automatalib.words.impl.Alphabets;
@@ -102,6 +103,43 @@ public class SclStar {
         assert productMealy != null;
         CompactMealy<String, Word<String>> hypothesis = productMealy.getMachine();
     //LearnInParts ends!
+
+    //UpdateSync starts:
+        Map<String,Word<String>> outSync = new HashMap<String, Word<String>>();
+        Collection<Integer> states = hypothesis.getStates();
+        Word<String> output_1 = null;
+        Word<String> output_2 = null;
+        Alphabet<String> alphabet = hypothesis.getInputAlphabet();
+        for (String m : alphabet){
+            boolean isSync = true;
+            for(Integer si : states){
+                for(Integer sj : states){
+                    output_1 = hypothesis.getTransition(si, m).getOutput();
+                    output_2 = hypothesis.getTransition(si, m).getOutput();
+                    if(output_1 != output_2){
+                        sync.remove(m);
+                        isSync = false;
+                        break;
+                    }
+                }
+                if(!isSync){
+                    break;
+                }
+            }
+            if(isSync) {
+                boolean hasIt = false;
+                for (Map.Entry<String, Word<String>> current_map : outSync.entrySet()) {
+                    if (current_map.getKey().equals(m) && current_map.getValue() == output_1) {
+                        hasIt = true;
+                        break;
+                    }
+                }
+                if (!hasIt) {
+                    outSync.put(m, output_1);
+                }
+            }
+        }
+    //UpdateSync ends!
 
         @Nullable DefaultQuery<String, Word<Word<String>>> ce;
         @Nullable DefaultQuery<String, Word<Word<String>>> ce2;
