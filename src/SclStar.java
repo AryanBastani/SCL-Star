@@ -319,7 +319,7 @@ public class SclStar {
     //MainLoop ends!
 
         CompactMealy final_H = productMealy.getMachine();
-        logger.info("___ Decomposed Learning finished ___");
+        logger.info("___ Synchronous Compositional Learning Algorithm finished ___");
 //        logger.info(sigmaFamily.toString());
         String log_msg = "";
         for (Alphabet s: sigmaFamily){
