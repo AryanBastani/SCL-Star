@@ -182,6 +182,28 @@ public class SclStar {
                 state = nextState;
             }
 
+            //Implementing the for loop:
+            for(String syncAlpha : sync){
+                boolean isInCe = false;
+                int ceIndex = 0;
+                for(String ceSync : ceList){
+                    if(ceSync == syncAlpha){
+                        isInCe = true;
+                        ceIndex = ceList.indexOf(ceSync);
+                        break;
+                    }
+                }
+                if(isInCe){
+                    for (Map.Entry<String, Word<String>> current_map : outSync.entrySet()) {
+                        if (current_map.getKey().equals(syncAlpha) && current_map.getValue() != outCe.get(ceIndex)) {
+                            sync.remove(syncAlpha);
+                            outSync.remove(syncAlpha);
+                            break;
+                        }
+                    }
+                }
+            }
+
         //ProcessCE ends!
 
         //InvolvedSet starts:
