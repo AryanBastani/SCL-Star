@@ -219,29 +219,50 @@ public class SclStar {
                 }
             }
             List<Alphabet<String>> iD = dependSets(ceInput, sigmaFamily, sync);
-        //ProcessCE ends!
-
-        //InvolvedSet starts:
-            List<Alphabet<String>> dependentSets = dependent_sets(ce.getInput(), sigmaFamily, hypothesis);
-        //InvolvedSet ends!
-
-        //Composition starts:
             ArrayList<String> mergedSet = new ArrayList<>();
             ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
-
-            for (Alphabet<String> sigmai : dependentSets){
+            for (Alphabet<String> sigmai : iD){
                 int i = sigmaFamily.indexOf(sigmai);
-//                System.out.println("merging set " + sigmai);
-//                System.out.println();
+                //                System.out.println("merging set " + sigmai);
+                //                System.out.println();
                 sigmaFamily.remove(sigmai);
                 trashParts.add(learnedParts.remove(i));
                 mergedSet.addAll(sigmai);
             }
-//            System.out.println("merged sets :  " + mergedSet);
-//            System.out.println();
-
+            for(String syncAlpha : sync){
+                for(String ceAlpha : ceList){
+                    if(ceAlpha.equals(syncAlpha)){
+                        Alphabet<String> sigmai = new ListAlphabet<String>(Arrays.asList(syncAlpha));
+                        mergedSet.addAll(sigmai);
+                        break;
+                    }
+                }
+            }
             Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
-        //Composition ends!
+            sigmaFamily.add(mergedAlphabet);
+        //ProcessCE ends!
+
+//        //InvolvedSet starts:
+//            List<Alphabet<String>> dependentSets = dependent_sets(ce.getInput(), sigmaFamily, hypothesis);
+//        //InvolvedSet ends!
+
+//        //Composition starts:
+//            ArrayList<String> mergedSet = new ArrayList<>();
+//            ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
+//
+//            for (Alphabet<String> sigmai : dependentSets){
+//                int i = sigmaFamily.indexOf(sigmai);
+////                System.out.println("merging set " + sigmai);
+////                System.out.println();
+//                sigmaFamily.remove(sigmai);
+//                trashParts.add(learnedParts.remove(i));
+//                mergedSet.addAll(sigmai);
+//            }
+////            System.out.println("merged sets :  " + mergedSet);
+////            System.out.println();
+//
+//            Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
+//        //Composition ends!
 
         //LearnInParts starts(Learn the single merged):
             pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
