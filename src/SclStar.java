@@ -164,6 +164,26 @@ public class SclStar {
 //            logger.info("Search for ce,  " + hypothesis.size() + " states,   " +
 //                    (post_eq_sym - pre_eq_sym) + " symbols" );
 
+        //ProcessCE starts:
+            //Building outCe:
+            Word<String> ceInput = ce.getInput();
+            ceInput = this.cut_ce(ceInput, hypothesis);
+            List<String> ceList = ceInput.asList();
+            int state = 0;
+            int nextState;
+            CompactMealyTransition<Word<String>> transition = null;
+            List<Word<String>> outCe = new ArrayList<>();
+            Word<String> output;
+            for(String currenntAlpha : ceList){
+                transition = hypothesis.getTransition(state, currenntAlpha);
+                output = transition.getOutput();
+                nextState = transition.getSuccId();
+                outCe.add(output);
+                state = nextState;
+            }
+
+        //ProcessCE ends!
+
         //InvolvedSet starts:
             List<Alphabet<String>> dependentSets = dependent_sets(ce.getInput(), sigmaFamily, hypothesis);
         //InvolvedSet ends!
