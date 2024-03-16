@@ -198,6 +198,21 @@ public class SclStar {
                             sync.remove(syncAlpha);
                             outSync.remove(syncAlpha);
                             List<Alphabet<String>> iStar = this.findSetsIncluding(sigmaFamily, syncAlpha);
+
+                            ArrayList<String> mergedSet = new ArrayList<>();
+                            ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
+                            for (Alphabet<String> sigmai : iStar){
+                                int i = sigmaFamily.indexOf(sigmai);
+                //                System.out.println("merging set " + sigmai);
+                //                System.out.println();
+                                sigmaFamily.remove(sigmai);
+                                trashParts.add(learnedParts.remove(i));
+                                mergedSet.addAll(sigmai);
+                            }
+                //            System.out.println("merged sets :  " + mergedSet);
+                //            System.out.println();
+                            Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
+                            sigmaFamily.add(mergedAlphabet);
                             break;
                         }
                     }
