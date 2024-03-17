@@ -95,35 +95,35 @@ public class Run_experiment {
             String file_path;
             if (line.hasOption(SRC_DIR)) {
                 file_path = line.getOptionValue(SRC_DIR);
-            }else{
+            } else {
                 file_path = experimentProperties.getProp("benchmarks_file");
             }
             String equivalence_method;
-            if (line.hasOption(EQUIVALENCE_METHOD) ) {
+            if (line.hasOption(EQUIVALENCE_METHOD)) {
                 equivalence_method = line.getOptionValue(EQUIVALENCE_METHOD);
-            }else {
+            } else {
                 equivalence_method = experimentProperties.getProp("eq_query");
             }
             int repeat;
             if (line.hasOption(EXPERIMENT_REPEAT)) {
                 repeat = Integer.parseInt(line.getOptionValue(EXPERIMENT_REPEAT));
-            }else{
+            } else {
                 repeat = Integer.parseInt(experimentProperties.getProp(EXPERIMENT_REPEAT));
             }
 
 //        initial the experiment properties
-        benchmarks_base_dir = experimentProperties.getProp("benchmarks_base_dir");
-        RESULTS_PATH = experimentProperties.getProp("result_path");
+            benchmarks_base_dir = experimentProperties.getProp("benchmarks_base_dir");
+            RESULTS_PATH = experimentProperties.getProp("result_path");
 
-        File f = new File(file_path);
-        BufferedReader br = new BufferedReader(new FileReader(f));
+            File f = new File(file_path);
+            BufferedReader br = new BufferedReader(new FileReader(f));
 
-        // initial a results file
-        Utils.writeDataHeader(RESULTS_PATH, csvProperties.getResults_header());
+            // initial a results file
+            Utils.writeDataHeader(RESULTS_PATH, csvProperties.getResults_header());
 
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-        LocalDateTime now = LocalDateTime.now();
-        logger = Logger.getLogger(dtf.format(now).toString());
+            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+            LocalDateTime now = LocalDateTime.now();
+            logger = Logger.getLogger(dtf.format(now).toString());
 //        FileHandler fh;
 //        try {
 //            String path = "logs/" + dtf.format(now) + ".log";
@@ -138,39 +138,46 @@ public class Run_experiment {
 //            e.printStackTrace();
 //        }
 
-        int dataLen = csvProperties.getIndex("DATA_LEN");
-        while (br.ready()) {
-            String c = br.readLine();
-            data = new String[dataLen];
-            File file = new File(c);
-            data[csvProperties.getIndex(FILE_NAME)] = c;
-            CompactMealy<String, Word<String>> target;
-            try {
-                target = Utils.getInstance().loadMealyMachineFromDot(file);
-            } catch (Exception e) {
-                logger.warning("problem in loading file");
-                logger.warning(e.toString());
-                logger.warning(c);
-                continue;
+            int dataLen = csvProperties.getIndex("DATA_LEN");
+
+            String c;
+            ProductMealy productMealy = null;
+            while (br.ready()) {
+                c = br.readLine();
+                CompactMealy<String, Word<String>> currentTarget;
+                data = new String[dataLen];
+                File file = new File(c);
+                data[csvProperties.getIndex(FILE_NAME)] = c;
+                try {
+                    currentTarget = Utils.getInstance().loadMealyMachineFromDot(file);
+                } catch (Exception e) {
+                    System.out.println(file);
+                    logger.warning("problem in loading file");
+                    logger.warning(e.toString());
+                    logger.warning(c);
+                    continue;
+                }
+                if (productMealy == null) {
+                    productMealy = new ProductMealy(currentTarget);
+                } else productMealy.mergeFSMs(currentTarget);
             }
+            assert productMealy != null;
+            CompactMealy<String, Word<String>> target = productMealy.getMachine();
 
 
-            logger.info("FSM from : " + c);
             logger.info("#States: " + target.size());
             data[csvProperties.getIndex(STATES)] = Integer.toString(target.size());
             data[csvProperties.getIndex(INPUTS)] = Integer.toString(target.numInputs());
             Alphabet<String> alphabet = target.getInputAlphabet();
 
-            for(int rep=0;rep<repeat; rep++) {
+            for (int rep = 0; rep < repeat; rep++) {
                 //   Shuffle the alphabet
                 String[] alphArr = alphabet.toArray(new String[alphabet.size()]);
                 Collections.shuffle(Arrays.asList(alphArr));
                 alphabet = Alphabets.fromArray(alphArr);
                 data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
 
-                //             Run LSTAR
                 Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
-                learnProductMealy(target, alphabet, equivalence_method, final_check_mode);
 
                 //             RUN DECOMPOSED LEARNING
                 @Nullable CompactMealy result = null;
@@ -182,7 +189,6 @@ public class Run_experiment {
                     Utils.writeDataLineByLine(RESULTS_PATH, data);
                 }
             }
-        }
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(e.getStackTrace()[0].getLineNumber());

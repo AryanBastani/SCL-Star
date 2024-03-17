@@ -117,7 +117,7 @@ public class SclStar {
                 for(Integer sj : states){
                     output_1 = hypothesis.getTransition(si, m).getOutput();
                     output_2 = hypothesis.getTransition(si, m).getOutput();
-                    if(output_1 != output_2){
+                    if(!output_1.equals(output_2)){
                         syncToRemove.add(m);
                         isSync = false;
                         break;
@@ -130,7 +130,7 @@ public class SclStar {
             if(isSync) {
                 boolean hasIt = false;
                 for (Map.Entry<String, Word<String>> current_map : outSync.entrySet()) {
-                    if (current_map.getKey().equals(m) && current_map.getValue() == output_1) {
+                    if (current_map.getKey().equals(m) && current_map.getValue().equals(output_1)) {
                         hasIt = true;
                         break;
                     }
@@ -187,6 +187,8 @@ public class SclStar {
 
             //Implementing the for loop:
             ArrayList<String> toRemoveSync = new ArrayList<>();
+            System.out.println("THE SYNC : " + sync);
+            System.out.println("OUTSYNC : " + outSync);
             for(String syncAlpha : sync){
                 boolean isInCe = false;
                 int ceIndex = 0;
@@ -199,7 +201,11 @@ public class SclStar {
                 }
                 if(isInCe){
                     for (Map.Entry<String, Word<String>> current_map : outSync.entrySet()) {
-                        if (current_map.getKey().equals(syncAlpha) && current_map.getValue() != outCe.get(ceIndex)) {
+                        if (current_map.getKey().equals(syncAlpha) && !current_map.getValue().equals(outCe.get(ceIndex))) {
+                            System.out.println("for single SYNC : " + syncAlpha);
+                            System.out.println("OUTPUT for SYNC : " + current_map.getValue());
+                            System.out.println("OUTPUT for Ce : " + outCe.get(ceIndex));
+                            System.out.println("ssssss :" + outCe.get(ceIndex) + current_map.getValue() + "asd" + (current_map.getValue() != outCe.get(ceIndex)));
                             toRemoveSync.add(syncAlpha);
                             List<Alphabet<String>> iStar = this.findSetsIncluding(sigmaFamily, syncAlpha);
 
@@ -228,6 +234,7 @@ public class SclStar {
                 outSync.remove(toRemove);
             }
             List<Alphabet<String>> iD = dependSets(ceInput, sigmaFamily, sync);
+            System.out.println("iD before sync" + iD);
             ArrayList<String> mergedSet = new ArrayList<>();
             ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
             for (Alphabet<String> sigmai : iD){
@@ -247,6 +254,7 @@ public class SclStar {
                         Alphabet<String> sigmai = new ListAlphabet<String>(Arrays.asList(syncAlpha));
                         ArrayList<String> cleaned = this.cleanSet(mergedSet, sigmai);
                         mergedSet.addAll(cleaned);
+                        System.out.println("sync for iD" + syncAlpha);
                         break;
                     }
                 }
@@ -336,9 +344,10 @@ public class SclStar {
 //        logger.info(sigmaFamily.toString());
         String log_msg = "";
         for (Alphabet s: sigmaFamily){
+            System.out.println("(*&#*(^(*&#(*$&@$(#*^%*&#^(#*^%(#*^(*#^(#*^(#*^#(*#(*^#(*#^%(*#%^(*#%^(#*%^#*%(#*%^#*%(#*#^*#(*#^*#%(*%#^*#%(#*%#*%(#%^*#(*%#^");
             log_msg += "  - component with " + s.size() + " inputs: " + s + " and " +  final_H.size() + " states" + "\n";
         }
-//        logger.info(log_msg);
+        logger.info(log_msg);
         return final_H;
     }
 
