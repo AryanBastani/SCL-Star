@@ -110,15 +110,15 @@ public class SclStar {
         Collection<Integer> states = hypothesis.getStates();
         Word<String> output_1 = null;
         Word<String> output_2 = null;
-        Alphabet<String> alphabet = hypothesis.getInputAlphabet();
-        for (String m : alphabet){
+        ArrayList<String> syncToRemove = new ArrayList<>();
+        for (String m : sync){
             boolean isSync = true;
             for(Integer si : states){
                 for(Integer sj : states){
                     output_1 = hypothesis.getTransition(si, m).getOutput();
                     output_2 = hypothesis.getTransition(si, m).getOutput();
                     if(output_1 != output_2){
-                        sync.remove(m);
+                        syncToRemove.add(m);
                         isSync = false;
                         break;
                     }
@@ -139,6 +139,9 @@ public class SclStar {
                     outSync.put(m, output_1);
                 }
             }
+        }
+        for(String toRemove : syncToRemove){
+            sync.remove(toRemove);
         }
     //UpdateSync ends!
 
@@ -204,14 +207,15 @@ public class SclStar {
                             ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
                             for (Alphabet<String> sigmai : iStar){
                                 int i = sigmaFamily.indexOf(sigmai);
-                //                System.out.println("merging set " + sigmai);
-                //                System.out.println();
+//                                System.out.println("merging set " + sigmai);
+//                                System.out.println();
                                 sigmaFamily.remove(sigmai);
 //                                trashParts.add(learnedParts.remove(i));
-                                mergedSet.addAll(sigmai);
+                                ArrayList<String> cleaned = this.cleanSet(mergedSet, sigmai);
+                                mergedSet.addAll(cleaned);
                             }
-                //            System.out.println("merged sets :  " + mergedSet);
-                //            System.out.println();
+//                            System.out.println("merged sets :  " + mergedSet);
+//                            System.out.println();
                             Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
                             sigmaFamily.add(mergedAlphabet);
                             break;
@@ -228,19 +232,21 @@ public class SclStar {
             ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
             for (Alphabet<String> sigmai : iD){
                 int i = sigmaFamily.indexOf(sigmai);
-                //                System.out.println("merging set " + sigmai);
-                //                System.out.println();
+//                                System.out.println("merging set " + sigmai);
+//                                System.out.println();
                 sigmaFamily.remove(sigmai);
 //                if(i < learnedParts.size()) {
 //                    trashParts.add(learnedParts.remove(i));
 //                }
-                mergedSet.addAll(sigmai);
+                ArrayList<String> cleaned = this.cleanSet(mergedSet, sigmai);
+                mergedSet.addAll(cleaned);
             }
             for(String syncAlpha : sync){
                 for(String ceAlpha : ceList){
                     if(ceAlpha.equals(syncAlpha)){
                         Alphabet<String> sigmai = new ListAlphabet<String>(Arrays.asList(syncAlpha));
-                        mergedSet.addAll(sigmai);
+                        ArrayList<String> cleaned = this.cleanSet(mergedSet, sigmai);
+                        mergedSet.addAll(cleaned);
                         break;
                     }
                 }
@@ -390,6 +396,23 @@ public class SclStar {
             }
         }
         return dependentSets;
+    }
+
+    private ArrayList<String> cleanSet(ArrayList<String> mergedSet, Alphabet<String> sigma) {
+        ArrayList<String> cleanedSet = new ArrayList<>();
+        for(String alphai : sigma){
+            boolean isClean = true;
+            for(String alphaj : mergedSet){
+                if(alphai.equals(alphaj)){
+                    isClean = false;
+                    break;
+                }
+            }
+            if(isClean){
+                cleanedSet.add(alphai);
+            }
+        }
+        return(cleanedSet);
     }
 
     private List<Alphabet<String>> findSetsIncluding(List<Alphabet<String>> sigmaFamily, String currentAlpha){
