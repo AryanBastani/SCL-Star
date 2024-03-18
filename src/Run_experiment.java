@@ -179,7 +179,7 @@ public class Run_experiment {
 
                 Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
 
-                //             RUN DECOMPOSED LEARNING
+                //             RUN SCL*
                 @Nullable CompactMealy result = null;
                 result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode);
 
@@ -243,10 +243,10 @@ public class Run_experiment {
 
 
 
-        SclStar Mealy_LIP = new SclStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
+        SclStar sclStar = new SclStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
         @Nullable CompactMealy result;
         if (!test_mode ){
-            result = Mealy_LIP.run(eq_sym, null);
+            result = sclStar.run(eq_sym, null);
         }
         else{
 //        create check eq oracle for random search
@@ -256,25 +256,25 @@ public class Run_experiment {
 //                    new WpMethodEQOracle<>(testOracleForEQoracle, 2);
             EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle =
                     buildEqOracle(eq_sul, "wp");
-            result = Mealy_LIP.run(eq_sym, testEqOracle);
+            result = sclStar.run(eq_sym, testEqOracle);
         }
 
-        logger.info("Rounds: " + Mealy_LIP.getRound_counter().getCount());
-        logger.info("#EQs: " + Mealy_LIP.getEq_counter().getCount());
+        logger.info("Rounds: " + sclStar.getRound_counter().getCount());
+        logger.info("#EQs: " + sclStar.getEq_counter().getCount());
         logger.info(mq_rst.getStatisticalData().toString());
         logger.info(mq_sym.getStatisticalData().toString());
         logger.info(eq_rst.getStatisticalData().toString());
         logger.info(eq_sym.getStatisticalData().toString());
 //        // statistics array
-        data[csvProperties.getIndex(LIP+ROUNDS)] = String.valueOf(Mealy_LIP.getRound_counter().getCount());
+        data[csvProperties.getIndex(LIP+ROUNDS)] = String.valueOf(sclStar.getRound_counter().getCount());
         data[csvProperties.getIndex(LIP+MQ_RST)] = Utils.ExtractValue(mq_rst.getStatisticalData().getSummary());
         data[csvProperties.getIndex(LIP+MQ_SYM)] = Utils.ExtractValue(mq_sym.getStatisticalData().getSummary());
         data[csvProperties.getIndex(LIP+EQ_RST)] = Utils.ExtractValue(eq_rst.getStatisticalData().getSummary());
         data[csvProperties.getIndex(LIP+EQ_SYM)] = Utils.ExtractValue(eq_sym.getStatisticalData().getSummary());
-        data[csvProperties.getIndex(LIP+EQs)] = String.valueOf(Mealy_LIP.getEq_counter().getCount());
+        data[csvProperties.getIndex(LIP+EQs)] = String.valueOf(sclStar.getEq_counter().getCount());
         data[csvProperties.getIndex(LIP+TOTAL_RST)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_rst.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_rst.getStatisticalData().getSummary())));
         data[csvProperties.getIndex(LIP+TOTAL_SYM)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_sym.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_sym.getStatisticalData().getSummary())));
-        data[csvProperties.getIndex(LIP+COMPONENTS)] = String.valueOf(Mealy_LIP.getSigmaFamily().size());
+        data[csvProperties.getIndex(LIP+COMPONENTS)] = String.valueOf(sclStar.getSigmaFamily().size());
         // learning statistics
 
 
