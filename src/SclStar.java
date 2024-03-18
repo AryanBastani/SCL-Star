@@ -112,11 +112,14 @@ public class SclStar {
         Word<String> output_2 = null;
         ArrayList<String> syncToRemove = new ArrayList<>();
         for (String m : sync){
+            System.out.println("For sync = " + m);
             boolean isSync = true;
             for(Integer si : states){
                 for(Integer sj : states){
                     output_1 = hypothesis.getTransition(si, m).getOutput();
-                    output_2 = hypothesis.getTransition(si, m).getOutput();
+                    output_2 = hypothesis.getTransition(sj, m).getOutput();
+                    System.out.println("\t output1 = " + output_1);
+                    System.out.println("\t output2 = " + output_2 + '\n');
                     if(!output_1.equals(output_2)){
                         syncToRemove.add(m);
                         isSync = false;
@@ -140,6 +143,7 @@ public class SclStar {
                 }
             }
         }
+        System.out.println("ToREmOVE : " + syncToRemove);
         for(String toRemove : syncToRemove){
             sync.remove(toRemove);
         }
@@ -233,6 +237,9 @@ public class SclStar {
                 sync.remove(toRemove);
                 outSync.remove(toRemove);
             }
+            System.out.println("CEINOUT: " + ceInput);
+            System.out.println("sigmaFamily: " + sigmaFamily);
+            System.out.println("syn: c" + sync);
             List<Alphabet<String>> iD = dependSets(ceInput, sigmaFamily, sync);
             System.out.println("iD before sync" + iD);
             ArrayList<String> mergedSet = new ArrayList<>();
