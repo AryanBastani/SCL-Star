@@ -209,7 +209,6 @@ public class SclStar {
                             System.out.println("for single SYNC : " + syncAlpha);
                             System.out.println("OUTPUT for SYNC : " + current_map.getValue());
                             System.out.println("OUTPUT for Ce : " + outCe.get(ceIndex));
-                            System.out.println("ssssss :" + outCe.get(ceIndex) + current_map.getValue() + "asd" + (current_map.getValue() != outCe.get(ceIndex)));
                             toRemoveSync.add(syncAlpha);
                             List<Alphabet<String>> iStar = this.findSetsIncluding(sigmaFamily, syncAlpha);
 
@@ -237,7 +236,7 @@ public class SclStar {
                 sync.remove(toRemove);
                 outSync.remove(toRemove);
             }
-            System.out.println("CEINOUT: " + ceInput);
+            System.out.println("CEinput: " + ceInput);
             System.out.println("sigmaFamily: " + sigmaFamily);
             System.out.println("syn: c" + sync);
             List<Alphabet<String>> iD = dependSets(ceInput, sigmaFamily, sync);
@@ -351,10 +350,11 @@ public class SclStar {
 //        logger.info(sigmaFamily.toString());
         String log_msg = "";
         for (Alphabet s: sigmaFamily){
-            System.out.println("(*&#*(^(*&#(*$&@$(#*^%*&#^(#*^%(#*^(*#^(#*^(#*^#(*#(*^#(*#^%(*#%^(*#%^(#*%^#*%(#*%^#*%(#*#^*#(*#^*#%(*%#^*#%(#*%#*%(#%^*#(*%#^");
+            System.out.println("The result:");
             log_msg += "  - component with " + s.size() + " inputs: " + s + " and " +  final_H.size() + " states" + "\n";
         }
-        logger.info(log_msg);
+        System.out.println(log_msg);
+        //logger.info(log_msg);
         return final_H;
     }
 
