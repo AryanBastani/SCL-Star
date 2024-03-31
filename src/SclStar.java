@@ -161,7 +161,7 @@ public class SclStar {
 
     //MainLoop starts:
         while (ce != null) {
-            Word<String> minimalCe = ceDistillation(ce.getInput(), sigmaFamily, hypothesis);
+            Word<String> minimalCe = ceDistillation(ce.getInput(), sigmaFamily, hypothesis, sync);
             System.out.println("******************$$$$$$$$$$$$$$$$$$************$$$$$$$$$$$$************");
 //            logger.info("round " + round_counter.getCount() + "  counterexample:  " + ce);
 //            System.out.println("round " + round_counter.getCount() + "  counterexample:  " + ce);
@@ -393,13 +393,30 @@ public class SclStar {
 //
 //    }
 
-    private Word<String> ceDistillation(Word<String> ce, List<Alphabet<String>> sigmaFamily, CompactMealy hypothesis){
+    private Word<String> ceDistillation(Word<String> ce, List<Alphabet<String>> sigmaFamily, CompactMealy hypothesis, ArrayList<String> sync){
         ce = this.cut_ce(ce, hypothesis);
-        List<Alphabet<String>>  involvedSets = involved_sets(ce, sigmaFamily);
+        List<Alphabet<String>>  iD = dependSets(ce, sigmaFamily, sync);
+        for(String synci : sync){
+            for(String cii : ce){
+                if(synci.equals(cii)){
+                    boolean isNew = true;
+                    Alphabet<String> synciString = new ListAlphabet<String>(Arrays.asList(synci));
+                    for(Alphabet<String> iDi : iD){
+                        if(synciString.equals(iDi)){
+                            isNew = false;
+                        }
+                    }
+                    if(isNew){
+                        iD.add(synciString);
+                    }
+                    break;
+                }
+            }
+        }
         List<ArrayList> subsets = new ArrayList();
 
-        for(int k=2; k<involvedSets.size(); k++){
-            subsets = k_combinations(k, involvedSets);
+        for(int k=2; k<iD.size(); k++){
+            subsets = k_combinations(k, iD);
             for(ArrayList list: subsets){
                 Alphabet<String> merged_list = merge_parts(list);
                 Word<String> ce_prime = projection(ce, merged_list);
