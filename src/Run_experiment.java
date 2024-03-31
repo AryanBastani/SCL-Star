@@ -246,7 +246,7 @@ public class Run_experiment {
         SclStar sclStar = new SclStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
         @Nullable CompactMealy result;
         if (!test_mode ){
-            result = sclStar.run(eq_sym, null);
+            result = sclStar.run(mealyss, eq_sym, null);
         }
         else{
 //        create check eq oracle for random search
@@ -256,7 +256,7 @@ public class Run_experiment {
 //                    new WpMethodEQOracle<>(testOracleForEQoracle, 2);
             EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle =
                     buildEqOracle(eq_sul, "wp");
-            result = sclStar.run(eq_sym, testEqOracle);
+            result = sclStar.run(mealyss, eq_sym, testEqOracle);
         }
 
         logger.info("Rounds: " + sclStar.getRound_counter().getCount());

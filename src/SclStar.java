@@ -51,7 +51,7 @@ public class SclStar {
         this.eq_counter = new Counter("Total number of equivalence queries", "#");
     }
 
-    public CompactMealy<String, Word<String>> run(StatisticSUL<String, Word<String>> eq_sym_counter,
+    public CompactMealy<String, Word<String>> run(CompactMealy<String, Word<String>> mealyss, StatisticSUL<String, Word<String>> eq_sym_counter,
                                                   EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle){
 
     //Initialize starts:
@@ -182,61 +182,67 @@ public class SclStar {
             List<Word<String>> outCe = new ArrayList<>();
             Word<String> output;
             for(String currenntAlpha : ceList){
-                transition = hypothesis.getTransition(state, currenntAlpha);
+                transition = mealyss.getTransition(state, currenntAlpha);
                 output = transition.getOutput();
                 nextState = transition.getSuccId();
                 outCe.add(output);
                 state = nextState;
             }
+            System.out.println("MinimalCE: " + minimalCe);
+            System.out.println("Output of minimalCE : " + outCe);
 
             //Implementing the for loop:
             ArrayList<String> toRemoveSync = new ArrayList<>();
             System.out.println("THE SYNC : " + sync);
             System.out.println("OUTSYNC : " + outSync);
             for(String syncAlpha : sync){
+                System.out.println("For SYNC : " + syncAlpha);
                 boolean isInCe = false;
-                int ceIndex = 0;
                 for(String ceSync : ceList){
+                    System.out.println("\tFor ceLetter : " + ceSync);
                     if(ceSync.equals(syncAlpha)){
                         isInCe = true;
-                        ceIndex = ceList.indexOf(ceSync);
                         break;
                     }
                 }
-                if(isInCe){
+                if(isInCe) {
                     for (Map.Entry<String, Word<String>> current_map : outSync.entrySet()) {
-                        if (current_map.getKey().equals(syncAlpha) && !current_map.getValue().equals(outCe.get(ceIndex))) {
-                            System.out.println("for single SYNC : " + syncAlpha);
-                            System.out.println("OUTPUT for SYNC : " + current_map.getValue());
-                            System.out.println("OUTPUT for Ce : " + outCe.get(ceIndex));
-                            toRemoveSync.add(syncAlpha);
-                            List<Alphabet<String>> iStar = this.findSetsIncluding(sigmaFamily, syncAlpha);
+                        for (int i = 0; i < ceList.size(); i++){
+                            if(!ceList.get(i).equals(syncAlpha)){
+                                continue;
+                            }
+                            if (current_map.getKey().equals(syncAlpha) && !current_map.getValue().equals(outCe.get(i))) {
+                                System.out.println("for single SYNC : " + syncAlpha);
+                                System.out.println("OUTPUT for SYNC : " + current_map.getValue());
+                                System.out.println("OUTPUT for Ce : " + outCe.get(i));
+                                toRemoveSync.add(syncAlpha);
+                                List<Alphabet<String>> iStar = this.findSetsIncluding(sigmaFamily, syncAlpha);
 
-                            ArrayList<String> mergedSet = new ArrayList<>();
-                            ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
-                            for (Alphabet<String> sigmai : iStar){
-                                int i = sigmaFamily.indexOf(sigmai);
+                                ArrayList<String> mergedSet = new ArrayList<>();
+                                ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
+                                for (Alphabet<String> sigmai : iStar) {
+                                    //int i = sigmaFamily.indexOf(sigmai);
 //                                System.out.println("merging set " + sigmai);
 //                                System.out.println();
-                                sigmaFamily.remove(sigmai);
+                                    sigmaFamily.remove(sigmai);
 //                                trashParts.add(learnedParts.remove(i));
-                                ArrayList<String> cleaned = this.cleanSet(mergedSet, sigmai);
-                                mergedSet.addAll(cleaned);
-                            }
+                                    ArrayList<String> cleaned = this.cleanSet(mergedSet, sigmai);
+                                    mergedSet.addAll(cleaned);
+                                }
 //                            System.out.println("merged sets :  " + mergedSet);
 //                            System.out.println();
-                            Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
-                            sigmaFamily.add(mergedAlphabet);
-                            break;
-                        }
+                                Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
+                                sigmaFamily.add(mergedAlphabet);
+                                break;
+                            }
                     }
+                }
                 }
             }
             for(String toRemove : toRemoveSync){
                 sync.remove(toRemove);
                 outSync.remove(toRemove);
             }
-            System.out.println("MinimalCE: " + minimalCe);
             System.out.println("sigmaFamily: " + sigmaFamily);
             System.out.println("syn: c" + sync);
             List<Alphabet<String>> iD = dependSets(minimalCe, sigmaFamily, sync);
