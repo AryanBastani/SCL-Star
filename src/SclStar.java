@@ -161,6 +161,7 @@ public class SclStar {
 
     //MainLoop starts:
         while (ce != null) {
+            Word<String> minimalCe = ceDistillation(ce.getInput(), sigmaFamily, hypothesis);
             System.out.println("******************$$$$$$$$$$$$$$$$$$************$$$$$$$$$$$$************");
 //            logger.info("round " + round_counter.getCount() + "  counterexample:  " + ce);
 //            System.out.println("round " + round_counter.getCount() + "  counterexample:  " + ce);
@@ -174,8 +175,7 @@ public class SclStar {
 
         //ProcessCE starts:
             //Building outCe:
-            Word<String> ceInput = ce.getInput();
-            List<String> ceList = ceInput.asList();
+            List<String> ceList = minimalCe.asList();
             int state = 0;
             int nextState;
             CompactMealyTransition<Word<String>> transition = null;
@@ -236,11 +236,11 @@ public class SclStar {
                 sync.remove(toRemove);
                 outSync.remove(toRemove);
             }
-            System.out.println("CEinput: " + ceInput);
+            System.out.println("MinimalCE: " + minimalCe);
             System.out.println("sigmaFamily: " + sigmaFamily);
             System.out.println("syn: c" + sync);
-            List<Alphabet<String>> iD = dependSets(ceInput, sigmaFamily, sync);
-            System.out.println("iD before sync" + iD);
+            List<Alphabet<String>> iD = dependSets(minimalCe, sigmaFamily, sync);
+            System.out.println("iD before sync: " + iD);
             ArrayList<String> mergedSet = new ArrayList<>();
             ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
             for (Alphabet<String> sigmai : iD){
@@ -259,14 +259,19 @@ public class SclStar {
                     if(ceAlpha.equals(syncAlpha)){
                         Alphabet<String> sigmai = new ListAlphabet<String>(Arrays.asList(syncAlpha));
                         ArrayList<String> cleaned = this.cleanSet(mergedSet, sigmai);
+                        if(isNew(mergedSet, ceAlpha)){
+                                sigmaFamily.remove(sigmai);
+                        }
                         mergedSet.addAll(cleaned);
                         System.out.println("sync for iD" + syncAlpha);
                         break;
                     }
                 }
             }
+            System.out.println("iD after sync: " + mergedSet);
             Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
             sigmaFamily.add(mergedAlphabet);
+            System.out.println("sigmaFamily after merging: " + sigmaFamily);
         //ProcessCE ends!
 
 //        //InvolvedSet starts:
@@ -325,6 +330,7 @@ public class SclStar {
 
         //Equivalence-Query starts:
             ce = eqOracle.findCounterExample(hypothesis, alphabet);
+            System.out.println(hypothesis);
         //Equivalence-Query ends!
 
             if(ce == null && testEqOracle!= null){
@@ -381,7 +387,7 @@ public class SclStar {
 //
 //    }
 
-    private List<Alphabet<String>> dependent_sets(Word<String> ce, List<Alphabet<String>> sigmaFamily, CompactMealy hypothesis){
+    private Word<String> ceDistillation(Word<String> ce, List<Alphabet<String>> sigmaFamily, CompactMealy hypothesis){
         ce = this.cut_ce(ce, hypothesis);
         List<Alphabet<String>>  involvedSets = involved_sets(ce, sigmaFamily);
         List<ArrayList> subsets = new ArrayList();
@@ -392,11 +398,11 @@ public class SclStar {
                 Alphabet<String> merged_list = merge_parts(list);
                 Word<String> ce_prime = projection(ce, merged_list);
                 if (check_for_ce(ce_prime, hypothesis)){
-                    return list;
+                    return ce_prime;
                 }
             }
         }
-        return involvedSets;
+        return ce;
     }
 
     private List<Alphabet<String>> involved_sets(Word<String> ce, List<Alphabet<String>> sigmaFamily){
@@ -414,17 +420,20 @@ public class SclStar {
         return dependentSets;
     }
 
+    private boolean isNew(ArrayList<String> mergedSet, String alpha){
+        for(String alphaj : mergedSet){
+            if(alpha.equals(alphaj)){
+                return(false);
+            }
+        }
+        return(true);
+    }
+
     private ArrayList<String> cleanSet(ArrayList<String> mergedSet, Alphabet<String> sigma) {
         ArrayList<String> cleanedSet = new ArrayList<>();
         for(String alphai : sigma){
             boolean isClean = true;
-            for(String alphaj : mergedSet){
-                if(alphai.equals(alphaj)){
-                    isClean = false;
-                    break;
-                }
-            }
-            if(isClean){
+            if(isNew(mergedSet, alphai)){
                 cleanedSet.add(alphai);
             }
         }
