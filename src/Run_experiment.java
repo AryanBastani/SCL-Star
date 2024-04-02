@@ -66,7 +66,7 @@ public class Run_experiment {
     private static Boolean CACHE_ENABLE = true;
 
     private static String RESULTS_PATH;
-    private static Logger logger;
+//    private static Logger logger;
     private static CSVProperties csvProperties;
     private static Experimentproperties experimentProperties ;
     private static String benchmarks_base_dir;
@@ -123,7 +123,7 @@ public class Run_experiment {
 
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
             LocalDateTime now = LocalDateTime.now();
-            logger = Logger.getLogger(dtf.format(now).toString());
+//            logger = Logger.getLogger(dtf.format(now).toString());
 //        FileHandler fh;
 //        try {
 //            String path = "logs/" + dtf.format(now) + ".log";
@@ -152,9 +152,9 @@ public class Run_experiment {
                     currentTarget = Utils.getInstance().loadMealyMachineFromDot(file);
                 } catch (Exception e) {
                     System.out.println(file);
-                    logger.warning("problem in loading file");
-                    logger.warning(e.toString());
-                    logger.warning(c);
+                    System.out.println("problem in loading file");
+                    System.out.println(e.toString());
+                    System.out.println(c);
                     continue;
                 }
                 if (productMealy == null) {
@@ -165,7 +165,7 @@ public class Run_experiment {
             CompactMealy<String, Word<String>> target = productMealy.getMachine();
 
 
-            logger.info("#States: " + target.size());
+            //logger.info("#States: " + target.size());
             data[csvProperties.getIndex(STATES)] = Integer.toString(target.size());
             data[csvProperties.getIndex(INPUTS)] = Integer.toString(target.numInputs());
             Alphabet<String> alphabet = target.getInputAlphabet();
@@ -184,7 +184,7 @@ public class Run_experiment {
                 result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode);
 
                 if (result == null) {
-                    logger.warning("the  SUL is not learned completely (CL-Star)");
+                    System.out.println("the  SUL is not learned completely (CL-Star)");
                 } else {
                     Utils.writeDataLineByLine(RESULTS_PATH, data);
                 }
@@ -243,7 +243,7 @@ public class Run_experiment {
 
 
 
-        SclStar sclStar = new SclStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
+        SclStar sclStar = new SclStar(alphabet, mqOracle, eqOracle, partialEqOracle);
         @Nullable CompactMealy result;
         if (!test_mode ){
             result = sclStar.run(mealyss, eq_sym, null);
@@ -259,12 +259,12 @@ public class Run_experiment {
             result = sclStar.run(mealyss, eq_sym, testEqOracle);
         }
 
-        logger.info("Rounds: " + sclStar.getRound_counter().getCount());
-        logger.info("#EQs: " + sclStar.getEq_counter().getCount());
-        logger.info(mq_rst.getStatisticalData().toString());
-        logger.info(mq_sym.getStatisticalData().toString());
-        logger.info(eq_rst.getStatisticalData().toString());
-        logger.info(eq_sym.getStatisticalData().toString());
+//        logger.info("Rounds: " + sclStar.getRound_counter().getCount());
+//        logger.info("#EQs: " + sclStar.getEq_counter().getCount());
+//        logger.info(mq_rst.getStatisticalData().toString());
+//        logger.info(mq_sym.getStatisticalData().toString());
+//        logger.info(eq_rst.getStatisticalData().toString());
+//        logger.info(eq_sym.getStatisticalData().toString());
 //        // statistics array
         data[csvProperties.getIndex(LIP+ROUNDS)] = String.valueOf(sclStar.getRound_counter().getCount());
         data[csvProperties.getIndex(LIP+MQ_RST)] = Utils.ExtractValue(mq_rst.getStatisticalData().getSummary());
@@ -279,7 +279,7 @@ public class Run_experiment {
 
 
         // profiling
-        SimpleProfiler.logResults();
+        //SimpleProfiler.logResults();
         return result;
     }
 
@@ -346,12 +346,12 @@ public class Run_experiment {
 
 
 
-        // learning statistics
-        logger.info("Rounds: " + experiment.getRounds().getCount());
-        logger.info(mq_rst.getStatisticalData().toString());
-        logger.info(mq_sym.getStatisticalData().toString());
-        logger.info(eq_rst.getStatisticalData().toString());
-        logger.info(eq_sym.getStatisticalData().toString());
+//        // learning statistics
+//        logger.info("Rounds: " + experiment.getRounds().getCount());
+//        logger.info(mq_rst.getStatisticalData().toString());
+//        logger.info(mq_sym.getStatisticalData().toString());
+//        logger.info(eq_rst.getStatisticalData().toString());
+//        logger.info(eq_sym.getStatisticalData().toString());
 
 
 //        // statistics array
@@ -366,7 +366,7 @@ public class Run_experiment {
 
 
         // profiling
-        SimpleProfiler.logResults();
+        //SimpleProfiler.logResults();
     }
 
     private static Experiment<MealyMachine<?, String,?, Word<String>>> learningLStarM(Alphabet<String> alphabet,

@@ -38,8 +38,7 @@ public class SclStar {
     public SclStar(Alphabet<String> alphabet,
                   MembershipOracle<String, Word<Word<String>>> mqOracle,
                   EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> eqOracle,
-                  EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> partialEqOracle,
-                  Logger logger){
+                  EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> partialEqOracle){
 
         this.eqOracle = eqOracle;
         this.partialEqOracle = partialEqOracle;
@@ -91,8 +90,6 @@ public class SclStar {
 
             eq_counter.increment(experiment.getRounds().getCount());
             Long post_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
-//            logger.info("Learned partialH with " + partialH.size() + " states,   " +
-//                    (post_eq_sym - pre_eq_sym) + " symbols in " + experiment.getRounds().getCount() + " rounds" );
 
             learnedParts.add(partialH);
             if (productMealy== null){
@@ -143,7 +140,7 @@ public class SclStar {
                 }
             }
         }
-        System.out.println("ToREmOVE : " + syncToRemove);
+        System.out.println("ToREmOVE : " + syncToRemove + "\n");
         for(String toRemove : syncToRemove){
             sync.remove(toRemove);
         }
@@ -161,17 +158,11 @@ public class SclStar {
 
     //MainLoop starts:
         while (ce != null) {
+            System.out.println("***NEW TRY IN WHILE LOOP***\n");
             Word<String> minimalCe = ceDistillation(ce.getInput(), sigmaFamily, hypothesis, sync);
-            System.out.println("******************$$$$$$$$$$$$$$$$$$************$$$$$$$$$$$$************");
-//            logger.info("round " + round_counter.getCount() + "  counterexample:  " + ce);
-//            System.out.println("round " + round_counter.getCount() + "  counterexample:  " + ce);
-//            System.out.println();
-//            System.out.println();
             round_counter.increment();
             eq_counter.increment();
             post_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
-//            logger.info("Search for ce,  " + hypothesis.size() + " states,   " +
-//                    (post_eq_sym - pre_eq_sym) + " symbols" );
 
         //ProcessCE starts:
             //Building outCe:
@@ -189,17 +180,15 @@ public class SclStar {
                 state = nextState;
             }
             System.out.println("MinimalCE: " + minimalCe);
-            System.out.println("Output of minimalCE : " + outCe);
+            System.out.println("Output of minimalCE : " + outCe +"\n");
 
             //Implementing the for loop:
             ArrayList<String> toRemoveSync = new ArrayList<>();
             System.out.println("THE SYNC : " + sync);
-            System.out.println("OUTSYNC : " + outSync);
+            System.out.println("OUTSYNC : " + outSync + "\n");
             for(String syncAlpha : sync){
-                System.out.println("For SYNC : " + syncAlpha);
                 boolean isInCe = false;
                 for(String ceSync : ceList){
-                    System.out.println("\tFor ceLetter : " + ceSync);
                     if(ceSync.equals(syncAlpha)){
                         isInCe = true;
                         break;
@@ -212,25 +201,19 @@ public class SclStar {
                                 continue;
                             }
                             if (current_map.getKey().equals(syncAlpha) && !current_map.getValue().equals(outCe.get(i))) {
-                                System.out.println("for single SYNC : " + syncAlpha);
+                                System.out.println("Removing SYNC : " + syncAlpha + "  because a different output in the ce");
                                 System.out.println("OUTPUT for SYNC : " + current_map.getValue());
-                                System.out.println("OUTPUT for Ce : " + outCe.get(i));
+                                System.out.println("OUTPUT for Ce : " + outCe.get(i) + "\n");
                                 toRemoveSync.add(syncAlpha);
                                 List<Alphabet<String>> iStar = this.findSetsIncluding(sigmaFamily, syncAlpha);
 
                                 ArrayList<String> mergedSet = new ArrayList<>();
                                 ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
                                 for (Alphabet<String> sigmai : iStar) {
-                                    //int i = sigmaFamily.indexOf(sigmai);
-//                                System.out.println("merging set " + sigmai);
-//                                System.out.println();
                                     sigmaFamily.remove(sigmai);
-//                                trashParts.add(learnedParts.remove(i));
                                     ArrayList<String> cleaned = this.cleanSet(mergedSet, sigmai);
                                     mergedSet.addAll(cleaned);
                                 }
-//                            System.out.println("merged sets :  " + mergedSet);
-//                            System.out.println();
                                 Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
                                 sigmaFamily.add(mergedAlphabet);
                                 break;
@@ -243,23 +226,16 @@ public class SclStar {
                 sync.remove(toRemove);
                 outSync.remove(toRemove);
             }
-            System.out.println("sigmaFamily: " + sigmaFamily);
-            System.out.println("syn: c" + sync);
+            System.out.println("syn: c" + sync + "\n");
             List<Alphabet<String>> iD = dependSets(minimalCe, sigmaFamily, sync);
-            System.out.println("iD before sync: " + iD);
+            System.out.println("iD before without syncs: " + iD);
             ArrayList<String> mergedSet = new ArrayList<>();
             ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
             for (Alphabet<String> sigmai : iD){
-                //int i = sigmaFamily.indexOf(sigmai);
-//                                System.out.println("merging set " + sigmai);
-//                                System.out.println();
                 if(exist(sigmai)){
                     sigmaFamily.remove(sigmai);
                 }
 
-//                if(i < learnedParts.size()) {
-//                    trashParts.add(learnedParts.remove(i));
-//                }
                 ArrayList<String> cleaned = this.cleanSet(mergedSet, sigmai);
                 mergedSet.addAll(cleaned);
             }
@@ -271,46 +247,21 @@ public class SclStar {
                         if(isNew(mergedSet, ceAlpha) && exist(sigmai)){
                                 sigmaFamily.remove(sigmai);
                         }
-                        System.out.println("sync for cleanedId" + cleaned);
                         mergedSet.addAll(cleaned);
-                        System.out.println("sync for iD" + syncAlpha);
                         break;
                     }
                 }
             }
-            System.out.println("iD after sync: " + mergedSet);
+            System.out.println("iD after sync:(merged) " + mergedSet + "\n");
             Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
             sigmaFamily.add(mergedAlphabet);
-            System.out.println("sigmaFamily after merging: " + sigmaFamily);
+            System.out.println("sigmaFamily after merging: " + sigmaFamily + "\n");
         //ProcessCE ends!
-
-//        //InvolvedSet starts:
-//            List<Alphabet<String>> dependentSets = dependent_sets(ce.getInput(), sigmaFamily, hypothesis);
-//        //InvolvedSet ends!
-
-//        //Composition starts:
-//            ArrayList<String> mergedSet = new ArrayList<>();
-//            ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
-//
-//            for (Alphabet<String> sigmai : dependentSets){
-//                int i = sigmaFamily.indexOf(sigmai);
-////                System.out.println("merging set " + sigmai);
-////                System.out.println();
-//                sigmaFamily.remove(sigmai);
-//                trashParts.add(learnedParts.remove(i));
-//                mergedSet.addAll(sigmai);
-//            }
-////            System.out.println("merged sets :  " + mergedSet);
-////            System.out.println();
-//
-//            Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
-//        //Composition ends!
 
         //LearnInParts starts(Learn the single merged):
             productMealy = null;
             learnedParts.clear();
             for(Alphabet<String> sigmai : sigmaFamily ){
-                System.out.println("of sigmaFamily: " + sigmai);
                 pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
                 ExtensibleLStarMealyBuilder<String, Word<String>> builder = new ExtensibleLStarMealyBuilder<String, Word<String>>();
                 builder.setAlphabet(sigmai);
@@ -326,8 +277,6 @@ public class SclStar {
 
                 eq_counter.increment(experiment.getRounds().getCount());
                 post_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
-//            logger.info("Learned partialH with " + partialH.size() + " states,   " +
-//                    (post_eq_sym - pre_eq_sym) + " symbols in " + experiment.getRounds().getCount() + " rounds" );
 
                 learnedParts.add(partialH);
                 if (productMealy== null){
@@ -346,56 +295,23 @@ public class SclStar {
             if(ce == null && testEqOracle!= null){
                 for (CompactMealy<String, Word<String>> comp: learnedParts){
                     ce2 = testEqOracle.findCounterExample(comp, comp.getInputAlphabet());
-//                ce2 = testEqOracle.findCounterExample(hypothesis,alphabet);
                     if(ce2 != null){
-//                        System.out.println();
-//                        System.out.println("********* Incomplete random learning **********");
-//                        System.out.println();
-//                        logger.info("********* Incomplete random learning **********");
                         return null;
                     }
                 }
             }
-//            Visualization.visualize(productDFA.getDfa(), productDFA.getDfa().getInputAlphabet());
             pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
         }
     //MainLoop ends!
 
         CompactMealy final_H = productMealy.getMachine();
-        logger.info("___ Synchronous Compositional Learning Algorithm finished ___");
-//        logger.info(sigmaFamily.toString());
-        String log_msg = "";
+        System.out.println("___ Synchronous Compositional Learning Algorithm finished ___");
+        System.out.println("The result:");
         for (Alphabet s: sigmaFamily){
-            System.out.println("The result:");
-            log_msg += "  - component with " + s.size() + " inputs: " + s + " and " +  final_H.size() + " states" + "\n";
+            System.out.println("  - component with " + s.size() + " inputs: " + s + " and " +  final_H.size() + " states" + "\n");
         }
-        System.out.println(log_msg);
-        //logger.info(log_msg);
         return final_H;
     }
-
-//    private void computeCounters(Experiment.DFAExperiment<String> experiment, ClassicLStarDFA<String> lstar ) {
-//        // profiling
-//        System.out.println(" --------- simple profiler: ---------");
-//        System.out.println(SimpleProfiler.getResults());
-//
-//        // learning statistics
-//        System.out.println("------ learning statistics---------- ");
-//        if (experiment != null)
-//            System.out.println(experiment.getRounds().getSummary());
-//        System.out.println(mqOracle.getStatisticalData().getSummary());
-//        if (lstar != null) {
-//            System.out.println("Final observation table:");
-//            new ObservationTableASCIIWriter<>().write(lstar.getObservationTable(), System.out);
-//            try {
-//                OTUtils.displayHTMLInBrowser(lstar.getObservationTable());
-//            } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            }
-//        }
-//        System.out.println("       **********************************************************");
-//
-//    }
 
     private boolean exist(Alphabet<String> sigmai){
         for(Alphabet<String> sigmaj : sigmaFamily){
