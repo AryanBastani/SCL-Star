@@ -250,10 +250,13 @@ public class SclStar {
             ArrayList<String> mergedSet = new ArrayList<>();
             ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
             for (Alphabet<String> sigmai : iD){
-                int i = sigmaFamily.indexOf(sigmai);
+                //int i = sigmaFamily.indexOf(sigmai);
 //                                System.out.println("merging set " + sigmai);
 //                                System.out.println();
-                sigmaFamily.remove(sigmai);
+                if(exist(sigmai)){
+                    sigmaFamily.remove(sigmai);
+                }
+
 //                if(i < learnedParts.size()) {
 //                    trashParts.add(learnedParts.remove(i));
 //                }
@@ -265,9 +268,10 @@ public class SclStar {
                     if(ceAlpha.equals(syncAlpha)){
                         Alphabet<String> sigmai = new ListAlphabet<String>(Arrays.asList(syncAlpha));
                         ArrayList<String> cleaned = this.cleanSet(mergedSet, sigmai);
-                        if(isNew(mergedSet, ceAlpha)){
+                        if(isNew(mergedSet, ceAlpha) && exist(sigmai)){
                                 sigmaFamily.remove(sigmai);
                         }
+                        System.out.println("sync for cleanedId" + cleaned);
                         mergedSet.addAll(cleaned);
                         System.out.println("sync for iD" + syncAlpha);
                         break;
@@ -306,6 +310,7 @@ public class SclStar {
             productMealy = null;
             learnedParts.clear();
             for(Alphabet<String> sigmai : sigmaFamily ){
+                System.out.println("of sigmaFamily: " + sigmai);
                 pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
                 ExtensibleLStarMealyBuilder<String, Word<String>> builder = new ExtensibleLStarMealyBuilder<String, Word<String>>();
                 builder.setAlphabet(sigmai);
@@ -336,7 +341,6 @@ public class SclStar {
 
         //Equivalence-Query starts:
             ce = eqOracle.findCounterExample(hypothesis, alphabet);
-            System.out.println(hypothesis);
         //Equivalence-Query ends!
 
             if(ce == null && testEqOracle!= null){
@@ -392,6 +396,15 @@ public class SclStar {
 //        System.out.println("       **********************************************************");
 //
 //    }
+
+    private boolean exist(Alphabet<String> sigmai){
+        for(Alphabet<String> sigmaj : sigmaFamily){
+            if(sigmai.equals(sigmaj)){
+                return(true);
+            }
+        }
+        return (false);
+    }
 
     private Word<String> ceDistillation(Word<String> ce, List<Alphabet<String>> sigmaFamily, CompactMealy hypothesis, ArrayList<String> sync){
         ce = this.cut_ce(ce, hypothesis);

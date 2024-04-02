@@ -1,4 +1,4 @@
 "FILE_NAME","STATES","INPUTS","LSTAR_MQ_SYM","LSTAR_MQ_RST","LSTAR_EQ_SYM","LSTAR_EQ_RST","LSTAR_TOTAL_SYM","LSTAR_TOTAL_RST","LSTAR_EQs","CLSTAR_MQ_SYM","CLSTAR_MQ_RST","CLSTAR_EQ_SYM","CLSTAR_EQ_RST","CLSTAR_TOTAL_SYM","CLSTAR_TOTAL_RST","CLSTAR_EQs","CLSTAR_COMPONENTS","CLSTAR_ROUNDS","CACHE"
-"resources/new_FSMs/2.dot","9","3",,,,,,,,"17042","194","153355","1010","170397","1204","8","2","2","true",
-"resources/new_FSMs/2.dot","9","3",,,,,,,,"13240","177","154330","1020","167570","1197","8","2","2","true",
-"resources/new_FSMs/2.dot","9","3",,,,,,,,"11372","165","151473","1013","162845","1178","8","2","2","true",
+"resources/new_FSMs/2.dot","9","3",,,,,,,,"291622","3249","230557","1522","522179","4771","12","1","3","true",
+"resources/new_FSMs/2.dot","9","3",,,,,,,,"314514","3458","228395","1521","542909","4979","12","1","3","true",
+"resources/new_FSMs/2.dot","9","3",,,,,,,,"464853","5369","229427","1519","694280","6888","13","1","3","true",
