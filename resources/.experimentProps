@@ -11,4 +11,4 @@ eq_query = rndWords
 final_check_mode = false
 
 ## Experiment parameters
-repeat  = 3
+repeat  = 6

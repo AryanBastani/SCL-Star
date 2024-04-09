@@ -181,7 +181,7 @@ public class Run_experiment {
 
                 //             RUN SCL*
                 @Nullable CompactMealy result = null;
-                result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode);
+                result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep+1);
 
                 if (result == null) {
                     System.out.println("the  SUL is not learned completely (CL-Star)");
@@ -195,7 +195,7 @@ public class Run_experiment {
         }
     }
 
-    public static CompactMealy learnMealyInParts(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, String partial_eq_method, boolean test_mode){
+    public static CompactMealy learnMealyInParts(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, String partial_eq_method, boolean test_mode, int rep){
 
         Utils.getInstance();
         // SUL simulator
@@ -246,7 +246,7 @@ public class Run_experiment {
         SclStar sclStar = new SclStar(alphabet, mqOracle, eqOracle, partialEqOracle);
         @Nullable CompactMealy result;
         if (!test_mode ){
-            result = sclStar.run(mealyss, eq_sym, null);
+            result = sclStar.run(mealyss, eq_sym, null, rep);
         }
         else{
 //        create check eq oracle for random search
@@ -256,7 +256,7 @@ public class Run_experiment {
 //                    new WpMethodEQOracle<>(testOracleForEQoracle, 2);
             EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle =
                     buildEqOracle(eq_sul, "wp");
-            result = sclStar.run(mealyss, eq_sym, testEqOracle);
+            result = sclStar.run(mealyss, eq_sym, testEqOracle, rep);
         }
 
 //        logger.info("Rounds: " + sclStar.getRound_counter().getCount());

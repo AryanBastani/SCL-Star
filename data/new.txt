@@ -1,2 +1,3 @@
-resources/new_FSMs/1.dot
-resources/new_FSMs/2.dot
+resources/new_FSMs/Component1.dot
+resources/new_FSMs/Component2.dot
+resources/new_FSMs/Component3.dot
