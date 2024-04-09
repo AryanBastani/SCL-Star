@@ -236,7 +236,7 @@ public class SclStar {
                 }
                 System.out.println("syn: c" + sync + "\n");
                 List<Alphabet<String>> iD = dependSets(minimalCe, sigmaFamily, sync);
-                System.out.println("iD before without syncs: " + iD);
+                System.out.println("iD without syncs: " + iD);
                 ArrayList<String> mergedSet = new ArrayList<>();
                 ArrayList<CompactMealy<String, Word<String>>> trashParts = new ArrayList<>();
                 for (Alphabet<String> sigmai : iD) {
@@ -260,7 +260,7 @@ public class SclStar {
                         }
                     }
                 }
-                System.out.println("iD after sync:(merged) " + mergedSet + "\n");
+                System.out.println("iD with sync:(merged) " + mergedSet + "\n");
                 Alphabet<String> mergedAlphabet = Alphabets.fromList(mergedSet);
                 sigmaFamily.add(mergedAlphabet);
                 System.out.println("sigmaFamily after merging: " + sigmaFamily + "\n");
