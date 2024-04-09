@@ -411,13 +411,11 @@ public class SclStar {
                     Word<String> ce_prime = projection(ce, merged_list);
                     if (check_for_ce(ce_prime, hypothesis)) {
                         myWriter.write("\tCE after minimizing:\n\t\t" + ce_prime + "\n\n");
-                        System.out.println("Successfully wrote to the file.");
                         return ce_prime;
                     }
                 }
             }
             myWriter.write("\tCE after minimizing:\n\t\t" + ce + "\n\n");
-            System.out.println("Successfully wrote to the file.");
             return ce;
         }
         catch (IOException e) {
