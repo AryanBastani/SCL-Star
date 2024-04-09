@@ -400,9 +400,12 @@ public class SclStar {
                 }
             }
 
-            List<ArrayList> subsets = new ArrayList();
+            List<ArrayList<Alphabet<String>>> subsets = new ArrayList();
             for (int k = 2; k < iD.size(); k++) {
                 subsets = k_combinations(k, iD);
+                System.out.println("Subsets before sort:\n\t" + subsets + "\n");
+                subsets = sortSubsets(subsets);
+                System.out.println("Subsets after sort:\n\t" + subsets + "\n");
                 for (ArrayList list : subsets) {
                     Alphabet<String> merged_list = merge_parts(list);
                     Word<String> ce_prime = projection(ce, merged_list);
@@ -422,6 +425,36 @@ public class SclStar {
             e.printStackTrace();
         }
         return ce;
+    }
+
+    private List<ArrayList<Alphabet<String>>> sortSubsets(List<ArrayList<Alphabet<String>>> subsets){
+        List<ArrayList<Alphabet<String>>> sortedSubsets = new ArrayList<>();
+        List<Integer> subsetsSizes = new ArrayList<Integer>();
+//        System.out.println("Loging sizes:");
+        for(int i = 0; i < subsets.size(); i++){
+            int len = 0;
+            for(int j = 0; j < subsets.get(i).size(); j++){
+                len += subsets.get(i).get(j).size();
+            }
+            subsetsSizes.add(len);
+
+//            System.out.println("\t" + subsets.get(i) + ": " + len);
+        }
+
+        for(int i = 0; i < subsets.size(); i++){
+            int minValue = Integer.MAX_VALUE;
+            int minIndex = 0;
+            for(int j = 0; j < subsets.size(); j++){
+                if(subsetsSizes.get(j) < minValue){
+                    minValue = subsetsSizes.get(j);
+                    minIndex = j;
+                }
+            }
+            subsetsSizes.set(minIndex, Integer.MAX_VALUE);
+            sortedSubsets.add(subsets.get(minIndex));
+//            System.out.println("MINIMUM: " + subsets.get(minIndex));
+        }
+        return(sortedSubsets);
     }
 
     private List<Alphabet<String>> involved_sets(Word<String> ce, List<Alphabet<String>> sigmaFamily){
@@ -535,8 +568,8 @@ public class SclStar {
         return Alphabets.fromList(mergedSet);
     }
 
-    private List<ArrayList> k_combinations(int k, List<Alphabet<String>> input){
-        List subsets = new ArrayList<>();
+    private List<ArrayList<Alphabet<String>>> k_combinations(int k, List<Alphabet<String>> input){
+        List<ArrayList<Alphabet<String>>> subsets = new ArrayList<>();
 
         int[] s = new int[k];                  // here we'll keep indices
         // pointing to elements in input array
@@ -562,8 +595,8 @@ public class SclStar {
         return subsets;
     }
 
-    private List getSubset(List input, int[] subset) {
-        List result = new ArrayList();
+    private ArrayList<Alphabet<String>> getSubset(List<Alphabet<String>> input, int[] subset) {
+        ArrayList<Alphabet<String>> result = new ArrayList();
         for (int i = 0; i < subset.length; i++)
             result.add(input.get(subset[i])) ;
         return result;

@@ -1,36 +1,37 @@
 Calling CE-Distilation for the 1st time:
 	CE before minimizing:
-		d d a d b a c e d b d e c c a b a b c d d e c c c d c a a c b e a b a b d e a e c c e a e d d c c a c c a b d b d e b b d c d a a a a c a a d b d c b b d d a c e a e c c e d b d c a c e d a b d e e a b d d b a c e e c a d c b d d b c a a e a b e e a b a a e b e c a d e a d b d d a e b d e d c c a c e c a b d a c d
+		d b c e a c d e b e b e a e b c b d d a c a d b b d e a d d e e e c a a b c b a a a b a e e c c b e c d d c b b b e c d d e c b c e a a d e d a b c b d e b d e e e b e b b e c c d a d d e d b d a b d c e d d d a b a b d a b b e e d a c c a d
 	CE after cut_ce:
-		d d a d b a c e d b
-	CE after minimizing:
-		d d d b d b
-
-Calling CE-Distilation for the 2st time:
-	CE before minimizing:
-		d c a d c b b b a a c d e a b e d e e e a c c c d a e a a a d a e b a b d b c e b c b b d e b a a c e c a b a a c b a a c c d d e c a d c a b b e e c a b e b b c c a d c e b d a c d d a c a c e c e b b b b c a e b d c e c c d e e a a d c b c a c b e d c a c a d c d a c a d d e c b e a c e a e e b c e a b e a c a b a e a c d c d b e d
-	CE after cut_ce:
-		d c a
+		d b c e a
 	CE after minimizing:
 		c a
 
+Calling CE-Distilation for the 2st time:
+	CE before minimizing:
+		e b e a e e a a d c d d e c d a b b e c b e d c a a d d a b d e d b b e e d e c c a b c b b b b b c b e e c d b a c a b e b c b c d a e e e d e c e e a c e e d a e e c c a c a e b d c c e a d b a a c d e a d b b d a b b a b a c d e d e a d c b c a a e b d
+	CE after cut_ce:
+		e b e a e e a a d c d d e c d a b
+	CE after minimizing:
+		b c c b
+
 Calling CE-Distilation for the 3st time:
 	CE before minimizing:
-		e d b c e b a b d d a d c d a e b d e c d a a a b c c c b d a e e a c c e c e a b b e d b b c a a b d e b a b d c d e b c a c b b b c a b d c d d a e e a a b a c e e e c b c e e d c d e d e d b a e d b d d a a a c d b c e c a c b c c b c a c e a b e e c c a d a c c c a d e b c e d c a a e c a e d c a b c c a e c b b b e b c a e c c c e
+		a c d e d c a c d c d d a a d a d d e a a e d e d c b b d e a c a b e a a c b b a b d a e d e d d a e c d b b e d c e c e e d d e a a b b a d b e d a a e e d e a d d d c a d a a d c d a e c a e a b a b c a d a c d a c e e c b a a e b e b e
 	CE after cut_ce:
-		e d b c e b
+		a c d e d c a c d c d d a a d a d d e
 	CE after minimizing:
-		d b c b
+		d e d d d d d d d e
 
 Calling CE-Distilation for the 4st time:
 	CE before minimizing:
-		d c a b d b d c c a b c b a d e d d e a a e e b c a a b b b b d b c e e e a e b b d c c b b e a c c b d e c a d b d e c b d e b e c a e b d e c c d d c a a b d a c d d b c d d e d a a e c b e d c d a b a b e c b a e b d a b a c b e d e d c e a a b d e c a e e d e c a e c d c a a a d e c a e c d c c d c b c a a c b e a a e b b e b d e b c d e c b d c c a c a c
+		c d c b d d e a a e e e b e b d d d d d a c c c b c d d e a e e a c d b a c d d a d a b b e a e e d a a c e a d c b d c a e e c a d d b a a d a a d e a b c c a a e d a c d c a d d e b e d e e b d a d a a d c a b a e d d d e c d a e e b b e c b a a d d c b c b d b a a a b d e b a e e b c e c c b b c e b c e c c d c d a b e d b a b a b b c e b d e e e b d b b e d c c e a
 	CE after cut_ce:
-		d c a b d b d c c a b c b a d e d d e
+		c d c b d d e a a e e e b
 	CE after minimizing:
-		d c b d b d c c b c b d e d d e
+		c d c b d d b
 
 ___ Synchronous Compositional Learning Algorithm finished ___
 	The result:
 		  - component with 2 inputs: [a, c]
-		  - component with 4 inputs: [e, b, d, c]
+		  - component with 2 inputs: [e, d]
+		  - component with 3 inputs: [b, c, d]
