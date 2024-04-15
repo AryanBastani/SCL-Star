@@ -659,4 +659,24 @@ public class Utils {
         }
     }
 
+    public static void printMachine(CompactMealy<String, Word<String>> machine){
+        Collection<Integer> states = machine.getStates();
+        Alphabet<String> alphabet = machine.getInputAlphabet();
+        for(int currentState : states){
+            for(String input : alphabet){
+                CompactMealyTransition<Word<String>> transition =
+                        machine.getTransition(currentState, input);
+                Word<String> output = transition.getOutput();
+                int nextState = transition.getSuccId();
+                printTransition(currentState, input, output, nextState);
+            }
+        }
+    }
+
+    private static void printTransition(int currentState, String input,
+                                        Word<String> output, int nextState){
+        String line = "s" + currentState + " -> " + "s" + nextState + " [label=\"" + input + "  /  " + output + "\" ];";
+        System.out.println(line);
+    }
+
 }
