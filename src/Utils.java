@@ -49,6 +49,7 @@ import net.automatalib.words.impl.Alphabets;
 
 
 public class Utils {
+
     private static Utils instance;
     public static final Word<String> OMEGA_SYMBOL = Word.fromLetter("Ω");
 
@@ -659,7 +660,13 @@ public class Utils {
         }
     }
 
-    public static void printMachine(CompactMealy<String, Word<String>> machine){
+    public static void printMachine(CompactMealy<String, Word<String>> machine, boolean isLStar){
+        if(isLStar){
+            System.out.println("LStar Algorithm output:");
+        }
+        else {
+            System.out.println("SCLStar Algorithm output:");
+        }
         Collection<Integer> states = machine.getStates();
         Alphabet<String> alphabet = machine.getInputAlphabet();
         for(int currentState : states){
@@ -675,7 +682,7 @@ public class Utils {
 
     private static void printTransition(int currentState, String input,
                                         Word<String> output, int nextState){
-        String line = "s" + currentState + " -> " + "s" + nextState + " [label=\"" + input + "  /  " + output + "\" ];";
+        String line = "\ts" + currentState + " -> " + "s" + nextState + " [label=\"" + input + "  /  " + output + "\" ];";
         System.out.println(line);
     }
 

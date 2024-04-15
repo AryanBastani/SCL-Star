@@ -240,7 +240,8 @@ public class Run_experiment {
         EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> partialEqOracle = null;
         partialEqOracle = buildEqOracle(eq_sul, partial_eq_method);
         eqOracle = buildEqOracle(eq_sul, eq_method);
-
+        EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle = null;
+        testEqOracle = buildEqOracle(eq_sul, "wp");
 
 
         SclStar sclStar = new SclStar(alphabet, mqOracle, eqOracle, partialEqOracle);
@@ -254,9 +255,22 @@ public class Run_experiment {
 //            MembershipOracle<String, Word<Word<String>>> testOracleForEQoracle = new SULOracle<>(testSul);
 //            EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle =
 //                    new WpMethodEQOracle<>(testOracleForEQoracle, 2);
-            EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle =
-                    buildEqOracle(eq_sul, "wp");
             result = sclStar.run(mealyss, eq_sym, testEqOracle, rep);
+        }
+        Utils.printMachine(result, false);
+
+        Experiment experiment = learningLStarM(alphabet, mealyss, mqOracle, eqOracle);
+        CompactMealy<String, Word<String>> lStarResult = (CompactMealy<String, Word<String>>) experiment.getFinalHypothesis();
+        Utils.printMachine(lStarResult, true);
+
+        if (test_mode){
+            @Nullable DefaultQuery<String, Word<Word<String>>> ce = testEqOracle.findCounterExample(lStarResult,alphabet);
+            if (ce!=null){
+                System.out.println();
+                System.out.println("************  incomplete lstar learning  **********");
+                System.out.println(data[csvProperties.getIndex(FILE_NAME)]);
+                System.out.println();
+            }
         }
 
 //        logger.info("Rounds: " + sclStar.getRound_counter().getCount());
