@@ -144,12 +144,12 @@ public class Run_experiment {
             ProductMealy productMealy = null;
             while (br.ready()) {
                 c = br.readLine();
-                CompactMealy<String, Word<String>> currentTarget;
                 data = new String[dataLen];
                 File file = new File(c);
                 data[csvProperties.getIndex(FILE_NAME)] = c;
+                CompactMealy<String, Word<String>> target;
                 try {
-                    currentTarget = Utils.getInstance().loadMealyMachineFromDot(file);
+                    target = Utils.getInstance().loadMealyMachineFromDot(file);
                 } catch (Exception e) {
                     System.out.println(file);
                     System.out.println("problem in loading file");
@@ -157,12 +157,6 @@ public class Run_experiment {
                     System.out.println(c);
                     continue;
                 }
-                if (productMealy == null) {
-                    productMealy = new ProductMealy(currentTarget);
-                } else productMealy.mergeFSMs(currentTarget);
-            }
-            assert productMealy != null;
-            CompactMealy<String, Word<String>> target = productMealy.getMachine();
 
 
             //logger.info("#States: " + target.size());
@@ -181,7 +175,7 @@ public class Run_experiment {
 
                 //             RUN SCL*
                 @Nullable CompactMealy result = null;
-                result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep+1);
+                result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1);
 
                 if (result == null) {
                     System.out.println("the  SUL is not learned completely (CL-Star)");
@@ -189,6 +183,7 @@ public class Run_experiment {
                     Utils.writeDataLineByLine(RESULTS_PATH, data);
                 }
             }
+        }
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(e.getStackTrace()[0].getLineNumber());
