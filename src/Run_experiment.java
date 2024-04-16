@@ -70,6 +70,7 @@ public class Run_experiment {
     private static CSVProperties csvProperties;
     private static Experimentproperties experimentProperties ;
     private static String benchmarks_base_dir;
+    private static Logger logger;
 
     public static final String SRC_DIR = "src_dir";
     public static final String EQUIVALENCE_METHOD = "eq";
@@ -142,7 +143,30 @@ public class Run_experiment {
 
             String c;
             ProductMealy productMealy = null;
+
+            File inputFolder = new File("Results/FSMs/INPUTs");
+            Utils.clearFolder(inputFolder);
+            new File("Results/FSMs/INPUTS").mkdirs();
+
+            int inputCounter = 0;
+
+            File sclFolder = new File("Results/FSMs/SCL-Star");
+            Utils.clearFolder(sclFolder);
+            new File("Results/FSMs/SCL-Star").mkdirs();
+
+            File lFolder = new File("Results/FSMs/L-Star");
+            Utils.clearFolder(lFolder);
+            new File("Results/FSMs/L-Star").mkdirs();
+
+            File clFolder = new File("Results/FSMs/CL-Star");
+            Utils.clearFolder(clFolder);
+            new File("Results/FSMs/CL-Star").mkdirs();
+
             while (br.ready()) {
+                inputCounter++;
+                new File("Results/FSMs/CL-Star/For input" + inputCounter).mkdirs();
+                new File("Results/FSMs/SCL-Star/For input" + inputCounter).mkdirs();
+                new File("Results/FSMs/L-Star/For input" + inputCounter).mkdirs();
                 c = br.readLine();
                 data = new String[dataLen];
                 File file = new File(c);
@@ -158,11 +182,24 @@ public class Run_experiment {
                     continue;
                 }
 
+                try {
+                    FileWriter inputWriter = new FileWriter("Results/FSMs/INPUTs/input" + inputCounter + "txt");
+                    Utils.printMachine(target, false, inputWriter);
+                    inputWriter.close();
+                }
+                catch (IOException e) {
+                    System.out.println("An error occurred.");
+                    e.printStackTrace();
+                }
+
+
 
             //logger.info("#States: " + target.size());
             data[csvProperties.getIndex(STATES)] = Integer.toString(target.size());
             data[csvProperties.getIndex(INPUTS)] = Integer.toString(target.numInputs());
             Alphabet<String> alphabet = target.getInputAlphabet();
+
+
 
             for (int rep = 0; rep < repeat; rep++) {
                 //   Shuffle the alphabet
@@ -175,7 +212,7 @@ public class Run_experiment {
 
                 //             RUN SCL*
                 @Nullable CompactMealy result = null;
-                result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1);
+                result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter);
 
                 if (result == null) {
                     System.out.println("the  SUL is not learned completely (CL-Star)");
@@ -190,7 +227,7 @@ public class Run_experiment {
         }
     }
 
-    public static CompactMealy learnMealyInParts(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, String partial_eq_method, boolean test_mode, int rep){
+    public static CompactMealy learnMealyInParts(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, String partial_eq_method, boolean test_mode, int rep, int inCounter){
 
         Utils.getInstance();
         // SUL simulator
@@ -237,12 +274,12 @@ public class Run_experiment {
         eqOracle = buildEqOracle(eq_sul, eq_method);
         EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle = null;
         testEqOracle = buildEqOracle(eq_sul, "wp");
-
-
+        @Nullable CompactMealy sclResult;
+        try {
+        FileWriter sclWriter = new FileWriter("Results/FSMs/SCL-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
         SclStar sclStar = new SclStar(alphabet, mqOracle, eqOracle, partialEqOracle);
-        @Nullable CompactMealy result;
         if (!test_mode ){
-            result = sclStar.run(mealyss, eq_sym, null, rep);
+            sclResult = sclStar.run(mealyss, eq_sym, null, rep, sclWriter);
         }
         else{
 //        create check eq oracle for random search
@@ -250,13 +287,21 @@ public class Run_experiment {
 //            MembershipOracle<String, Word<Word<String>>> testOracleForEQoracle = new SULOracle<>(testSul);
 //            EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle =
 //                    new WpMethodEQOracle<>(testOracleForEQoracle, 2);
-            result = sclStar.run(mealyss, eq_sym, testEqOracle, rep);
+            sclResult = sclStar.run(mealyss, eq_sym, testEqOracle, rep, sclWriter);
         }
-        Utils.printMachine(result, false);
+
+            Utils.printMachine(sclResult, true, sclWriter);
+            sclWriter.close();
+        }
+        catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+            return null;
+        }
+
 
         Experiment experiment = learningLStarM(alphabet, mealyss, mqOracle, eqOracle);
         CompactMealy<String, Word<String>> lStarResult = (CompactMealy<String, Word<String>>) experiment.getFinalHypothesis();
-        Utils.printMachine(lStarResult, true);
         if (test_mode){
             @Nullable DefaultQuery<String, Word<Word<String>>> ce = testEqOracle.findCounterExample(lStarResult,alphabet);
             if (ce!=null){
@@ -266,6 +311,40 @@ public class Run_experiment {
                 System.out.println();
             }
         }
+        try {
+            FileWriter lWriter = new FileWriter("Results/FSMs/L-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
+            Utils.printMachine(lStarResult, false, lWriter);
+            lWriter.close();
+        }
+        catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+            return null;
+        }
+
+        ClStar Mealy_LIP = new ClStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
+        @Nullable CompactMealy clResult;
+        if (!test_mode ){
+            clResult = Mealy_LIP.run(eq_sym, null);
+        }
+        else{
+//        create check eq oracle for random search
+//            SUL<String, Word<String>> testSul = new MealySimulatorSUL<>(mealyss, Utils.OMEGA_SYMBOL);
+//            MembershipOracle<String, Word<Word<String>>> testOracleForEQoracle = new SULOracle<>(testSul);
+//            EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle =
+//                    new WpMethodEQOracle<>(testOracleForEQoracle, 2);
+            clResult = Mealy_LIP.run(eq_sym, testEqOracle);
+        }
+        try {
+            FileWriter clWriter = new FileWriter("Results/FSMs/CL-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
+            Utils.printMachine(clResult, false, clWriter);
+            clWriter.close();
+        }
+        catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+            return null;
+        }
 
 //        logger.info("Rounds: " + sclStar.getRound_counter().getCount());
 //        logger.info("#EQs: " + sclStar.getEq_counter().getCount());
@@ -274,21 +353,21 @@ public class Run_experiment {
 //        logger.info(eq_rst.getStatisticalData().toString());
 //        logger.info(eq_sym.getStatisticalData().toString());
 //        // statistics array
-        data[csvProperties.getIndex(LIP+ROUNDS)] = String.valueOf(sclStar.getRound_counter().getCount());
+        //data[csvProperties.getIndex(LIP+ROUNDS)] = String.valueOf(sclStar.getRound_counter().getCount());
         data[csvProperties.getIndex(LIP+MQ_RST)] = Utils.ExtractValue(mq_rst.getStatisticalData().getSummary());
         data[csvProperties.getIndex(LIP+MQ_SYM)] = Utils.ExtractValue(mq_sym.getStatisticalData().getSummary());
         data[csvProperties.getIndex(LIP+EQ_RST)] = Utils.ExtractValue(eq_rst.getStatisticalData().getSummary());
         data[csvProperties.getIndex(LIP+EQ_SYM)] = Utils.ExtractValue(eq_sym.getStatisticalData().getSummary());
-        data[csvProperties.getIndex(LIP+EQs)] = String.valueOf(sclStar.getEq_counter().getCount());
+        //data[csvProperties.getIndex(LIP+EQs)] = String.valueOf(sclStar.getEq_counter().getCount());
         data[csvProperties.getIndex(LIP+TOTAL_RST)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_rst.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_rst.getStatisticalData().getSummary())));
         data[csvProperties.getIndex(LIP+TOTAL_SYM)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_sym.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_sym.getStatisticalData().getSummary())));
-        data[csvProperties.getIndex(LIP+COMPONENTS)] = String.valueOf(sclStar.getSigmaFamily().size());
+        //data[csvProperties.getIndex(LIP+COMPONENTS)] = String.valueOf(sclStar.getSigmaFamily().size());
         // learning statistics
 
 
         // profiling
         //SimpleProfiler.logResults();
-        return result;
+        return sclResult;
     }
 
     public static void learnProductMealy(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, boolean test_mode){

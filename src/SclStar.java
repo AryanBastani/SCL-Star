@@ -55,7 +55,8 @@ public class SclStar {
     }
 
     public CompactMealy<String, Word<String>> run(CompactMealy<String, Word<String>> mealyss, StatisticSUL<String, Word<String>> eq_sym_counter,
-                                                  EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle, int runCounter){
+                                                  EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle,
+                                                  int runCounter, FileWriter sclWriter){
 
     //Initialize starts:
         List<Alphabet<String>> initialSimaF = new ArrayList<>();
@@ -315,12 +316,12 @@ public class SclStar {
 
         CompactMealy final_H = productMealy.getMachine();
         String result = "";
-        result += "___ Synchronous Compositional Learning Algorithm finished ___\n";
+        //result += "___ Synchronous Compositional Learning Algorithm finished ___\n";
         result += "\tThe result:\n";
         for (Alphabet s: sigmaFamily){
             result += "\t\t  - component with " + s.size() + " inputs: " + s + "\n";
         }
-        System.out.println(result);
+        sclWriter.write(result);
         myWriter.write(result);
         myWriter.close();
         return final_H;

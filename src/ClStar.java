@@ -175,7 +175,7 @@ public class ClStar {
             pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
         }
         CompactMealy final_H = productMealy.getMachine();
-        logger.info("___ Decomposed Learning finished ___");
+        //logger.info("___ Decomposed Learning finished ___");
 //        logger.info(sigmaFamily.toString());
         String log_msg = "";
         for (Alphabet s: sigmaFamily){

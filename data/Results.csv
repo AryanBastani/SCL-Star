@@ -1,7 +1,2 @@
 "FILE_NAME","STATES","INPUTS","LSTAR_MQ_SYM","LSTAR_MQ_RST","LSTAR_EQ_SYM","LSTAR_EQ_RST","LSTAR_TOTAL_SYM","LSTAR_TOTAL_RST","LSTAR_EQs","CLSTAR_MQ_SYM","CLSTAR_MQ_RST","CLSTAR_EQ_SYM","CLSTAR_EQ_RST","CLSTAR_TOTAL_SYM","CLSTAR_TOTAL_RST","CLSTAR_EQs","CLSTAR_COMPONENTS","CLSTAR_ROUNDS","CACHE"
-"resources/all_FSMs/96.dot","312","18",,,,,,,,"762462","102149","4447795","29629","5210257","131778","174","5","14","true",
-"resources/all_FSMs/96.dot","312","18",,,,,,,,"766159","102235","4669111","31124","5435270","133359","174","5","14","true",
-"resources/all_FSMs/96.dot","312","18",,,,,,,,"739054","101524","4520622","30124","5259676","131648","174","5","14","true",
-"resources/all_FSMs/96.dot","312","18",,,,,,,,"758009","102124","4669170","31106","5427179","133230","174","5","14","true",
-"resources/all_FSMs/96.dot","312","18",,,,,,,,"754449","102120","4147552","27604","4902001","129724","174","5","14","true",
-"resources/all_FSMs/96.dot","312","18",,,,,,,,"751980","101768","4662382","31094","5414362","132862","174","5","14","true",
+"resources/all_FSMs/96.dot","312","18",,,,,,,,"783300","102359","5572795","37139","6356095","139498",,,,"true",

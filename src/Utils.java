@@ -660,12 +660,15 @@ public class Utils {
         }
     }
 
-    public static void printMachine(CompactMealy<String, Word<String>> machine, boolean isLStar){
-        if(isLStar){
-            System.out.println("LStar Algorithm output:");
+    public static void printMachine(CompactMealy<String, Word<String>> machine, boolean isSclStar, FileWriter file){
+        try {
+            if (isSclStar) {
+                file.write("SCL-Star Algorithm output:\n");
+            }
         }
-        else {
-            System.out.println("SCLStar Algorithm output:");
+        catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
         }
         Collection<Integer> states = machine.getStates();
         Alphabet<String> alphabet = machine.getInputAlphabet();
@@ -675,15 +678,35 @@ public class Utils {
                         machine.getTransition(currentState, input);
                 Word<String> output = transition.getOutput();
                 int nextState = transition.getSuccId();
-                printTransition(currentState, input, output, nextState);
+                printTransition(currentState, input, output, nextState, file);
             }
         }
     }
 
-    private static void printTransition(int currentState, String input,
-                                        Word<String> output, int nextState){
-        String line = "\ts" + currentState + " -> " + "s" + nextState + " [label=\"" + input + "  /  " + output + "\" ];";
-        System.out.println(line);
+    private static void printTransition(int currentState, String input, Word<String> output,
+                                        int nextState, FileWriter file){
+        try {
+            String line = "\ts" + currentState + " -> " + "s" + nextState + " [label=\"" + input + "  /  " + output + "\" ];\n";
+            file.write(line);
+        }
+        catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
+
+    public static void clearFolder(File folder) {
+        File[] files = folder.listFiles();
+        if(files!=null) { //some JVMs return null for empty dirs
+            for(File f: files) {
+                if(f.isDirectory()) {
+                    clearFolder(f);
+                } else {
+                    f.delete();
+                }
+            }
+        }
+        folder.delete();
     }
 
 }
