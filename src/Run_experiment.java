@@ -257,7 +257,6 @@ public class Run_experiment {
         Experiment experiment = learningLStarM(alphabet, mealyss, mqOracle, eqOracle);
         CompactMealy<String, Word<String>> lStarResult = (CompactMealy<String, Word<String>>) experiment.getFinalHypothesis();
         Utils.printMachine(lStarResult, true);
-
         if (test_mode){
             @Nullable DefaultQuery<String, Word<Word<String>>> ce = testEqOracle.findCounterExample(lStarResult,alphabet);
             if (ce!=null){
