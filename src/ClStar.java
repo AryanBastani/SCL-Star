@@ -15,6 +15,9 @@ import net.automatalib.words.Word;
 import net.automatalib.words.impl.Alphabets;
 import net.automatalib.words.impl.ListAlphabet;
 import org.checkerframework.checker.nullness.qual.Nullable;
+
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,10 +38,10 @@ public class ClStar {
 
 
     public ClStar(Alphabet<String> alphabet,
-                             MembershipOracle<String, Word<Word<String>>> mqOracle,
-                             EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> eqOracle,
-                             EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> partialEqOracle,
-                             Logger logger){
+                  MembershipOracle<String, Word<Word<String>>> mqOracle,
+                  EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> eqOracle,
+                  EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> partialEqOracle,
+                  Logger logger){
 
         this.eqOracle = eqOracle;
         this.partialEqOracle = partialEqOracle;
@@ -51,7 +54,8 @@ public class ClStar {
     }
 
     public CompactMealy<String, Word<String>> run(StatisticSUL<String, Word<String>> eq_sym_counter,
-                                                  EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle){
+                                                  EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String,
+                                                          Word<Word<String>>> testEqOracle, FileWriter file){
 
 
         List<Alphabet<String>> initialSimaF = new ArrayList<>();
@@ -175,14 +179,23 @@ public class ClStar {
             pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
         }
         CompactMealy final_H = productMealy.getMachine();
-        //logger.info("___ Decomposed Learning finished ___");
-//        logger.info(sigmaFamily.toString());
-        String log_msg = "";
+        String result = "";
+        //result += "___ Synchronous Compositional Learning Algorithm finished ___\n";
+        result += "\tThe result:\n";
         for (Alphabet s: sigmaFamily){
-            log_msg += "  - component with " + s.size() + " inputs: " + s + " and " +  final_H.size() + " states" + "\n";
+            result += "\t\t  - component with " + s.size() + " inputs: " + s + "\n";
         }
-//        logger.info(log_msg);
+        try{
+        file.write(result + "\n\n");
         return final_H;
+    }
+
+        catch (
+    IOException e) {
+        System.out.println("An error occurred.");
+        e.printStackTrace();
+        return null;
+    }
     }
 
 //    private void computeCounters(Experiment.DFAExperiment<String> experiment, ClassicLStarDFA<String> lstar ) {

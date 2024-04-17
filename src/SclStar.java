@@ -321,7 +321,7 @@ public class SclStar {
         for (Alphabet s: sigmaFamily){
             result += "\t\t  - component with " + s.size() + " inputs: " + s + "\n";
         }
-        sclWriter.write(result);
+        sclWriter.write(result + "\n\n");
         myWriter.write(result);
         myWriter.close();
         return final_H;

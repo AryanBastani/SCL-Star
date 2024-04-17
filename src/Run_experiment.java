@@ -321,11 +321,12 @@ public class Run_experiment {
             e.printStackTrace();
             return null;
         }
-
+        try {
+            FileWriter clWriter = new FileWriter("Results/FSMs/CL-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
         ClStar Mealy_LIP = new ClStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
         @Nullable CompactMealy clResult;
         if (!test_mode ){
-            clResult = Mealy_LIP.run(eq_sym, null);
+            clResult = Mealy_LIP.run(eq_sym, null, clWriter);
         }
         else{
 //        create check eq oracle for random search
@@ -333,10 +334,8 @@ public class Run_experiment {
 //            MembershipOracle<String, Word<Word<String>>> testOracleForEQoracle = new SULOracle<>(testSul);
 //            EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle =
 //                    new WpMethodEQOracle<>(testOracleForEQoracle, 2);
-            clResult = Mealy_LIP.run(eq_sym, testEqOracle);
+            clResult = Mealy_LIP.run(eq_sym, testEqOracle, clWriter);
         }
-        try {
-            FileWriter clWriter = new FileWriter("Results/FSMs/CL-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
             Utils.printMachine(clResult, false, clWriter);
             clWriter.close();
         }
