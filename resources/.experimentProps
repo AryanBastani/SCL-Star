@@ -2,7 +2,7 @@
 benchmarks_base_dir = resources/
 benchmarks_file = resources/Benchmarks/All_Benchmarks.txt
 result_path = data/Results.csv
-benchmarks_file = data/new.txt
+benchmarks_file = data/CL_benchmarks.txt
 fsm_dir = data/sample_fsm.dot
 
 ## Learning parameters
