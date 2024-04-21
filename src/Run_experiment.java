@@ -167,7 +167,9 @@ public class Run_experiment {
 
             File lFolder = new File("Results/FSMs/L-Star");
             Utils.clearFolder(lFolder);
-            new File("Results/FSMs/L-Star").mkdirs();
+            if(benckmarkId.equals("1")) {
+                new File("Results/FSMs/L-Star").mkdirs();
+            }
 
             File clFolder = new File("Results/FSMs/CL-Star");
             Utils.clearFolder(clFolder);
@@ -177,7 +179,8 @@ public class Run_experiment {
                 inputCounter++;
                 new File("Results/FSMs/CL-Star/For input" + inputCounter).mkdirs();
                 new File("Results/FSMs/SCL-Star/For input" + inputCounter).mkdirs();
-                new File("Results/FSMs/L-Star/For input" + inputCounter).mkdirs();
+                if(benckmarkId.equals("1"))
+                    new File("Results/FSMs/L-Star/For input" + inputCounter).mkdirs();
                 c = br.readLine();
                 data = new String[dataLen];
                 File file = new File(c);
