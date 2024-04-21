@@ -1,4 +1,4 @@
-resources/Mealy_Benchmarks/ABP_Receiver.flat_0_1.dot
+resources/Mealy_Benchmarks/10_learnresult_MasterCard_fix.dot
 resources/Mealy_Benchmarks/1_learnresult_MasterCard_fix.dot
 resources/Mealy_Benchmarks/4_learnresult_MAESTRO_fix.dot
 resources/Mealy_Benchmarks/4_learnresult_PIN_fix.dot
