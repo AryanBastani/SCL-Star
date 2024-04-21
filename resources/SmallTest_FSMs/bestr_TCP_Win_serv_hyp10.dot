@@ -1,25 +1,3 @@
-digraph g {
-
-	 s7 [shape = "circle" label="s7"];
-	 s413 [shape = "circle" label="s413"];
-	 s698 [shape = "circle" label="s698"];
-	 s855 [shape = "circle" label="s855"];
-	 s390 [shape = "circle" label="s390"];
-	 s92 [shape = "circle" label="s92"];
-	 s158 [shape = "circle" label="s158"];
-	 s514 [shape = "circle" label="s514"];
-	 s181 [shape = "circle" label="s181"];
-	 s183 [shape = "circle" label="s183"];
-	 s230 [shape = "circle" label="s230"];
-	 s198 [shape = "circle" label="s198"];
-	 s0 [shape = "circle" label="s0"];
-	 s786 [shape = "circle" label="s786"];
-	 s438 [shape = "circle" label="s438"];
-	 s172 [shape = "circle" label="s172"];
-	 s534 [shape = "circle" label="s534"];
-	 s110 [shape = "circle" label="s110"];
-	 s89 [shape = "circle" label="s89"];
-	 s858 [shape = "circle" label="s858"];
 	 s0 -> s0 [label="FIN+ACK(V,V,0) / RST(ZERO,ZERO,0)"];
 	 s0 -> s0 [label="SYN(V,V,0) / ACK+RST(ZERO,NEXT,0)"];
 	 s0 -> s0 [label="ACK+PSH(V,V,1) / RST(ZERO,ZERO,0)"];
@@ -260,8 +238,3 @@ digraph g {
 	 s858 -> s858 [label="CLOSECONNECTION / TIMEOUT"];
 	 s858 -> s7 [label="ACK(V,V,0) / RST(NEXT,ZERO,0)"];
 	 s858 -> s7 [label="SYN+ACK(V,V,0) / RST(NEXT,ZERO,0)"];
-__start0 [label="" shape="none" width="0" height="0"];
-		__start0 -> s0;
-
-}
-

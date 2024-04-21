@@ -93,12 +93,24 @@ public class Run_experiment {
             // parse the command line arguments
             CommandLine line = parser.parse(options, args);
 
-            String file_path;
+            System.out.println("Please choose a benchmarck to run(Enter 1 or 2 or 3):");
+            System.out.println("\t1- CL-Star-Benchmarks\n\t2- SmallTest-Benchmarks\n\t3- Mealy-benchmarks");
+
+            String file_path = "";
+            Scanner myObj = new Scanner(System.in);
+            String benckmarkId = myObj.nextLine();
+            if(benckmarkId.equals("1"))
+                file_path = "data/CL_Benchmarks.txt";
+            else if(benckmarkId.equals("2"))
+                file_path = "data/SmallTest_Benchmarks.txt";
+            else
+                file_path = "data/Mealy_Benchmarks.txt";
+            /*
             if (line.hasOption(SRC_DIR)) {
                 file_path = line.getOptionValue(SRC_DIR);
             } else {
                 file_path = experimentProperties.getProp("benchmarks_file");
-            }
+            }*/
             String equivalence_method;
             if (line.hasOption(EQUIVALENCE_METHOD)) {
                 equivalence_method = line.getOptionValue(EQUIVALENCE_METHOD);
@@ -115,7 +127,6 @@ public class Run_experiment {
 //        initial the experiment properties
             benchmarks_base_dir = experimentProperties.getProp("benchmarks_base_dir");
             RESULTS_PATH = experimentProperties.getProp("result_path");
-
             File f = new File(file_path);
             BufferedReader br = new BufferedReader(new FileReader(f));
 
@@ -212,7 +223,7 @@ public class Run_experiment {
 
                 //             RUN SCL*
                 @Nullable CompactMealy result = null;
-                result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter);
+                result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId);
 
                 if (result == null) {
                     System.out.println("the  SUL is not learned completely (CL-Star)");
@@ -227,7 +238,7 @@ public class Run_experiment {
         }
     }
 
-    public static CompactMealy learnMealyInParts(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, String partial_eq_method, boolean test_mode, int rep, int inCounter){
+    public static CompactMealy learnMealyInParts(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, String partial_eq_method, boolean test_mode, int rep, int inCounter, String benchmarkId){
 
         Utils.getInstance();
         // SUL simulator
@@ -299,28 +310,6 @@ public class Run_experiment {
             return null;
         }
 
-
-        Experiment experiment = learningLStarM(alphabet, mealyss, mqOracle, eqOracle);
-        CompactMealy<String, Word<String>> lStarResult = (CompactMealy<String, Word<String>>) experiment.getFinalHypothesis();
-        if (test_mode){
-            @Nullable DefaultQuery<String, Word<Word<String>>> ce = testEqOracle.findCounterExample(lStarResult,alphabet);
-            if (ce!=null){
-                System.out.println();
-                System.out.println("************  incomplete lstar learning  **********");
-                System.out.println(data[csvProperties.getIndex(FILE_NAME)]);
-                System.out.println();
-            }
-        }
-        try {
-            FileWriter lWriter = new FileWriter("Results/FSMs/L-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
-            Utils.printMachine(lStarResult, false, lWriter);
-            lWriter.close();
-        }
-        catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-            return null;
-        }
         try {
             FileWriter clWriter = new FileWriter("Results/FSMs/CL-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
         ClStar Mealy_LIP = new ClStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
@@ -338,6 +327,29 @@ public class Run_experiment {
         }
             Utils.printMachine(clResult, false, clWriter);
             clWriter.close();
+        }
+        catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+            return null;
+        }
+        if(!benchmarkId.equals("1"))
+            return (sclResult);
+        Experiment experiment = learningLStarM(alphabet, mealyss, mqOracle, eqOracle);
+        CompactMealy<String, Word<String>> lStarResult = (CompactMealy<String, Word<String>>) experiment.getFinalHypothesis();
+        if (test_mode){
+            @Nullable DefaultQuery<String, Word<Word<String>>> ce = testEqOracle.findCounterExample(lStarResult,alphabet);
+            if (ce!=null){
+                System.out.println();
+                System.out.println("************  incomplete lstar learning  **********");
+                System.out.println(data[csvProperties.getIndex(FILE_NAME)]);
+                System.out.println();
+            }
+        }
+        try {
+            FileWriter lWriter = new FileWriter("Results/FSMs/L-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
+            Utils.printMachine(lStarResult, false, lWriter);
+            lWriter.close();
         }
         catch (IOException e) {
             System.out.println("An error occurred.");
