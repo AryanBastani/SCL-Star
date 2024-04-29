@@ -4,6 +4,8 @@ from typing import Final
 
 alphabets = string.ascii_letters
 numOfUnsynchActs: Final[int] = 2
+minStates: Final[int] = 5
+maxStates: Final[int] = 9
 
 def generateSynchComponents(synchActions, numOfComponents):
     synchOuts = list()
@@ -24,7 +26,9 @@ def generateUnsynchActs(synchActions, synchOuts):
     return(unsynchActs)
 
 def generateComponent(synchActions, synchOuts, unsynchActs):
-    
+    numOfStates = random.randint(minStates, maxStates)
+    for state in range(numOfStates):
+        
          
     
     
