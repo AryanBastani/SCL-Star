@@ -10,16 +10,18 @@ def generateSyncheds(synchActions, numOfComponents):
     for synchAct in synchActions:
         synchOuts.append(random.randint(0,1))
     for i in range(numOfComponents):
-        generateComponent(synchActions, synchOuts)
+        unsynchActs = generateUnsynchActs(synchActions, synchOuts)
         
-def generateComponent(synchActions, synchOuts):
-    alphabets =  [i for i in all if i not in synchActions]
+        
+        
+def generateUnsynchActs(synchActions, synchOuts):    
     unsynchActs = list()
     for i in range(numOfUnsynchActs):
         newAct = alphabets[random.randint(0, len(alphabets) - 1)]
         unsynchActs.append(newAct)
         alphabets.remove(newAct)
     
+    return(unsynchActs)
          
     
     
