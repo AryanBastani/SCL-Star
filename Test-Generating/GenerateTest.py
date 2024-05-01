@@ -2,7 +2,7 @@ import string
 import random
 from typing import Final
 import pydot
-
+import GenerateComponent
 
 
 class GenerateTest:
@@ -19,7 +19,8 @@ class GenerateTest:
             synchOuts.append(random.randint(0,1))
         for i in range(numOfComponents):
             unsynchActs = self.generateUnsynchActs(synchActions, synchOuts)
-            self.generateComponent(synchActions, synchOuts, unsynchActs)
+            numOfStates = random.randint(self.minStates, self.maxStates)
+            graphString = GenerateComponent(synchActions, synchOuts, unsynchActs, numOfStates)
         
         
     def generateUnsynchActs(self, synchActions, synchOuts):    
@@ -30,23 +31,6 @@ class GenerateTest:
             self.alphabets.remove(newAct)
         
         return(unsynchActs)
-
-    def generateComponent(self, synchActions, synchOuts, unsynchActs):
-        componentCounter += 1
-        numOfStates = random.randint(self.minStates, self.maxStates)
-        graph = ''
-        for stateNum in range(numOfStates):
-            for synchNum in range(len(synchActions)):
-            # generateLine(graph, stateNum, synchActions[synchNum], synchOuts[synchOuts]) 
-
-            
-    #def generateLine(graph, stateNum, action, synchOut):
-        # graph += 's' + string(stateNum) + ' -> s' + random.randint()
-            #pydot.Edge
-            #graph.add_edge(pydot.Edge(node_a, node_b))
-
-            # Save the source as a DOT file
-            #graph.write_raw("my_graph.dot")
     
 
          
