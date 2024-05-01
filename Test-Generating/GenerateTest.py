@@ -2,7 +2,7 @@ import string
 import random
 from typing import Final
 import pydot
-import GenerateComponent
+import GenerateComponent as gc
 from itertools import product
 from string import ascii_lowercase
 
@@ -18,14 +18,20 @@ class GenerateTest:
     def generateSynchComponents(self, synchActions, numOfComponents):
         synchOuts = list()
         for synchAct in synchActions:
+            self.alphabets.remove(synchAct)
             synchOuts.append(random.randint(0,1))
+            
         for i in range(numOfComponents):
             self.componentCounter += 1
             unsynchActs = self.generateUnsynchActs(synchActions, synchOuts)
             numOfStates = random.randint(self.minStates, self.maxStates)
-            graphString = GenerateComponent(synchActions, synchOuts, unsynchActs, numOfStates)
-            with open('Component' + string(self.componentCounter) + '.dot', 'w') as dotFile:
+            
+            componentGenerator = gc.ComponentGenerator(synchActions, synchOuts, unsynchActs, numOfStates)
+            graphString = componentGenerator.generate()
+            with open('Test-Generating/Component' + str(self.componentCounter) + '.dot', 'w') as dotFile:
                 dotFile.write(graphString)
+                dotFile.close()
+            print(graphString)
 
         
     def generateUnsynchActs(self, synchActions, synchOuts):    
@@ -36,6 +42,9 @@ class GenerateTest:
             self.alphabets.remove(newAct)
         
         return(unsynchActs)
+    
+gt = GenerateTest()
+gt.generateSynchComponents(['asd', 'ads'], 2)
     
 
          
