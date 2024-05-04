@@ -9,8 +9,15 @@ class ComponentGenerator:
         self.synchOuts: Final[list] = synchOuts
         self.unsynchActs: Final[list] = unsynchActs
         self.numOfStates: Final[int] = numOfStates
+        self.IsMinimum: Final[int] = 1
+        self.IsNotMin: Final[int] = 0
         self.graph = ''
     
+    def refactorGraph(self):
+        return
+    
+    def isGraphMinimum():
+        return
     
     def generate(self):
         for stateNum in range(self.numOfStates):
@@ -18,6 +25,10 @@ class ComponentGenerator:
                 self.generateLine(stateNum, self.synchActions[synchNum], self.synchOuts[synchNum]) 
             for unsynchNum in range(len(self.unsynchActs)):
                 self.generateLine(stateNum, self.unsynchActs[unsynchNum], random.randint(0, 1))
+                
+        if self.isGraphMinimum():       
+            self.refactorGraph()
+            
         return(self.graph)
 
             
