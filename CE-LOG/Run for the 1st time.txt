@@ -1,101 +1,71 @@
 Calling CE-Distilation for the 1st time:
 	CE before minimizing:
-		jap mtn btn mtn uzt vgl vcf jap oux bae xjs vgl bae bae bae vgl mtn xjs jap miw bae vcf jap vcf vcf vgl vgl miw bae bae btn jap jap uzt xjs bae bae vcf jap bae vgl xjs bae btn jap vcf bae oux btn mtn mtn bae mtn btn btn mtn oux oux oux oux miw mtn vgl uzt btn vgl uzt bae jap mtn bae mtn xjs jap xjs oux miw btn uzt jap oux miw oux bae jap uzt jap vcf btn miw uzt xjs btn jap miw btn vcf vcf bae bae jap vcf vgl mtn vgl btn vgl uzt uzt xjs miw jap vcf vgl miw bae oux miw mtn miw btn jap vcf vcf miw oux bae oux jap bae btn miw oux jap bae miw jap vcf miw bae xjs oux vcf mtn btn miw xjs uzt vgl btn miw uzt bae btn jap mtn xjs miw jap xjs miw xjs oux bae oux btn vgl xjs vcf vgl bae vcf vcf btn uzt mtn jap
+		azi gix mpp wjr yxa enx oli wjr enx azi gix mpp gix azi wjr azi wjr azi oli oli yxa azi mpp wjr oli enx gix dbl dbl yxa foa dbl dbl oli gix dbl mpp dbl yxa mpp dbl yxa dbl wjr oli gix dbl foa wjr gix oli enx yxa oli oli dbl oli oli enx azi gix oli yxa wjr yxa azi oli azi azi oli mpp gix foa dbl wjr yxa oli azi enx gix foa oli enx foa azi oli enx enx gix oli oli foa enx dbl foa enx dbl yxa dbl azi azi mpp foa gix wjr mpp foa mpp yxa foa wjr mpp azi oli gix
 	CE after cut_ce:
-		jap mtn btn mtn
+		azi gix mpp wjr yxa enx
 	CE after minimizing:
-		mtn btn mtn
+		yxa enx
 
 Calling CE-Distilation for the 2st time:
 	CE before minimizing:
-		xjs miw xjs vcf oux btn xjs xjs jap btn mtn xjs mtn xjs jap miw vcf uzt btn mtn jap uzt jap uzt btn miw miw btn miw vgl oux uzt xjs uzt miw mtn jap jap jap mtn vcf vcf bae bae vcf mtn oux btn uzt uzt btn uzt miw uzt jap xjs vcf mtn btn btn bae jap xjs oux uzt uzt xjs xjs vcf btn mtn bae btn vcf xjs xjs vcf mtn miw vcf vgl miw vgl bae vcf vcf jap oux bae miw bae bae vcf oux uzt bae vgl vgl uzt uzt uzt vcf vcf oux oux vgl oux miw oux btn jap vcf mtn bae miw vgl btn mtn mtn vcf uzt btn oux xjs btn jap oux vcf mtn jap btn vgl oux vcf btn vcf xjs uzt btn oux vgl uzt bae jap vcf jap bae vcf oux bae jap uzt bae bae uzt xjs vcf jap vgl mtn bae btn mtn vcf miw bae mtn btn btn xjs xjs oux miw bae mtn uzt bae bae oux mtn jap oux bae bae miw uzt mtn jap mtn jap btn
+		azi enx azi azi mpp foa dbl azi dbl yxa dbl mpp wjr azi yxa mpp wjr azi wjr dbl enx foa azi enx gix yxa mpp dbl foa dbl foa wjr gix enx foa gix oli dbl wjr wjr yxa foa wjr mpp oli mpp dbl oli oli dbl gix oli mpp oli yxa azi enx dbl enx yxa dbl yxa wjr wjr wjr gix gix azi azi dbl enx mpp oli wjr gix dbl dbl mpp wjr dbl wjr yxa yxa mpp azi dbl yxa oli azi mpp foa foa mpp enx foa gix azi mpp enx azi yxa azi wjr azi foa yxa gix foa azi foa azi enx dbl dbl dbl azi yxa foa gix dbl dbl azi mpp dbl wjr wjr dbl yxa foa foa wjr
 	CE after cut_ce:
-		xjs miw xjs vcf oux btn xjs xjs jap btn mtn
+		azi enx azi azi mpp foa dbl
 	CE after minimizing:
-		xjs xjs btn xjs xjs btn mtn
+		foa dbl
 
 Calling CE-Distilation for the 3st time:
 	CE before minimizing:
-		vgl jap miw oux oux bae btn bae jap xjs vgl miw miw miw uzt jap bae vcf vgl mtn oux xjs vgl jap vgl oux bae mtn miw jap btn vgl mtn xjs xjs uzt oux xjs vgl uzt xjs mtn jap bae bae vcf miw xjs uzt vcf oux mtn bae vcf uzt vgl miw vcf mtn vgl mtn vcf miw btn jap oux xjs xjs btn vcf mtn uzt btn xjs vgl jap vcf miw jap miw miw vcf vcf oux xjs oux jap vcf btn oux vcf uzt xjs vgl btn vcf vcf uzt oux uzt bae
+		enx foa wjr azi wjr gix enx enx dbl dbl oli gix yxa enx mpp oli gix oli foa foa wjr yxa dbl gix yxa dbl oli enx foa enx wjr foa dbl wjr foa wjr dbl gix gix gix enx wjr mpp enx mpp gix gix mpp mpp wjr wjr oli azi gix yxa wjr dbl yxa foa wjr wjr mpp dbl foa dbl gix yxa dbl yxa wjr gix azi dbl azi azi foa dbl azi dbl gix oli dbl mpp dbl foa mpp enx enx dbl mpp enx azi azi yxa oli azi azi mpp wjr foa wjr oli wjr mpp gix enx gix azi oli wjr foa gix mpp oli wjr foa wjr oli mpp dbl mpp gix wjr gix enx foa gix enx foa foa dbl azi dbl azi mpp yxa mpp foa dbl wjr oli oli mpp wjr yxa oli wjr wjr enx gix yxa enx wjr enx dbl mpp yxa wjr yxa gix foa enx gix wjr gix enx dbl wjr foa
 	CE after cut_ce:
-		vgl jap miw oux oux bae btn bae jap xjs vgl miw
+		enx foa wjr azi
 	CE after minimizing:
-		miw oux oux miw
+		wjr azi
 
 Calling CE-Distilation for the 4st time:
 	CE before minimizing:
-		btn jap oux jap oux xjs bae bae miw jap xjs miw jap miw vcf uzt bae oux bae oux vgl uzt miw vgl vgl uzt bae jap xjs uzt bae uzt mtn oux uzt btn oux uzt vcf btn btn miw vcf btn vcf jap jap miw mtn mtn xjs oux vcf vcf mtn mtn oux mtn bae vgl miw oux btn uzt jap xjs btn bae btn miw vgl miw btn vgl mtn jap oux mtn miw miw miw xjs btn vcf vcf bae jap vcf vgl vcf oux bae oux vcf vgl btn miw bae xjs uzt xjs uzt btn oux vgl bae uzt oux oux oux oux jap mtn mtn vgl bae miw btn vcf jap btn miw mtn uzt miw uzt xjs miw mtn uzt btn miw btn
+		enx wjr dbl foa azi mpp oli azi yxa dbl gix enx oli enx oli azi dbl dbl oli dbl yxa gix azi foa enx foa dbl enx azi enx foa foa wjr enx enx enx dbl oli azi foa azi dbl yxa oli wjr yxa dbl foa foa foa dbl gix yxa yxa gix mpp foa wjr dbl gix yxa azi dbl mpp azi dbl enx oli foa enx yxa enx mpp azi mpp oli wjr foa yxa mpp mpp gix foa mpp wjr gix azi enx oli dbl gix azi wjr dbl foa wjr gix azi azi enx dbl wjr wjr gix dbl azi mpp mpp enx foa foa dbl wjr azi dbl foa enx azi oli azi foa mpp gix enx enx enx wjr gix yxa enx oli mpp foa
 	CE after cut_ce:
-		btn jap oux jap oux xjs bae bae miw jap xjs miw jap miw vcf uzt bae oux bae oux vgl
+		enx wjr dbl foa azi mpp oli
 	CE after minimizing:
-		jap oux jap oux miw jap miw jap miw oux oux
+		wjr oli
 
 Calling CE-Distilation for the 5st time:
 	CE before minimizing:
-		btn btn bae vgl mtn jap miw jap xjs uzt oux vcf jap miw xjs vcf jap btn oux vgl oux bae oux uzt bae vcf btn jap vcf uzt miw mtn oux vgl btn vgl mtn uzt vgl btn miw oux xjs miw mtn vgl btn btn uzt uzt xjs oux vgl mtn miw jap xjs vcf xjs btn vgl bae vcf oux uzt vgl oux jap vcf miw oux bae jap btn mtn bae jap bae jap mtn btn oux btn btn oux vcf btn xjs uzt miw oux btn mtn bae bae vcf btn btn mtn vgl vcf oux btn xjs jap vgl vgl vcf mtn vcf xjs jap xjs jap btn oux uzt vgl xjs jap xjs btn bae uzt
+		foa foa azi yxa yxa enx dbl wjr dbl oli dbl azi dbl mpp enx foa azi azi dbl foa yxa foa mpp dbl foa foa foa foa mpp yxa enx enx oli oli yxa wjr mpp azi dbl dbl wjr azi azi mpp mpp enx enx azi enx enx yxa yxa gix wjr wjr foa wjr gix yxa azi yxa yxa mpp mpp azi foa mpp wjr azi oli azi mpp yxa wjr enx foa mpp foa wjr mpp oli yxa wjr enx azi gix azi gix mpp yxa foa dbl azi yxa enx gix enx gix azi enx mpp enx wjr mpp mpp foa enx foa azi yxa foa yxa wjr oli dbl mpp enx oli enx oli oli wjr yxa dbl oli gix mpp dbl foa yxa mpp wjr mpp azi foa yxa azi azi yxa enx enx azi oli wjr yxa foa gix mpp oli wjr yxa oli oli mpp
 	CE after cut_ce:
-		btn btn bae vgl mtn jap miw jap xjs uzt oux vcf
+		foa foa azi yxa yxa enx dbl wjr dbl oli
 	CE after minimizing:
-		uzt vcf
+		foa foa wjr oli
 
 Calling CE-Distilation for the 6st time:
 	CE before minimizing:
-		vgl uzt bae xjs xjs xjs bae jap uzt oux vgl oux btn miw bae bae uzt xjs jap miw oux btn miw miw xjs vgl xjs xjs vgl btn miw uzt oux oux btn mtn btn miw miw xjs jap vcf oux mtn miw btn miw xjs jap miw vgl btn vgl mtn mtn mtn bae jap vgl btn btn btn jap xjs btn oux uzt btn jap uzt uzt btn miw vcf xjs oux jap mtn vcf oux vgl mtn uzt oux vgl miw oux jap jap xjs uzt btn btn miw bae btn oux vgl bae xjs xjs miw miw vgl oux oux uzt bae xjs vcf mtn mtn uzt vcf vgl uzt mtn mtn xjs mtn btn xjs btn btn uzt bae vgl oux vgl uzt oux btn uzt vcf bae vcf
+		yxa oli wjr wjr oli oli oli gix wjr gix azi enx azi oli enx yxa dbl wjr oli mpp enx azi wjr mpp mpp wjr gix oli mpp azi enx oli enx dbl azi foa azi yxa yxa dbl enx gix gix dbl mpp wjr wjr foa mpp oli azi azi mpp azi wjr dbl gix oli wjr oli dbl mpp foa dbl yxa wjr mpp yxa wjr foa dbl foa dbl dbl azi dbl azi gix foa dbl foa mpp mpp mpp foa azi oli oli dbl gix mpp oli enx yxa wjr oli wjr dbl gix dbl gix yxa yxa dbl dbl dbl mpp gix gix azi azi foa mpp azi oli gix enx yxa gix enx azi enx foa gix azi yxa gix dbl yxa enx oli dbl enx gix oli dbl oli wjr gix mpp oli mpp mpp gix dbl foa foa azi oli enx mpp dbl wjr oli yxa gix gix dbl azi yxa enx dbl foa enx azi oli yxa
 	CE after cut_ce:
-		vgl uzt bae xjs xjs xjs bae jap uzt oux vgl
+		yxa oli
 	CE after minimizing:
-		vgl oux vgl
+		yxa oli
 
 Calling CE-Distilation for the 7st time:
 	CE before minimizing:
-		btn jap bae vgl xjs vcf bae vgl vgl uzt btn uzt bae miw mtn miw xjs btn btn jap oux vgl bae oux btn vgl mtn xjs uzt btn oux uzt btn vcf vcf xjs vcf oux oux vgl vcf oux bae oux vgl btn xjs bae vgl bae oux bae uzt vcf mtn mtn bae vgl vcf oux mtn oux uzt jap oux vcf btn uzt oux vcf mtn xjs mtn xjs miw miw miw mtn mtn mtn vgl mtn jap bae miw oux vcf mtn bae vcf jap miw mtn uzt vcf xjs mtn mtn miw mtn vcf jap vgl oux xjs btn miw mtn jap xjs oux jap jap btn xjs jap miw vgl jap jap vgl vgl btn btn miw jap btn btn miw jap jap btn vcf xjs vgl vgl bae jap btn jap mtn btn xjs btn miw xjs miw xjs vgl btn mtn xjs mtn vcf vgl miw btn btn jap vgl bae oux miw vcf vgl miw oux xjs uzt vgl miw jap vcf jap oux uzt vcf bae oux uzt vcf miw oux btn bae jap uzt uzt
+		wjr oli foa foa yxa enx enx gix yxa dbl dbl mpp yxa wjr yxa enx mpp enx oli oli mpp wjr foa yxa mpp yxa wjr gix foa azi oli foa gix enx enx wjr yxa azi oli mpp foa gix enx gix mpp foa mpp foa oli yxa yxa mpp yxa dbl dbl dbl dbl gix oli dbl gix enx oli mpp enx dbl yxa foa foa foa enx azi dbl enx mpp wjr foa gix oli enx enx oli dbl oli dbl azi foa dbl mpp gix dbl azi mpp oli foa enx enx foa foa azi wjr oli oli gix dbl foa dbl enx mpp
 	CE after cut_ce:
-		btn jap bae vgl xjs vcf bae vgl vgl uzt btn uzt bae miw mtn
+		wjr oli foa foa yxa enx enx gix yxa dbl dbl mpp yxa wjr yxa enx mpp enx oli oli mpp
 	CE after minimizing:
-		btn bae xjs bae btn bae mtn
+		gix mpp mpp mpp
 
 Calling CE-Distilation for the 8st time:
 	CE before minimizing:
-		jap oux vcf vgl vgl uzt bae miw vcf jap vgl mtn miw uzt vcf vgl uzt oux oux miw xjs vgl miw xjs xjs vgl jap jap oux miw vgl btn uzt jap uzt mtn jap btn bae btn vgl bae jap uzt jap vgl miw uzt mtn btn jap mtn miw jap xjs vgl mtn btn vgl vcf uzt btn jap miw miw vcf vgl oux mtn miw btn vgl jap vgl vcf vgl mtn miw jap mtn miw uzt miw uzt miw jap xjs bae mtn miw jap oux vgl oux xjs jap xjs oux xjs mtn vcf vcf btn vgl vgl bae oux vgl mtn bae jap btn vgl xjs uzt oux xjs xjs vgl xjs vcf jap miw vcf xjs vgl uzt uzt miw mtn vgl bae oux vcf mtn mtn oux uzt jap vcf bae oux miw bae miw btn btn miw vcf miw btn vcf jap mtn miw oux btn vcf vgl oux bae xjs miw oux uzt
+		oli yxa wjr wjr foa yxa gix foa oli gix foa wjr mpp wjr gix wjr dbl gix gix dbl foa azi enx dbl gix dbl azi foa foa oli gix enx dbl foa mpp oli yxa foa yxa oli enx yxa gix mpp mpp wjr foa azi oli dbl wjr enx enx azi oli yxa oli dbl enx yxa mpp enx enx foa oli wjr foa dbl dbl gix yxa oli oli azi oli mpp gix oli gix enx yxa yxa mpp azi enx wjr enx azi enx azi dbl dbl wjr dbl yxa yxa enx wjr dbl foa mpp foa foa enx dbl foa mpp gix dbl dbl yxa yxa oli enx gix oli wjr yxa yxa yxa gix yxa wjr foa foa gix wjr gix mpp azi wjr gix yxa yxa yxa
 	CE after cut_ce:
-		jap oux vcf vgl vgl uzt bae miw vcf jap vgl mtn miw uzt vcf vgl uzt oux oux miw xjs vgl
+		oli yxa wjr wjr foa yxa gix foa oli
 	CE after minimizing:
-		vcf uzt bae vcf uzt vcf uzt
-
-Calling CE-Distilation for the 9st time:
-	CE before minimizing:
-		miw mtn xjs miw miw vcf oux vgl oux btn jap xjs mtn jap miw uzt btn xjs miw btn vcf xjs oux vcf xjs xjs uzt vgl vcf miw oux btn bae oux mtn mtn oux xjs bae jap vgl btn miw xjs uzt mtn btn jap mtn btn vgl mtn bae bae btn xjs uzt xjs btn uzt mtn bae bae oux oux mtn xjs xjs xjs bae oux vgl vgl btn bae mtn xjs jap mtn uzt vcf xjs btn btn xjs bae vcf xjs miw btn mtn oux vgl oux mtn miw vcf vcf vgl uzt vcf uzt uzt bae uzt vcf xjs vgl vgl xjs bae btn oux jap bae miw oux xjs vgl bae mtn oux mtn xjs uzt mtn uzt bae bae xjs jap xjs bae vgl vgl uzt mtn xjs miw bae uzt jap vgl xjs bae jap uzt btn vgl xjs bae oux oux jap uzt miw mtn xjs xjs xjs miw oux uzt vcf mtn vcf jap xjs jap xjs xjs vgl miw vcf mtn vgl vgl btn miw xjs mtn jap xjs miw xjs jap miw vcf mtn mtn btn uzt xjs bae mtn uzt
-	CE after cut_ce:
-		miw mtn xjs miw
-	CE after minimizing:
-		miw xjs miw
-
-Calling CE-Distilation for the 10st time:
-	CE before minimizing:
-		oux vcf xjs vgl oux vcf miw xjs uzt mtn btn vgl mtn vcf uzt btn oux btn vcf miw mtn xjs xjs miw mtn miw vcf mtn oux vgl xjs jap uzt uzt mtn jap mtn btn bae vcf oux xjs mtn jap oux btn btn jap vcf xjs vgl oux uzt oux xjs oux vcf mtn bae mtn uzt bae btn bae xjs uzt xjs vcf btn btn miw bae xjs mtn uzt uzt vgl bae vgl oux btn miw vgl jap oux uzt jap jap miw miw jap jap bae jap bae vcf uzt bae mtn jap oux jap xjs mtn vgl vcf vgl vgl xjs vgl xjs jap vcf miw mtn vcf oux jap miw uzt vgl miw oux btn oux miw jap uzt vgl jap jap vcf miw vgl bae xjs oux jap uzt vcf mtn vcf miw miw bae xjs jap mtn mtn xjs vgl vgl vcf xjs miw miw vcf vgl
-	CE after cut_ce:
-		oux vcf xjs vgl oux vcf miw xjs uzt mtn btn vgl
-	CE after minimizing:
-		oux vgl oux btn vgl
-
-Calling CE-Distilation for the 11st time:
-	CE before minimizing:
-		vgl oux btn oux btn miw vgl xjs xjs bae mtn btn jap bae miw jap vcf btn vcf uzt jap xjs miw jap bae miw miw oux miw oux jap uzt uzt uzt vcf xjs mtn oux xjs jap jap bae btn vcf oux vgl btn oux uzt btn btn bae btn vcf mtn vcf vgl btn jap oux btn oux vcf uzt uzt miw mtn jap jap mtn vcf btn oux jap mtn xjs jap bae uzt uzt vcf btn oux bae vgl jap uzt mtn vcf uzt xjs btn miw bae btn oux xjs oux jap vcf mtn bae vcf miw vgl bae vcf vgl uzt bae xjs vgl uzt vgl jap btn vgl vcf jap oux uzt vgl uzt vgl btn miw btn jap vgl mtn
-	CE after cut_ce:
-		vgl oux btn oux btn miw vgl xjs xjs bae mtn btn jap bae miw jap vcf btn vcf uzt jap xjs miw jap bae miw miw oux miw oux jap uzt uzt uzt vcf
-	CE after minimizing:
-		bae jap bae jap vcf vcf uzt jap jap bae jap uzt uzt uzt vcf
-
-Calling CE-Distilation for the 12st time:
-	CE before minimizing:
-		bae bae xjs vgl xjs uzt oux bae vgl miw jap mtn oux miw xjs oux oux vgl miw jap xjs vcf xjs vgl xjs btn uzt uzt oux vgl bae btn bae vcf mtn vgl uzt vcf jap bae mtn bae mtn oux jap mtn jap btn jap mtn jap bae vgl xjs uzt xjs btn uzt xjs bae uzt vgl miw vgl mtn vgl vcf xjs xjs uzt vcf miw oux miw uzt uzt xjs xjs vcf mtn vgl btn miw uzt mtn mtn mtn vcf miw btn xjs btn uzt oux miw btn vgl oux vcf bae vgl vcf xjs vgl btn xjs jap oux vgl xjs jap jap miw btn xjs btn miw uzt btn mtn bae miw mtn mtn uzt uzt oux mtn btn xjs xjs vgl xjs vgl uzt btn vgl miw oux btn xjs vcf jap miw mtn oux oux bae miw jap vcf miw xjs btn uzt jap bae bae miw oux jap xjs vgl jap xjs jap uzt bae btn xjs uzt vgl miw oux btn oux miw jap vcf jap jap bae btn vgl mtn vcf mtn
-	CE after cut_ce:
-		bae bae xjs vgl xjs uzt oux bae vgl miw jap mtn oux miw xjs oux oux vgl miw jap xjs vcf xjs vgl xjs btn uzt uzt oux vgl bae btn bae vcf mtn vgl
-	CE after minimizing:
-		vgl uzt oux vgl oux oux oux vgl vgl btn uzt uzt oux vgl btn vgl
+		oli yxa wjr wjr foa yxa gix foa oli
 
 	The result:
-		  - component with 4 inputs: [mtn, btn, xjs, bae]
-		  - component with 4 inputs: [miw, oux, jap, xjs]
-		  - component with 4 inputs: [vcf, uzt, bae, jap]
-		  - component with 4 inputs: [vgl, oux, btn, uzt]
+		  - component with 2 inputs: [enx, yxa]
+		  - component with 2 inputs: [dbl, foa]
+		  - component with 2 inputs: [azi, wjr]
+		  - component with 2 inputs: [mpp, gix]
+		  - component with 5 inputs: [oli, wjr, foa, yxa, gix]
+Sync Actions: [wjr, foa, yxa, gix]

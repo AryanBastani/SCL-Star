@@ -1,4 +1,4 @@
-resources/all_FSMs/96.dot
+resources/all_FSMs/1.dot
 resources/all_FSMs/97.dot
 resources/all_FSMs/98.dot
 resources/all_FSMs/99.dot

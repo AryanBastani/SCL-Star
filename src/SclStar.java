@@ -321,6 +321,7 @@ public class SclStar {
         for (Alphabet s: sigmaFamily){
             result += "\t\t  - component with " + s.size() + " inputs: " + s + "\n";
         }
+        result += "Sync Actions: " + sync;
         sclWriter.write(result + "\n\n");
         myWriter.write(result);
         myWriter.close();

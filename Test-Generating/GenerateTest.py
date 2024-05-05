@@ -114,6 +114,8 @@ class GenerateTest:
         currentSynchs = self.generateActs()
         currentOutSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)] 
         self.generateSynchComponents(currentSynchs, currentOutSynchs, numOfComponents, self.BUS)
+    
+    
      
     def resetVars(self, type):
         self.clearFolder('resources/Generated/' + type)
