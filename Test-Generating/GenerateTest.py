@@ -17,7 +17,6 @@ class GenerateTest:
     def generateSynchComponents(self, synchActions, numOfComponents):
         synchOuts = list()
         for synchAct in synchActions:
-            self.alphabets.remove(synchAct)
             synchOuts.append(random.randint(0,1))
             
         for i in range(numOfComponents):
