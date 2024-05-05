@@ -11,13 +11,30 @@ class ComponentGenerator:
         self.numOfStates: Final[int] = numOfStates
         self.IsMinimum: Final[int] = 1
         self.IsNotMin: Final[int] = 0
+        self.transitions = list(dict())
         self.graph = ''
+        self.causeOfNotMin = ''
     
     def refactorGraph(self):
         return
     
-    def isGraphMinimum():
-        return
+    def didActJustLoop(self, act):
+        
+    
+    def checkMinForActs(self, acts):
+        for act in acts:
+            if(self.didActJustLoop(act)):
+                self.causeOfNotMin = act
+                return(False)
+        return(True)
+            
+    def isGraphMinimum(self):
+        if(not self.checkMinForActs(self.unsynchActs)):
+            return(False)
+        if(not self.checkMinForActs(self.synchActions)):
+            return(False)
+        
+        return(True)
     
     def generate(self):
         for stateNum in range(self.numOfStates):
@@ -26,7 +43,7 @@ class ComponentGenerator:
             for unsynchNum in range(len(self.unsynchActs)):
                 self.generateLine(stateNum, self.unsynchActs[unsynchNum], random.randint(0, 1))
                 
-        if self.isGraphMinimum():       
+        if not self.isGraphMinimum():       
             self.refactorGraph()
             
         return(self.graph)
