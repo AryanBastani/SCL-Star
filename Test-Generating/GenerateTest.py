@@ -54,9 +54,7 @@ class GenerateTest:
         self.generatePointTPoint()
         
             
-            
-        
-    
+             
 gt = GenerateTest()
 gt.generateAllTests()
     
