@@ -96,7 +96,7 @@ public class Run_experiment {
             boolean isGenratedTests = false;
 
             System.out.println("Please choose a benchmarck to run(Enter 1 or 2 or 3):");
-            System.out.println("\t1- CL-Star-Benchmarks\n\t2- SmallTest-Benchmarks")
+            System.out.println("\t1- CL-Star-Benchmarks\n\t2- SmallTest-Benchmarks");
             System.out.println("\t3- Mealy-benchmarks\n\t4- Generated-Benchmarks");
 
             String file_path = "";
@@ -112,22 +112,22 @@ public class Run_experiment {
                 isGenratedTests = true;
                 System.out.println("Please choose the type of generated-benchmark (Enter 1 or 2 or ... or 7):");
                 System.out.println("\t1- Point-To-Point\n\t2- Mesh\n\t3-Star\n\t4- Ring");
-                System.out.println("\tTree\n\tBus\n\tHybrid");
+                System.out.println("\t5- Tree\n\t6- Bus\n\t7- Hybrid");
                 benckmarkId = myObj.nextLine();
                 if(benckmarkId.equals("1"))
-                    file_path = "data/generated/Point-To-Point.txt";
+                    file_path = "data/Generated/Point-To-Point.txt";
                 else if(benckmarkId.equals("2"))
-                    file_path = "data/generated/Mesh.txt";
+                    file_path = "data/Generated/Mesh.txt";
                 else if(benckmarkId.equals("3"))
-                    file_path = "data/generated/Star.txt";
+                    file_path = "data/Generated/Star.txt";
                 else if(benckmarkId.equals("4"))
-                    file_path = "data/generated/Ring.txt";
+                    file_path = "data/Generated/Ring.txt";
                 else if(benckmarkId.equals("5"))
-                    file_path = "data/generated/Tree.txt";
+                    file_path = "data/Generated/Tree.txt";
                 else if(benckmarkId.equals("6"))
-                    file_path = "data/generated/Bus.txt";
+                    file_path = "data/Generated/Bus.txt";
                 else
-                    file_path = "data/generated/Hybrid.txt";
+                    file_path = "data/Generated/Hybrid.txt";
             }
             /*
             if (line.hasOption(SRC_DIR)) {

@@ -14,6 +14,7 @@ class GenerateTest:
         self.minStates: Final[int] = 5
         self.maxStates: Final[int] = 9
         self.componentCounter = 0
+        self.experimentInput = ''
         
         self.POINT_TO_POINT: Final[string] = 'Point-To-Point'
         self.MESH: Final[string] = 'Mesh'
@@ -35,11 +36,19 @@ class GenerateTest:
             
             componentGenerator = gc.ComponentGenerator(synchActions, synchOuts, unsynchActs, numOfStates)
             graphString = componentGenerator.generate()
+
+            currentFile = 'resources/Generated/' + type + \
+                '/Component' + str(self.componentCounter) + '.dot'
+            self.writeIntoFile(currentFile, graphString)
             
-            currentFolder = 'resources/Generated/' + type
-            with open(currentFolder + '/Component' + str(self.componentCounter) + '.dot', 'w') as dotFile:
-                dotFile.write(graphString) 
-                dotFile.close()
+            self.experimentInput += currentFile + '\n'
+        
+        self.writeIntoFile('data/Generated/' + type + '.txt', self.experimentInput)
+                
+    def writeIntoFile(self, file, content):
+        with open(file, 'w') as writingfile:
+            writingfile.write(content) 
+            writingfile.close()   
 
     def generateAct(self):
         newAct = self.alphabets[random.randint(0, len(self.alphabets) - 1)]
@@ -63,6 +72,7 @@ class GenerateTest:
     def resetVars(self, type):
         self.clearFolder('resources/Generated/' + type)
         self.alphabets = [''.join(i) for i in product(ascii_lowercase, repeat = 3)]
+        self.experimentInput = ''
         self.componentCounter = 0  
             
     def generateAllTests(self):
