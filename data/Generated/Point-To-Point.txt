@@ -2,3 +2,5 @@ resources/Generated/Point-To-Point/Component1.dot
 resources/Generated/Point-To-Point/Component2.dot
 resources/Generated/Point-To-Point/Component3.dot
 resources/Generated/Point-To-Point/Component4.dot
+resources/Generated/Point-To-Point/Component5.dot
+resources/Generated/Point-To-Point/Component6.dot

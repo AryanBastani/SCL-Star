@@ -3,3 +3,7 @@ resources/Generated/Star/Component2.dot
 resources/Generated/Star/Component3.dot
 resources/Generated/Star/Component4.dot
 resources/Generated/Star/Component5.dot
+resources/Generated/Star/Component6.dot
+resources/Generated/Star/Component7.dot
+resources/Generated/Star/Component8.dot
+resources/Generated/Star/Component9.dot

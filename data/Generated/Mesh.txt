@@ -3,3 +3,5 @@ resources/Generated/Mesh/Component2.dot
 resources/Generated/Mesh/Component3.dot
 resources/Generated/Mesh/Component4.dot
 resources/Generated/Mesh/Component5.dot
+resources/Generated/Mesh/Component6.dot
+resources/Generated/Mesh/Component7.dot

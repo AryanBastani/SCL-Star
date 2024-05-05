@@ -115,8 +115,32 @@ class GenerateTest:
         currentOutSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)] 
         self.generateSynchComponents(currentSynchs, currentOutSynchs, numOfComponents, self.BUS)
     
-    
-     
+    def generateRing(self):
+        numOfComponents = random.randint(self.minComponents, self.maxComponents)
+        synchsActs = [0] * numOfComponents 
+        outSynchs = [0] * numOfComponents 
+        for i in range(numOfComponents):
+            synchsActs[i] = [0] * (2 * self.numOfEachActs)
+            outSynchs[i] = [0] * (2 * self.numOfEachActs)
+                
+        for component in range(numOfComponents):
+            currentSynchs = self.generateActs()
+            currentOutSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)]
+            for synchNum in range(len(currentSynchs)):
+                if(component == (numOfComponents - 1)):
+                    nextComp = 0
+                else:
+                    nextComp = component + 1
+                synchsActs[component][self.numOfEachActs + synchNum] = currentSynchs[synchNum]
+                outSynchs[component][self.numOfEachActs + synchNum] = currentOutSynchs[synchNum]
+                
+                synchsActs[nextComp][synchNum] = currentSynchs[synchNum]
+                outSynchs[nextComp][synchNum] = currentOutSynchs[synchNum]
+        
+        for component in range(numOfComponents):
+            self.generateSynchComponents(synchsActs[component], outSynchs[component], 1, self.RING)
+        
+        
     def resetVars(self, type):
         self.clearFolder('resources/Generated/' + type)
         self.alphabets = [''.join(i) for i in product(ascii_lowercase, repeat = 3)]
@@ -135,6 +159,9 @@ class GenerateTest:
         
         self.resetVars(self.BUS)
         self.generateBus()
+        
+        self.resetVars(self.RING)
+        self.generateRing()
         
         
     def clearFolder(self, folder):

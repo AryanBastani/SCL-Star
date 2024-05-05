@@ -2,8 +2,3 @@ resources/Generated/Bus/Component1.dot
 resources/Generated/Bus/Component2.dot
 resources/Generated/Bus/Component3.dot
 resources/Generated/Bus/Component4.dot
-resources/Generated/Bus/Component5.dot
-resources/Generated/Bus/Component6.dot
-resources/Generated/Bus/Component7.dot
-resources/Generated/Bus/Component8.dot
-resources/Generated/Bus/Component9.dot
