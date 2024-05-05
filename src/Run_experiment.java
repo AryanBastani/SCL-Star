@@ -94,7 +94,8 @@ public class Run_experiment {
             CommandLine line = parser.parse(options, args);
 
             System.out.println("Please choose a benchmarck to run(Enter 1 or 2 or 3):");
-            System.out.println("\t1- CL-Star-Benchmarks\n\t2- SmallTest-Benchmarks\n\t3- Mealy-benchmarks");
+            System.out.println("\t1- CL-Star-Benchmarks\n\t2- SmallTest-Benchmarks")
+            System.out.println("\t3- Mealy-benchmarks\n\t4- Generated-Benchmarks");
 
             String file_path = "";
             Scanner myObj = new Scanner(System.in);
@@ -103,8 +104,28 @@ public class Run_experiment {
                 file_path = "data/CL_Benchmarks.txt";
             else if(benckmarkId.equals("2"))
                 file_path = "data/SmallTest_Benchmarks.txt";
-            else
+            else if(benckmarkId.equals("3"))
                 file_path = "data/Mealy_Benchmarks.txt";
+            else{
+                System.out.println("Please choose the type of generated-benchmark (Enter 1 or 2 or ... or 7):");
+                System.out.println("\t1- Point-To-Point\n\t2- Mesh\n\t3-Star\n\t4- Ring");
+                System.out.println("\tTree\n\tBus\n\tHybrid");
+                benckmarkId = myObj.nextLine();
+                if(benckmarkId.equals("1"))
+                    file_path = "data/generated/Point-To-Point.txt";
+                else if(benckmarkId.equals("2"))
+                    file_path = "data/generated/Mesh.txt";
+                else if(benckmarkId.equals("3"))
+                    file_path = "data/generated/Star.txt";
+                else if(benckmarkId.equals("4"))
+                    file_path = "data/generated/Ring.txt";
+                else if(benckmarkId.equals("5"))
+                    file_path = "data/generated/Tree.txt";
+                else if(benckmarkId.equals("6"))
+                    file_path = "data/generated/Bus.txt";
+                else
+                    file_path = "data/generated/Hybrid.txt";
+            }
             /*
             if (line.hasOption(SRC_DIR)) {
                 file_path = line.getOptionValue(SRC_DIR);
