@@ -1,0 +1,5 @@
+resources/Generated/Star/Component1.dot
+resources/Generated/Star/Component2.dot
+resources/Generated/Star/Component3.dot
+resources/Generated/Star/Component4.dot
+resources/Generated/Star/Component5.dot

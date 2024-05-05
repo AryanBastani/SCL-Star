@@ -1,0 +1,14 @@
+s0 -> s1 [label="hic  /  1"];
+s0 -> s0 [label="pcu  /  0"];
+s1 -> s2 [label="hic  /  1"];
+s1 -> s0 [label="pcu  /  0"];
+s2 -> s3 [label="hic  /  1"];
+s2 -> s6 [label="pcu  /  1"];
+s3 -> s1 [label="hic  /  1"];
+s3 -> s5 [label="pcu  /  0"];
+s4 -> s1 [label="hic  /  1"];
+s4 -> s5 [label="pcu  /  1"];
+s5 -> s1 [label="hic  /  1"];
+s5 -> s2 [label="pcu  /  0"];
+s6 -> s5 [label="hic  /  1"];
+s6 -> s5 [label="pcu  /  1"];

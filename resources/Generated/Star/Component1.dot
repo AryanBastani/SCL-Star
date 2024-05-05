@@ -1,0 +1,16 @@
+s0 -> s1 [label="zeb  /  0"];
+s0 -> s0 [label="zst  /  1"];
+s1 -> s1 [label="zeb  /  0"];
+s1 -> s2 [label="zst  /  1"];
+s2 -> s4 [label="zeb  /  0"];
+s2 -> s4 [label="zst  /  0"];
+s3 -> s1 [label="zeb  /  0"];
+s3 -> s3 [label="zst  /  0"];
+s4 -> s5 [label="zeb  /  0"];
+s4 -> s1 [label="zst  /  1"];
+s5 -> s2 [label="zeb  /  0"];
+s5 -> s5 [label="zst  /  1"];
+s6 -> s2 [label="zeb  /  0"];
+s6 -> s1 [label="zst  /  0"];
+s7 -> s5 [label="zeb  /  0"];
+s7 -> s7 [label="zst  /  0"];
