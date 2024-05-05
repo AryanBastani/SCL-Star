@@ -1,0 +1,16 @@
+s0 -> s6 [label="cnr  /  0"];
+s0 -> s7 [label="jci  /  1"];
+s1 -> s5 [label="cnr  /  0"];
+s1 -> s4 [label="jci  /  1"];
+s2 -> s3 [label="cnr  /  0"];
+s2 -> s3 [label="jci  /  1"];
+s3 -> s4 [label="cnr  /  0"];
+s3 -> s4 [label="jci  /  1"];
+s4 -> s0 [label="cnr  /  0"];
+s4 -> s6 [label="jci  /  1"];
+s5 -> s4 [label="cnr  /  0"];
+s5 -> s7 [label="jci  /  1"];
+s6 -> s2 [label="cnr  /  0"];
+s6 -> s7 [label="jci  /  0"];
+s7 -> s7 [label="cnr  /  0"];
+s7 -> s6 [label="jci  /  1"];

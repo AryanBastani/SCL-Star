@@ -108,7 +108,12 @@ class GenerateTest:
             
             self.generateSynchComponents(currentSynchs, currentOutSynchs, 1, self.STAR)
         self.generateSynchComponents(centerSynchsActs, centerOutSynchs, 1, self.STAR)
-            
+        
+    def generateBus(self):
+        numOfComponents = random.randint(self.minComponents, self.maxComponents)
+        currentSynchs = self.generateActs()
+        currentOutSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)] 
+        self.generateSynchComponents(currentSynchs, currentOutSynchs, numOfComponents, self.BUS)
      
     def resetVars(self, type):
         self.clearFolder('resources/Generated/' + type)
@@ -125,6 +130,9 @@ class GenerateTest:
         
         self.resetVars(self.STAR)
         self.generateStar()
+        
+        self.resetVars(self.BUS)
+        self.generateBus()
         
         
     def clearFolder(self, folder):

@@ -1,0 +1,12 @@
+s0 -> s5 [label="cnr  /  0"];
+s0 -> s3 [label="rra  /  1"];
+s1 -> s2 [label="cnr  /  0"];
+s1 -> s2 [label="rra  /  0"];
+s2 -> s2 [label="cnr  /  0"];
+s2 -> s0 [label="rra  /  1"];
+s3 -> s5 [label="cnr  /  0"];
+s3 -> s3 [label="rra  /  0"];
+s4 -> s0 [label="cnr  /  0"];
+s4 -> s0 [label="rra  /  0"];
+s5 -> s1 [label="cnr  /  0"];
+s5 -> s3 [label="rra  /  0"];
