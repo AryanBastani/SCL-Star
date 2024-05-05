@@ -47,19 +47,19 @@ class GenerateTest:
     def generatePointTPoint(self):
         possibleNums = [4, 6, 8]
         numOfComponents = random.randint(0, 2)
-        for twoComponents in range(0, possibleNums, 2):
+        for twoComponents in range(0, possibleNums[numOfComponents], 2):
             synchActs = self.generateActs()
             self.generateSynchComponents(synchActs, 2)
             
     def generateAllTests(self):
         self.generatePointTPoint()
-            
+        
             
             
         
     
 gt = GenerateTest()
-gt.generateSynchComponents(['asd', 'ads'], 2)
+gt.generateAllTests()
     
 
          

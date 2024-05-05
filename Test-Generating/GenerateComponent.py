@@ -16,7 +16,14 @@ class ComponentGenerator:
         self.causeOfNotMin = ''
     
     def refactorGraph(self):
-        return
+        shouldChangeState = random.randint(0, self.numOfStates - 1)
+        
+        destState = random.randint(0, self.numOfStates - 2)
+        if(destState >= shouldChangeState):
+            destState += 1
+            
+        preOut = self.transitions[shouldChangeState][self.causeOfNotMin][1]
+        self.transitions[shouldChangeState][self.causeOfNotMin] = (destState, preOut)
     
     def didActJustLoop(self, act):
         for state in range(self.numOfStates):
@@ -38,25 +45,42 @@ class ComponentGenerator:
             return(False)
         
         return(True)
-    
-    def generate(self):
+        
+    def generateAll(self, isForTransitions):
         for stateNum in range(self.numOfStates):
             for synchNum in range(len(self.synchActions)):
-                self.generateLine(stateNum, self.synchActions[synchNum], self.synchOuts[synchNum]) 
+                if(isForTransitions):
+                    self.generateTransition(stateNum, self.synchActions[synchNum], self.synchOuts[synchNum]) 
+                else:
+                    self.generateLine(stateNum, self.synchActions[synchNum], self.synchOuts[synchNum])
             for unsynchNum in range(len(self.unsynchActs)):
-                self.generateLine(stateNum, self.unsynchActs[unsynchNum], random.randint(0, 1))
-                
-        if not self.isGraphMinimum():       
-            self.refactorGraph()
+                if(isForTransitions):
+                    self.generateTransition(stateNum, self.unsynchActs[unsynchNum], random.randint(0, 1))
+                else:
+                    self.generateLine(stateNum, self.unsynchActs[unsynchNum], random.randint(0, 1))
+    
+    def generate(self):
+        self.generateAll(isForTransitions = True)
+        
+        while (True):
+            if not self.isGraphMinimum():       
+                self.refactorGraph()
+            else:
+                break
             
+        self.generateGraphStr()
         return(self.graph)
 
+    def generateTransition(self, stateNum, action, actionOut):
+        self.transitions[stateNum][action] = [random.randint(0, self.numOfStates - 1), actionOut]
             
     def generateLine(self, stateNum, action, actionOut):
-        #self.graph += 's' + str(stateNum) + ' -> '
-        #self.graph += 's' + str(random.randint(0, self.numOfStates - 1))
-        #self.graph += ' [label="' + action + '  /  ' + str(actionOut) + '"];\n'
+        self.graph += 's' + str(stateNum) + ' -> '
+        self.graph += 's' + str(random.randint(0, self.numOfStates - 1))
+        self.graph += ' [label="' + action + '  /  ' + str(actionOut) + '"];\n'
         
-        self.transitions[stateNum][action] = [random.randint(0, self.numOfStates - 1), actionOut]
+    def generateGraphStr(self):
+        self.generateAll(isForTransitions = False)
+
 
             
