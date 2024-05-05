@@ -11,7 +11,7 @@ class ComponentGenerator:
         self.numOfStates: Final[int] = numOfStates
         self.IsMinimum: Final[int] = 1
         self.IsNotMin: Final[int] = 0
-        self.transitions = list(dict())
+        self.transitions = [dict()] * numOfStates
         self.graph = ''
         self.causeOfNotMin = ''
     
@@ -19,7 +19,10 @@ class ComponentGenerator:
         return
     
     def didActJustLoop(self, act):
-        
+        for state in range(self.numOfStates):
+            if(self.transitions[state][act][0] != state):
+                return(False)
+        return(True)
     
     def checkMinForActs(self, acts):
         for act in acts:
@@ -50,8 +53,10 @@ class ComponentGenerator:
 
             
     def generateLine(self, stateNum, action, actionOut):
-        self.graph += 's' + str(stateNum) + ' -> '
-        self.graph += 's' + str(random.randint(0, self.numOfStates - 1))
-        self.graph += ' [label="' + action + '  /  ' + str(actionOut) + '"];\n'
+        #self.graph += 's' + str(stateNum) + ' -> '
+        #self.graph += 's' + str(random.randint(0, self.numOfStates - 1))
+        #self.graph += ' [label="' + action + '  /  ' + str(actionOut) + '"];\n'
+        
+        self.transitions[stateNum][action] = [random.randint(0, self.numOfStates - 1), actionOut]
 
             
