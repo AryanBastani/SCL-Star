@@ -14,8 +14,17 @@ class GenerateTest:
         self.minStates: Final[int] = 5
         self.maxStates: Final[int] = 9
         self.componentCounter = 0
+        
+        self.POINT_TO_POINT: Final[string] = 'Point-To-Point'
+        self.MESH: Final[string] = 'Mesh'
+        self.STAR: Final[string] = 'Star'
+        self.RING: Final[string] = 'Ring'
+        self.TREE: Final[string] = 'Tree'
+        self.BUS: Final[string] = 'Bus'
+        self.HYBRID: Final[string] = 'Hybrid'
+        
 
-    def generateSynchComponents(self, synchActions, numOfComponents):
+    def generateSynchComponents(self, synchActions, numOfComponents, type):
         synchOuts = list()
         for synchAct in synchActions:
             synchOuts.append(random.randint(0,1))
@@ -27,8 +36,11 @@ class GenerateTest:
             
             componentGenerator = gc.ComponentGenerator(synchActions, synchOuts, unsynchActs, numOfStates)
             graphString = componentGenerator.generate()
-            with open('Test-Generating/Component' + str(self.componentCounter) + '.dot', 'w') as dotFile:
-                dotFile.write(graphString)
+            
+            currentFolder = 'resources/Generated/' + type
+            self.clearFolder(currentFolder)
+            with open(currentFolder + '/Component' + str(self.componentCounter) + '.dot', 'w') as dotFile:
+                dotFile.write(graphString) 
                 dotFile.close()
             print(graphString)
 
@@ -49,14 +61,17 @@ class GenerateTest:
         numOfComponents = random.randint(0, 2)
         for twoComponents in range(0, possibleNums[numOfComponents], 2):
             synchActs = self.generateActs()
-            self.generateSynchComponents(synchActs, 2)
+            self.generateSynchComponents(synchActs, 2, self.POINT_TO_POINT)
+     
+    def resetVars(self):
+        self.alphabets = [''.join(i) for i in product(ascii_lowercase, repeat = 3)]
+        self.componentCounter = 0  
             
     def generateAllTests(self):
         self.generatePointTPoint()
-        self.alphabets = [''.join(i) for i in product(ascii_lowercase, repeat = 3)]
+        self.resetVars()
         
     def clearFolder(folder):
-        #folder = '/path/to/folder'
         for filename in os.listdir(folder):
             file_path = os.path.join(folder, filename)
             try:
