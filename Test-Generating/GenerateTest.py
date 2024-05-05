@@ -23,7 +23,6 @@ class GenerateTest:
         self.BUS: Final[string] = 'Bus'
         self.HYBRID: Final[string] = 'Hybrid'
         
-
     def generateSynchComponents(self, synchActions, numOfComponents, type):
         synchOuts = list()
         for synchAct in synchActions:
@@ -38,11 +37,9 @@ class GenerateTest:
             graphString = componentGenerator.generate()
             
             currentFolder = 'resources/Generated/' + type
-            self.clearFolder(currentFolder)
             with open(currentFolder + '/Component' + str(self.componentCounter) + '.dot', 'w') as dotFile:
                 dotFile.write(graphString) 
                 dotFile.close()
-            print(graphString)
 
     def generateAct(self):
         newAct = self.alphabets[random.randint(0, len(self.alphabets) - 1)]
@@ -63,15 +60,17 @@ class GenerateTest:
             synchActs = self.generateActs()
             self.generateSynchComponents(synchActs, 2, self.POINT_TO_POINT)
      
-    def resetVars(self):
+    def resetVars(self, type):
+        self.clearFolder('resources/Generated/' + type)
         self.alphabets = [''.join(i) for i in product(ascii_lowercase, repeat = 3)]
         self.componentCounter = 0  
             
     def generateAllTests(self):
+        self.resetVars(self.POINT_TO_POINT)
         self.generatePointTPoint()
-        self.resetVars()
         
-    def clearFolder(folder):
+        
+    def clearFolder(self, folder):
         for filename in os.listdir(folder):
             file_path = os.path.join(folder, filename)
             try:
@@ -83,7 +82,6 @@ class GenerateTest:
                 print('Failed to delete %s. Reason: %s' % (file_path, e))
         
             
-             
 gt = GenerateTest()
 gt.generateAllTests()
     
