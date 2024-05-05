@@ -111,7 +111,7 @@ public class Run_experiment {
             else{
                 isGenratedTests = true;
                 System.out.println("Please choose the type of generated-benchmark (Enter 1 or 2 or ... or 7):");
-                System.out.println("\t1- Point-To-Point\n\t2- Mesh\n\t3-Star\n\t4- Ring");
+                System.out.println("\t1- Point-To-Point\n\t2- Mesh\n\t3- Star\n\t4- Ring");
                 System.out.println("\t5- Tree\n\t6- Bus\n\t7- Hybrid");
                 benckmarkId = myObj.nextLine();
                 if(benckmarkId.equals("1"))
@@ -221,27 +221,47 @@ public class Run_experiment {
                 }
                 assert productMealy != null;
                 CompactMealy<String, Word<String>> target = productMealy.getMachine();
-                Alphabet<String> alphabet = target.getInputAlphabet();
 
-                for (int rep = 0; rep < repeat; rep++) {
-                    //   Shuffle the alphabet
-                    String[] alphArr = alphabet.toArray(new String[alphabet.size()]);
-                    Collections.shuffle(Arrays.asList(alphArr));
-                    alphabet = Alphabets.fromArray(alphArr);
-                    data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
+                inputCounter++;
+                new File("Results/FSMs/CL-Star/For input" + inputCounter).mkdirs();
+                new File("Results/FSMs/SCL-Star/For input" + inputCounter).mkdirs();
+                if (benckmarkId.equals("1"))
+                    new File("Results/FSMs/L-Star/For input" + inputCounter).mkdirs();
 
-                    Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
-
-                    //             RUN SCL*
-                    @Nullable CompactMealy result = null;
-                    result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId);
-
-                    if (result == null) {
-                        System.out.println("the  SUL is not learned completely (CL-Star)");
-                    } else {
-                        Utils.writeDataLineByLine(RESULTS_PATH, data);
+                    try {
+                        FileWriter inputWriter = new FileWriter("Results/FSMs/INPUTs/input" + inputCounter + "txt");
+                        Utils.printMachine(target, false, inputWriter);
+                        inputWriter.close();
+                    } catch (IOException e) {
+                        System.out.println("An error occurred.");
+                        e.printStackTrace();
                     }
-                }
+
+
+                    //logger.info("#States: " + target.size());
+                    data[csvProperties.getIndex(STATES)] = Integer.toString(target.size());
+                    data[csvProperties.getIndex(INPUTS)] = Integer.toString(target.numInputs());
+                    Alphabet<String> alphabet = target.getInputAlphabet();
+
+                    for (int rep = 0; rep < repeat; rep++) {
+                        //   Shuffle the alphabet
+                        String[] alphArr = alphabet.toArray(new String[alphabet.size()]);
+                        Collections.shuffle(Arrays.asList(alphArr));
+                        alphabet = Alphabets.fromArray(alphArr);
+                        data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
+
+                        Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
+
+                        //             RUN SCL*
+                        @Nullable CompactMealy result = null;
+                        result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId);
+
+                        if (result == null) {
+                            System.out.println("the  SUL is not learned completely (CL-Star)");
+                        } else {
+                            Utils.writeDataLineByLine(RESULTS_PATH, data);
+                        }
+                    }
             }
             else {
                 while (br.ready()) {

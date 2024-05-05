@@ -1,9 +1,76 @@
 Calling CE-Distilation for the 1st time:
 	CE before minimizing:
-		mpw_stop key_pos_lock em_pos_hor_pend receiveMsg pw_pos_dn mpw_stop m_pw_msg pw_auto_mv_up key_pos_unlock fp_on pw_pos_dn receiveMsg key_pos_unlock m_pw_msg fp_on pw_pos_up fp_on pw_pos_up pw_but_dn pw_auto_mv_dn em_pos_hor_pend em_pos_hor_pend pw_pos_dn pw_but_up pw_pos_dn fp_off m_pw_msg pw_pos_up pw_auto_mv_up fp_off pw_but_up pw_auto_mv_up pw_auto_mv_up pw_but_up pw_auto_mv_up pw_but_up pw_auto_mv_dn fp_on fp_off pw_pos_dn m_pw_msg pw_but_up fp_off mpw_stop pw_auto_mv_stop key_pos_lock pw_but_up pw_auto_mv_up key_pos_lock key_pos_unlock mpw_stop key_pos_lock key_pos_lock as_alarm_off m_pw_msg receiveMsg key_pos_lock receiveMsg pw_auto_mv_up receiveMsg em_pos_hor_pend key_pos_unlock pw_pos_up as_alarm_on receiveMsg pw_pos_up em_pos_hor_pend receiveMsg pw_but_up fp_off fp_off em_pos_hor_right fp_on as_alarm_off pw_but_dn pw_auto_mv_stop as_alarm_off receiveMsg em_pos_hor_right pw_pos_up as_alarm_off as_alarm_off pw_auto_mv_stop em_pos_hor_pend pw_pos_dn as_alarm_on pw_auto_mv_dn pw_but_dn pw_auto_mv_dn mpw_stop pw_but_up em_pos_hor_right pw_but_dn pw_but_dn as_alarm_off pw_auto_mv_up fp_off pw_but_up pw_auto_mv_up pw_pos_up as_alarm_off as_alarm_off pw_but_up fp_on pw_pos_up key_pos_lock as_alarm_off as_alarm_on
+		kzz soh csz ytt ytt csz zhu csz kzz mrc ikj zhu csz csz ikj uch trh kzz ikj jcr csz kzz ikj jcr zhu cbq kzz trh kzz apn mrc cbq ytt apn ytt csz apn apn apn ytt kzz cbq jcr ikj mrc cbq apn jcr apn cbq ikj kzz ikj ikj trh apn mrc mrc jcr ytt ytt apn ytt soh uch trh csz mrc kzz jcr jcr jcr csz uch kzz ytt zhu trh mrc kzz apn apn apn ikj cbq zhu mrc cbq csz jcr mrc apn trh apn cbq trh ytt soh kzz cbq apn jcr jcr apn ytt ytt ikj soh mrc soh mrc mrc ikj trh mrc mrc apn uch ytt soh zhu jcr ikj cbq csz soh cbq trh kzz jcr apn soh zhu uch soh apn mrc ytt ytt trh csz kzz zhu uch kzz uch kzz apn cbq jcr kzz ytt kzz ytt ikj zhu mrc jcr apn mrc zhu zhu ytt
 	CE after cut_ce:
-		mpw_stop key_pos_lock em_pos_hor_pend receiveMsg pw_pos_dn mpw_stop m_pw_msg
+		kzz soh csz ytt ytt csz zhu csz kzz
 	CE after minimizing:
-		receiveMsg m_pw_msg
+		kzz csz csz csz kzz
 
 Calling CE-Distilation for the 2st time:
+	CE before minimizing:
+		trh zhu trh ikj ytt zhu csz uch cbq jcr mrc jcr ikj jcr cbq trh jcr zhu cbq soh csz soh kzz csz csz kzz cbq trh cbq ytt jcr uch trh ikj soh kzz ytt apn mrc jcr ytt kzz apn cbq uch csz uch jcr ytt ytt zhu soh jcr apn mrc apn trh kzz ikj zhu ytt apn apn ytt csz jcr soh apn mrc trh mrc ikj ikj soh uch trh apn ytt mrc trh ikj apn apn uch csz mrc ytt ytt uch mrc cbq trh ytt mrc uch jcr csz soh csz mrc zhu uch jcr trh soh csz
+	CE after cut_ce:
+		trh zhu trh ikj ytt
+	CE after minimizing:
+		zhu ytt
+
+Calling CE-Distilation for the 3st time:
+	CE before minimizing:
+		kzz kzz ytt cbq uch zhu soh uch ytt uch apn cbq csz apn apn apn ytt mrc apn zhu trh zhu ytt cbq ytt mrc mrc zhu kzz csz trh csz kzz ikj zhu zhu uch jcr apn apn zhu soh zhu trh trh apn soh trh soh apn kzz ytt mrc jcr soh apn apn ytt trh trh ikj trh zhu uch trh uch csz ikj uch soh apn trh zhu zhu kzz trh kzz zhu kzz kzz kzz mrc csz cbq mrc mrc kzz jcr kzz zhu csz kzz cbq jcr ytt jcr csz apn cbq cbq csz apn cbq apn kzz uch trh soh csz kzz zhu apn apn trh mrc cbq trh cbq trh ytt apn ytt zhu csz apn apn jcr mrc kzz csz apn trh kzz jcr mrc trh zhu kzz csz trh zhu zhu cbq cbq apn kzz csz trh apn apn cbq ytt ikj mrc apn uch cbq ytt uch cbq cbq mrc kzz mrc mrc cbq csz csz apn csz apn csz ikj csz kzz
+	CE after cut_ce:
+		kzz kzz ytt cbq uch zhu soh uch ytt uch apn cbq
+	CE after minimizing:
+		cbq apn cbq
+
+Calling CE-Distilation for the 4st time:
+	CE before minimizing:
+		trh apn csz cbq csz ytt uch zhu ikj ytt kzz trh cbq cbq csz mrc ikj zhu uch apn jcr zhu zhu kzz zhu jcr ikj cbq jcr trh zhu uch trh csz apn trh apn ytt soh cbq jcr ytt ikj apn mrc csz csz jcr ytt zhu soh apn apn uch apn cbq jcr cbq zhu csz mrc apn soh mrc mrc soh apn uch apn apn cbq ikj zhu mrc zhu ytt mrc ytt ikj uch csz soh csz uch jcr ytt mrc mrc kzz uch soh ytt soh mrc zhu apn mrc cbq soh soh ikj uch jcr uch kzz mrc mrc apn csz mrc soh ytt soh csz ytt mrc
+	CE after cut_ce:
+		trh apn csz cbq csz ytt uch zhu ikj
+	CE after minimizing:
+		csz csz ikj
+
+Calling CE-Distilation for the 5st time:
+	CE before minimizing:
+		uch kzz apn jcr uch jcr csz zhu zhu uch apn apn trh uch zhu apn kzz uch soh jcr csz zhu apn mrc ytt ytt trh ikj kzz mrc ytt mrc apn zhu ikj uch kzz uch mrc trh soh trh cbq ytt cbq apn csz trh zhu soh uch trh trh ytt trh kzz csz zhu soh ytt jcr ytt trh apn mrc jcr apn cbq kzz csz uch soh jcr ikj jcr apn ikj ytt apn uch kzz csz uch mrc kzz cbq apn apn soh kzz soh jcr mrc trh apn trh ikj ikj zhu jcr jcr kzz zhu jcr kzz kzz mrc ytt apn csz ytt
+	CE after cut_ce:
+		uch kzz apn jcr
+	CE after minimizing:
+		uch jcr
+
+Calling CE-Distilation for the 6st time:
+	CE before minimizing:
+		ikj csz soh jcr csz zhu zhu ikj mrc kzz soh mrc ikj jcr zhu jcr ytt apn jcr ikj jcr cbq apn uch apn uch ikj zhu jcr ytt ikj trh zhu jcr ytt ikj soh soh mrc zhu uch soh cbq jcr apn zhu soh csz soh cbq zhu kzz zhu trh cbq soh apn csz trh csz mrc trh csz mrc zhu zhu zhu apn soh apn zhu ytt csz kzz soh mrc ytt jcr ytt cbq cbq zhu ytt zhu ytt trh uch soh cbq jcr mrc trh trh mrc csz trh mrc apn mrc soh ikj apn uch zhu csz jcr cbq cbq jcr zhu soh uch apn csz ytt mrc jcr ikj trh csz uch mrc trh uch kzz jcr apn cbq zhu cbq jcr
+	CE after cut_ce:
+		ikj csz soh jcr csz zhu zhu ikj mrc kzz soh mrc ikj jcr
+	CE after minimizing:
+		jcr zhu zhu jcr
+
+Calling CE-Distilation for the 7st time:
+	CE before minimizing:
+		apn uch trh apn csz trh trh kzz trh ikj kzz jcr cbq csz trh jcr soh soh mrc zhu uch csz mrc apn mrc apn ikj zhu apn apn soh soh uch jcr uch ikj trh soh ytt ikj trh jcr ytt mrc jcr ikj ikj trh ytt jcr kzz apn trh apn mrc trh soh soh csz apn csz ytt soh ikj mrc trh uch csz soh kzz uch soh cbq csz ikj ytt mrc kzz trh trh mrc ytt uch csz soh ytt apn csz zhu uch jcr cbq apn apn kzz apn trh ikj mrc trh mrc jcr cbq kzz mrc kzz ikj apn uch csz trh jcr cbq uch jcr uch kzz kzz uch ikj ytt soh
+	CE after cut_ce:
+		apn uch trh apn csz trh trh kzz trh ikj kzz jcr cbq
+	CE after minimizing:
+		trh csz trh trh trh
+
+Calling CE-Distilation for the 8st time:
+	CE before minimizing:
+		soh kzz soh cbq jcr csz mrc apn soh cbq csz kzz mrc uch csz ikj kzz zhu mrc kzz mrc jcr zhu cbq zhu ikj apn csz mrc uch kzz ikj jcr cbq soh soh trh cbq kzz csz trh trh csz ikj ikj mrc soh uch trh soh apn soh apn zhu soh ytt csz mrc ytt ytt ikj trh trh cbq ytt ikj zhu ytt jcr soh kzz apn trh mrc zhu kzz soh kzz ikj uch mrc jcr mrc ikj ytt mrc kzz apn soh cbq kzz jcr mrc apn mrc zhu trh ikj cbq soh ikj ikj zhu kzz apn mrc mrc uch cbq apn kzz mrc cbq zhu ytt jcr csz apn cbq ytt apn ytt csz kzz ikj apn csz kzz ytt jcr kzz cbq jcr zhu uch csz ikj zhu apn kzz csz soh uch ytt jcr uch uch csz mrc uch zhu trh apn mrc cbq cbq mrc soh kzz uch uch soh zhu csz csz ytt jcr csz mrc csz apn jcr trh uch kzz jcr kzz apn ytt kzz mrc kzz uch zhu soh soh uch
+	CE after cut_ce:
+		soh kzz soh cbq jcr csz mrc apn soh cbq csz kzz
+	CE after minimizing:
+		kzz cbq csz apn cbq csz kzz
+
+Calling CE-Distilation for the 9st time:
+	CE before minimizing:
+		uch csz uch zhu apn mrc csz apn apn csz ytt zhu ikj soh csz ikj csz mrc mrc uch uch csz csz jcr trh trh ytt zhu cbq zhu apn jcr trh jcr ikj ikj apn apn apn zhu ytt jcr kzz soh mrc mrc csz zhu kzz apn uch trh apn kzz csz ikj zhu zhu apn cbq trh apn mrc zhu csz jcr soh csz trh csz csz uch csz apn csz zhu uch jcr uch trh jcr jcr ikj apn cbq soh uch kzz ikj mrc apn mrc ytt csz ytt zhu uch soh ikj ytt soh soh kzz soh ytt ytt kzz ytt uch trh ikj cbq soh ikj apn trh zhu trh kzz trh mrc cbq ytt mrc jcr jcr kzz cbq uch ytt uch jcr kzz apn csz ikj ikj zhu kzz trh mrc ytt zhu jcr ikj ytt uch zhu zhu trh trh trh csz ikj soh cbq mrc csz trh soh kzz jcr
+	CE after cut_ce:
+		uch csz uch zhu apn mrc csz apn apn csz ytt zhu ikj
+	CE after minimizing:
+		uch uch mrc
+
+Calling CE-Distilation for the 10st time:
+	CE before minimizing:
+		jcr ytt ikj ikj ikj csz csz zhu mrc ytt ytt mrc soh uch uch zhu ikj apn uch mrc trh zhu csz cbq ytt jcr uch trh ikj kzz jcr cbq csz zhu ikj kzz trh cbq soh soh uch kzz kzz jcr jcr mrc jcr trh cbq zhu jcr ikj apn ytt soh mrc ytt uch apn trh jcr zhu soh kzz soh ytt ikj mrc jcr cbq apn apn trh ytt jcr trh cbq kzz ikj apn csz trh apn mrc kzz cbq ytt ikj csz zhu jcr kzz zhu ytt trh soh trh trh cbq mrc uch trh mrc zhu jcr zhu uch soh csz ikj ytt csz trh ytt csz ytt zhu ytt kzz ikj mrc kzz ikj csz cbq ikj jcr soh jcr ikj mrc csz
+	CE aft
