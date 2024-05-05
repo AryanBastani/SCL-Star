@@ -5,6 +5,7 @@ import pydot
 import GenerateComponent as gc
 from itertools import product
 from string import ascii_lowercase
+import os, shutil
 
 class GenerateTest:
     def __init__(self):
@@ -52,6 +53,19 @@ class GenerateTest:
             
     def generateAllTests(self):
         self.generatePointTPoint()
+        self.alphabets = [''.join(i) for i in product(ascii_lowercase, repeat = 3)]
+        
+    def clearFolder(folder):
+        #folder = '/path/to/folder'
+        for filename in os.listdir(folder):
+            file_path = os.path.join(folder, filename)
+            try:
+                if os.path.isfile(file_path) or os.path.islink(file_path):
+                    os.unlink(file_path)
+                elif os.path.isdir(file_path):
+                    shutil.rmtree(file_path)
+            except Exception as e:
+                print('Failed to delete %s. Reason: %s' % (file_path, e))
         
             
              
