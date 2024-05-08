@@ -1,0 +1,9 @@
+Test-Generating/resources/Star/Component1.dot
+Test-Generating/resources/Star/Component2.dot
+Test-Generating/resources/Star/Component3.dot
+Test-Generating/resources/Star/Component4.dot
+Test-Generating/resources/Star/Component5.dot
+Test-Generating/resources/Star/Component6.dot
+Test-Generating/resources/Star/Component7.dot
+Test-Generating/resources/Star/Component8.dot
+Test-Generating/resources/Star/Component9.dot

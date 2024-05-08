@@ -1,0 +1,4 @@
+Test-Generating/resources/Bus/Component1.dot
+Test-Generating/resources/Bus/Component2.dot
+Test-Generating/resources/Bus/Component3.dot
+Test-Generating/resources/Bus/Component4.dot

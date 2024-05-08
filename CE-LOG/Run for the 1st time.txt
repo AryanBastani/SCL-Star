@@ -1,71 +1,38 @@
 Calling CE-Distilation for the 1st time:
 	CE before minimizing:
-		azi gix mpp wjr yxa enx oli wjr enx azi gix mpp gix azi wjr azi wjr azi oli oli yxa azi mpp wjr oli enx gix dbl dbl yxa foa dbl dbl oli gix dbl mpp dbl yxa mpp dbl yxa dbl wjr oli gix dbl foa wjr gix oli enx yxa oli oli dbl oli oli enx azi gix oli yxa wjr yxa azi oli azi azi oli mpp gix foa dbl wjr yxa oli azi enx gix foa oli enx foa azi oli enx enx gix oli oli foa enx dbl foa enx dbl yxa dbl azi azi mpp foa gix wjr mpp foa mpp yxa foa wjr mpp azi oli gix
+		qus pmy bgo luj qus luj bgo bgo pmy bgo luj pmy bgo bgo pmy lnn pmy bgo qus bgo lnn qus pmy luj luj pmy luj bgo luj bgo luj pmy pmy luj lnn lnn bgo bgo qus pmy lnn luj qus luj luj bgo pmy qus lnn bgo luj luj luj lnn pmy bgo qus luj bgo lnn luj qus pmy lnn luj qus qus lnn luj bgo qus bgo luj luj qus lnn luj bgo lnn qus luj pmy luj qus luj luj qus qus bgo lnn qus qus lnn pmy luj qus pmy pmy bgo pmy lnn luj pmy pmy qus qus pmy bgo luj qus lnn qus lnn luj lnn pmy lnn qus luj bgo pmy qus luj luj pmy pmy luj bgo luj bgo pmy pmy lnn bgo luj bgo bgo luj luj qus qus bgo lnn luj luj qus qus pmy luj bgo qus bgo luj luj qus pmy luj pmy qus qus lnn qus luj bgo lnn luj pmy qus lnn pmy bgo bgo qus pmy lnn bgo luj lnn
 	CE after cut_ce:
-		azi gix mpp wjr yxa enx
+		qus pmy bgo luj
 	CE after minimizing:
-		yxa enx
+		bgo luj
 
 Calling CE-Distilation for the 2st time:
 	CE before minimizing:
-		azi enx azi azi mpp foa dbl azi dbl yxa dbl mpp wjr azi yxa mpp wjr azi wjr dbl enx foa azi enx gix yxa mpp dbl foa dbl foa wjr gix enx foa gix oli dbl wjr wjr yxa foa wjr mpp oli mpp dbl oli oli dbl gix oli mpp oli yxa azi enx dbl enx yxa dbl yxa wjr wjr wjr gix gix azi azi dbl enx mpp oli wjr gix dbl dbl mpp wjr dbl wjr yxa yxa mpp azi dbl yxa oli azi mpp foa foa mpp enx foa gix azi mpp enx azi yxa azi wjr azi foa yxa gix foa azi foa azi enx dbl dbl dbl azi yxa foa gix dbl dbl azi mpp dbl wjr wjr dbl yxa foa foa wjr
+		pmy lnn bgo luj lnn lnn qus pmy qus luj luj pmy qus bgo luj bgo qus lnn pmy pmy luj pmy bgo luj qus qus bgo bgo pmy lnn luj pmy lnn qus qus bgo lnn lnn pmy luj pmy qus lnn pmy bgo qus qus luj qus pmy lnn pmy luj luj qus luj pmy pmy pmy bgo bgo lnn bgo pmy bgo pmy qus pmy lnn luj qus qus qus pmy pmy pmy qus bgo bgo pmy qus pmy luj luj pmy luj lnn bgo qus luj qus pmy pmy bgo pmy lnn lnn lnn qus qus qus luj pmy bgo lnn pmy qus bgo luj lnn pmy lnn bgo luj lnn pmy luj luj bgo pmy bgo luj pmy qus pmy pmy pmy pmy pmy pmy bgo luj luj qus luj lnn luj
 	CE after cut_ce:
-		azi enx azi azi mpp foa dbl
+		pmy lnn bgo luj lnn lnn qus
 	CE after minimizing:
-		foa dbl
+		bgo qus
 
 Calling CE-Distilation for the 3st time:
 	CE before minimizing:
-		enx foa wjr azi wjr gix enx enx dbl dbl oli gix yxa enx mpp oli gix oli foa foa wjr yxa dbl gix yxa dbl oli enx foa enx wjr foa dbl wjr foa wjr dbl gix gix gix enx wjr mpp enx mpp gix gix mpp mpp wjr wjr oli azi gix yxa wjr dbl yxa foa wjr wjr mpp dbl foa dbl gix yxa dbl yxa wjr gix azi dbl azi azi foa dbl azi dbl gix oli dbl mpp dbl foa mpp enx enx dbl mpp enx azi azi yxa oli azi azi mpp wjr foa wjr oli wjr mpp gix enx gix azi oli wjr foa gix mpp oli wjr foa wjr oli mpp dbl mpp gix wjr gix enx foa gix enx foa foa dbl azi dbl azi mpp yxa mpp foa dbl wjr oli oli mpp wjr yxa oli wjr wjr enx gix yxa enx wjr enx dbl mpp yxa wjr yxa gix foa enx gix wjr gix enx dbl wjr foa
+		bgo bgo qus luj luj qus lnn luj bgo lnn lnn lnn bgo pmy pmy luj lnn qus qus bgo luj qus pmy lnn luj luj luj luj bgo bgo luj qus bgo lnn luj lnn bgo luj luj lnn pmy lnn qus lnn luj luj luj pmy qus lnn luj pmy bgo bgo luj pmy pmy qus pmy lnn luj lnn qus bgo qus lnn pmy bgo lnn pmy pmy lnn pmy pmy bgo lnn luj qus qus pmy pmy pmy luj bgo bgo luj qus lnn lnn bgo luj pmy bgo luj qus bgo pmy qus luj pmy luj bgo qus bgo lnn bgo bgo bgo lnn bgo qus luj luj luj lnn luj lnn lnn bgo luj qus lnn
 	CE after cut_ce:
-		enx foa wjr azi
+		bgo bgo qus luj luj qus lnn
 	CE after minimizing:
-		wjr azi
+		bgo bgo lnn
 
 Calling CE-Distilation for the 4st time:
 	CE before minimizing:
-		enx wjr dbl foa azi mpp oli azi yxa dbl gix enx oli enx oli azi dbl dbl oli dbl yxa gix azi foa enx foa dbl enx azi enx foa foa wjr enx enx enx dbl oli azi foa azi dbl yxa oli wjr yxa dbl foa foa foa dbl gix yxa yxa gix mpp foa wjr dbl gix yxa azi dbl mpp azi dbl enx oli foa enx yxa enx mpp azi mpp oli wjr foa yxa mpp mpp gix foa mpp wjr gix azi enx oli dbl gix azi wjr dbl foa wjr gix azi azi enx dbl wjr wjr gix dbl azi mpp mpp enx foa foa dbl wjr azi dbl foa enx azi oli azi foa mpp gix enx enx enx wjr gix yxa enx oli mpp foa
+		luj qus luj luj luj qus luj qus lnn qus bgo bgo bgo lnn bgo bgo pmy lnn bgo lnn pmy pmy pmy lnn lnn luj pmy lnn bgo bgo pmy luj lnn luj qus pmy pmy lnn pmy pmy qus lnn luj lnn qus luj lnn pmy bgo lnn bgo lnn bgo luj lnn bgo qus bgo pmy pmy pmy lnn bgo bgo bgo qus bgo pmy pmy luj lnn qus lnn qus lnn luj bgo qus luj bgo luj qus bgo pmy bgo bgo luj pmy bgo luj lnn lnn lnn qus lnn pmy bgo pmy bgo bgo luj pmy bgo bgo lnn luj qus lnn luj qus qus lnn bgo lnn qus pmy lnn pmy bgo qus pmy luj luj lnn qus luj bgo bgo qus
 	CE after cut_ce:
-		enx wjr dbl foa azi mpp oli
+		luj qus luj luj luj qus luj qus lnn qus bgo bgo bgo lnn bgo bgo pmy
 	CE after minimizing:
-		wjr oli
-
-Calling CE-Distilation for the 5st time:
-	CE before minimizing:
-		foa foa azi yxa yxa enx dbl wjr dbl oli dbl azi dbl mpp enx foa azi azi dbl foa yxa foa mpp dbl foa foa foa foa mpp yxa enx enx oli oli yxa wjr mpp azi dbl dbl wjr azi azi mpp mpp enx enx azi enx enx yxa yxa gix wjr wjr foa wjr gix yxa azi yxa yxa mpp mpp azi foa mpp wjr azi oli azi mpp yxa wjr enx foa mpp foa wjr mpp oli yxa wjr enx azi gix azi gix mpp yxa foa dbl azi yxa enx gix enx gix azi enx mpp enx wjr mpp mpp foa enx foa azi yxa foa yxa wjr oli dbl mpp enx oli enx oli oli wjr yxa dbl oli gix mpp dbl foa yxa mpp wjr mpp azi foa yxa azi azi yxa enx enx azi oli wjr yxa foa gix mpp oli wjr yxa oli oli mpp
-	CE after cut_ce:
-		foa foa azi yxa yxa enx dbl wjr dbl oli
-	CE after minimizing:
-		foa foa wjr oli
-
-Calling CE-Distilation for the 6st time:
-	CE before minimizing:
-		yxa oli wjr wjr oli oli oli gix wjr gix azi enx azi oli enx yxa dbl wjr oli mpp enx azi wjr mpp mpp wjr gix oli mpp azi enx oli enx dbl azi foa azi yxa yxa dbl enx gix gix dbl mpp wjr wjr foa mpp oli azi azi mpp azi wjr dbl gix oli wjr oli dbl mpp foa dbl yxa wjr mpp yxa wjr foa dbl foa dbl dbl azi dbl azi gix foa dbl foa mpp mpp mpp foa azi oli oli dbl gix mpp oli enx yxa wjr oli wjr dbl gix dbl gix yxa yxa dbl dbl dbl mpp gix gix azi azi foa mpp azi oli gix enx yxa gix enx azi enx foa gix azi yxa gix dbl yxa enx oli dbl enx gix oli dbl oli wjr gix mpp oli mpp mpp gix dbl foa foa azi oli enx mpp dbl wjr oli yxa gix gix dbl azi yxa enx dbl foa enx azi oli yxa
-	CE after cut_ce:
-		yxa oli
-	CE after minimizing:
-		yxa oli
-
-Calling CE-Distilation for the 7st time:
-	CE before minimizing:
-		wjr oli foa foa yxa enx enx gix yxa dbl dbl mpp yxa wjr yxa enx mpp enx oli oli mpp wjr foa yxa mpp yxa wjr gix foa azi oli foa gix enx enx wjr yxa azi oli mpp foa gix enx gix mpp foa mpp foa oli yxa yxa mpp yxa dbl dbl dbl dbl gix oli dbl gix enx oli mpp enx dbl yxa foa foa foa enx azi dbl enx mpp wjr foa gix oli enx enx oli dbl oli dbl azi foa dbl mpp gix dbl azi mpp oli foa enx enx foa foa azi wjr oli oli gix dbl foa dbl enx mpp
-	CE after cut_ce:
-		wjr oli foa foa yxa enx enx gix yxa dbl dbl mpp yxa wjr yxa enx mpp enx oli oli mpp
-	CE after minimizing:
-		gix mpp mpp mpp
-
-Calling CE-Distilation for the 8st time:
-	CE before minimizing:
-		oli yxa wjr wjr foa yxa gix foa oli gix foa wjr mpp wjr gix wjr dbl gix gix dbl foa azi enx dbl gix dbl azi foa foa oli gix enx dbl foa mpp oli yxa foa yxa oli enx yxa gix mpp mpp wjr foa azi oli dbl wjr enx enx azi oli yxa oli dbl enx yxa mpp enx enx foa oli wjr foa dbl dbl gix yxa oli oli azi oli mpp gix oli gix enx yxa yxa mpp azi enx wjr enx azi enx azi dbl dbl wjr dbl yxa yxa enx wjr dbl foa mpp foa foa enx dbl foa mpp gix dbl dbl yxa yxa oli enx gix oli wjr yxa yxa yxa gix yxa wjr foa foa gix wjr gix mpp azi wjr gix yxa yxa yxa
-	CE after cut_ce:
-		oli yxa wjr wjr foa yxa gix foa oli
-	CE after minimizing:
-		oli yxa wjr wjr foa yxa gix foa oli
+		bgo bgo bgo bgo bgo pmy
 
 	The result:
-		  - component with 2 inputs: [enx, yxa]
-		  - component with 2 inputs: [dbl, foa]
-		  - component with 2 inputs: [azi, wjr]
-		  - component with 2 inputs: [mpp, gix]
-		  - component with 5 inputs: [oli, wjr, foa, yxa, gix]
-Sync Actions: [wjr, foa, yxa, gix]
+		  - component with 2 inputs: [luj, bgo]
+		  - component with 2 inputs: [qus, bgo]
+		  - component with 2 inputs: [lnn, bgo]
+		  - component with 2 inputs: [pmy, bgo]
+Sync Actions: [bgo]

@@ -1,0 +1,14 @@
+s0 -> s3 [label="bgo  /  1"];
+s0 -> s2 [label="luj  /  1"];
+s1 -> s4 [label="bgo  /  1"];
+s1 -> s2 [label="luj  /  0"];
+s2 -> s5 [label="bgo  /  1"];
+s2 -> s6 [label="luj  /  1"];
+s3 -> s6 [label="bgo  /  1"];
+s3 -> s4 [label="luj  /  0"];
+s4 -> s5 [label="bgo  /  1"];
+s4 -> s1 [label="luj  /  0"];
+s5 -> s5 [label="bgo  /  1"];
+s5 -> s5 [label="luj  /  0"];
+s6 -> s5 [label="bgo  /  1"];
+s6 -> s4 [label="luj  /  1"];

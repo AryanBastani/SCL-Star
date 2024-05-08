@@ -1,0 +1,12 @@
+s0 -> s5 [label="bgo  /  1"];
+s0 -> s4 [label="lnn  /  0"];
+s1 -> s2 [label="bgo  /  1"];
+s1 -> s4 [label="lnn  /  0"];
+s2 -> s4 [label="bgo  /  1"];
+s2 -> s5 [label="lnn  /  1"];
+s3 -> s2 [label="bgo  /  1"];
+s3 -> s1 [label="lnn  /  1"];
+s4 -> s5 [label="bgo  /  1"];
+s4 -> s1 [label="lnn  /  1"];
+s5 -> s3 [label="bgo  /  1"];
+s5 -> s1 [label="lnn  /  1"];

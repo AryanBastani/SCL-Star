@@ -1,8 +1,0 @@
-resources/Generated/Ring/Component1.dot
-resources/Generated/Ring/Component2.dot
-resources/Generated/Ring/Component3.dot
-resources/Generated/Ring/Component4.dot
-resources/Generated/Ring/Component5.dot
-resources/Generated/Ring/Component6.dot
-resources/Generated/Ring/Component7.dot
-resources/Generated/Ring/Component8.dot

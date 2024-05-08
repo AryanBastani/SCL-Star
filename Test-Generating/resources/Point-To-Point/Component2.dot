@@ -1,0 +1,14 @@
+s0 -> s5 [label="fcf  /  0"];
+s0 -> s4 [label="fcb  /  0"];
+s1 -> s1 [label="fcf  /  0"];
+s1 -> s1 [label="fcb  /  0"];
+s2 -> s2 [label="fcf  /  0"];
+s2 -> s2 [label="fcb  /  1"];
+s3 -> s1 [label="fcf  /  0"];
+s3 -> s4 [label="fcb  /  0"];
+s4 -> s0 [label="fcf  /  0"];
+s4 -> s3 [label="fcb  /  1"];
+s5 -> s2 [label="fcf  /  0"];
+s5 -> s5 [label="fcb  /  0"];
+s6 -> s1 [label="fcf  /  0"];
+s6 -> s5 [label="fcb  /  0"];

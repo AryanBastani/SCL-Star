@@ -35,19 +35,20 @@ class GenerateTest:
             
         for i in range(numOfComponents):
             self.componentCounter += 1
+            self.experimentInput += "Test-Generating/"
             unsynchActs = self.generateActs()
             numOfStates = random.randint(self.minStates, self.maxStates)
             
             componentGenerator = gc.ComponentGenerator(synchActions, synchOuts, unsynchActs, numOfStates)
             graphString = componentGenerator.generate()
 
-            currentFile = 'resources/Generated/' + type + \
+            currentFile = 'resources/' + type + \
                 '/Component' + str(self.componentCounter) + '.dot'
             self.writeIntoFile(currentFile, graphString)
             
             self.experimentInput += currentFile + '\n'
         
-        self.writeIntoFile('data/Generated/' + type + '.txt', self.experimentInput)
+        self.writeIntoFile('data/' + type + '.txt', self.experimentInput)
                 
     def writeIntoFile(self, file, content):
         with open(file, 'w') as writingfile:
@@ -142,7 +143,7 @@ class GenerateTest:
         
         
     def resetVars(self, type):
-        self.clearFolder('resources/Generated/' + type)
+        self.clearFolder('resources/' + type)
         self.alphabets = [''.join(i) for i in product(ascii_lowercase, repeat = 3)]
         self.experimentInput = ''
         self.componentCounter = 0  

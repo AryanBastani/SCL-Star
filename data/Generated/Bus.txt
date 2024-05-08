@@ -1,4 +1,0 @@
-resources/Generated/Bus/Component1.dot
-resources/Generated/Bus/Component2.dot
-resources/Generated/Bus/Component3.dot
-resources/Generated/Bus/Component4.dot

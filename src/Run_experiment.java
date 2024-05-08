@@ -114,20 +114,21 @@ public class Run_experiment {
                 System.out.println("\t1- Point-To-Point\n\t2- Mesh\n\t3- Star\n\t4- Ring");
                 System.out.println("\t5- Tree\n\t6- Bus\n\t7- Hybrid");
                 benckmarkId = myObj.nextLine();
+                file_path = "Test-Generating/data/";
                 if(benckmarkId.equals("1"))
-                    file_path = "data/Generated/Point-To-Point.txt";
+                    file_path += "Point-To-Point.txt";
                 else if(benckmarkId.equals("2"))
-                    file_path = "data/Generated/Mesh.txt";
+                    file_path += "Mesh.txt";
                 else if(benckmarkId.equals("3"))
-                    file_path = "data/Generated/Star.txt";
+                    file_path += "Star.txt";
                 else if(benckmarkId.equals("4"))
-                    file_path = "data/Generated/Ring.txt";
+                    file_path += "Ring.txt";
                 else if(benckmarkId.equals("5"))
-                    file_path = "data/Generated/Tree.txt";
+                    file_path += "Tree.txt";
                 else if(benckmarkId.equals("6"))
-                    file_path = "data/Generated/Bus.txt";
+                    file_path += "Bus.txt";
                 else
-                    file_path = "data/Generated/Hybrid.txt";
+                    file_path += "Hybrid.txt";
             }
             /*
             if (line.hasOption(SRC_DIR)) {
