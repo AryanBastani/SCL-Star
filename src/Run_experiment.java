@@ -95,7 +95,7 @@ public class Run_experiment {
 
             boolean isGenratedTests = false;
 
-            System.out.println("Please choose a benchmarck to run(Enter 1 or 2 or 3):");
+            System.out.println("Please choose a benchmarck to run(Enter 1 or 2 or ... or 5):");
             System.out.println("\t1- CL-Star-Benchmarks\n\t2- SmallTest-Benchmarks");
             System.out.println("\t3- Mealy-benchmarks\n\t4- Generated-Benchmarks");
 
@@ -108,6 +108,8 @@ public class Run_experiment {
                 file_path = "data/SmallTest_Benchmarks.txt";
             else if(benckmarkId.equals("3"))
                 file_path = "data/Mealy_Benchmarks.txt";
+            else if(benckmarkId.equals("4"))
+                file_path = "Real-Tests/data/Reals.txt";
             else{
                 isGenratedTests = true;
                 System.out.println("Please choose the type of generated-benchmark (Enter 1 or 2 or ... or 7):");
