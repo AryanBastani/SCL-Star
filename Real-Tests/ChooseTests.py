@@ -7,7 +7,7 @@ from string import ascii_lowercase
 import os, shutil
 
 COMPONENTS = [
-                 "4_1_BCS_MPW.dot", "4_2_BCS_APW.dot"
+                 "4_1_BCS_MPW.dot", "4_2_BCS_APW.dot",
                  "4_3_BCS_FP.dot", "4_5_BCS_LED_FP.dot",
                  "4_6_BCS_CLS.dot", "4_7_BCS_EM.dot",
                  "4_9_BCS_LED_CLS.dot", "4_10_BCS_LED_MPW.dot",
@@ -49,7 +49,7 @@ SYNCHS = [
             ]
          ]
 
-TESTS_FOLDER = "Real-Tests/resourses/"
+TESTS_FOLDER = "Real-Tests/resources/"
 
 numOfComponents = random.randint(2, 9)
 numOfSynchs = random.randint(1, min(int(numOfComponents/2), 4))

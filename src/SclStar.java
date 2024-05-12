@@ -120,8 +120,8 @@ public class SclStar {
                 for(Integer sj : states){
                     output_1 = hypothesis.getTransition(si, m).getOutput();
                     output_2 = hypothesis.getTransition(sj, m).getOutput();
-                    System.out.println("\t output1 = " + output_1);
-                    System.out.println("\t output2 = " + output_2 + '\n');
+                    //System.out.println("\t output1 = " + output_1);
+                    //System.out.println("\t output2 = " + output_2 + '\n');
                     if(!output_1.equals(output_2)){
                         syncToRemove.add(m);
                         isSync = false;

@@ -1,38 +1,11 @@
 Calling CE-Distilation for the 1st time:
 	CE before minimizing:
-		qus pmy lnn qus bgo lnn luj bgo pmy pmy bgo qus luj pmy bgo bgo bgo bgo luj qus bgo bgo lnn qus lnn bgo bgo luj qus luj pmy qus qus qus bgo lnn lnn qus qus luj luj pmy qus pmy luj pmy luj qus lnn qus qus luj bgo bgo qus luj lnn bgo lnn qus pmy qus qus luj pmy luj pmy lnn pmy bgo lnn luj lnn qus pmy lnn bgo pmy pmy bgo luj lnn luj bgo qus pmy lnn qus pmy pmy lnn qus pmy pmy qus pmy luj luj pmy lnn bgo bgo lnn qus qus qus pmy luj luj pmy luj pmy bgo luj luj lnn bgo pmy bgo bgo pmy luj luj luj lnn bgo luj luj lnn luj luj luj luj lnn qus bgo qus lnn luj qus bgo pmy bgo bgo bgo luj qus luj qus pmy qus lnn lnn bgo luj pmy luj qus lnn pmy pmy luj pmy
+		as_active_on as_active_off as_active_off as_active_on as_active_off as_active_on as_active_on as_active_off as_active_on as_active_off as_active_off as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_off as_active_off as_active_off as_active_on as_active_on as_active_off as_active_off as_active_on as_active_on as_active_off as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_off as_active_off as_active_off as_active_on as_active_off as_active_off as_active_on as_active_off as_active_off as_active_on as_active_on as_active_on as_active_off as_active_on as_active_on as_active_on as_active_on as_active_off as_active_on as_active_on as_active_off as_active_on as_active_on as_active_off as_active_off as_active_off as_active_on as_active_off as_active_off as_active_on as_active_off as_active_off as_active_on as_active_on as_active_off as_active_on as_active_on as_active_off as_active_on as_active_on as_active_off as_active_on as_active_on as_active_off as_active_off as_active_on as_active_on as_active_off as_active_off as_active_off as_active_on as_active_on as_active_off as_active_on as_active_off as_active_on as_active_on as_active_off as_active_off as_active_on as_active_on as_active_off as_active_off as_active_off as_active_off as_active_on as_active_on as_active_off as_active_on as_active_off as_active_off as_active_on as_active_on as_active_off as_active_on as_active_on as_active_off as_active_on as_active_off as_active_off as_active_off as_active_off as_active_on as_active_off as_active_on as_active_off as_active_on as_active_off as_active_off as_active_on as_active_off as_active_on as_active_on as_active_on as_active_off as_active_off as_active_on as_active_on as_active_on as_active_on as_active_on as_active_off as_active_off as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_off as_active_off as_active_off as_active_off as_active_off as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_off as_active_on as_active_on as_active_off as_active_on as_active_off as_active_on as_active_on as_active_on as_active_on as_active_on as_active_on as_active_off as_active_off as_active_on as_active_off as_active_on as_active_off as_active_off as_active_off as_active_off as_active_on as_active_on as_active_on as_active_on as_active_off as_active_off as_active_on as_active_off as_active_on as_active_off as_active_on as_active_off as_active_off
 	CE after cut_ce:
-		qus pmy lnn qus bgo lnn luj
+		as_active_on as_active_off
 	CE after minimizing:
-		bgo luj
-
-Calling CE-Distilation for the 2st time:
-	CE before minimizing:
-		lnn qus lnn bgo luj qus pmy bgo bgo qus lnn qus luj luj qus bgo bgo bgo lnn lnn lnn bgo luj bgo luj bgo luj luj lnn pmy pmy luj lnn lnn qus bgo pmy pmy bgo qus lnn pmy luj qus lnn bgo luj pmy bgo pmy lnn luj luj luj lnn luj bgo luj pmy pmy pmy qus lnn pmy bgo bgo qus bgo bgo qus bgo lnn luj luj pmy qus bgo bgo lnn qus bgo lnn pmy bgo lnn qus luj luj pmy qus luj pmy lnn luj luj bgo qus luj luj qus qus pmy lnn qus qus pmy qus qus bgo lnn pmy luj pmy lnn pmy lnn bgo pmy lnn qus qus qus bgo lnn pmy pmy pmy pmy qus lnn bgo qus qus qus pmy pmy bgo pmy luj luj luj bgo lnn pmy lnn luj bgo pmy luj luj bgo luj bgo lnn lnn pmy bgo lnn bgo pmy bgo pmy qus qus bgo lnn pmy pmy lnn pmy qus bgo lnn qus pmy luj pmy luj bgo lnn luj bgo
-	CE after cut_ce:
-		lnn qus lnn bgo luj qus
-	CE after minimizing:
-		qus bgo qus
-
-Calling CE-Distilation for the 3st time:
-	CE before minimizing:
-		bgo lnn luj lnn pmy qus lnn bgo luj pmy pmy bgo bgo pmy luj lnn pmy bgo pmy qus qus pmy pmy qus lnn bgo lnn lnn bgo qus bgo lnn qus qus pmy bgo luj pmy lnn pmy lnn bgo pmy pmy pmy qus bgo pmy luj bgo qus bgo qus bgo qus luj qus qus pmy lnn pmy pmy qus qus bgo lnn lnn pmy qus qus qus qus lnn lnn pmy luj luj luj qus bgo pmy bgo qus bgo pmy luj qus qus pmy pmy luj pmy pmy pmy luj qus luj bgo qus lnn luj luj qus bgo pmy bgo pmy luj lnn pmy lnn lnn bgo bgo pmy luj
-	CE after cut_ce:
-		bgo lnn
-	CE after minimizing:
-		bgo lnn
-
-Calling CE-Distilation for the 4st time:
-	CE before minimizing:
-		lnn lnn qus qus bgo pmy lnn lnn luj luj luj qus pmy lnn qus pmy lnn bgo bgo pmy luj qus lnn bgo lnn pmy pmy pmy bgo qus qus luj lnn bgo bgo pmy qus bgo qus lnn qus qus luj bgo qus luj pmy bgo luj luj qus bgo lnn pmy luj qus lnn qus lnn qus luj lnn bgo qus lnn pmy luj luj qus luj lnn pmy luj lnn pmy luj lnn bgo qus pmy luj pmy pmy lnn pmy lnn pmy qus qus luj qus lnn qus luj pmy luj qus lnn bgo bgo lnn luj luj qus pmy qus lnn lnn pmy bgo pmy bgo pmy qus luj lnn qus qus bgo luj qus bgo luj pmy qus lnn bgo lnn bgo luj luj luj pmy qus pmy lnn bgo bgo luj lnn lnn qus qus lnn bgo luj luj pmy pmy bgo bgo lnn luj bgo luj qus qus pmy luj bgo bgo qus lnn luj lnn luj pmy bgo qus
-	CE after cut_ce:
-		lnn lnn qus qus bgo pmy
-	CE after minimizing:
-		bgo pmy
+		as_active_on as_active_off
 
 	The result:
-		  - component with 2 inputs: [luj, bgo]
-		  - component with 2 inputs: [qus, bgo]
-		  - component with 2 inputs: [lnn, bgo]
-		  - component with 2 inputs: [pmy, bgo]
-Sync Actions: [bgo]
+		  - component with 2 inputs: [as_active_on, as_active_off]
+Sync Actions: []
