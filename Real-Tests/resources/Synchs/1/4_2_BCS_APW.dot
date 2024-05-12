@@ -29,7 +29,7 @@ digraph g {
 	s2 -> s2 [label="pw_pos_up  / 1"];
 	s2 -> s2 [label="pw_but_up  / 1"];
 	s2 -> s2 [label="pw_pos_dn  / 1"];
-	s2 -> s3 [label="pw_but_dn  /  pw_mv_dn"];
+	s2 -> s3 [label="pw_but_dn  /  1"];
 	s2 -> s2 [label="fp_on  / 1"];
 	s2 -> s0 [label="apw_stop  /  pw_inactivated"];
 	s2 -> s2 [label="receiveMsg  / 1"];
@@ -47,7 +47,7 @@ digraph g {
 	s4 -> s4 [label="pw_pos_up  / 1"];
 	s4 -> s6 [label="pw_but_up  /  pw_mv_up"];
 	s4 -> s4 [label="pw_pos_dn  / 1"];
-	s4 -> s3 [label="pw_but_dn  /  pw_mv_dn"];
+	s4 -> s3 [label="pw_but_dn  /  1"];
 	s4 -> s4 [label="fp_on  / 1"];
 	s4 -> s4 [label="apw_stop  / 1"];
 	s4 -> s4 [label="receiveMsg  / 1"];
@@ -65,7 +65,7 @@ digraph g {
 	s6 -> s2 [label="pw_pos_up  /  pw_mv_stop"];
 	s6 -> s6 [label="pw_but_up  / 1"];
 	s6 -> s6 [label="pw_pos_dn  / 1"];
-	s6 -> s4 [label="pw_but_dn  /  pw_mv_stop"];
+	s6 -> s4 [label="pw_but_dn  /  1"];
 	s6 -> s7 [label="fp_on  /  pw_mv_stop"];
 	s6 -> s6 [label="apw_stop  / 1"];
 	s6 -> s6 [label="receiveMsg  / 1"];

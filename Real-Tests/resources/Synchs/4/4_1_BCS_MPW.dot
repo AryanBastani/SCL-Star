@@ -57,7 +57,7 @@ digraph g {
 	s5 -> s5 [label="pw_but_up  /  pw_mv_up"];
 	s5 -> s5 [label="pw_pos_dn  / 1"];
 	s5 -> s3 [label="pw_but_dn  /  pw_mv_dn"];
-	s5 -> s6 [label="fp_on  /  pw_mv_stop"];
+	s5 -> s6 [label="fp_on  /  1"];
 	s5 -> s5 [label="m_pw_msg  / 1"];
 	s5 -> s5 [label="receiveMsg  / 1"];
 	s5 -> s5 [label="fp_off  / 1"];
@@ -69,7 +69,7 @@ digraph g {
 	s6 -> s6 [label="fp_on  / 1"];
 	s6 -> s6 [label="m_pw_msg  / 1"];
 	s6 -> s6 [label="receiveMsg  / 1"];
-	s6 -> s3 [label="fp_off  /  pw_mv_dn"];
+	s6 -> s3 [label="fp_off  /  1"];
 
 __start0 [label="" shape="none" width="0" height="0"];
 __start0 -> s0;
