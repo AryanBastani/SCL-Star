@@ -230,8 +230,7 @@ public class Run_experiment {
                 inputCounter++;
                 new File("Results/FSMs/CL-Star/For input" + inputCounter).mkdirs();
                 new File("Results/FSMs/SCL-Star/For input" + inputCounter).mkdirs();
-                if (benckmarkId.equals("1"))
-                    new File("Results/FSMs/L-Star/For input" + inputCounter).mkdirs();
+                new File("Results/FSMs/L-Star/For input" + inputCounter).mkdirs();
 
                     try {
                         FileWriter inputWriter = new FileWriter("Results/FSMs/INPUTs/input" + inputCounter + "txt");
@@ -428,8 +427,6 @@ public class Run_experiment {
             e.printStackTrace();
             return null;
         }
-        if(!benchmarkId.equals("1"))
-            return (sclResult);
         Experiment experiment = learningLStarM(alphabet, mealyss, mqOracle, eqOracle);
         CompactMealy<String, Word<String>> lStarResult = (CompactMealy<String, Word<String>>) experiment.getFinalHypothesis();
         if (test_mode){
