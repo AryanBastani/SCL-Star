@@ -1,0 +1,16 @@
+s0 -> s3 [label="dfc  /  0"];
+s0 -> s7 [label="ysi  /  0"];
+s1 -> s1 [label="dfc  /  0"];
+s1 -> s0 [label="ysi  /  1"];
+s2 -> s3 [label="dfc  /  0"];
+s2 -> s5 [label="ysi  /  0"];
+s3 -> s2 [label="dfc  /  0"];
+s3 -> s0 [label="ysi  /  0"];
+s4 -> s6 [label="dfc  /  0"];
+s4 -> s7 [label="ysi  /  1"];
+s5 -> s2 [label="dfc  /  0"];
+s5 -> s5 [label="ysi  /  0"];
+s6 -> s4 [label="dfc  /  0"];
+s6 -> s6 [label="ysi  /  1"];
+s7 -> s2 [label="dfc  /  0"];
+s7 -> s2 [label="ysi  /  1"];

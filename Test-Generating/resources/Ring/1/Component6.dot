@@ -1,0 +1,15 @@
+s0 -> s1 [label="iim  /  1"];
+s0 -> s4 [label="zqv  /  1"];
+s0 -> s2 [label="cax  /  0"];
+s1 -> s0 [label="iim  /  1"];
+s1 -> s4 [label="zqv  /  1"];
+s1 -> s1 [label="cax  /  1"];
+s2 -> s3 [label="iim  /  1"];
+s2 -> s4 [label="zqv  /  1"];
+s2 -> s0 [label="cax  /  0"];
+s3 -> s3 [label="iim  /  1"];
+s3 -> s2 [label="zqv  /  1"];
+s3 -> s3 [label="cax  /  0"];
+s4 -> s1 [label="iim  /  1"];
+s4 -> s4 [label="zqv  /  1"];
+s4 -> s2 [label="cax  /  1"];

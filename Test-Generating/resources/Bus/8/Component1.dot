@@ -1,0 +1,12 @@
+s0 -> s5 [label="ooy  /  0"];
+s0 -> s0 [label="ekx  /  1"];
+s1 -> s0 [label="ooy  /  0"];
+s1 -> s3 [label="ekx  /  0"];
+s2 -> s4 [label="ooy  /  0"];
+s2 -> s1 [label="ekx  /  1"];
+s3 -> s5 [label="ooy  /  0"];
+s3 -> s2 [label="ekx  /  1"];
+s4 -> s1 [label="ooy  /  0"];
+s4 -> s0 [label="ekx  /  0"];
+s5 -> s2 [label="ooy  /  0"];
+s5 -> s4 [label="ekx  /  1"];

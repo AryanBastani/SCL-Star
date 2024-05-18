@@ -1,0 +1,12 @@
+s0 -> s4 [label="pvc  /  1"];
+s0 -> s2 [label="rod  /  1"];
+s1 -> s4 [label="pvc  /  1"];
+s1 -> s5 [label="rod  /  0"];
+s2 -> s4 [label="pvc  /  1"];
+s2 -> s5 [label="rod  /  0"];
+s3 -> s4 [label="pvc  /  1"];
+s3 -> s4 [label="rod  /  0"];
+s4 -> s0 [label="pvc  /  1"];
+s4 -> s2 [label="rod  /  1"];
+s5 -> s3 [label="pvc  /  1"];
+s5 -> s1 [label="rod  /  1"];

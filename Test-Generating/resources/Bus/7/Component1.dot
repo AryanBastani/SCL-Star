@@ -1,0 +1,14 @@
+s0 -> s4 [label="qym  /  0"];
+s0 -> s4 [label="psk  /  1"];
+s1 -> s1 [label="qym  /  0"];
+s1 -> s6 [label="psk  /  1"];
+s2 -> s1 [label="qym  /  0"];
+s2 -> s2 [label="psk  /  1"];
+s3 -> s3 [label="qym  /  0"];
+s3 -> s6 [label="psk  /  0"];
+s4 -> s4 [label="qym  /  0"];
+s4 -> s6 [label="psk  /  0"];
+s5 -> s0 [label="qym  /  0"];
+s5 -> s5 [label="psk  /  0"];
+s6 -> s5 [label="qym  /  0"];
+s6 -> s4 [label="psk  /  1"];

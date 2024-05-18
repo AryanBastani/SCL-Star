@@ -1,0 +1,14 @@
+s0 -> s2 [label="fng  /  1"];
+s0 -> s2 [label="hwn  /  0"];
+s1 -> s5 [label="fng  /  1"];
+s1 -> s4 [label="hwn  /  0"];
+s2 -> s2 [label="fng  /  1"];
+s2 -> s4 [label="hwn  /  1"];
+s3 -> s0 [label="fng  /  1"];
+s3 -> s3 [label="hwn  /  1"];
+s4 -> s3 [label="fng  /  1"];
+s4 -> s3 [label="hwn  /  0"];
+s5 -> s1 [label="fng  /  1"];
+s5 -> s3 [label="hwn  /  0"];
+s6 -> s1 [label="fng  /  1"];
+s6 -> s2 [label="hwn  /  1"];

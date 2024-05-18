@@ -1,0 +1,10 @@
+s0 -> s3 [label="qjh  /  1"];
+s0 -> s3 [label="dny  /  1"];
+s1 -> s0 [label="qjh  /  1"];
+s1 -> s0 [label="dny  /  0"];
+s2 -> s0 [label="qjh  /  1"];
+s2 -> s0 [label="dny  /  0"];
+s3 -> s1 [label="qjh  /  1"];
+s3 -> s0 [label="dny  /  0"];
+s4 -> s2 [label="qjh  /  1"];
+s4 -> s3 [label="dny  /  1"];

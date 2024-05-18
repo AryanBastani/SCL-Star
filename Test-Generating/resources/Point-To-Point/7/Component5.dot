@@ -1,0 +1,16 @@
+s0 -> s6 [label="sxo  /  1"];
+s0 -> s7 [label="cyh  /  0"];
+s1 -> s2 [label="sxo  /  1"];
+s1 -> s4 [label="cyh  /  1"];
+s2 -> s7 [label="sxo  /  1"];
+s2 -> s4 [label="cyh  /  1"];
+s3 -> s7 [label="sxo  /  1"];
+s3 -> s2 [label="cyh  /  1"];
+s4 -> s4 [label="sxo  /  1"];
+s4 -> s2 [label="cyh  /  1"];
+s5 -> s0 [label="sxo  /  1"];
+s5 -> s4 [label="cyh  /  0"];
+s6 -> s4 [label="sxo  /  1"];
+s6 -> s0 [label="cyh  /  0"];
+s7 -> s5 [label="sxo  /  1"];
+s7 -> s7 [label="cyh  /  0"];

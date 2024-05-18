@@ -1,0 +1,16 @@
+s0 -> s3 [label="gyz  /  0"];
+s0 -> s3 [label="suk  /  1"];
+s1 -> s5 [label="gyz  /  0"];
+s1 -> s7 [label="suk  /  0"];
+s2 -> s0 [label="gyz  /  0"];
+s2 -> s1 [label="suk  /  1"];
+s3 -> s1 [label="gyz  /  0"];
+s3 -> s3 [label="suk  /  0"];
+s4 -> s7 [label="gyz  /  0"];
+s4 -> s5 [label="suk  /  0"];
+s5 -> s3 [label="gyz  /  0"];
+s5 -> s5 [label="suk  /  0"];
+s6 -> s4 [label="gyz  /  0"];
+s6 -> s7 [label="suk  /  1"];
+s7 -> s6 [label="gyz  /  0"];
+s7 -> s1 [label="suk  /  1"];

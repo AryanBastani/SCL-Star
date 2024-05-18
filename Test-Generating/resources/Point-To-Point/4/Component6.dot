@@ -1,0 +1,12 @@
+s0 -> s5 [label="yxv  /  1"];
+s0 -> s3 [label="oyh  /  0"];
+s1 -> s4 [label="yxv  /  1"];
+s1 -> s5 [label="oyh  /  0"];
+s2 -> s4 [label="yxv  /  1"];
+s2 -> s4 [label="oyh  /  1"];
+s3 -> s4 [label="yxv  /  1"];
+s3 -> s1 [label="oyh  /  1"];
+s4 -> s1 [label="yxv  /  1"];
+s4 -> s4 [label="oyh  /  1"];
+s5 -> s0 [label="yxv  /  1"];
+s5 -> s4 [label="oyh  /  1"];

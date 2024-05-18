@@ -1,0 +1,15 @@
+s0 -> s0 [label="ccn  /  0"];
+s0 -> s0 [label="pwj  /  1"];
+s0 -> s0 [label="eam  /  0"];
+s1 -> s1 [label="ccn  /  0"];
+s1 -> s0 [label="pwj  /  1"];
+s1 -> s3 [label="eam  /  1"];
+s2 -> s0 [label="ccn  /  0"];
+s2 -> s3 [label="pwj  /  1"];
+s2 -> s1 [label="eam  /  0"];
+s3 -> s3 [label="ccn  /  0"];
+s3 -> s2 [label="pwj  /  1"];
+s3 -> s1 [label="eam  /  1"];
+s4 -> s0 [label="ccn  /  0"];
+s4 -> s1 [label="pwj  /  1"];
+s4 -> s4 [label="eam  /  0"];

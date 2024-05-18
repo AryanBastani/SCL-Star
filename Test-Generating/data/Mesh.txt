@@ -1,5 +1,7 @@
-Test-Generating/resources/Mesh/Component1.dot
-Test-Generating/resources/Mesh/Component2.dot
-Test-Generating/resources/Mesh/Component3.dot
-Test-Generating/resources/Mesh/Component4.dot
-Test-Generating/resources/Mesh/Component5.dot
+Test-Generating/resources/Mesh/10/Component1.dot
+Test-Generating/resources/Mesh/10/Component2.dot
+Test-Generating/resources/Mesh/10/Component3.dot
+Test-Generating/resources/Mesh/10/Component4.dot
+Test-Generating/resources/Mesh/10/Component5.dot
+Test-Generating/resources/Mesh/10/Component6.dot
+Test-Generating/resources/Mesh/10/Component7.dot

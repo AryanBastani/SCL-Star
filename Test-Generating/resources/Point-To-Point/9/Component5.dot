@@ -1,0 +1,14 @@
+s0 -> s0 [label="cst  /  1"];
+s0 -> s5 [label="tso  /  1"];
+s1 -> s6 [label="cst  /  1"];
+s1 -> s1 [label="tso  /  1"];
+s2 -> s5 [label="cst  /  1"];
+s2 -> s1 [label="tso  /  0"];
+s3 -> s5 [label="cst  /  1"];
+s3 -> s6 [label="tso  /  0"];
+s4 -> s3 [label="cst  /  1"];
+s4 -> s1 [label="tso  /  1"];
+s5 -> s0 [label="cst  /  1"];
+s5 -> s3 [label="tso  /  0"];
+s6 -> s2 [label="cst  /  1"];
+s6 -> s2 [label="tso  /  1"];

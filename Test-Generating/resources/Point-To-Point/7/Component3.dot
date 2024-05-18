@@ -1,0 +1,12 @@
+s0 -> s0 [label="wbd  /  0"];
+s0 -> s4 [label="hnk  /  0"];
+s1 -> s0 [label="wbd  /  0"];
+s1 -> s1 [label="hnk  /  1"];
+s2 -> s0 [label="wbd  /  0"];
+s2 -> s0 [label="hnk  /  1"];
+s3 -> s0 [label="wbd  /  0"];
+s3 -> s2 [label="hnk  /  0"];
+s4 -> s0 [label="wbd  /  0"];
+s4 -> s1 [label="hnk  /  1"];
+s5 -> s0 [label="wbd  /  0"];
+s5 -> s1 [label="hnk  /  1"];

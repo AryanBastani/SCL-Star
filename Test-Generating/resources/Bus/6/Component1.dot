@@ -1,0 +1,10 @@
+s0 -> s4 [label="fbs  /  1"];
+s0 -> s1 [label="wro  /  1"];
+s1 -> s2 [label="fbs  /  1"];
+s1 -> s0 [label="wro  /  0"];
+s2 -> s0 [label="fbs  /  1"];
+s2 -> s1 [label="wro  /  1"];
+s3 -> s3 [label="fbs  /  1"];
+s3 -> s4 [label="wro  /  1"];
+s4 -> s1 [label="fbs  /  1"];
+s4 -> s3 [label="wro  /  1"];

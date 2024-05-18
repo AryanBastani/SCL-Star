@@ -1,0 +1,16 @@
+s0 -> s3 [label="iit  /  0"];
+s0 -> s4 [label="wwl  /  0"];
+s1 -> s7 [label="iit  /  0"];
+s1 -> s0 [label="wwl  /  1"];
+s2 -> s0 [label="iit  /  0"];
+s2 -> s5 [label="wwl  /  0"];
+s3 -> s4 [label="iit  /  0"];
+s3 -> s7 [label="wwl  /  0"];
+s4 -> s2 [label="iit  /  0"];
+s4 -> s3 [label="wwl  /  0"];
+s5 -> s2 [label="iit  /  0"];
+s5 -> s5 [label="wwl  /  0"];
+s6 -> s3 [label="iit  /  0"];
+s6 -> s5 [label="wwl  /  0"];
+s7 -> s1 [label="iit  /  0"];
+s7 -> s6 [label="wwl  /  0"];

@@ -1,0 +1,12 @@
+s0 -> s5 [label="uql  /  0"];
+s0 -> s3 [label="bqr  /  0"];
+s1 -> s4 [label="uql  /  0"];
+s1 -> s5 [label="bqr  /  0"];
+s2 -> s1 [label="uql  /  0"];
+s2 -> s4 [label="bqr  /  0"];
+s3 -> s1 [label="uql  /  0"];
+s3 -> s3 [label="bqr  /  1"];
+s4 -> s3 [label="uql  /  0"];
+s4 -> s5 [label="bqr  /  1"];
+s5 -> s5 [label="uql  /  0"];
+s5 -> s2 [label="bqr  /  0"];

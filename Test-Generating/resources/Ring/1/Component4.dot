@@ -1,0 +1,15 @@
+s0 -> s0 [label="lnb  /  0"];
+s0 -> s2 [label="nza  /  0"];
+s0 -> s2 [label="blw  /  0"];
+s1 -> s0 [label="lnb  /  0"];
+s1 -> s2 [label="nza  /  0"];
+s1 -> s3 [label="blw  /  1"];
+s2 -> s1 [label="lnb  /  0"];
+s2 -> s3 [label="nza  /  0"];
+s2 -> s1 [label="blw  /  0"];
+s3 -> s0 [label="lnb  /  0"];
+s3 -> s3 [label="nza  /  0"];
+s3 -> s3 [label="blw  /  0"];
+s4 -> s4 [label="lnb  /  0"];
+s4 -> s4 [label="nza  /  0"];
+s4 -> s1 [label="blw  /  0"];

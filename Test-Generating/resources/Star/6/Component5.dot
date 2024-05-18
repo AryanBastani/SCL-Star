@@ -1,0 +1,12 @@
+s0 -> s4 [label="pxv  /  1"];
+s0 -> s5 [label="czo  /  1"];
+s1 -> s4 [label="pxv  /  1"];
+s1 -> s5 [label="czo  /  0"];
+s2 -> s0 [label="pxv  /  1"];
+s2 -> s1 [label="czo  /  1"];
+s3 -> s0 [label="pxv  /  1"];
+s3 -> s5 [label="czo  /  1"];
+s4 -> s1 [label="pxv  /  1"];
+s4 -> s1 [label="czo  /  0"];
+s5 -> s3 [label="pxv  /  1"];
+s5 -> s3 [label="czo  /  0"];

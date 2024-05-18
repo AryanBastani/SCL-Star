@@ -1,0 +1,15 @@
+s0 -> s1 [label="tzb  /  0"];
+s0 -> s4 [label="kcy  /  0"];
+s0 -> s3 [label="gxd  /  0"];
+s1 -> s2 [label="tzb  /  0"];
+s1 -> s4 [label="kcy  /  0"];
+s1 -> s2 [label="gxd  /  1"];
+s2 -> s1 [label="tzb  /  0"];
+s2 -> s2 [label="kcy  /  0"];
+s2 -> s4 [label="gxd  /  1"];
+s3 -> s0 [label="tzb  /  0"];
+s3 -> s1 [label="kcy  /  0"];
+s3 -> s0 [label="gxd  /  0"];
+s4 -> s2 [label="tzb  /  0"];
+s4 -> s1 [label="kcy  /  0"];
+s4 -> s2 [label="gxd  /  0"];

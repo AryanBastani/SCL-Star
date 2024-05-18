@@ -1,0 +1,16 @@
+s0 -> s1 [label="uei  /  1"];
+s0 -> s0 [label="fjj  /  0"];
+s1 -> s0 [label="uei  /  1"];
+s1 -> s6 [label="fjj  /  0"];
+s2 -> s6 [label="uei  /  1"];
+s2 -> s6 [label="fjj  /  1"];
+s3 -> s2 [label="uei  /  1"];
+s3 -> s2 [label="fjj  /  1"];
+s4 -> s2 [label="uei  /  1"];
+s4 -> s4 [label="fjj  /  1"];
+s5 -> s3 [label="uei  /  1"];
+s5 -> s6 [label="fjj  /  1"];
+s6 -> s6 [label="uei  /  1"];
+s6 -> s7 [label="fjj  /  0"];
+s7 -> s1 [label="uei  /  1"];
+s7 -> s3 [label="fjj  /  1"];

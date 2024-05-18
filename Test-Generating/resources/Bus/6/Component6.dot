@@ -1,0 +1,14 @@
+s0 -> s4 [label="fbs  /  1"];
+s0 -> s4 [label="xmt  /  0"];
+s1 -> s1 [label="fbs  /  1"];
+s1 -> s1 [label="xmt  /  1"];
+s2 -> s5 [label="fbs  /  1"];
+s2 -> s6 [label="xmt  /  0"];
+s3 -> s1 [label="fbs  /  1"];
+s3 -> s1 [label="xmt  /  0"];
+s4 -> s2 [label="fbs  /  1"];
+s4 -> s0 [label="xmt  /  0"];
+s5 -> s3 [label="fbs  /  1"];
+s5 -> s0 [label="xmt  /  1"];
+s6 -> s6 [label="fbs  /  1"];
+s6 -> s2 [label="xmt  /  0"];

@@ -1,0 +1,12 @@
+s0 -> s0 [label="dfc  /  1"];
+s0 -> s0 [label="hfw  /  0"];
+s1 -> s1 [label="dfc  /  1"];
+s1 -> s0 [label="hfw  /  1"];
+s2 -> s5 [label="dfc  /  1"];
+s2 -> s2 [label="hfw  /  1"];
+s3 -> s3 [label="dfc  /  1"];
+s3 -> s0 [label="hfw  /  1"];
+s4 -> s3 [label="dfc  /  1"];
+s4 -> s4 [label="hfw  /  1"];
+s5 -> s5 [label="dfc  /  1"];
+s5 -> s1 [label="hfw  /  1"];

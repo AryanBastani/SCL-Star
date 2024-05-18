@@ -1,0 +1,16 @@
+s0 -> s2 [label="rwm  /  0"];
+s0 -> s6 [label="ouv  /  0"];
+s1 -> s1 [label="rwm  /  0"];
+s1 -> s5 [label="ouv  /  0"];
+s2 -> s6 [label="rwm  /  0"];
+s2 -> s3 [label="ouv  /  1"];
+s3 -> s0 [label="rwm  /  0"];
+s3 -> s0 [label="ouv  /  0"];
+s4 -> s3 [label="rwm  /  0"];
+s4 -> s1 [label="ouv  /  0"];
+s5 -> s3 [label="rwm  /  0"];
+s5 -> s7 [label="ouv  /  0"];
+s6 -> s2 [label="rwm  /  0"];
+s6 -> s3 [label="ouv  /  1"];
+s7 -> s7 [label="rwm  /  0"];
+s7 -> s4 [label="ouv  /  1"];

@@ -1,0 +1,16 @@
+s0 -> s1 [label="cst  /  1"];
+s0 -> s4 [label="niz  /  1"];
+s1 -> s7 [label="cst  /  1"];
+s1 -> s7 [label="niz  /  1"];
+s2 -> s1 [label="cst  /  1"];
+s2 -> s2 [label="niz  /  1"];
+s3 -> s6 [label="cst  /  1"];
+s3 -> s2 [label="niz  /  1"];
+s4 -> s5 [label="cst  /  1"];
+s4 -> s5 [label="niz  /  1"];
+s5 -> s0 [label="cst  /  1"];
+s5 -> s1 [label="niz  /  0"];
+s6 -> s7 [label="cst  /  1"];
+s6 -> s6 [label="niz  /  1"];
+s7 -> s1 [label="cst  /  1"];
+s7 -> s2 [label="niz  /  0"];

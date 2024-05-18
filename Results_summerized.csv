@@ -1,0 +1,9 @@
+,STATES,inputs,LSTAR_total_sym_median,LSTAR_total_sym_mean,LSTAR_total_sym_std,LSTAR_total_reset_median,LSTAR_total_reset_mean,LSTAR_total_reset_std,LSTAR_mq_sym_mean,LSTAR_mq_sym_std,LSTAR_mq_reset_mean,LSTAR_mq_reset_std,LSTAR_eq_sym_mean,LSTAR_eq_sym_std,LSTAR_eq_reset_mean,LSTAR_eq_reset_std,LSTAR_eqs,CLSTAR_total_sym_median,CLSTAR_total_sym_mean,CLSTAR_total_sym_std,CLSTAR_total_reset_median,CLSTAR_total_reset_mean,CLSTAR_total_reset_std,CLSTAR_mq_sym_mean,CLSTAR_mq_sym_std,CLSTAR_mq_reset_mean,CLSTAR_mq_reset_std,CLSTAR_eq_sym_mean,CLSTAR_eq_sym_std,CLSTAR_eq_reset_mean,CLSTAR_eq_reset_std,CLSTAR_eqs,CLSTAR_components,CLSTAR_rounds,CLSTAR_TOTAL_SYM_progress,CLSTAR_TOTAL_RST_progress,CLSTAR_MQ_SYM_progress,CLSTAR_MQ_RST_progress,CLSTAR_EQ_SYM_progress,CLSTAR_EQ_RST_progress,CLSTAR_TOTAL_SYM_pvalue,CLSTAR_TOTAL_RST_pvalue
+0,"(300, 600]",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1,"(600, 900]",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2,"(900, 1200]",23.0,4239851.5,4239796.333333333,795.097394453349,609931.0,609931.0,0.0,4164311.0,0.0,609431.0,0.0,75540.5,795.0973944534494,500.0,0.0,1.0,5936097.666666667,5930966.0,513090.2736652358,40240.5,40280.0,3435.9987776482117,9094.0,5238.432691814095,785.0,111.17313824241297,5918289.0,514317.15286763146,39390.5,3432.5085093363805,273.0,8.0,17.0,-39.887993047464796,93.39597429873216,99.7816205369868,99.8711913243665,-7734.59071623831,-7778.1,0.9997666515562502,8.591880104425544e-13
+3,"(1200, 1500]",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4,"(1500, 1800]",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+5,"(1800, 2100]",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+6,"(2100, 2400]",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+7,"(2400, 3840]",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

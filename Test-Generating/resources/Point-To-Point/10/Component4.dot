@@ -1,0 +1,14 @@
+s0 -> s6 [label="get  /  1"];
+s0 -> s6 [label="igq  /  1"];
+s1 -> s3 [label="get  /  1"];
+s1 -> s4 [label="igq  /  0"];
+s2 -> s5 [label="get  /  1"];
+s2 -> s0 [label="igq  /  1"];
+s3 -> s1 [label="get  /  1"];
+s3 -> s0 [label="igq  /  0"];
+s4 -> s5 [label="get  /  1"];
+s4 -> s1 [label="igq  /  0"];
+s5 -> s3 [label="get  /  1"];
+s5 -> s0 [label="igq  /  1"];
+s6 -> s3 [label="get  /  1"];
+s6 -> s3 [label="igq  /  1"];

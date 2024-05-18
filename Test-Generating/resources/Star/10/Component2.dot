@@ -1,0 +1,14 @@
+s0 -> s1 [label="dso  /  1"];
+s0 -> s1 [label="jei  /  1"];
+s1 -> s3 [label="dso  /  1"];
+s1 -> s4 [label="jei  /  1"];
+s2 -> s2 [label="dso  /  1"];
+s2 -> s5 [label="jei  /  1"];
+s3 -> s4 [label="dso  /  1"];
+s3 -> s5 [label="jei  /  0"];
+s4 -> s6 [label="dso  /  1"];
+s4 -> s6 [label="jei  /  1"];
+s5 -> s5 [label="dso  /  1"];
+s5 -> s4 [label="jei  /  1"];
+s6 -> s2 [label="dso  /  1"];
+s6 -> s2 [label="jei  /  1"];

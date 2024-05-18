@@ -1,0 +1,10 @@
+s0 -> s0 [label="eut  /  0"];
+s0 -> s3 [label="maj  /  0"];
+s1 -> s3 [label="eut  /  0"];
+s1 -> s0 [label="maj  /  0"];
+s2 -> s0 [label="eut  /  0"];
+s2 -> s2 [label="maj  /  1"];
+s3 -> s1 [label="eut  /  0"];
+s3 -> s4 [label="maj  /  0"];
+s4 -> s3 [label="eut  /  0"];
+s4 -> s4 [label="maj  /  0"];

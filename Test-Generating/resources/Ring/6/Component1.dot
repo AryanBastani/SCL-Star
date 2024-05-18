@@ -1,0 +1,15 @@
+s0 -> s1 [label="uoh  /  0"];
+s0 -> s0 [label="muv  /  0"];
+s0 -> s0 [label="wxx  /  0"];
+s1 -> s3 [label="uoh  /  0"];
+s1 -> s4 [label="muv  /  0"];
+s1 -> s4 [label="wxx  /  1"];
+s2 -> s3 [label="uoh  /  0"];
+s2 -> s4 [label="muv  /  0"];
+s2 -> s1 [label="wxx  /  1"];
+s3 -> s0 [label="uoh  /  0"];
+s3 -> s4 [label="muv  /  0"];
+s3 -> s2 [label="wxx  /  1"];
+s4 -> s1 [label="uoh  /  0"];
+s4 -> s2 [label="muv  /  0"];
+s4 -> s3 [label="wxx  /  1"];

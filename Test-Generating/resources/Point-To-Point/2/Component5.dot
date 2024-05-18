@@ -1,0 +1,12 @@
+s0 -> s0 [label="ybr  /  1"];
+s0 -> s2 [label="moy  /  1"];
+s1 -> s3 [label="ybr  /  1"];
+s1 -> s3 [label="moy  /  1"];
+s2 -> s5 [label="ybr  /  1"];
+s2 -> s5 [label="moy  /  0"];
+s3 -> s0 [label="ybr  /  1"];
+s3 -> s4 [label="moy  /  1"];
+s4 -> s3 [label="ybr  /  1"];
+s4 -> s3 [label="moy  /  0"];
+s5 -> s0 [label="ybr  /  1"];
+s5 -> s2 [label="moy  /  1"];

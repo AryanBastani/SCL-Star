@@ -1,0 +1,16 @@
+s0 -> s5 [label="qce  /  1"];
+s0 -> s2 [label="xxd  /  1"];
+s1 -> s3 [label="qce  /  1"];
+s1 -> s4 [label="xxd  /  1"];
+s2 -> s3 [label="qce  /  1"];
+s2 -> s1 [label="xxd  /  0"];
+s3 -> s5 [label="qce  /  1"];
+s3 -> s1 [label="xxd  /  1"];
+s4 -> s5 [label="qce  /  1"];
+s4 -> s4 [label="xxd  /  1"];
+s5 -> s4 [label="qce  /  1"];
+s5 -> s5 [label="xxd  /  0"];
+s6 -> s6 [label="qce  /  1"];
+s6 -> s1 [label="xxd  /  1"];
+s7 -> s6 [label="qce  /  1"];
+s7 -> s5 [label="xxd  /  0"];

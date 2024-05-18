@@ -1,6 +1,8 @@
-Test-Generating/resources/Point-To-Point/Component1.dot
-Test-Generating/resources/Point-To-Point/Component2.dot
-Test-Generating/resources/Point-To-Point/Component3.dot
-Test-Generating/resources/Point-To-Point/Component4.dot
-Test-Generating/resources/Point-To-Point/Component5.dot
-Test-Generating/resources/Point-To-Point/Component6.dot
+Test-Generating/resources/Point-To-Point/10/Component1.dot
+Test-Generating/resources/Point-To-Point/10/Component2.dot
+Test-Generating/resources/Point-To-Point/10/Component3.dot
+Test-Generating/resources/Point-To-Point/10/Component4.dot
+Test-Generating/resources/Point-To-Point/10/Component5.dot
+Test-Generating/resources/Point-To-Point/10/Component6.dot
+Test-Generating/resources/Point-To-Point/10/Component7.dot
+Test-Generating/resources/Point-To-Point/10/Component8.dot

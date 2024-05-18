@@ -1,0 +1,16 @@
+s0 -> s4 [label="fbs  /  1"];
+s0 -> s1 [label="xay  /  0"];
+s1 -> s0 [label="fbs  /  1"];
+s1 -> s6 [label="xay  /  0"];
+s2 -> s0 [label="fbs  /  1"];
+s2 -> s6 [label="xay  /  0"];
+s3 -> s0 [label="fbs  /  1"];
+s3 -> s7 [label="xay  /  1"];
+s4 -> s1 [label="fbs  /  1"];
+s4 -> s7 [label="xay  /  1"];
+s5 -> s1 [label="fbs  /  1"];
+s5 -> s4 [label="xay  /  0"];
+s6 -> s4 [label="fbs  /  1"];
+s6 -> s5 [label="xay  /  1"];
+s7 -> s5 [label="fbs  /  1"];
+s7 -> s4 [label="xay  /  0"];

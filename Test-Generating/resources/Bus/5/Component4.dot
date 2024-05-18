@@ -1,0 +1,12 @@
+s0 -> s4 [label="lxy  /  0"];
+s0 -> s5 [label="hne  /  1"];
+s1 -> s0 [label="lxy  /  0"];
+s1 -> s2 [label="hne  /  1"];
+s2 -> s5 [label="lxy  /  0"];
+s2 -> s2 [label="hne  /  1"];
+s3 -> s4 [label="lxy  /  0"];
+s3 -> s4 [label="hne  /  1"];
+s4 -> s1 [label="lxy  /  0"];
+s4 -> s5 [label="hne  /  1"];
+s5 -> s2 [label="lxy  /  0"];
+s5 -> s5 [label="hne  /  0"];

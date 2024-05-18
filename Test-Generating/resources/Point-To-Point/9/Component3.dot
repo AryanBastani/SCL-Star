@@ -1,0 +1,14 @@
+s0 -> s6 [label="qwo  /  1"];
+s0 -> s0 [label="cnj  /  1"];
+s1 -> s0 [label="qwo  /  1"];
+s1 -> s5 [label="cnj  /  1"];
+s2 -> s3 [label="qwo  /  1"];
+s2 -> s5 [label="cnj  /  1"];
+s3 -> s0 [label="qwo  /  1"];
+s3 -> s2 [label="cnj  /  1"];
+s4 -> s4 [label="qwo  /  1"];
+s4 -> s5 [label="cnj  /  0"];
+s5 -> s1 [label="qwo  /  1"];
+s5 -> s3 [label="cnj  /  1"];
+s6 -> s5 [label="qwo  /  1"];
+s6 -> s3 [label="cnj  /  1"];

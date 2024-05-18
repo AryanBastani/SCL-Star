@@ -1,0 +1,12 @@
+s0 -> s5 [label="zos  /  1"];
+s0 -> s3 [label="aee  /  0"];
+s1 -> s1 [label="zos  /  1"];
+s1 -> s1 [label="aee  /  0"];
+s2 -> s5 [label="zos  /  1"];
+s2 -> s5 [label="aee  /  1"];
+s3 -> s3 [label="zos  /  1"];
+s3 -> s0 [label="aee  /  0"];
+s4 -> s3 [label="zos  /  1"];
+s4 -> s3 [label="aee  /  1"];
+s5 -> s3 [label="zos  /  1"];
+s5 -> s0 [label="aee  /  0"];

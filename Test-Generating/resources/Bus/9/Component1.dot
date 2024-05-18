@@ -1,0 +1,12 @@
+s0 -> s0 [label="qrj  /  1"];
+s0 -> s3 [label="aod  /  1"];
+s1 -> s1 [label="qrj  /  1"];
+s1 -> s0 [label="aod  /  0"];
+s2 -> s5 [label="qrj  /  1"];
+s2 -> s1 [label="aod  /  0"];
+s3 -> s1 [label="qrj  /  1"];
+s3 -> s4 [label="aod  /  1"];
+s4 -> s5 [label="qrj  /  1"];
+s4 -> s2 [label="aod  /  0"];
+s5 -> s0 [label="qrj  /  1"];
+s5 -> s4 [label="aod  /  1"];

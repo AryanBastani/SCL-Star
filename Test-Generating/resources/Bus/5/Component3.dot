@@ -1,0 +1,14 @@
+s0 -> s5 [label="lxy  /  0"];
+s0 -> s4 [label="gxf  /  0"];
+s1 -> s0 [label="lxy  /  0"];
+s1 -> s6 [label="gxf  /  1"];
+s2 -> s5 [label="lxy  /  0"];
+s2 -> s5 [label="gxf  /  1"];
+s3 -> s4 [label="lxy  /  0"];
+s3 -> s4 [label="gxf  /  1"];
+s4 -> s4 [label="lxy  /  0"];
+s4 -> s3 [label="gxf  /  0"];
+s5 -> s4 [label="lxy  /  0"];
+s5 -> s3 [label="gxf  /  0"];
+s6 -> s6 [label="lxy  /  0"];
+s6 -> s5 [label="gxf  /  1"];

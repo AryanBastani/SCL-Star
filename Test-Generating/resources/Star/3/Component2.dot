@@ -1,0 +1,14 @@
+s0 -> s2 [label="sdq  /  1"];
+s0 -> s6 [label="lyp  /  1"];
+s1 -> s3 [label="sdq  /  1"];
+s1 -> s1 [label="lyp  /  1"];
+s2 -> s5 [label="sdq  /  1"];
+s2 -> s4 [label="lyp  /  1"];
+s3 -> s1 [label="sdq  /  1"];
+s3 -> s4 [label="lyp  /  0"];
+s4 -> s1 [label="sdq  /  1"];
+s4 -> s0 [label="lyp  /  1"];
+s5 -> s1 [label="sdq  /  1"];
+s5 -> s6 [label="lyp  /  1"];
+s6 -> s5 [label="sdq  /  1"];
+s6 -> s4 [label="lyp  /  1"];

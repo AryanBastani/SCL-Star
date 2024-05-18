@@ -1,0 +1,12 @@
+s0 -> s3 [label="sxo  /  1"];
+s0 -> s0 [label="jfu  /  0"];
+s1 -> s3 [label="sxo  /  1"];
+s1 -> s2 [label="jfu  /  0"];
+s2 -> s4 [label="sxo  /  1"];
+s2 -> s2 [label="jfu  /  0"];
+s3 -> s0 [label="sxo  /  1"];
+s3 -> s1 [label="jfu  /  0"];
+s4 -> s1 [label="sxo  /  1"];
+s4 -> s1 [label="jfu  /  0"];
+s5 -> s1 [label="sxo  /  1"];
+s5 -> s0 [label="jfu  /  1"];
