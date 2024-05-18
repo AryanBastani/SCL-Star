@@ -255,6 +255,7 @@ public class Run_experiment {
                         data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
 
                         Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
+                        learnProductMealy(target, alphabet, equivalence_method, final_check_mode, inputCounter, rep + 1);
 
                         //             RUN SCL*
                         @Nullable CompactMealy result = null;
@@ -312,7 +313,9 @@ public class Run_experiment {
                         alphabet = Alphabets.fromArray(alphArr);
                         data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
 
+                        //             RUN L*
                         Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
+                        learnProductMealy(target, alphabet, equivalence_method, final_check_mode, inputCounter, rep + 1);
 
                         //             RUN SCL*
                         @Nullable CompactMealy result = null;
@@ -427,27 +430,7 @@ public class Run_experiment {
             e.printStackTrace();
             return null;
         }
-        Experiment experiment = learningLStarM(alphabet, mealyss, mqOracle, eqOracle);
-        CompactMealy<String, Word<String>> lStarResult = (CompactMealy<String, Word<String>>) experiment.getFinalHypothesis();
-        if (test_mode){
-            @Nullable DefaultQuery<String, Word<Word<String>>> ce = testEqOracle.findCounterExample(lStarResult,alphabet);
-            if (ce!=null){
-                System.out.println();
-                System.out.println("************  incomplete lstar learning  **********");
-                System.out.println(data[csvProperties.getIndex(FILE_NAME)]);
-                System.out.println();
-            }
-        }
-        try {
-            FileWriter lWriter = new FileWriter("Results/FSMs/L-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
-            Utils.printMachine(lStarResult, false, lWriter);
-            lWriter.close();
-        }
-        catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-            return null;
-        }
+
 
 //        logger.info("Rounds: " + sclStar.getRound_counter().getCount());
 //        logger.info("#EQs: " + sclStar.getEq_counter().getCount());
@@ -473,7 +456,7 @@ public class Run_experiment {
         return sclResult;
     }
 
-    public static void learnProductMealy(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, boolean test_mode){
+    public static void learnProductMealy(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, boolean test_mode, int inCounter, int rep){
 
         Utils.getInstance();
         // SUL simulator
@@ -533,10 +516,19 @@ public class Run_experiment {
                 System.out.println();
             }
         }
+        try {
+            FileWriter lWriter = new FileWriter("Results/FSMs/L-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
+            Utils.printMachine(h, false, lWriter);
+            lWriter.close();
+        }
+        catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
 
 
 
-//        // learning statistics
+        // learning statistics
 //        logger.info("Rounds: " + experiment.getRounds().getCount());
 //        logger.info(mq_rst.getStatisticalData().toString());
 //        logger.info(mq_sym.getStatisticalData().toString());
@@ -556,7 +548,7 @@ public class Run_experiment {
 
 
         // profiling
-        //SimpleProfiler.logResults();
+        SimpleProfiler.logResults();
     }
 
     private static Experiment<MealyMachine<?, String,?, Word<String>>> learningLStarM(Alphabet<String> alphabet,
