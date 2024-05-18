@@ -401,16 +401,16 @@ public class Run_experiment {
 
             Utils.printMachine(sclResult, true, sclWriter);
             sclWriter.close();
-            
-            data[csvProperties.getIndex(LIP+ROUNDS)] = String.valueOf(sclStar.getRound_counter().getCount());
+
+            data[csvProperties.getIndex(SCLSTAR+ROUNDS)] = String.valueOf(sclStar.getRound_counter().getCount());
             data[csvProperties.getIndex(SCLSTAR+MQ_RST)] = Utils.ExtractValue(mq_rst.getStatisticalData().getSummary());
             data[csvProperties.getIndex(SCLSTAR+MQ_SYM)] = Utils.ExtractValue(mq_sym.getStatisticalData().getSummary());
             data[csvProperties.getIndex(SCLSTAR+EQ_RST)] = Utils.ExtractValue(eq_rst.getStatisticalData().getSummary());
             data[csvProperties.getIndex(SCLSTAR+EQ_SYM)] = Utils.ExtractValue(eq_sym.getStatisticalData().getSummary());
-            data[csvProperties.getIndex(LIP+EQs)] = String.valueOf(sclStar.getEq_counter().getCount());
+            data[csvProperties.getIndex(SCLSTAR+EQs)] = String.valueOf(sclStar.getEq_counter().getCount());
             data[csvProperties.getIndex(SCLSTAR+TOTAL_RST)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_rst.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_rst.getStatisticalData().getSummary())));
             data[csvProperties.getIndex(SCLSTAR+TOTAL_SYM)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_sym.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_sym.getStatisticalData().getSummary())));
-            data[csvProperties.getIndex(LIP+COMPONENTS)] = String.valueOf(sclStar.getSigmaFamily().size());
+            data[csvProperties.getIndex(SCLSTAR+COMPONENTS)] = String.valueOf(sclStar.getSigmaFamily().size());
         }
         catch (IOException e) {
             System.out.println("An error occurred.");
@@ -418,29 +418,29 @@ public class Run_experiment {
             return null;
         }
 
-        try {
-            FileWriter clWriter = new FileWriter("Results/FSMs/CL-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
-        ClStar Mealy_LIP = new ClStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
-        @Nullable CompactMealy clResult;
-        if (!test_mode ){
-            clResult = Mealy_LIP.run(eq_sym, null, clWriter);
-        }
-        else{
-//        create check eq oracle for random search
-//            SUL<String, Word<String>> testSul = new MealySimulatorSUL<>(mealyss, Utils.OMEGA_SYMBOL);
-//            MembershipOracle<String, Word<Word<String>>> testOracleForEQoracle = new SULOracle<>(testSul);
-//            EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle =
-//                    new WpMethodEQOracle<>(testOracleForEQoracle, 2);
-            clResult = Mealy_LIP.run(eq_sym, testEqOracle, clWriter);
-        }
-            Utils.printMachine(clResult, false, clWriter);
-            clWriter.close();
-        }
-        catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-            return null;
-        }
+//        try {
+//            FileWriter clWriter = new FileWriter("Results/FSMs/CL-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
+//        ClStar Mealy_LIP = new ClStar(alphabet, mqOracle, eqOracle, partialEqOracle, logger);
+//        @Nullable CompactMealy clResult;
+//        if (!test_mode ){
+//            clResult = Mealy_LIP.run(eq_sym, null, clWriter);
+//        }
+//        else{
+////        create check eq oracle for random search
+////            SUL<String, Word<String>> testSul = new MealySimulatorSUL<>(mealyss, Utils.OMEGA_SYMBOL);
+////            MembershipOracle<String, Word<Word<String>>> testOracleForEQoracle = new SULOracle<>(testSul);
+////            EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle =
+////                    new WpMethodEQOracle<>(testOracleForEQoracle, 2);
+//            clResult = Mealy_LIP.run(eq_sym, testEqOracle, clWriter);
+//        }
+//            Utils.printMachine(clResult, false, clWriter);
+//            clWriter.close();
+//        }
+//        catch (IOException e) {
+//            System.out.println("An error occurred.");
+//            e.printStackTrace();
+//            return null;
+//        }
 
 
 //        logger.info("Rounds: " + sclStar.getRound_counter().getCount());

@@ -1,3 +1,7 @@
 "FILE_NAME","STATES","INPUTS","LSTAR_MQ_SYM","LSTAR_MQ_RST","LSTAR_EQ_SYM","LSTAR_EQ_RST","LSTAR_TOTAL_SYM","LSTAR_TOTAL_RST","LSTAR_EQs","CLSTAR_MQ_SYM","CLSTAR_MQ_RST","CLSTAR_EQ_SYM","CLSTAR_EQ_RST","CLSTAR_TOTAL_SYM","CLSTAR_TOTAL_RST","CLSTAR_EQs","CLSTAR_COMPONENTS","CLSTAR_ROUNDS","CACHE"
-"Real-Tests/resources/4_18_BCS_LED_AS_Alarm.dot","1152","23","4164311","609431","74053","500","4238364","609931","1","13990","1289","7458870","49646","7472860","50935",,,,"true",
-"Real-Tests/resources/4_18_BCS_LED_AS_Alarm.dot","1152","23","4164311","609431","74297","500","4238608","609931","1","19016","1306","7672226","51140","7691242","52446",,,,"true",
+"Real-Tests/resources/4_18_BCS_LED_AS_Alarm.dot","1152","23","4164311","609431","76152","500","4240463","609931","1",,,,,,,,,,"true","8"
+"Real-Tests/resources/4_18_BCS_LED_AS_Alarm.dot","1152","23","4164311","609431","74818","500","4239129","609931","1",,,,,,,,,,"true","8"
+"Real-Tests/resources/4_18_BCS_LED_AS_Alarm.dot","1152","23","4164311","609431","75405","500","4239716","609931","1",,,,,,,,,,"true","8"
+"Real-Tests/resources/4_18_BCS_LED_AS_Alarm.dot","1152","23","4164311","609431","74564","500","4238875","609931","1",,,,,,,,,,"true","8"
+"Real-Tests/resources/4_18_BCS_LED_AS_Alarm.dot","1152","23","4164311","609431","75222","500","4239533","609931","1",,,,,,,,,,"true","8"
+"Real-Tests/resources/4_18_BCS_LED_AS_Alarm.dot","1152","23","4164311","609431","76070","500","4240381","609931","1",,,,,,,,,,"true","8"
