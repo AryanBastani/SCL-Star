@@ -50,6 +50,7 @@ public class Run_experiment {
     public static String INPUTS = "INPUTS";
     public static String LSTAR = "LSTAR";
     public static String LIP = "LIP";
+    public static String SCLSTAR = "SCLSTAR";
     public static String MQ_SYM = "_MQ_SYM";
     public static String MQ_RST = "_MQ_RST";
     public static String EQ_SYM = "_EQ_SYM";
@@ -400,6 +401,16 @@ public class Run_experiment {
 
             Utils.printMachine(sclResult, true, sclWriter);
             sclWriter.close();
+            
+            data[csvProperties.getIndex(LIP+ROUNDS)] = String.valueOf(sclStar.getRound_counter().getCount());
+            data[csvProperties.getIndex(SCLSTAR+MQ_RST)] = Utils.ExtractValue(mq_rst.getStatisticalData().getSummary());
+            data[csvProperties.getIndex(SCLSTAR+MQ_SYM)] = Utils.ExtractValue(mq_sym.getStatisticalData().getSummary());
+            data[csvProperties.getIndex(SCLSTAR+EQ_RST)] = Utils.ExtractValue(eq_rst.getStatisticalData().getSummary());
+            data[csvProperties.getIndex(SCLSTAR+EQ_SYM)] = Utils.ExtractValue(eq_sym.getStatisticalData().getSummary());
+            data[csvProperties.getIndex(LIP+EQs)] = String.valueOf(sclStar.getEq_counter().getCount());
+            data[csvProperties.getIndex(SCLSTAR+TOTAL_RST)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_rst.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_rst.getStatisticalData().getSummary())));
+            data[csvProperties.getIndex(SCLSTAR+TOTAL_SYM)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_sym.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_sym.getStatisticalData().getSummary())));
+            data[csvProperties.getIndex(LIP+COMPONENTS)] = String.valueOf(sclStar.getSigmaFamily().size());
         }
         catch (IOException e) {
             System.out.println("An error occurred.");
@@ -439,15 +450,7 @@ public class Run_experiment {
 //        logger.info(eq_rst.getStatisticalData().toString());
 //        logger.info(eq_sym.getStatisticalData().toString());
 //        // statistics array
-        //data[csvProperties.getIndex(LIP+ROUNDS)] = String.valueOf(sclStar.getRound_counter().getCount());
-        data[csvProperties.getIndex(LIP+MQ_RST)] = Utils.ExtractValue(mq_rst.getStatisticalData().getSummary());
-        data[csvProperties.getIndex(LIP+MQ_SYM)] = Utils.ExtractValue(mq_sym.getStatisticalData().getSummary());
-        data[csvProperties.getIndex(LIP+EQ_RST)] = Utils.ExtractValue(eq_rst.getStatisticalData().getSummary());
-        data[csvProperties.getIndex(LIP+EQ_SYM)] = Utils.ExtractValue(eq_sym.getStatisticalData().getSummary());
-        //data[csvProperties.getIndex(LIP+EQs)] = String.valueOf(sclStar.getEq_counter().getCount());
-        data[csvProperties.getIndex(LIP+TOTAL_RST)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_rst.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_rst.getStatisticalData().getSummary())));
-        data[csvProperties.getIndex(LIP+TOTAL_SYM)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_sym.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_sym.getStatisticalData().getSummary())));
-        //data[csvProperties.getIndex(LIP+COMPONENTS)] = String.valueOf(sclStar.getSigmaFamily().size());
+
         // learning statistics
 
 
