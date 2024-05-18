@@ -1,0 +1,23 @@
+## RandomWalkEQOracle parameters
+rndWalk_restartProbability=0.05
+rndWalk_maxSteps=1000
+rndWalk_resetStepCount=true
+rndWalk_big_maxSteps = 10000
+
+## RandomWordsEQOracle parameters
+# rndWords_minLength=20
+# rndWords_maxLength=100
+# rndWords_maxSteps=100
+
+# WMethodEQOracle-based parameters
+w_maxDepth=2
+
+# RandomWMethodQsizeEQOracle parameters
+weq_minLength=0
+weq_rndLength=4
+weq_maxTests=40000
+
+# RandomWMethodEQOracle parameters
+wrnd_minLength=0
+wrnd_rndLength=4
+wrnd_maxTests=40000

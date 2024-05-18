@@ -1,0 +1,5 @@
+Real-Tests/resources/Synchs/4_1_BCS_MPW.dot
+Real-Tests/resources/Synchs/4_5_BCS_LED_FP.dot
+Real-Tests/resources/Synchs/BCS_PW_4.dot
+Real-Tests/resources/4_17_BCS_LED_AS_Active.dot
+Real-Tests/resources/4_10_BCS_LED_MPW.dot

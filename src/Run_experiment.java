@@ -111,8 +111,9 @@ public class Run_experiment {
             else if(benckmarkId.equals("3"))
                 file_path = "data/Mealy_Benchmarks.txt";
             else if(benckmarkId.equals("4")) {
-                file_path = "Real-Tests/data/Reals.txt";
+                file_path = "data/Reals.txt";
                 isGenratedTests = true;
+                isNastedTests = true;
             }
             else{
                 isGenratedTests = true;
@@ -217,6 +218,7 @@ public class Run_experiment {
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
                     data = new String[dataLen];
                     data[csvProperties.getIndex(FILE_NAME)] = c;
+                    productMealy = null;
                     while (br2.ready()) {
                         c = br2.readLine();
                         CompactMealy<String, Word<String>> currentTarget;

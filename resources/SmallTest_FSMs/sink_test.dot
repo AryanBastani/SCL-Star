@@ -1,0 +1,22 @@
+digraph g {
+
+	 s0 [shape = "circle" label="s0"];
+	 s2 [shape = "circle" label="s2"];
+	 s3 [shape = "circle" label="s3"];
+	 s0 -> s0 [label="a / 0"];
+	 s0 -> s2 [label="b / 1"];
+	 s0 -> s3 [label="c / error"];
+	
+	 s2 -> s3 [label="a / error"];
+	 s2 -> s3 [label="b / error"];
+	 s2 -> s0 [label="c / 2"];
+
+	 s3 -> s3 [label="a / error"];
+	 s3 -> s3 [label="b / error"];
+	 s3 -> s3 [label="c / error"];
+	 
+__start0 [label="" shape="none" width="0" height="0"];
+		__start0 -> s0;
+
+}
+

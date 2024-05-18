@@ -1,0 +1,7 @@
+Real-Tests/resources/Synchs/4_6_BCS_CLS.dot
+Real-Tests/resources/Synchs/4_21_BCS_AS.dot
+Real-Tests/resources/Synchs/4_1_BCS_MPW.dot
+Real-Tests/resources/Synchs/4_5_BCS_LED_FP.dot
+Real-Tests/resources/4_20_MCS_LED_AS_IMA.dot
+Real-Tests/resources/4_17_BCS_LED_AS_Active.dot
+Real-Tests/resources/4_7_BCS_EM.dot
