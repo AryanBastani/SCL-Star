@@ -2,6 +2,8 @@
 /out/
 /bin/
 /logs/
+/Results/FSMs/
+CE-LOG/
 
 *.smt2
 .Rhistory
