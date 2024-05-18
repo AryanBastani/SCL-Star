@@ -1,18 +1,18 @@
 	The result:
-		  - component with 2 inputs: [em_pos_hor_right, em_pos_hor_pend]
 		  - component with 2 inputs: [em_pos_hor_left, em_pos_hor_pend]
+		  - component with 2 inputs: [em_pos_hor_right, em_pos_hor_pend]
 Sync Actions: [em_pos_hor_pend]
 
 SCL-Star Algorithm output:
-	s0 -> s1 [label="em_pos_hor_left  /  led_em_left_on" ];
+	s0 -> s1 [label="em_pos_hor_right  /  led_em_right_on" ];
 	s0 -> s0 [label="em_pos_hor_pend  /  led_em_left_off" ];
-	s0 -> s2 [label="em_pos_hor_right  /  led_em_right_on" ];
-	s1 -> s1 [label="em_pos_hor_left  /  1" ];
+	s0 -> s2 [label="em_pos_hor_left  /  led_em_left_on" ];
+	s1 -> s1 [label="em_pos_hor_right  /  1" ];
 	s1 -> s0 [label="em_pos_hor_pend  /  led_em_left_off" ];
-	s1 -> s3 [label="em_pos_hor_right  /  led_em_right_on" ];
-	s2 -> s3 [label="em_pos_hor_left  /  led_em_left_on" ];
+	s1 -> s3 [label="em_pos_hor_left  /  led_em_left_on" ];
+	s2 -> s3 [label="em_pos_hor_right  /  led_em_right_on" ];
 	s2 -> s0 [label="em_pos_hor_pend  /  led_em_left_off" ];
-	s2 -> s2 [label="em_pos_hor_right  /  1" ];
-	s3 -> s3 [label="em_pos_hor_left  /  1" ];
-	s3 -> s0 [label="em_pos_hor_pend  /  led_em_left_off" ];
+	s2 -> s2 [label="em_pos_hor_left  /  1" ];
 	s3 -> s3 [label="em_pos_hor_right  /  1" ];
+	s3 -> s0 [label="em_pos_hor_pend  /  led_em_left_off" ];
+	s3 -> s3 [label="em_pos_hor_left  /  1" ];

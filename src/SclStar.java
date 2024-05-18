@@ -5,6 +5,7 @@ import de.learnlib.api.oracle.EquivalenceOracle;
 import de.learnlib.api.query.DefaultQuery;
 import de.learnlib.api.statistic.StatisticSUL;
 import de.learnlib.filter.statistic.Counter;
+import de.learnlib.filter.statistic.oracle.CounterOracle;
 import de.learnlib.oracle.equivalence.WpMethodEQOracle;
 import de.learnlib.oracle.membership.SULOracle;
 import de.learnlib.util.Experiment;

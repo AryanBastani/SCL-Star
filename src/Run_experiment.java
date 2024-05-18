@@ -7,6 +7,7 @@ import de.learnlib.api.query.DefaultQuery;
 import de.learnlib.api.statistic.StatisticSUL;
 import de.learnlib.driver.util.MealySimulatorSUL;
 import de.learnlib.filter.cache.sul.SULCache;
+import de.learnlib.filter.statistic.oracle.CounterOracle;
 import de.learnlib.filter.statistic.sul.ResetCounterSUL;
 import de.learnlib.filter.statistic.sul.SymbolCounterSUL;
 import de.learnlib.oracle.equivalence.RandomWMethodEQOracle;
@@ -60,6 +61,8 @@ public class Run_experiment {
     public static String EQs = "_EQs";
     public static String COMPONENTS = "_COMPONENTS" ;
     public static String ROUNDS = "_ROUNDS";
+    public static String MEM_SHIP_COUNT = "_MQs";
+    public static String EQ_QUERY_COUNT = "_EQ_QUERY_COUNT";
     public static String CACHE = "CACHE";
     public static String[] data;
 
@@ -436,6 +439,7 @@ public class Run_experiment {
         }
 
         MembershipOracle<String, Word<Word<String>>> mqOracle = new SULOracle<String, Word<String>>(mq_sul);
+        CounterOracle membShipCounter = new CounterOracle(mqOracle, "MQ");
 
         //////////////////////////////////
         // Setup objects related to EQs //
@@ -457,6 +461,7 @@ public class Run_experiment {
         EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> partialEqOracle = null;
         partialEqOracle = buildEqOracle(eq_sul, partial_eq_method);
         eqOracle = buildEqOracle(eq_sul, eq_method);
+
         EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle = null;
         testEqOracle = buildEqOracle(eq_sul, "wp");
         @Nullable CompactMealy sclResult;
@@ -487,6 +492,7 @@ public class Run_experiment {
             data[csvProperties.getIndex(LIP+TOTAL_RST)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_rst.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_rst.getStatisticalData().getSummary())));
             data[csvProperties.getIndex(LIP+TOTAL_SYM)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_sym.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_sym.getStatisticalData().getSummary())));
             data[csvProperties.getIndex(LIP+COMPONENTS)] = String.valueOf(sclStar.getSigmaFamily().size());
+            data[csvProperties.getIndex(LIP+MEM_SHIP_COUNT)] = String.valueOf(membShipCounter.getCount());
         }
         catch (IOException e) {
             System.out.println("An error occurred.");
@@ -560,6 +566,7 @@ public class Run_experiment {
         }
 
         MembershipOracle<String, Word<Word<String>>> mqOracle = new SULOracle<String, Word<String>>(mq_sul);
+        CounterOracle membShipCounter = new CounterOracle(mqOracle, "MQ");
 
 
         //////////////////////////////////
@@ -623,7 +630,7 @@ public class Run_experiment {
         data[csvProperties.getIndex(LSTAR+EQs)] = String.valueOf(experiment.getRounds().getCount());
         data[csvProperties.getIndex(LSTAR+TOTAL_RST)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_rst.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_rst.getStatisticalData().getSummary())));
         data[csvProperties.getIndex(LSTAR+TOTAL_SYM)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_sym.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_sym.getStatisticalData().getSummary())));
-
+        //data[csvProperties.getIndex(LSTAR+MEM_SHIP_COUNT)] = String.valueOf(eq_sul.g);
 
 
         // profiling

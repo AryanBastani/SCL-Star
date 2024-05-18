@@ -47,10 +47,10 @@ public class CSVProperties {
         String [] hearder = new String[]{
                 "FILE_NAME", "STATES", "INPUTS",
                 "LSTAR_MQ_SYM", "LSTAR_MQ_RST", "LSTAR_EQ_SYM", "LSTAR_EQ_RST", "LSTAR_TOTAL_SYM",
-                "LSTAR_TOTAL_RST", "LSTAR_EQs",
+                "LSTAR_TOTAL_RST", "LSTAR_EQs", "LSTAR_MQs",
                 "CLSTAR_MQ_SYM", "CLSTAR_MQ_RST", "CLSTAR_EQ_SYM", "CLSTAR_EQ_RST",
                 "CLSTAR_TOTAL_SYM", "CLSTAR_TOTAL_RST", "CLSTAR_EQs", "CLSTAR_COMPONENTS",
-                "CLSTAR_ROUNDS", "CACHE"};
+                "CLSTAR_ROUNDS", "CLSTAR_MQs", "CACHE"};
         return hearder;
     }
 }
