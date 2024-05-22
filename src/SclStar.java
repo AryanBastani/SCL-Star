@@ -160,6 +160,7 @@ public class SclStar {
 
     //Equivalence-Query starts:
         ce = eqOracle.findCounterExample(hypothesis,alphabet);
+        eq_counter.increment();
     //Equivalence-Query ends!
     //MainLoop starts:
         try {
@@ -171,7 +172,6 @@ public class SclStar {
                 Word<String> minimalCe = ceDistillation(ce.getInput(), sigmaFamily, hypothesis, sync, myWriter);
                 counter++;
                 round_counter.increment();
-                eq_counter.increment();
                 post_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
 
                 //ProcessCE starts:
@@ -299,6 +299,7 @@ public class SclStar {
 
                 //Equivalence-Query starts:
                 ce = eqOracle.findCounterExample(hypothesis, alphabet);
+                eq_counter.increment();
                 //Equivalence-Query ends!
 
                 if (ce == null && testEqOracle != null) {

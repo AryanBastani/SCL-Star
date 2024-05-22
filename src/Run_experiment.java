@@ -467,7 +467,7 @@ public class Run_experiment {
         @Nullable CompactMealy sclResult;
         try {
         FileWriter sclWriter = new FileWriter("Results/FSMs/SCL-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
-        SclStar sclStar = new SclStar(alphabet, mqOracle, eqOracle, partialEqOracle);
+        SclStar sclStar = new SclStar(alphabet, membShipCounter, eqOracle, partialEqOracle);
         if (!test_mode ){
             sclResult = sclStar.run(mealyss, eq_sym, null, rep, sclWriter);
         }
@@ -591,7 +591,7 @@ public class Run_experiment {
         testEqOracle = buildEqOracle(eq_sul, "wp");
 
 
-        Experiment experiment = learningLStarM(alphabet, mealyss, mqOracle, eqOracle);
+        Experiment experiment = learningLStarM(alphabet, mealyss, membShipCounter, eqOracle);
         CompactMealy<String, Word<String>> h = (CompactMealy<String, Word<String>>) experiment.getFinalHypothesis();
         if (test_mode){
             @Nullable DefaultQuery<String, Word<Word<String>>> ce = testEqOracle.findCounterExample(h,alphabet);
@@ -630,7 +630,7 @@ public class Run_experiment {
         data[csvProperties.getIndex(LSTAR+EQs)] = String.valueOf(experiment.getRounds().getCount());
         data[csvProperties.getIndex(LSTAR+TOTAL_RST)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_rst.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_rst.getStatisticalData().getSummary())));
         data[csvProperties.getIndex(LSTAR+TOTAL_SYM)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_sym.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_sym.getStatisticalData().getSummary())));
-        //data[csvProperties.getIndex(LSTAR+MEM_SHIP_COUNT)] = String.valueOf(eq_sul.g);
+        data[csvProperties.getIndex(LSTAR+MEM_SHIP_COUNT)] = String.valueOf(membShipCounter.getCount());
 
 
         // profiling
