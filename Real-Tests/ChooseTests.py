@@ -53,39 +53,44 @@ SYNCHS: Final[list] = [
 TESTS_FOLDER = "Real-Tests/resources/"
 
 #numOfComponents = random.randint(2, 9)
-for numOfComponents in range(2, 10):
-    for repeat in range(4):
-        remaindedComponents = numOfComponents
-        numOfSynchs = random.randint(1, min(int(numOfComponents/2), 4))
-        curSynchs = copy.copy(SYNCHS)
-        curComponents = copy.copy(COMPONENTS)
-        chosen = ''
-        biggestSynch = 4
-        while(numOfSynchs):
-            if((2 * numOfSynchs) < biggestSynch):
-                curSynchs.pop(0)
-                biggestSynch = 0
-            currentSynchIndex = random.randint(0, len(curSynchs) - 1)
-            currentSynch = curSynchs[currentSynchIndex]
-            for component in currentSynch:
-                if(component in curComponents):
-                    curComponents.remove(component)
-                    chosen += TESTS_FOLDER + "Synchs/" + component + '\n'
-                    remaindedComponents-= 1
+for outerRepeat in range(200):
+    for numOfComponents in range(2, 11):
+        for repeat in range(5):
+            remaindedComponents = numOfComponents
+            numOfSynchs = random.randint(1, min(int(numOfComponents/2), 4))
+            curSynchs = copy.copy(SYNCHS)
+            curComponents = copy.copy(COMPONENTS)
+            chosen = ''
+            biggestSynch = 4
+            while(numOfSynchs):
+                if((2 * numOfSynchs) < biggestSynch):
+                    curSynchs.pop(0)
+                    biggestSynch = 0
+                currentSynchIndex = random.randint(0, len(curSynchs) - 1)
+                currentSynch = curSynchs[currentSynchIndex]
+                for component in currentSynch:
+                    if(component in curComponents):
+                        curComponents.remove(component)
+                        chosen += TESTS_FOLDER + "Synchs/" + component + '\n'
+                        remaindedComponents-= 1
 
-                    if biggestSynch != 0 and component in curSynchs[0]:
-                        biggestSynch -= 1
+                        if biggestSynch != 0 and component in curSynchs[0]:
+                            biggestSynch -= 1
 
-            curSynchs.remove(currentSynch)
+                curSynchs.remove(currentSynch)
 
-            numOfSynchs -= 1
-        while(remaindedComponents > 0):
-            componentIndex = random.randint(0, len(curComponents) - 1)
-            chosen += TESTS_FOLDER + curComponents[componentIndex] + '\n'
-            curComponents.pop(componentIndex)
-            remaindedComponents -= 1
+                numOfSynchs -= 1
+            while(remaindedComponents > 0):
+                componentIndex = random.randint(0, len(curComponents) - 1)
+                chosen += TESTS_FOLDER + curComponents[componentIndex] + '\n'
+                curComponents.pop(componentIndex)
+                remaindedComponents -= 1
 
-        with open('data/Reals_With_' + str(numOfComponents) + '_Components' + str(repeat + 1) + '.txt', 'w') as writingfile:
-                    writingfile.write(chosen)
-                    writingfile.close()
-    
+            outerInput = 'data/Reals.txt'
+            innerInput = 'data/Reals_With_' + str(numOfComponents) + '_Components' + str(outerRepeat + repeat + 1) + '.txt'
+            with open(outerInput, 'a') as writingfile:
+                writingfile.write('Real-Tests/' + innerInput + '\n')
+                writingfile.close()
+            with open( innerInput, 'w') as writingfile:
+                writingfile.write(chosen)
+                writingfile.close()

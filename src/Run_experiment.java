@@ -114,7 +114,7 @@ public class Run_experiment {
             else if(benckmarkId.equals("3"))
                 file_path = "data/Mealy_Benchmarks.txt";
             else if(benckmarkId.equals("4")) {
-                file_path = "data/Reals.txt";
+                file_path = "Real-Tests/data/Reals.txt";
                 isGenratedTests = true;
                 isNastedTests = true;
             }
@@ -241,10 +241,10 @@ public class Run_experiment {
                             productMealy = new ProductMealy(currentTarget);
                         } else productMealy.mergeFSMs(currentTarget);
                         size = productMealy.getMachine().getStates().size();
-                        if(size > 3840)
+                        if(size > 10000)
                             break;
                     }
-                    if(size <= 300 || size > 3840)
+                    if(size < 100 || size > 10000)
                         continue;
                     numOfTests++;
                     assert productMealy != null;

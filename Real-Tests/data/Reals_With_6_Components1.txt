@@ -1,6 +1,0 @@
-Real-Tests/resources/Synchs/4_12_BCS_LED_EMT.dot
-Real-Tests/resources/Synchs/4_14_BCS_LED_EMB.dot
-Real-Tests/resources/BCS_PW_4.dot
-Real-Tests/resources/4_10_BCS_LED_MPW.dot
-Real-Tests/resources/4_21_BCS_AS.dot
-Real-Tests/resources/4_16_BCS_LED_EMH.dot
