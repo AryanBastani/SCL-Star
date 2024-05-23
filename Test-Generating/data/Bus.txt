@@ -1,9 +1,0 @@
-Test-Generating/resources/Bus/10/Component1.dot
-Test-Generating/resources/Bus/10/Component2.dot
-Test-Generating/resources/Bus/10/Component3.dot
-Test-Generating/resources/Bus/10/Component4.dot
-Test-Generating/resources/Bus/10/Component5.dot
-Test-Generating/resources/Bus/10/Component6.dot
-Test-Generating/resources/Bus/10/Component7.dot
-Test-Generating/resources/Bus/10/Component8.dot
-Test-Generating/resources/Bus/10/Component9.dot

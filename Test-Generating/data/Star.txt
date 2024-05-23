@@ -1,6 +1,0 @@
-Test-Generating/resources/Star/10/Component1.dot
-Test-Generating/resources/Star/10/Component2.dot
-Test-Generating/resources/Star/10/Component3.dot
-Test-Generating/resources/Star/10/Component4.dot
-Test-Generating/resources/Star/10/Component5.dot
-Test-Generating/resources/Star/10/Component6.dot

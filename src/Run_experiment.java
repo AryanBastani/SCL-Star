@@ -126,23 +126,23 @@ public class Run_experiment {
                 benckmarkId = myObj.nextLine();
                 file_path = "Test-Generating/data/";
                 if(benckmarkId.equals("1"))
-                    file_path += "Point-To-Point.txt";
+                    file_path += "Point-To-Point-All-Tests.txt";
                 else if(benckmarkId.equals("2"))
-                    file_path += "Mesh.txt";
+                    file_path += "Mesh-All-Tests.txt";
                 else if(benckmarkId.equals("3"))
-                    file_path += "Star.txt";
+                    file_path += "Star-All-Tests.txt";
                 else if(benckmarkId.equals("4"))
-                    file_path += "Ring.txt";
+                    file_path += "Ring-All-Tests.txt";
                 else if(benckmarkId.equals("5"))
-                    file_path += "Tree.txt";
+                    file_path += "Tree-All-Tests.txt";
                 else if(benckmarkId.equals("6"))
-                    file_path += "Bus.txt";
+                    file_path += "Bus-All-Tests.txt";
                 else if(benckmarkId.equals("7"))
-                    file_path += "Hybrid.txt";
+                    file_path += "Hybrid-All-Tests.txt";
                 else{
                     file_path = "data/Generated_Benchmarks.txt";
-                    isNastedTests = true;
                 }
+                isNastedTests = true;
             }
             /*
             if (line.hasOption(SRC_DIR)) {
@@ -215,13 +215,15 @@ public class Run_experiment {
             new File("Results/FSMs/CL-Star").mkdirs();
 
             if(isGenratedTests && isNastedTests) {
-                while (br.ready()) {
+                int numOfTests = 0;
+                while (br.ready() && numOfTests <= 100) {
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
                     data = new String[dataLen];
                     data[csvProperties.getIndex(FILE_NAME)] = c;
                     productMealy = null;
+                    int size = 0;
                     while (br2.ready()) {
                         c = br2.readLine();
                         CompactMealy<String, Word<String>> currentTarget;
@@ -238,7 +240,13 @@ public class Run_experiment {
                         if (productMealy == null) {
                             productMealy = new ProductMealy(currentTarget);
                         } else productMealy.mergeFSMs(currentTarget);
+                        size = productMealy.getMachine().getStates().size();
+                        if(size > 3840)
+                            break;
                     }
+                    if(size <= 300 || size > 3840)
+                        continue;
+                    numOfTests++;
                     assert productMealy != null;
                     CompactMealy<String, Word<String>> target = productMealy.getMachine();
 
@@ -303,6 +311,7 @@ public class Run_experiment {
                     if (productMealy == null) {
                         productMealy = new ProductMealy(currentTarget);
                     } else productMealy.mergeFSMs(currentTarget);
+
                 }
                 assert productMealy != null;
                 CompactMealy<String, Word<String>> target = productMealy.getMachine();

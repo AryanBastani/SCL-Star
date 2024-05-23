@@ -4,16 +4,16 @@ from typing import Final
 import pydot
 import GenerateComponent as gc
 from itertools import product
-from string import ascii_lowercase
+from string import ascii_letters
 import os, shutil
 
 class GenerateTest:
     def __init__(self):
-        self.alphabets = [''.join(i) for i in product(ascii_lowercase, repeat = 3)]
+        self.alphabets = [''.join(i) for i in product(ascii_letters, repeat = 1)]
         self.numOfEachActs: Final[int] = 1
         self.minStates: Final[int] = 5
         self.maxStates: Final[int] = 9
-        self.minComponents: Final[int] = 4
+        self.minComponents: Final[int] = 2
         self.maxComponents: Final[int] = 9
         self.componentCounter = 0
         self.experimentInput = ''
@@ -32,7 +32,6 @@ class GenerateTest:
         self.TYPESFUNCS: Final[list] = [self.generatePointTPoint]
         
     def generateSynchComponents(self, synchActions, synchOuts, numOfComponents, type, testCounter):
-            
         for i in range(numOfComponents):
             self.componentCounter += 1
             self.experimentInput += "Test-Generating/"
@@ -48,10 +47,10 @@ class GenerateTest:
             
             self.experimentInput += currentFile + '\n'
         
-        self.writeIntoFile('data/' + type + '.txt', self.experimentInput)
+        self.writeIntoFile('data/' + type + '/' + str(testCounter) + '.txt', self.experimentInput)
                 
-    def writeIntoFile(self, file, content):
-        with open(file, 'w') as writingfile:
+    def writeIntoFile(self, file, content, writingType = 'w'):
+        with open(file, writingType) as writingfile:
             writingfile.write(content) 
             writingfile.close()   
 
@@ -67,15 +66,24 @@ class GenerateTest:
         
         return(acts)
     
+    def writeTheInput(self, testCounter, type):
+        self.writeIntoFile('data/' + type + '-All-Tests.txt',\
+            'Test-Generating/data/' + type + '/' + str(testCounter) + '.txt' + '\n', 'a')   
+    
     def generatePointTPoint(self, testCounter):
-        possibleNums = [4, 6, 8]
-        numOfComponents = random.randint(0, 2)
+        self.writeTheInput(testCounter, self.POINT_TO_POINT)
+        
+        possibleNums = [2, 4, 6, 8, 10]
+        numOfComponents = random.randint(0, 4)
+        
         for twoComponents in range(0, possibleNums[numOfComponents], 2):
             synchActs = self.generateActs()
             outSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)]
             self.generateSynchComponents(synchActs, outSynchs, 2, self.POINT_TO_POINT, testCounter)
             
     def generateMesh(self, testCounter):
+        self.writeTheInput(testCounter, self.MESH)
+        
         numOfComponents = random.randint(self.minComponents, self.maxComponents)
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
@@ -97,6 +105,8 @@ class GenerateTest:
             self.generateSynchComponents(synchsActs[component], outSynchs[component], 1, self.MESH, testCounter)
             
     def generateStar(self, testCounter):
+        self.writeTheInput(testCounter, self.STAR)
+        
         numOfComponents = random.randint(self.minComponents, self.maxComponents)
         centerSynchsActs = []
         centerOutSynchs = []
@@ -111,12 +121,16 @@ class GenerateTest:
         self.generateSynchComponents(centerSynchsActs, centerOutSynchs, 1, self.STAR, testCounter)
         
     def generateBus(self, testCounter):
+        self.writeTheInput(testCounter, self.BUS)
+        
         numOfComponents = random.randint(self.minComponents, self.maxComponents)
         currentSynchs = self.generateActs()
         currentOutSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)] 
         self.generateSynchComponents(currentSynchs, currentOutSynchs, numOfComponents, self.BUS, testCounter)
     
     def generateRing(self, testCounter):
+        self.writeTheInput(testCounter, self.RING)
+        
         numOfComponents = random.randint(self.minComponents, self.maxComponents)
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
@@ -144,12 +158,12 @@ class GenerateTest:
         
     def resetVars(self, type, testCounter):
         self.clearFolder('resources/' + type + '/' + str(testCounter))
-        self.alphabets = [''.join(i) for i in product(ascii_lowercase, repeat = 3)]
+        self.alphabets = [''.join(i) for i in product(ascii_letters, repeat = 1)]
         self.experimentInput = ''
         self.componentCounter = 0  
             
     def generateAllTests(self):
-        for i in range(10):
+        for i in range(5000):
             self.resetVars(self.POINT_TO_POINT, i+1)
             self.generatePointTPoint(i+1)
             
@@ -167,7 +181,10 @@ class GenerateTest:
         
         
     def clearFolder(self, folder):
+        if not os.path.isdir(folder):
+            os.makedirs(folder)
         for filename in os.listdir(folder):
+            
             file_path = os.path.join(folder, filename)
             try:
                 if os.path.isfile(file_path) or os.path.islink(file_path):
