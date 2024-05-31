@@ -70,7 +70,7 @@ public class Run_experiment {
     private static Boolean CACHE_ENABLE = true;
 
     private static String RESULTS_PATH;
-//    private static Logger logger;
+    //    private static Logger logger;
     private static CSVProperties csvProperties;
     private static Experimentproperties experimentProperties ;
     private static String benchmarks_base_dir;
@@ -196,7 +196,7 @@ public class Run_experiment {
 
             File inputFolder = new File("Results/FSMs/INPUTs");
             Utils.clearFolder(inputFolder);
-            new File("Results/FSMs/INPUTS").mkdirs();
+            new File("Results/FSMs/INPUTs/Components Log").mkdirs();
 
             int inputCounter = 0;
 
@@ -215,8 +215,9 @@ public class Run_experiment {
             new File("Results/FSMs/CL-Star").mkdirs();
 
             if(isGenratedTests && isNastedTests) {
-                int numOfTests = 0;
+                int numOfTests = 1;
                 while (br.ready() && numOfTests <= 100) {
+                    int componentsCount = 0;
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
@@ -225,27 +226,34 @@ public class Run_experiment {
                     productMealy = null;
                     int size = 0;
                     while (br2.ready()) {
-                        c = br2.readLine();
+                        componentsCount++;
+                        String c2 = br2.readLine();
                         CompactMealy<String, Word<String>> currentTarget;
-                        File file = new File(c);
+                        File file = new File(c2);
                         try {
                             currentTarget = Utils.getInstance().loadMealyMachineFromDot(file);
                         } catch (Exception e) {
                             System.out.println(file);
                             System.out.println("problem in loading file");
                             System.out.println(e.toString());
-                            System.out.println(c);
+                            System.out.println(c2);
                             continue;
                         }
                         if (productMealy == null) {
                             productMealy = new ProductMealy(currentTarget);
                         } else productMealy.mergeFSMs(currentTarget);
                         size = productMealy.getMachine().getStates().size();
-                        if(size > 10000)
+                        if(size > 30000)
                             break;
                     }
-                    if(size < 100 || size > 10000)
+                    if(size < 100) {
+                        System.out.println("This one is too small ");
                         continue;
+                    }
+                    else if(size > 30000) {
+                        System.out.println("This one is too big ");
+                        continue;
+                    }
                     numOfTests++;
                     assert productMealy != null;
                     CompactMealy<String, Word<String>> target = productMealy.getMachine();
@@ -259,6 +267,10 @@ public class Run_experiment {
                         FileWriter inputWriter = new FileWriter("Results/FSMs/INPUTs/input" + inputCounter + "txt");
                         Utils.printMachine(target, false, inputWriter);
                         inputWriter.close();
+
+                        FileWriter componentsWriter = new FileWriter( "Results/FSMs/INPUTs/Components Log/" + inputCounter + ".txt");
+                        componentsWriter.write(c);
+                        componentsWriter.close();
                     } catch (IOException e) {
                         System.out.println("An error occurred.");
                         e.printStackTrace();
@@ -475,19 +487,19 @@ public class Run_experiment {
         testEqOracle = buildEqOracle(eq_sul, "wp");
         @Nullable CompactMealy sclResult;
         try {
-        FileWriter sclWriter = new FileWriter("Results/FSMs/SCL-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
-        SclStar sclStar = new SclStar(alphabet, membShipCounter, eqOracle, partialEqOracle);
-        if (!test_mode ){
-            sclResult = sclStar.run(mealyss, eq_sym, null, rep, sclWriter);
-        }
-        else{
+            FileWriter sclWriter = new FileWriter("Results/FSMs/SCL-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
+            SclStar sclStar = new SclStar(alphabet, membShipCounter, eqOracle, partialEqOracle);
+            if (!test_mode ){
+                sclResult = sclStar.run(mealyss, eq_sym, null, rep, sclWriter);
+            }
+            else{
 //        create check eq oracle for random search
 //            SUL<String, Word<String>> testSul = new MealySimulatorSUL<>(mealyss, Utils.OMEGA_SYMBOL);
 //            MembershipOracle<String, Word<Word<String>>> testOracleForEQoracle = new SULOracle<>(testSul);
 //            EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle =
 //                    new WpMethodEQOracle<>(testOracleForEQoracle, 2);
-            sclResult = sclStar.run(mealyss, eq_sym, testEqOracle, rep, sclWriter);
-        }
+                sclResult = sclStar.run(mealyss, eq_sym, testEqOracle, rep, sclWriter);
+            }
 
             Utils.printMachine(sclResult, true, sclWriter);
             sclWriter.close();

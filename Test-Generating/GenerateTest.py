@@ -163,7 +163,7 @@ class GenerateTest:
         self.componentCounter = 0  
             
     def generateAllTests(self):
-        for i in range(5000):
+        for i in range(2000):
             self.resetVars(self.POINT_TO_POINT, i+1)
             self.generatePointTPoint(i+1)
             
