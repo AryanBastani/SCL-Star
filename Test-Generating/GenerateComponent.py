@@ -1,6 +1,7 @@
 import string
 import random
 from typing import Final
+from decimal import Decimal
 import pydot
 
 class ComponentGenerator:
@@ -11,11 +12,31 @@ class ComponentGenerator:
         self.numOfStates: Final[int] = numOfStates
         self.IsMinimum: Final[int] = 1
         self.IsNotMin: Final[int] = 0
-        self.transitions = [dict()] * numOfStates
+        self.transitions = [dict() for i in range(numOfStates)]
         self.graph = ''
         self.causeOfNotMin = ''
-        self.statesInputFlow = [0] * numOfStates
-    
+        self.isReachable = [False] * numOfStates
+
+    def expandBfsQueue(self, actions, u, queue):
+        for act in actions:
+            v = self.transitions[u][act][0]
+            if(not self.isReachable[v]):
+                self.isReachable[v] = True
+                queue.append(v)
+
+    def bfs(self, startState):
+        queue = []
+
+        self.isReachable[startState] = True
+        queue.append(startState)
+
+        while(len(queue) != 0):
+            u = queue.pop()
+            
+            self.expandBfsQueue(self.synchActions, u, queue)
+            self.expandBfsQueue(self.unsynchActs, u, queue)
+
+            
     def refactorGraph(self):
         shouldChangeState = random.randint(0, self.numOfStates - 1)
         
@@ -47,60 +68,46 @@ class ComponentGenerator:
         
         return(True)
     
-    def satisfyFlowForActs(self, acts, stateId):
-        for currentState in range(self.numOfStates):
-            for act in acts:
-                if(self.transitions[currentState][act][0] == stateId and currentState != stateId):
-                    self.statesInputFlow[stateId] += 1
-    
-    def satisfyInputFlow(self, stateId):
-        self.statesInputFlow[stateId] = 0
-        self.satisfyFlowForActs(self.unsynchActs, stateId)
-        self.satisfyFlowForActs(self.synchActions, stateId)
-
     
     def isEveryStateReachable(self):
-        for state in range(self.numOfStates):
-            self.satisfyInputFlow(state)
+        self.isReachable = [False] * self.numOfStates
+        self.bfs(0)
 
-        if(0 in self.statesInputFlow):
+        if(False in self.isReachable):
             return(False)
         else:
             return(True)
         
-    def findEnoughReachableState(self, sourceState, acts):
+    def findEnoughReachableState(self, sourceState, acts, stateId):
         for act in acts:
             sinkState = self.transitions[sourceState][act][0]
-            if(sourceState == sinkState):
-                return(sinkState, act)
-            elif(self.statesInputFlow[sinkState] > 1):
-                return(sinkState, act)
-        return(-1, -1)
+            self.transitions[sourceState][act][0] = stateId
+            numOfPrevReachables = self.isReachable.count(True)
+            self.isReachable = [False] * self.numOfStates
+            self.bfs(0)
+            if(self.isReachable.count(True) > numOfPrevReachables):
+                return(sinkState)
+            self.transitions[sourceState][act][0] = sinkState
+            self.bfs(0)
+        return(-1)
 
         
     def makeReachable(self, stateID):
-        sourceState = random.randint(0, self.numOfStates - 1)
-        enoughReachableState = -1
-        actToEnoughState = -1
-        while(True):
-            while(self.statesInputFlow[sourceState] == 0):
-                sourceState = random.randint(0, self.numOfStates - 1)
-
-            enoughReachableState, actToEnoughState = self.findEnoughReachableState(sourceState, self.synchActions)
-            if(enoughReachableState != -1):
+        for sourceState in range(self.numOfStates):
+            if(not self.isReachable[sourceState]):
+                continue
+            sinkState = self.findEnoughReachableState(sourceState, self.synchActions, stateID)
+            if(sinkState == -1):
+                sinkState = self.findEnoughReachableState(sourceState, self.unsynchActs, stateID)
+            if(sinkState != -1):
                 break
-            enoughReachableState, actToEnoughState = self.findEnoughReachableState(sourceState, self.unsynchActs)
-            if(enoughReachableState != -1):
-                break
+        assert sinkState != -1
             
-        self.statesInputFlow[enoughReachableState] -= 1
-        self.transitions[sourceState][actToEnoughState][0] = stateID
-        self.statesInputFlow[stateID] += 1
                 
 
     def makeStatesReachable(self):
         for stateId in range(self.numOfStates):
-            if(self.statesInputFlow[stateId] == 0):
+            if(not self.isReachable[stateId]):
                 self.makeReachable(stateId)
         
     def generateAll(self, isForTransitions):
@@ -118,12 +125,12 @@ class ComponentGenerator:
 
     def generate(self):
         self.generateAll(isForTransitions = True)
+        while(not self.isEveryStateReachable()):
+            self.generateAll(isForTransitions = True)
+        while(not self.isGraphMinimum()):       
+            self.refactorGraph()
         
-        while ((not self.isGraphMinimum()) or (not self.isEveryStateReachable())):
-            while(not self.isGraphMinimum()):       
-                self.refactorGraph()
-            while(not self.isEveryStateReachable()):
-                self.makeStatesReachable()
+        assert self.isEveryStateReachable()
             
         self.generateGraphStr()
         return(self.graph)
@@ -133,11 +140,9 @@ class ComponentGenerator:
             
     def generateLine(self, stateNum, action, actionOut):
         self.graph += 's' + str(stateNum) + ' -> '
-        self.graph += 's' + str(random.randint(0, self.numOfStates - 1))
+        self.graph += 's' + str(self.transitions[stateNum][action][0])
         self.graph += ' [label="' + action + '  /  ' + str(actionOut) + '"];\n'
         
     def generateGraphStr(self):
         self.generateAll(isForTransitions = False)
-
-
             

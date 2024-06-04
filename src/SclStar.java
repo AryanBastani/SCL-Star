@@ -167,6 +167,14 @@ public class SclStar {
             FileWriter myWriter = new FileWriter("CE-LOG/Run for the " + runCounter + "st time.txt");
             int counter = 1;
             while (ce != null) {
+                try {
+                    FileWriter componentsWriter = new FileWriter( "Results/Log.txt", true);
+                    componentsWriter.write(String.valueOf(counter) + "st in whileLoop\n");
+                    componentsWriter.close();
+                } catch (IOException e) {
+                    System.out.println("An error occurred.");
+                    e.printStackTrace();
+                }
                 System.out.println("***NEW TRY IN WHILE LOOP***\n");
                 myWriter.write("Calling CE-Distilation for the " + counter + "st time:\n");
                 Word<String> minimalCe = ceDistillation(ce.getInput(), sigmaFamily, hypothesis, sync, myWriter);
@@ -280,6 +288,14 @@ public class SclStar {
                     // The experiment will execute the main loop of active learning
                     Experiment.MealyExperiment<String, Word<String>> experiment =
                             new Experiment.MealyExperiment<String, Word<String>>(learner, partialEqOracle, sigmai);
+                    try {
+                        FileWriter componentsWriter = new FileWriter( "Results/Log.txt", true);
+                        componentsWriter.write("\tLearn the component " + sigmai.toString() + " using L-Star\n");
+                        componentsWriter.close();
+                    } catch (IOException e) {
+                        System.out.println("An error occurred.");
+                        e.printStackTrace();
+                    }
                     experiment.run();
 
                     // get learned model
@@ -311,6 +327,7 @@ public class SclStar {
                     }
                 }
                 pre_eq_sym = Long.parseLong(Utils.ExtractValue(eq_sym_counter.getStatisticalData().getSummary()));
+
             }
 
 

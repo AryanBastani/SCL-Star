@@ -1,1 +1,86 @@
 Calling CE-Distilation for the 1st time:
+	CE before minimizing:
+		i Z E A A x i i a N S i E Z Z S x a i d S a N E A E Z Z x N E E A a a x A S a S d N w N E w N w E d a i N w a a w a a w N N S N d A x x x i S N Z A S x S x a i E E x x A E w N Z w d Z w Z w i A Z N E d N i x d i a w w E N S A N a A a d x A E A w Z S Z S A E a x Z S E i i a i i Z N N a x S N a E E d w A A d E E A A d E d N Z A Z S x x a a i E a E E w E d Z x x x d A E S S i a N d x x a i N
+	CE after cut_ce:
+		i Z E A A x i i a N S
+	CE after minimizing:
+		A A S
+
+Calling CE-Distilation for the 2st time:
+	CE before minimizing:
+		A N S A N E i i i x w A Z x E x x E d E x w A a E d Z a w x w A E S a Z d N A w w S a N x E x x A d a E x w d i A Z N Z Z d d w S x Z a Z w Z x Z E Z d x i Z N w d d E N i S S S Z d i Z S Z a i S a i N a a S A Z w x x a S a E E x d i a S x E A x a E N x S w d w Z N S a d S a S N E N E N a N i A S d A a a A a x a i w d A a N N a w S i a i i Z S w Z A N x a x x N Z a S a A d N E E
+	CE after cut_ce:
+		A N S
+	CE after minimizing:
+		A N S
+
+Calling CE-Distilation for the 3st time:
+	CE before minimizing:
+		i i x i d x A A Z E S S d d Z x A x E A x S a N w A A E i S w w N Z A N E S Z S a A E w S E i x d d d w Z d i a Z S E x S w S w d N x E i a N a d d w A S a Z a d N d d d Z E N A a w w i S N E N A d x i a N S A i a i Z Z d w S N x x E S Z Z S Z w A x A d w E E S S
+	CE after cut_ce:
+		i i x i d x A A Z E S S d d Z x A x E A x S a N w A A E i
+	CE after minimizing:
+		x x Z E Z x x E x E
+
+Calling CE-Distilation for the 4st time:
+	CE before minimizing:
+		i a a i Z x S A i Z x A i A S A x w w i A N E A N d Z a N Z E N w Z N i a d N E N a i Z E i S w w i A a Z w a A N x a Z N w w w S x w N Z a x A N x A S a S x w N x a Z Z S a d E d S N i Z a S a N S S N x Z E E x S N A a d S d i Z N Z Z Z i A d x Z A Z Z i A x A S N w Z x N w E i S x a w d x N x w N S S i E N E S E S w E i a N x a a E A a i a Z E
+	CE after cut_ce:
+		i a a i Z x S A i Z x
+	CE after minimizing:
+		Z x A Z x
+
+Calling CE-Distilation for the 5st time:
+	CE before minimizing:
+		A S d x a w a S i E x S w d x w Z E N S x A Z i N w E Z Z E N S a i x S w d E S A E i d d a i N Z i a w d Z E w S w E Z x x Z S a x i d S i E a N w x d i d N S i E d A w S i N i A E a S S Z x Z d Z x x N x S d d Z Z w i a i x Z Z d x w E w w d i a i Z w S a Z S Z S i Z i i i E S Z w x E A w Z N a N E i a x i Z E E N x Z x x A
+	CE after cut_ce:
+		A S d x a w a
+	CE after minimizing:
+		d a a
+
+Calling CE-Distilation for the 6st time:
+	CE before minimizing:
+		w d d N i d a A a w a E E d w a d i Z A x S d Z i A w N E x w S S Z E a Z Z w w N Z E a S d E S N E N d Z S x Z A A A A i a w E E Z S N A i Z Z i A d E x E E Z i E i x d S Z Z A Z w d N A S x N A S N a w x d A N S a w
+	CE after cut_ce:
+		w d d N i d a A a w a E E d w a
+	CE after minimizing:
+		d d d a a a E E d a
+
+Calling CE-Distilation for the 7st time:
+	CE before minimizing:
+		a a N S A Z d x A S E a S N A Z i x a d S a A i Z x w Z Z A S Z a Z N A E Z x E x w x N d S a S Z Z A A A x x Z d A E w Z w S d a a E a E S S w E S A a w i w a x Z x S a i N x S d a A N d a N w x d d a a N d x E A w N i Z A Z E i E A a d S a S x w N i A N w Z i a S A i w E E A a a d N A S i A S Z x a w i d i N x E d i E d d A a E d N x Z A x S N w x N x
+	CE after cut_ce:
+		a a N S A Z d x A S E a S N A Z i x a d S a A i Z x w Z Z A S Z a Z N A E Z x E x w x N d S a S Z Z A A A x x Z d A E w Z w S d a
+	CE after minimizing:
+		a a d E a a d a w a E E w d a d E w w d a
+
+Calling CE-Distilation for the 8st time:
+	CE before minimizing:
+		Z Z d i E N i Z A i w x Z A i N E i a Z w A E i d A Z w E A N N d N a A N E A d x S A Z a x N a A S w w E Z Z d d Z x Z A E d S Z a N E i Z A a x d w d i S w A w x A w S N x E A i w i A w S Z i S d E S S x a A w x Z x a a Z
+	CE after cut_ce:
+		Z Z d i E N i
+	CE after minimizing:
+		d i N i
+
+Calling CE-Distilation for the 9st time:
+	CE before minimizing:
+		a S S E w i x w x S w d a S E x E Z d a d N A E w N a S E d Z x a N x N S S E i E A a a w d A S E E x S A Z A Z i E i N S d E N w Z N S d Z N A w a w x S S E S E x x Z i A w N x A A Z i x d N Z x d w d w w E S E d a A x A S x d Z S d w w E a w x x S x x A w a w a N Z E E S A a d i S N w Z d i x A E Z a w a E i Z x w i w w i d A a w
+	CE after cut_ce:
+		a S S E w i x w x S
+	CE after minimizing:
+		S S w w S
+
+Calling CE-Distilation for the 10st time:
+	CE before minimizing:
+		A N x A x a N x i A x x Z w S w N d d i w S Z E Z x x d A S E E S x N a d E w i w i A A Z E a w w S A x S S i S a x d i i x i Z i i S i i i d N S Z N A i a S d A i N a Z x N x N A w x Z x E S w A E x d w a A E Z a E N E A E i w i w d a w N S a N S i S i N Z A a S a N i a x w S d S Z i Z N d i x E x a i x i d S S x a i d S S S
+	CE after cut_ce:
+		A N x A x a N x i A x x Z w S w N d d i w S Z E Z x x d A S E E S x N a d E w i w i A A Z E a w w S A x S S i S a x d i i x i Z i i S i i i d N S Z N A i a S d A i N a Z x N x N A w x Z x E S w A E x d w a A E Z a E N E A E i w i w d a w N S a N S i S i N Z A a S a N i
+	CE after minimizing:
+		N N i Z N d d i Z Z d N d i i Z i d i i i Z i i i i i d N Z N i d i N Z N N Z d Z N i i d N N i i N Z N i
+
+	The result:
+		  - component with 4 inputs: [x, E, Z, A]
+		  - component with 4 inputs: [a, d, E, w]
+		  - component with 4 inputs: [S, A, N, w]
+		  - component with 4 inputs: [i, d, N, Z]
+Sync Actions: [E, Z, d, w, A, N]
