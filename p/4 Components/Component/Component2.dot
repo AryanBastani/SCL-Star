@@ -1,0 +1,14 @@
+s0 -> s4 [label="O  /  1"];
+s0 -> s3 [label="A  /  0"];
+s1 -> s4 [label="O  /  1"];
+s1 -> s5 [label="A  /  0"];
+s2 -> s1 [label="O  /  1"];
+s2 -> s1 [label="A  /  1"];
+s3 -> s2 [label="O  /  1"];
+s3 -> s6 [label="A  /  1"];
+s4 -> s1 [label="O  /  1"];
+s4 -> s0 [label="A  /  0"];
+s5 -> s6 [label="O  /  1"];
+s5 -> s3 [label="A  /  0"];
+s6 -> s0 [label="O  /  1"];
+s6 -> s1 [label="A  /  0"];

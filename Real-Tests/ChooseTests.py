@@ -53,8 +53,8 @@ SYNCHS: Final[list] = [
 TESTS_FOLDER = "Real-Tests/resources/"
 
 #numOfComponents = random.randint(2, 9)
-for outerRepeat in range(200):
-    for numOfComponents in range(2, 11):
+for outerRepeat in range(0, 100000, 5):
+    for numOfComponents in range(2, 3):
         for repeat in range(5):
             remaindedComponents = numOfComponents
             numOfSynchs = random.randint(1, min(int(numOfComponents/2), 4))

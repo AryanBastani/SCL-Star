@@ -214,10 +214,10 @@ public class Run_experiment {
             Utils.clearFolder(clFolder);
             new File("Results/FSMs/CL-Star").mkdirs();
 
+            int componentsCount = 0;
             if(isGenratedTests && isNastedTests) {
                 int numOfTests = 1;
-                while (br.ready() && numOfTests <= 100) {
-                    int componentsCount = 0;
+                while (br.ready() && numOfTests <= 20) {
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
@@ -225,6 +225,7 @@ public class Run_experiment {
                     data[csvProperties.getIndex(FILE_NAME)] = c;
                     productMealy = null;
                     int size = 0;
+                    componentsCount = 0;
                     while (br2.ready()) {
                         componentsCount++;
                         String c2 = br2.readLine();
@@ -243,15 +244,16 @@ public class Run_experiment {
                             productMealy = new ProductMealy(currentTarget);
                         } else productMealy.mergeFSMs(currentTarget);
                         size = productMealy.getMachine().getStates().size();
-                        if(size > 30000)
+                        if(size > 4000)
                             break;
                     }
                     if(size < 100) {
-                        System.out.println("This one is too small ");
+                        System.out.println("This one is too small (" + size + " States)");
                         continue;
                     }
-                    else if(size > 30000) {
-                        System.out.println("This one is too big ");
+                    else if(size > 4000) {
+                        System.out.println("This one is too big (" + size + " States)");
+                        System.out.println( componentsCount + " Cmpnss");
                         continue;
                     }
                     numOfTests++;
@@ -294,6 +296,7 @@ public class Run_experiment {
 
                         //             RUN SCL*
                         @Nullable CompactMealy result = null;
+                        data[csvProperties.getIndex(LIP+COMPONENTS)] = String.valueOf(componentsCount);
                         result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId);
 
                         if (result == null) {
@@ -512,7 +515,6 @@ public class Run_experiment {
             data[csvProperties.getIndex(LIP+EQs)] = String.valueOf(sclStar.getEq_counter().getCount());
             data[csvProperties.getIndex(LIP+TOTAL_RST)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_rst.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_rst.getStatisticalData().getSummary())));
             data[csvProperties.getIndex(LIP+TOTAL_SYM)] = String.valueOf(Long.parseLong(Utils.ExtractValue(mq_sym.getStatisticalData().getSummary()))+ Long.parseLong(Utils.ExtractValue(eq_sym.getStatisticalData().getSummary())));
-            data[csvProperties.getIndex(LIP+COMPONENTS)] = String.valueOf(sclStar.getSigmaFamily().size());
             data[csvProperties.getIndex(LIP+MEM_SHIP_COUNT)] = String.valueOf(membShipCounter.getCount());
         }
         catch (IOException e) {
