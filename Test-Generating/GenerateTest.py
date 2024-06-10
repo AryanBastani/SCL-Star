@@ -31,13 +31,11 @@ class GenerateTest:
                                    self.BUS, self.HYBRID]
         self.TYPESFUNCS: Final[list] = [self.generatePointTPoint]
         
-    def generateSynchComponents(self, synchActions, synchOuts, numOfComponents, type, testCounter, allComponentsCount):
+    def generateSynchComponents(self, synchActions, synchOuts, numOfComponents, type, testCounter):
         for i in range(numOfComponents):
             self.componentCounter += 1
             self.experimentInput += "Test-Generating/"
             unsynchActs = self.generateActs()
-            possibleStates = [i for i in range(max(self.minStates - allComponentsCount - 2, 2),\
-                                               self.maxStates - allComponentsCount + 1)] 
             numOfStates = random.randint(2, 5)
                 
             
@@ -75,14 +73,16 @@ class GenerateTest:
     
     def generatePointTPoint(self, testCounter):
         self.writeTheInput(testCounter, self.POINT_TO_POINT)
+
+        numOfComponents = random.randint(self.minComponents, self.maxComponents)
         
-        possibleNums = [2, 4, 6, 8]
-        numOfComponents = random.randint(0, len(possibleNums) - 1)
-        
-        for twoComponents in range(0, possibleNums[numOfComponents], 2):
+        for twoComponents in range(0, numOfComponents - 1, 2):
             synchActs = self.generateActs()
             outSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)]
-            self.generateSynchComponents(synchActs, outSynchs, 2, self.POINT_TO_POINT, testCounter, possibleNums[numOfComponents])
+            self.generateSynchComponents(synchActs, outSynchs, 2, self.POINT_TO_POINT, testCounter)
+        
+        if numOfComponents % 2 == 1:
+            self.generateSynchComponents([], [], 1, self.POINT_TO_POINT, testCounter)
             
     def generateMesh(self, testCounter):
         self.writeTheInput(testCounter, self.MESH)
@@ -105,7 +105,7 @@ class GenerateTest:
                     
                     synchsActs[nextComps][(component*self.numOfEachActs) + synchNum] = currentSynchs[synchNum]
                     outSynchs[nextComps][(component*self.numOfEachActs) + synchNum] = currentOutSynchs[synchNum]
-            self.generateSynchComponents(synchsActs[component], outSynchs[component], 1, self.MESH, testCounter, numOfComponents)
+            self.generateSynchComponents(synchsActs[component], outSynchs[component], 1, self.MESH, testCounter)
             
     def generateStar(self, testCounter):
         self.writeTheInput(testCounter, self.STAR)
@@ -167,11 +167,11 @@ class GenerateTest:
             
     def generateAllTests(self):
         for i in range(2000):
-            # self.resetVars(self.POINT_TO_POINT, i+1)
-            # self.generatePointTPoint(i+1)
+            self.resetVars(self.POINT_TO_POINT, i+1)
+            self.generatePointTPoint(i+1)
             
-            self.resetVars(self.MESH, i+1)
-            self.generateMesh(i+1)
+            # self.resetVars(self.MESH, i+1)
+            # self.generateMesh(i+1)
             
             # self.resetVars(self.STAR, i+1)
             # self.generateStar(i+1)
