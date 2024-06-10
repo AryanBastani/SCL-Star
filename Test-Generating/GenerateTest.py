@@ -38,14 +38,7 @@ class GenerateTest:
             unsynchActs = self.generateActs()
             possibleStates = [i for i in range(max(self.minStates - allComponentsCount - 2, 2),\
                                                self.maxStates - allComponentsCount + 1)] 
-            if(type == self.MESH and allComponentsCount >= 7):
-                numOfStates = 2
-            elif(allComponentsCount >= 5):
-                possibleStates = possibleStates[0:4]
-                numOfStates = (random.choices(possibleStates, weights=(4, 3, 2, 1)))[0]
-            else:
-                possibleStates = possibleStates[-5:-1]
-                numOfStates = (random.choices(possibleStates, weights=(1, 2, 3, 4)))[0]
+            numOfStates = random.randint(2, 5)
                 
             
             componentGenerator = gc.ComponentGenerator(synchActions, synchOuts, unsynchActs, numOfStates)
@@ -94,7 +87,7 @@ class GenerateTest:
     def generateMesh(self, testCounter):
         self.writeTheInput(testCounter, self.MESH)
         
-        numOfComponents = 8
+        numOfComponents = 7
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):
@@ -173,7 +166,7 @@ class GenerateTest:
         self.componentCounter = 0  
             
     def generateAllTests(self):
-        for i in range(1000):
+        for i in range(2000):
             # self.resetVars(self.POINT_TO_POINT, i+1)
             # self.generatePointTPoint(i+1)
             
