@@ -22,21 +22,29 @@ class GenerateTest:
         self.MESH: Final[string] = 'Mesh'
         self.STAR: Final[string] = 'Star'
         self.RING: Final[string] = 'Ring'
-        self.TREE: Final[string] = 'Tree'
         self.BUS: Final[string] = 'Bus'
-        self.HYBRID: Final[string] = 'Hybrid'
         
         self.TYPES: Final[list] = [self.POINT_TO_POINT, self.MESH,
-                                   self.STAR, self.RING, self.TREE,
-                                   self.BUS, self.HYBRID]
+                                   self.STAR, self.RING,
+                                   self.BUS]
         self.TYPESFUNCS: Final[list] = [self.generatePointTPoint]
         
-    def generateSynchComponents(self, synchActions, synchOuts, numOfComponents, type, testCounter):
+    def generateSynchComponents(self, synchActions, synchOuts, numOfComponents, type, testCounter, allComponentsCount):
         for i in range(numOfComponents):
             self.componentCounter += 1
             self.experimentInput += "Test-Generating/"
             unsynchActs = self.generateActs()
-            numOfStates = random.randint(2, 5)
+            if(type != self.MESH):
+                numOfStates = 5
+            else:
+                if(allComponentsCount >= 7):
+                    numOfStates = 2
+                elif(allComponentsCount >= 5):
+                    possibleStates = possibleStates[0:4]
+                    numOfStates = (random.choices(possibleStates, weights=(4, 3, 2, 1)))[0]
+                else:
+                    possibleStates = possibleStates[-5:-1]
+                    numOfStates = (random.choices(possibleStates, weights=(1, 2, 3, 4)))[0]
                 
             
             componentGenerator = gc.ComponentGenerator(synchActions, synchOuts, unsynchActs, numOfStates)
@@ -79,15 +87,15 @@ class GenerateTest:
         for twoComponents in range(0, numOfComponents - 1, 2):
             synchActs = self.generateActs()
             outSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)]
-            self.generateSynchComponents(synchActs, outSynchs, 2, self.POINT_TO_POINT, testCounter)
+            self.generateSynchComponents(synchActs, outSynchs, 2, self.POINT_TO_POINT, testCounter, numOfComponents)
         
         if numOfComponents % 2 == 1:
-            self.generateSynchComponents([], [], 1, self.POINT_TO_POINT, testCounter)
+            self.generateSynchComponents([], [], 1, self.POINT_TO_POINT, testCounter, numOfComponents)
             
     def generateMesh(self, testCounter):
         self.writeTheInput(testCounter, self.MESH)
         
-        numOfComponents = 7
+        numOfComponents = random.randint(self.minComponents, self.maxComponents)
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):
@@ -105,7 +113,7 @@ class GenerateTest:
                     
                     synchsActs[nextComps][(component*self.numOfEachActs) + synchNum] = currentSynchs[synchNum]
                     outSynchs[nextComps][(component*self.numOfEachActs) + synchNum] = currentOutSynchs[synchNum]
-            self.generateSynchComponents(synchsActs[component], outSynchs[component], 1, self.MESH, testCounter)
+            self.generateSynchComponents(synchsActs[component], outSynchs[component], 1, self.MESH, testCounter, numOfComponents)
             
     def generateStar(self, testCounter):
         self.writeTheInput(testCounter, self.STAR)
@@ -129,7 +137,7 @@ class GenerateTest:
         numOfComponents = random.randint(self.minComponents, self.maxComponents)
         currentSynchs = self.generateActs()
         currentOutSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)] 
-        self.generateSynchComponents(currentSynchs, currentOutSynchs, numOfComponents, self.BUS, testCounter)
+        self.generateSynchComponents(currentSynchs, currentOutSynchs, numOfComponents, self.BUS, testCounter, numOfComponents)
     
     def generateRing(self, testCounter):
         self.writeTheInput(testCounter, self.RING)
@@ -166,21 +174,21 @@ class GenerateTest:
         self.componentCounter = 0  
             
     def generateAllTests(self):
-        for i in range(2000):
+        for i in range(1000):
             self.resetVars(self.POINT_TO_POINT, i+1)
             self.generatePointTPoint(i+1)
             
-            # self.resetVars(self.MESH, i+1)
-            # self.generateMesh(i+1)
+            self.resetVars(self.MESH, i+1)
+            self.generateMesh(i+1)
             
-            # self.resetVars(self.STAR, i+1)
-            # self.generateStar(i+1)
+            self.resetVars(self.STAR, i+1)
+            self.generateStar(i+1)
             
-            # self.resetVars(self.BUS, i+1)
-            # self.generateBus(i+1)
+            self.resetVars(self.BUS, i+1)
+            self.generateBus(i+1)
             
-            # self.resetVars(self.RING, i+1)
-            # self.generateRing(i+1)
+            self.resetVars(self.RING, i+1)
+            self.generateRing(i+1)
         
         
     def clearFolder(self, folder):

@@ -3,7 +3,10 @@
 /bin/
 /logs/
 /Results/FSMs/
-CE-LOG/
+/CE-LOG/
+/Test-Generating/data/
+/Test-Generating/resources/
+/Real-Tests/data/
 
 *.smt2
 .Rhistory
