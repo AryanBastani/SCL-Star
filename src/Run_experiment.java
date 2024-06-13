@@ -217,7 +217,7 @@ public class Run_experiment {
             int componentsCount = 0;
             if(isGenratedTests && isNastedTests) {
                 int numOfTests = 1;
-                while (br.ready() && numOfTests <= 20) {
+                while (br.ready() && numOfTests <= 6) {
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
@@ -242,20 +242,23 @@ public class Run_experiment {
                         }
                         if (productMealy == null) {
                             productMealy = new ProductMealy(currentTarget);
-                        } else productMealy.mergeFSMs(currentTarget);
+                        } else productMealy.mergeFSMs(currentTarget, componentsCount);
                         size = productMealy.getMachine().getStates().size();
-                        if(size > 4000)
+                        if(size > 8000)
+                            break;
+                        if(componentsCount < 7 && size > 4000)
                             break;
                     }
                     if(size < 100) {
                         System.out.println("This one is too small (" + size + " States)");
                         continue;
                     }
-                    else if(size > 4000) {
+                    else if((size > 8000) || (componentsCount < 7 && size > 4000)) {
                         System.out.println("This one is too big (" + size + " States)");
                         System.out.println( componentsCount + " Cmpnss");
                         continue;
                     }
+                    System.out.println(" (" + size + " States)");
                     numOfTests++;
                     assert productMealy != null;
                     CompactMealy<String, Word<String>> target = productMealy.getMachine();
@@ -325,7 +328,7 @@ public class Run_experiment {
                     }
                     if (productMealy == null) {
                         productMealy = new ProductMealy(currentTarget);
-                    } else productMealy.mergeFSMs(currentTarget);
+                    } else productMealy.mergeFSMs(currentTarget, 1);
 
                 }
                 assert productMealy != null;

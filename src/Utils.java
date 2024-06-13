@@ -576,7 +576,7 @@ public class Utils {
 
 //            Visualization.visualize(component, component.getInputAlphabet());
             if (productMealy == null) productMealy = new ProductMealy(component);
-            else productMealy.mergeFSMs(component);
+            else productMealy.mergeFSMs(component, 1);
             comp_num++;
         }
         productMealy.setComponents_count(comp_num);

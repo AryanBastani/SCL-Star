@@ -11,9 +11,9 @@ class GenerateTest:
     def __init__(self):
         self.alphabets = [''.join(i) for i in product(ascii_letters, repeat = 1)]
         self.numOfEachActs: Final[int] = 1
-        self.minStates: Final[int] = 11
-        self.maxStates: Final[int] = 14
-        self.minComponents: Final[int] = 2
+        self.minStates: Final[int] = 9
+        self.maxStates: Final[int] = 11
+        self.minComponents: Final[int] = 3
         self.maxComponents: Final[int] = 9
         self.componentCounter = 0
         self.experimentInput = ''
@@ -35,16 +35,27 @@ class GenerateTest:
             self.experimentInput += "Test-Generating/"
             unsynchActs = self.generateActs()
             if(type != self.MESH):
-                numOfStates = 5
+                numOfStates = random.randint(2, 5)
             else:
-                if(allComponentsCount >= 7):
-                    numOfStates = 2
-                elif(allComponentsCount >= 5):
-                    possibleStates = possibleStates[0:4]
-                    numOfStates = (random.choices(possibleStates, weights=(4, 3, 2, 1)))[0]
+                # possibleStates = [i for i in range(max(self.minStates - allComponentsCount - 2, 2),\
+                #     self.maxStates - allComponentsCount + 1)] 
+                # if(allComponentsCount >= 7):
+                #     numOfStates = 3
+                # # if(allComponentsCount >= 5):
+                # #     possibleStates = possibleStates[0:4]
+                # #     numOfStates = (random.choices(possibleStates, weights=(4, 3, 2, 1)))[0]
+                # # else:
+                # else:
+                #     possibleStates = possibleStates[-7:-3]
+                #     # numOfStates = (random.choices(possibleStates, weights=(1, 2, 3, 4)))[0]
+                #     numOfStates = (random.choices(possibleStates))[0]
+                
+                # diff = int((allComponentsCount - 2) * 1.5)
+                # numOfStates = random.randint(self.minStates - diff, self.maxStates - diff)
+                if allComponentsCount < 7:
+                    numOfStates = random.randint(4, 7)
                 else:
-                    possibleStates = possibleStates[-5:-1]
-                    numOfStates = (random.choices(possibleStates, weights=(1, 2, 3, 4)))[0]
+                    numOfStates = random.randint(3, 6)
                 
             
             componentGenerator = gc.ComponentGenerator(synchActions, synchOuts, unsynchActs, numOfStates)
@@ -95,7 +106,7 @@ class GenerateTest:
     def generateMesh(self, testCounter):
         self.writeTheInput(testCounter, self.MESH)
         
-        numOfComponents = random.randint(self.minComponents, self.maxComponents)
+        numOfComponents = 7
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):
@@ -175,20 +186,20 @@ class GenerateTest:
             
     def generateAllTests(self):
         for i in range(1000):
-            self.resetVars(self.POINT_TO_POINT, i+1)
-            self.generatePointTPoint(i+1)
+            # self.resetVars(self.POINT_TO_POINT, i+1)
+            # self.generatePointTPoint(i+1)
             
             self.resetVars(self.MESH, i+1)
             self.generateMesh(i+1)
             
-            self.resetVars(self.STAR, i+1)
-            self.generateStar(i+1)
+            # self.resetVars(self.STAR, i+1)
+            # self.generateStar(i+1)
             
-            self.resetVars(self.BUS, i+1)
-            self.generateBus(i+1)
+            # self.resetVars(self.BUS, i+1)
+            # self.generateBus(i+1)
             
-            self.resetVars(self.RING, i+1)
-            self.generateRing(i+1)
+            # self.resetVars(self.RING, i+1)
+            # self.generateRing(i+1)
         
         
     def clearFolder(self, folder):

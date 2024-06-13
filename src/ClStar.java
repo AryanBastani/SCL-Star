@@ -90,7 +90,7 @@ public class ClStar {
             if (productMealy== null){
                 productMealy = new ProductMealy(partialH);
             }
-            else productMealy.mergeFSMs(partialH);
+            else productMealy.mergeFSMs(partialH, 1);
         }
 
         assert productMealy != null;
@@ -158,7 +158,7 @@ public class ClStar {
                 if (productMealy== null){
                     productMealy = new ProductMealy(component);
                 }
-                else productMealy.mergeFSMs(component);
+                else productMealy.mergeFSMs(component, 1);
             }
             hypothesis = productMealy.getMachine();
             ce = eqOracle.findCounterExample(hypothesis, alphabet);
