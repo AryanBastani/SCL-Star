@@ -52,10 +52,8 @@ class GenerateTest:
                 
                 # diff = int((allComponentsCount - 2) * 1.5)
                 # numOfStates = random.randint(self.minStates - diff, self.maxStates - diff)
-                if allComponentsCount < 7:
-                    numOfStates = random.randint(4, 7)
-                else:
-                    numOfStates = random.randint(3, 6)
+
+                numOfStates = random.randint(3, 6)
                 
             
             componentGenerator = gc.ComponentGenerator(synchActions, synchOuts, unsynchActs, numOfStates)
@@ -93,7 +91,7 @@ class GenerateTest:
     def generatePointTPoint(self, testCounter):
         self.writeTheInput(testCounter, self.POINT_TO_POINT)
 
-        numOfComponents = random.randint(self.minComponents, self.maxComponents)
+        numOfComponents = 3
         
         for twoComponents in range(0, numOfComponents - 1, 2):
             synchActs = self.generateActs()
@@ -106,7 +104,7 @@ class GenerateTest:
     def generateMesh(self, testCounter):
         self.writeTheInput(testCounter, self.MESH)
         
-        numOfComponents = 7
+        numOfComponents = random.randint(5, 7)
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):
@@ -129,7 +127,7 @@ class GenerateTest:
     def generateStar(self, testCounter):
         self.writeTheInput(testCounter, self.STAR)
         
-        numOfComponents = random.randint(self.minComponents, self.maxComponents)
+        numOfComponents = 3
         centerSynchsActs = []
         centerOutSynchs = []
         for component in range(numOfComponents - 1):
@@ -153,7 +151,7 @@ class GenerateTest:
     def generateRing(self, testCounter):
         self.writeTheInput(testCounter, self.RING)
         
-        numOfComponents = random.randint(self.minComponents, self.maxComponents)
+        numOfComponents = 3
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):

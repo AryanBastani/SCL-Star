@@ -217,7 +217,7 @@ public class Run_experiment {
             int componentsCount = 0;
             if(isGenratedTests && isNastedTests) {
                 int numOfTests = 1;
-                while (br.ready() && numOfTests <= 6) {
+                while (br.ready() && numOfTests <= 10) {
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
@@ -244,16 +244,17 @@ public class Run_experiment {
                             productMealy = new ProductMealy(currentTarget);
                         } else productMealy.mergeFSMs(currentTarget, componentsCount);
                         size = productMealy.getMachine().getStates().size();
-                        if(size > 8000)
+                        if(size > 22000)
                             break;
-                        if(componentsCount < 7 && size > 4000)
-                            break;
+//                        if(componentsCount < 8 && size > 16000)
+//                            break;
+
                     }
-                    if(size < 100) {
+                    if(size < 13000) {
                         System.out.println("This one is too small (" + size + " States)");
                         continue;
                     }
-                    else if((size > 8000) || (componentsCount < 7 && size > 4000)) {
+                    else if(size > 22000) {
                         System.out.println("This one is too big (" + size + " States)");
                         System.out.println( componentsCount + " Cmpnss");
                         continue;
