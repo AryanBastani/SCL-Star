@@ -65,7 +65,7 @@ public class ProductMealy{
             mealy.addState();
 //            if(componentsCount < 8 && mealy.getStates().size() > 16000)
 //                break;
-            if(mealy.getStates().size() > 22000)
+            if(mealy.getStates().size() > 30000)
                 break;
 //			System.out.println("\ncurrent state: " + current_state);
             int s_1 = states_map[current_state][1];

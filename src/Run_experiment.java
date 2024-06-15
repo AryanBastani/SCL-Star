@@ -244,17 +244,17 @@ public class Run_experiment {
                             productMealy = new ProductMealy(currentTarget);
                         } else productMealy.mergeFSMs(currentTarget, componentsCount);
                         size = productMealy.getMachine().getStates().size();
-                        if(size > 22000)
+                        if(size > 30000)
                             break;
 //                        if(componentsCount < 8 && size > 16000)
 //                            break;
 
                     }
-                    if(size < 13000) {
+                    if(size < 29000) {
                         System.out.println("This one is too small (" + size + " States)");
                         continue;
                     }
-                    else if(size > 22000) {
+                    else if(size > 30000) {
                         System.out.println("This one is too big (" + size + " States)");
                         System.out.println( componentsCount + " Cmpnss");
                         continue;

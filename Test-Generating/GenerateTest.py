@@ -52,7 +52,6 @@ class GenerateTest:
                 
                 # diff = int((allComponentsCount - 2) * 1.5)
                 # numOfStates = random.randint(self.minStates - diff, self.maxStates - diff)
-
                 numOfStates = random.randint(3, 6)
                 
             
@@ -91,7 +90,7 @@ class GenerateTest:
     def generatePointTPoint(self, testCounter):
         self.writeTheInput(testCounter, self.POINT_TO_POINT)
 
-        numOfComponents = 3
+        numOfComponents = random.randint(8, 9)
         
         for twoComponents in range(0, numOfComponents - 1, 2):
             synchActs = self.generateActs()
@@ -104,7 +103,7 @@ class GenerateTest:
     def generateMesh(self, testCounter):
         self.writeTheInput(testCounter, self.MESH)
         
-        numOfComponents = random.randint(5, 7)
+        numOfComponents = 6
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):
@@ -184,11 +183,11 @@ class GenerateTest:
             
     def generateAllTests(self):
         for i in range(1000):
-            # self.resetVars(self.POINT_TO_POINT, i+1)
-            # self.generatePointTPoint(i+1)
+            self.resetVars(self.POINT_TO_POINT, i+1)
+            self.generatePointTPoint(i+1)
             
-            self.resetVars(self.MESH, i+1)
-            self.generateMesh(i+1)
+            # self.resetVars(self.MESH, i+1)
+            # self.generateMesh(i+1)
             
             # self.resetVars(self.STAR, i+1)
             # self.generateStar(i+1)
