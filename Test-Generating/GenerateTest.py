@@ -90,7 +90,7 @@ class GenerateTest:
     def generatePointTPoint(self, testCounter):
         self.writeTheInput(testCounter, self.POINT_TO_POINT)
 
-        numOfComponents = random.randint(8, 9)
+        numOfComponents = random.randint(self.minComponents, self.maxComponents)
         
         for twoComponents in range(0, numOfComponents - 1, 2):
             synchActs = self.generateActs()
@@ -103,7 +103,7 @@ class GenerateTest:
     def generateMesh(self, testCounter):
         self.writeTheInput(testCounter, self.MESH)
         
-        numOfComponents = 6
+        numOfComponents = random.randint(self.minComponents, self.maxComponents - 2)
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):
@@ -126,7 +126,7 @@ class GenerateTest:
     def generateStar(self, testCounter):
         self.writeTheInput(testCounter, self.STAR)
         
-        numOfComponents = 3
+        numOfComponents = random.randint(self.minComponents, self.maxComponents)
         centerSynchsActs = []
         centerOutSynchs = []
         for component in range(numOfComponents - 1):
@@ -150,7 +150,7 @@ class GenerateTest:
     def generateRing(self, testCounter):
         self.writeTheInput(testCounter, self.RING)
         
-        numOfComponents = 3
+        numOfComponents = random.randint(self.minComponents, self.maxComponents)
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):
@@ -186,17 +186,17 @@ class GenerateTest:
             self.resetVars(self.POINT_TO_POINT, i+1)
             self.generatePointTPoint(i+1)
             
-            # self.resetVars(self.MESH, i+1)
-            # self.generateMesh(i+1)
+            self.resetVars(self.MESH, i+1)
+            self.generateMesh(i+1)
             
-            # self.resetVars(self.STAR, i+1)
-            # self.generateStar(i+1)
+            self.resetVars(self.STAR, i+1)
+            self.generateStar(i+1)
             
-            # self.resetVars(self.BUS, i+1)
-            # self.generateBus(i+1)
+            self.resetVars(self.BUS, i+1)
+            self.generateBus(i+1)
             
-            # self.resetVars(self.RING, i+1)
-            # self.generateRing(i+1)
+            self.resetVars(self.RING, i+1)
+            self.generateRing(i+1)
         
         
     def clearFolder(self, folder):
