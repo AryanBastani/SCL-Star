@@ -12077,3 +12077,3893 @@
 	Learn the component [t, Z] using L-Star
 	Learn the component [r, Z] using L-Star
 	Learn the component [K, Z] using L-Star
+1st in whileLoop
+	Learn the component [T] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [t, i] using L-Star
+2st in whileLoop
+	Learn the component [T] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [t, i] using L-Star
+	Learn the component [q, i] using L-Star
+3st in whileLoop
+	Learn the component [T] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [t, i] using L-Star
+	Learn the component [q, i] using L-Star
+	Learn the component [a, i] using L-Star
+4st in whileLoop
+	Learn the component [T] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [t, i] using L-Star
+	Learn the component [q, i] using L-Star
+	Learn the component [a, i] using L-Star
+	Learn the component [y, i] using L-Star
+5st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [t, i] using L-Star
+	Learn the component [q, i] using L-Star
+	Learn the component [a, i] using L-Star
+	Learn the component [y, i] using L-Star
+	Learn the component [T, i] using L-Star
+6st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [t, i] using L-Star
+	Learn the component [q, i] using L-Star
+	Learn the component [a, i] using L-Star
+	Learn the component [y, i] using L-Star
+	Learn the component [T, i] using L-Star
+	Learn the component [F, i] using L-Star
+1st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [q, i] using L-Star
+2st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [q, i] using L-Star
+	Learn the component [T, i] using L-Star
+3st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [q, i] using L-Star
+	Learn the component [T, i] using L-Star
+	Learn the component [F, i] using L-Star
+4st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [q, i] using L-Star
+	Learn the component [T, i] using L-Star
+	Learn the component [F, i] using L-Star
+	Learn the component [y, i] using L-Star
+5st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [q, i] using L-Star
+	Learn the component [T, i] using L-Star
+	Learn the component [F, i] using L-Star
+	Learn the component [y, i] using L-Star
+	Learn the component [t, i] using L-Star
+6st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [q, i] using L-Star
+	Learn the component [T, i] using L-Star
+	Learn the component [F, i] using L-Star
+	Learn the component [y, i] using L-Star
+	Learn the component [t, i] using L-Star
+	Learn the component [a, i] using L-Star
+1st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [a, i] using L-Star
+2st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [a, i] using L-Star
+	Learn the component [F, i] using L-Star
+3st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [a, i] using L-Star
+	Learn the component [F, i] using L-Star
+	Learn the component [y, i] using L-Star
+4st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [a, i] using L-Star
+	Learn the component [F, i] using L-Star
+	Learn the component [y, i] using L-Star
+	Learn the component [q, i] using L-Star
+5st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [a, i] using L-Star
+	Learn the component [F, i] using L-Star
+	Learn the component [y, i] using L-Star
+	Learn the component [q, i] using L-Star
+	Learn the component [T, i] using L-Star
+6st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [a, i] using L-Star
+	Learn the component [F, i] using L-Star
+	Learn the component [y, i] using L-Star
+	Learn the component [q, i] using L-Star
+	Learn the component [T, i] using L-Star
+	Learn the component [t, i] using L-Star
+1st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [t, y] using L-Star
+2st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [t, y] using L-Star
+	Learn the component [B, y] using L-Star
+3st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [t, y] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [j, y] using L-Star
+4st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [t, y] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [j, y] using L-Star
+	Learn the component [o, y] using L-Star
+5st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [t, y] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [j, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [Y, y] using L-Star
+6st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [t, y] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [j, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [Y, y] using L-Star
+	Learn the component [l, y] using L-Star
+7st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [t, y] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [j, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [Y, y] using L-Star
+	Learn the component [l, y] using L-Star
+	Learn the component [c, y] using L-Star
+1st in whileLoop
+	Learn the component [o] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+2st in whileLoop
+	Learn the component [Y] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [o, y] using L-Star
+3st in whileLoop
+	Learn the component [Y] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [j, y] using L-Star
+4st in whileLoop
+	Learn the component [Y] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [j, y] using L-Star
+	Learn the component [t, y] using L-Star
+5st in whileLoop
+	Learn the component [Y] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [j, y] using L-Star
+	Learn the component [t, y] using L-Star
+	Learn the component [l, y] using L-Star
+6st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [j, y] using L-Star
+	Learn the component [t, y] using L-Star
+	Learn the component [l, y] using L-Star
+	Learn the component [Y, y] using L-Star
+7st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [j, y] using L-Star
+	Learn the component [t, y] using L-Star
+	Learn the component [l, y] using L-Star
+	Learn the component [Y, y] using L-Star
+	Learn the component [c, y] using L-Star
+1st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+2st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [o, y] using L-Star
+3st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [j, y] using L-Star
+4st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [j, y] using L-Star
+	Learn the component [t, y] using L-Star
+5st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [j, y] using L-Star
+	Learn the component [t, y] using L-Star
+	Learn the component [l, y] using L-Star
+6st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [j, y] using L-Star
+	Learn the component [t, y] using L-Star
+	Learn the component [l, y] using L-Star
+	Learn the component [Y, y] using L-Star
+7st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B, y] using L-Star
+	Learn the component [o, y] using L-Star
+	Learn the component [j, y] using L-Star
+	Learn the component [t, y] using L-Star
+	Learn the component [l, y] using L-Star
+	Learn the component [Y, y] using L-Star
+	Learn the component [c, y] using L-Star
+1st in whileLoop
+	Learn the component [L] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [j, V] using L-Star
+2st in whileLoop
+	Learn the component [L] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [j, V] using L-Star
+	Learn the component [w, V] using L-Star
+3st in whileLoop
+	Learn the component [L] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [j, V] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+4st in whileLoop
+	Learn the component [L] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [j, V] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+	Learn the component [S, V] using L-Star
+5st in whileLoop
+	Learn the component [L] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [j, V] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+	Learn the component [S, V] using L-Star
+	Learn the component [K, V] using L-Star
+6st in whileLoop
+	Learn the component [C] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [j, V] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+	Learn the component [S, V] using L-Star
+	Learn the component [K, V] using L-Star
+	Learn the component [L, V] using L-Star
+1st in whileLoop
+	Learn the component [L] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [w, V] using L-Star
+2st in whileLoop
+	Learn the component [L] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+3st in whileLoop
+	Learn the component [L] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+	Learn the component [S, V] using L-Star
+4st in whileLoop
+	Learn the component [h] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+	Learn the component [S, V] using L-Star
+	Learn the component [L, V] using L-Star
+5st in whileLoop
+	Learn the component [h] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+	Learn the component [S, V] using L-Star
+	Learn the component [L, V] using L-Star
+	Learn the component [j, V] using L-Star
+6st in whileLoop
+	Learn the component [h] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+	Learn the component [S, V] using L-Star
+	Learn the component [L, V] using L-Star
+	Learn the component [j, V] using L-Star
+	Learn the component [K, V] using L-Star
+1st in whileLoop
+	Learn the component [j] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [L] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [w, V] using L-Star
+2st in whileLoop
+	Learn the component [j] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [L] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+3st in whileLoop
+	Learn the component [j] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+	Learn the component [L, V] using L-Star
+4st in whileLoop
+	Learn the component [h] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+	Learn the component [L, V] using L-Star
+	Learn the component [j, V] using L-Star
+5st in whileLoop
+	Learn the component [h] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+	Learn the component [L, V] using L-Star
+	Learn the component [j, V] using L-Star
+	Learn the component [S, V] using L-Star
+6st in whileLoop
+	Learn the component [h] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [w, V] using L-Star
+	Learn the component [y, V] using L-Star
+	Learn the component [L, V] using L-Star
+	Learn the component [j, V] using L-Star
+	Learn the component [S, V] using L-Star
+	Learn the component [K, V] using L-Star
+1st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [L] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [h, M] using L-Star
+2st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [L] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [h, M] using L-Star
+	Learn the component [q, M] using L-Star
+3st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [h, M] using L-Star
+	Learn the component [q, M] using L-Star
+	Learn the component [L, M] using L-Star
+4st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [h, M] using L-Star
+	Learn the component [q, M] using L-Star
+	Learn the component [L, M] using L-Star
+	Learn the component [E, M] using L-Star
+5st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [h, M] using L-Star
+	Learn the component [q, M] using L-Star
+	Learn the component [L, M] using L-Star
+	Learn the component [E, M] using L-Star
+	Learn the component [W, M] using L-Star
+6st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [h, M] using L-Star
+	Learn the component [q, M] using L-Star
+	Learn the component [L, M] using L-Star
+	Learn the component [E, M] using L-Star
+	Learn the component [W, M] using L-Star
+	Learn the component [O, M] using L-Star
+1st in whileLoop
+	Learn the component [q] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [L] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [O, M] using L-Star
+2st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [L] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [O, M] using L-Star
+	Learn the component [q, M] using L-Star
+3st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [L] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [O, M] using L-Star
+	Learn the component [q, M] using L-Star
+	Learn the component [h, M] using L-Star
+4st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [L] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [O, M] using L-Star
+	Learn the component [q, M] using L-Star
+	Learn the component [h, M] using L-Star
+	Learn the component [E, M] using L-Star
+5st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [L] using L-Star
+	Learn the component [O, M] using L-Star
+	Learn the component [q, M] using L-Star
+	Learn the component [h, M] using L-Star
+	Learn the component [E, M] using L-Star
+	Learn the component [W, M] using L-Star
+6st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [O, M] using L-Star
+	Learn the component [q, M] using L-Star
+	Learn the component [h, M] using L-Star
+	Learn the component [E, M] using L-Star
+	Learn the component [W, M] using L-Star
+	Learn the component [L, M] using L-Star
+1st in whileLoop
+	Learn the component [h] using L-Star
+	Learn the component [L] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [E, M] using L-Star
+2st in whileLoop
+	Learn the component [h] using L-Star
+	Learn the component [L] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [E, M] using L-Star
+	Learn the component [q, M] using L-Star
+3st in whileLoop
+	Learn the component [L] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [E, M] using L-Star
+	Learn the component [q, M] using L-Star
+	Learn the component [h, M] using L-Star
+4st in whileLoop
+	Learn the component [L] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [E, M] using L-Star
+	Learn the component [q, M] using L-Star
+	Learn the component [h, M] using L-Star
+	Learn the component [W, M] using L-Star
+5st in whileLoop
+	Learn the component [L] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [E, M] using L-Star
+	Learn the component [q, M] using L-Star
+	Learn the component [h, M] using L-Star
+	Learn the component [W, M] using L-Star
+	Learn the component [O, M] using L-Star
+6st in whileLoop
+	Learn the component [v] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [E, M] using L-Star
+	Learn the component [q, M] using L-Star
+	Learn the component [h, M] using L-Star
+	Learn the component [W, M] using L-Star
+	Learn the component [O, M] using L-Star
+	Learn the component [L, M] using L-Star
+1st in whileLoop
+	Learn the component [i] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [R, t] using L-Star
+2st in whileLoop
+	Learn the component [i] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [j, t] using L-Star
+3st in whileLoop
+	Learn the component [i] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [B, t] using L-Star
+4st in whileLoop
+	Learn the component [i] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [B, t] using L-Star
+	Learn the component [h, t] using L-Star
+5st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [B, t] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [i, t] using L-Star
+6st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [B, t] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [i, t] using L-Star
+	Learn the component [M, t] using L-Star
+7st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [B, t] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [i, t] using L-Star
+	Learn the component [M, t] using L-Star
+	Learn the component [s, t] using L-Star
+1st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [h, t] using L-Star
+2st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [R, t] using L-Star
+3st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [j, t] using L-Star
+4st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [B, t] using L-Star
+5st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [B, t] using L-Star
+	Learn the component [M, t] using L-Star
+6st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [B, t] using L-Star
+	Learn the component [M, t] using L-Star
+	Learn the component [s, t] using L-Star
+7st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [B, t] using L-Star
+	Learn the component [M, t] using L-Star
+	Learn the component [s, t] using L-Star
+	Learn the component [i, t] using L-Star
+1st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [i, t] using L-Star
+2st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [i, t] using L-Star
+	Learn the component [M, t] using L-Star
+3st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [i, t] using L-Star
+	Learn the component [M, t] using L-Star
+	Learn the component [j, t] using L-Star
+4st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [i, t] using L-Star
+	Learn the component [M, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [R, t] using L-Star
+5st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [i, t] using L-Star
+	Learn the component [M, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [s, t] using L-Star
+6st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [i, t] using L-Star
+	Learn the component [M, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [s, t] using L-Star
+	Learn the component [h, t] using L-Star
+7st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [i, t] using L-Star
+	Learn the component [M, t] using L-Star
+	Learn the component [j, t] using L-Star
+	Learn the component [R, t] using L-Star
+	Learn the component [s, t] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [B, t] using L-Star
+1st in whileLoop
+	Learn the component [W] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [l, R] using L-Star
+2st in whileLoop
+	Learn the component [W] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [l, R] using L-Star
+	Learn the component [P, R] using L-Star
+3st in whileLoop
+	Learn the component [W] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [l, R] using L-Star
+	Learn the component [P, R] using L-Star
+	Learn the component [c, R] using L-Star
+4st in whileLoop
+	Learn the component [W] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [l, R] using L-Star
+	Learn the component [P, R] using L-Star
+	Learn the component [c, R] using L-Star
+	Learn the component [K, R] using L-Star
+5st in whileLoop
+	Learn the component [W] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [l, R] using L-Star
+	Learn the component [P, R] using L-Star
+	Learn the component [c, R] using L-Star
+	Learn the component [K, R] using L-Star
+	Learn the component [Y, R] using L-Star
+6st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [l, R] using L-Star
+	Learn the component [P, R] using L-Star
+	Learn the component [c, R] using L-Star
+	Learn the component [K, R] using L-Star
+	Learn the component [Y, R] using L-Star
+	Learn the component [W, R] using L-Star
+1st in whileLoop
+	Learn the component [P] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [W, R] using L-Star
+2st in whileLoop
+	Learn the component [P] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [W, R] using L-Star
+	Learn the component [c, R] using L-Star
+3st in whileLoop
+	Learn the component [P] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [W, R] using L-Star
+	Learn the component [c, R] using L-Star
+	Learn the component [l, R] using L-Star
+4st in whileLoop
+	Learn the component [P] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [W, R] using L-Star
+	Learn the component [c, R] using L-Star
+	Learn the component [l, R] using L-Star
+	Learn the component [K, R] using L-Star
+5st in whileLoop
+	Learn the component [Y] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [W, R] using L-Star
+	Learn the component [c, R] using L-Star
+	Learn the component [l, R] using L-Star
+	Learn the component [K, R] using L-Star
+	Learn the component [P, R] using L-Star
+6st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [W, R] using L-Star
+	Learn the component [c, R] using L-Star
+	Learn the component [l, R] using L-Star
+	Learn the component [K, R] using L-Star
+	Learn the component [P, R] using L-Star
+	Learn the component [Y, R] using L-Star
+1st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [P, R] using L-Star
+2st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [P, R] using L-Star
+	Learn the component [l, R] using L-Star
+3st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [P, R] using L-Star
+	Learn the component [l, R] using L-Star
+	Learn the component [c, R] using L-Star
+4st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [P, R] using L-Star
+	Learn the component [l, R] using L-Star
+	Learn the component [c, R] using L-Star
+	Learn the component [Y, R] using L-Star
+5st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [P, R] using L-Star
+	Learn the component [l, R] using L-Star
+	Learn the component [c, R] using L-Star
+	Learn the component [Y, R] using L-Star
+	Learn the component [W, R] using L-Star
+6st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [P, R] using L-Star
+	Learn the component [l, R] using L-Star
+	Learn the component [c, R] using L-Star
+	Learn the component [Y, R] using L-Star
+	Learn the component [W, R] using L-Star
+	Learn the component [K, R] using L-Star
+1st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [y, G] using L-Star
+2st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [y, G] using L-Star
+	Learn the component [l, G] using L-Star
+3st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [y, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [j, G] using L-Star
+4st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [y, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [j, G] using L-Star
+	Learn the component [o, G] using L-Star
+5st in whileLoop
+	Learn the component [v] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [y, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [j, G] using L-Star
+	Learn the component [o, G] using L-Star
+	Learn the component [e, G] using L-Star
+6st in whileLoop
+	Learn the component [g] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [y, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [j, G] using L-Star
+	Learn the component [o, G] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [v, G] using L-Star
+7st in whileLoop
+	Learn the component [U] using L-Star
+	Learn the component [y, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [j, G] using L-Star
+	Learn the component [o, G] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [g, G] using L-Star
+1st in whileLoop
+	Learn the component [U] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [e, G] using L-Star
+2st in whileLoop
+	Learn the component [U] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [v, G] using L-Star
+3st in whileLoop
+	Learn the component [U] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [l, G] using L-Star
+4st in whileLoop
+	Learn the component [U] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [y, G] using L-Star
+5st in whileLoop
+	Learn the component [U] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [y, G] using L-Star
+	Learn the component [o, G] using L-Star
+6st in whileLoop
+	Learn the component [U] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [y, G] using L-Star
+	Learn the component [o, G] using L-Star
+	Learn the component [j, G] using L-Star
+7st in whileLoop
+	Learn the component [U] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [y, G] using L-Star
+	Learn the component [o, G] using L-Star
+	Learn the component [j, G] using L-Star
+	Learn the component [g, G] using L-Star
+1st in whileLoop
+	Learn the component [j] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [e, G] using L-Star
+2st in whileLoop
+	Learn the component [j] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [o] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [l, G] using L-Star
+3st in whileLoop
+	Learn the component [j] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [o, G] using L-Star
+4st in whileLoop
+	Learn the component [j] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [o, G] using L-Star
+	Learn the component [v, G] using L-Star
+5st in whileLoop
+	Learn the component [j] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [o, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [y, G] using L-Star
+6st in whileLoop
+	Learn the component [U] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [o, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [y, G] using L-Star
+	Learn the component [j, G] using L-Star
+7st in whileLoop
+	Learn the component [U] using L-Star
+	Learn the component [e, G] using L-Star
+	Learn the component [l, G] using L-Star
+	Learn the component [o, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [y, G] using L-Star
+	Learn the component [j, G] using L-Star
+	Learn the component [g, G] using L-Star
+1st in whileLoop
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [v, G] using L-Star
+2st in whileLoop
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [a, G] using L-Star
+3st in whileLoop
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [a, G] using L-Star
+	Learn the component [b, G] using L-Star
+4st in whileLoop
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [a, G] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [g, G] using L-Star
+5st in whileLoop
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [a, G] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [g, G] using L-Star
+	Learn the component [J, G] using L-Star
+6st in whileLoop
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [a, G] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [g, G] using L-Star
+	Learn the component [J, G] using L-Star
+	Learn the component [I, G] using L-Star
+7st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [a, G] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [g, G] using L-Star
+	Learn the component [J, G] using L-Star
+	Learn the component [I, G] using L-Star
+	Learn the component [K, G] using L-Star
+1st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [a, G] using L-Star
+2st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [a, G] using L-Star
+	Learn the component [v, G] using L-Star
+3st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [a, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [g, G] using L-Star
+4st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [a, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [g, G] using L-Star
+	Learn the component [b, G] using L-Star
+5st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [a, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [g, G] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [I, G] using L-Star
+6st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [a, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [g, G] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [I, G] using L-Star
+	Learn the component [K, G] using L-Star
+7st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [a, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [g, G] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [I, G] using L-Star
+	Learn the component [K, G] using L-Star
+	Learn the component [J, G] using L-Star
+1st in whileLoop
+	Learn the component [a] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [b, G] using L-Star
+2st in whileLoop
+	Learn the component [a] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [g, G] using L-Star
+3st in whileLoop
+	Learn the component [a] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [g, G] using L-Star
+	Learn the component [I, G] using L-Star
+4st in whileLoop
+	Learn the component [a] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [g, G] using L-Star
+	Learn the component [I, G] using L-Star
+	Learn the component [v, G] using L-Star
+5st in whileLoop
+	Learn the component [a] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [g, G] using L-Star
+	Learn the component [I, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [J, G] using L-Star
+6st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [g, G] using L-Star
+	Learn the component [I, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [J, G] using L-Star
+	Learn the component [a, G] using L-Star
+7st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [b, G] using L-Star
+	Learn the component [g, G] using L-Star
+	Learn the component [I, G] using L-Star
+	Learn the component [v, G] using L-Star
+	Learn the component [J, G] using L-Star
+	Learn the component [a, G] using L-Star
+	Learn the component [K, G] using L-Star
+1st in whileLoop
+	Learn the component [J] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [A] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [M, h] using L-Star
+2st in whileLoop
+	Learn the component [g] using L-Star
+	Learn the component [A] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [M, h] using L-Star
+	Learn the component [J, h] using L-Star
+3st in whileLoop
+	Learn the component [g] using L-Star
+	Learn the component [A] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [M, h] using L-Star
+	Learn the component [J, h] using L-Star
+	Learn the component [k, h] using L-Star
+4st in whileLoop
+	Learn the component [g] using L-Star
+	Learn the component [A] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [M, h] using L-Star
+	Learn the component [J, h] using L-Star
+	Learn the component [k, h] using L-Star
+	Learn the component [Q, h] using L-Star
+5st in whileLoop
+	Learn the component [g] using L-Star
+	Learn the component [A] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [M, h] using L-Star
+	Learn the component [J, h] using L-Star
+	Learn the component [k, h] using L-Star
+	Learn the component [Q, h] using L-Star
+	Learn the component [a, h] using L-Star
+6st in whileLoop
+	Learn the component [g] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [M, h] using L-Star
+	Learn the component [J, h] using L-Star
+	Learn the component [k, h] using L-Star
+	Learn the component [Q, h] using L-Star
+	Learn the component [a, h] using L-Star
+	Learn the component [A, h] using L-Star
+1st in whileLoop
+	Learn the component [J] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [A] using L-Star
+	Learn the component [Q, h] using L-Star
+2st in whileLoop
+	Learn the component [J] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [Q, h] using L-Star
+	Learn the component [A, h] using L-Star
+3st in whileLoop
+	Learn the component [D] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [Q, h] using L-Star
+	Learn the component [A, h] using L-Star
+	Learn the component [J, h] using L-Star
+4st in whileLoop
+	Learn the component [D] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [Q, h] using L-Star
+	Learn the component [A, h] using L-Star
+	Learn the component [J, h] using L-Star
+	Learn the component [M, h] using L-Star
+5st in whileLoop
+	Learn the component [D] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [Q, h] using L-Star
+	Learn the component [A, h] using L-Star
+	Learn the component [J, h] using L-Star
+	Learn the component [M, h] using L-Star
+	Learn the component [a, h] using L-Star
+6st in whileLoop
+	Learn the component [D] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [Q, h] using L-Star
+	Learn the component [A, h] using L-Star
+	Learn the component [J, h] using L-Star
+	Learn the component [M, h] using L-Star
+	Learn the component [a, h] using L-Star
+	Learn the component [k, h] using L-Star
+1st in whileLoop
+	Learn the component [A] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [M, h] using L-Star
+2st in whileLoop
+	Learn the component [A] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [M, h] using L-Star
+	Learn the component [Q, h] using L-Star
+3st in whileLoop
+	Learn the component [A] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [M, h] using L-Star
+	Learn the component [Q, h] using L-Star
+	Learn the component [a, h] using L-Star
+4st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [M, h] using L-Star
+	Learn the component [Q, h] using L-Star
+	Learn the component [a, h] using L-Star
+	Learn the component [A, h] using L-Star
+5st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [M, h] using L-Star
+	Learn the component [Q, h] using L-Star
+	Learn the component [a, h] using L-Star
+	Learn the component [A, h] using L-Star
+	Learn the component [J, h] using L-Star
+6st in whileLoop
+	Learn the component [D] using L-Star
+	Learn the component [g] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [M, h] using L-Star
+	Learn the component [Q, h] using L-Star
+	Learn the component [a, h] using L-Star
+	Learn the component [A, h] using L-Star
+	Learn the component [J, h] using L-Star
+	Learn the component [k, h] using L-Star
+1st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [n] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [O, L] using L-Star
+2st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [n] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [Z, L] using L-Star
+3st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [n] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [Z, L] using L-Star
+	Learn the component [x, L] using L-Star
+4st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [n] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [Z, L] using L-Star
+	Learn the component [x, L] using L-Star
+	Learn the component [f, L] using L-Star
+5st in whileLoop
+	Learn the component [n] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [Z, L] using L-Star
+	Learn the component [x, L] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [Q, L] using L-Star
+6st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [H] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [Z, L] using L-Star
+	Learn the component [x, L] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [Q, L] using L-Star
+	Learn the component [n, L] using L-Star
+7st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [Z, L] using L-Star
+	Learn the component [x, L] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [Q, L] using L-Star
+	Learn the component [n, L] using L-Star
+	Learn the component [H, L] using L-Star
+1st in whileLoop
+	Learn the component [f] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [n] using L-Star
+	Learn the component [H, L] using L-Star
+2st in whileLoop
+	Learn the component [O] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [n] using L-Star
+	Learn the component [H, L] using L-Star
+	Learn the component [f, L] using L-Star
+3st in whileLoop
+	Learn the component [O] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H, L] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [n, L] using L-Star
+4st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H, L] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [n, L] using L-Star
+	Learn the component [O, L] using L-Star
+5st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H, L] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [n, L] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [x, L] using L-Star
+6st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H, L] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [n, L] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [x, L] using L-Star
+	Learn the component [Q, L] using L-Star
+7st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [H, L] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [n, L] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [x, L] using L-Star
+	Learn the component [Q, L] using L-Star
+	Learn the component [Z, L] using L-Star
+1st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [n] using L-Star
+	Learn the component [H] using L-Star
+	Learn the component [f, L] using L-Star
+2st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [n, L] using L-Star
+3st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [n, L] using L-Star
+	Learn the component [O, L] using L-Star
+4st in whileLoop
+	Learn the component [Z] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [n, L] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [Q, L] using L-Star
+5st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [H] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [n, L] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [Q, L] using L-Star
+	Learn the component [Z, L] using L-Star
+6st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [n, L] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [Q, L] using L-Star
+	Learn the component [Z, L] using L-Star
+	Learn the component [H, L] using L-Star
+7st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [f, L] using L-Star
+	Learn the component [n, L] using L-Star
+	Learn the component [O, L] using L-Star
+	Learn the component [Q, L] using L-Star
+	Learn the component [Z, L] using L-Star
+	Learn the component [H, L] using L-Star
+	Learn the component [x, L] using L-Star
+1st in whileLoop
+	Learn the component [G] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [c, X] using L-Star
+2st in whileLoop
+	Learn the component [G] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [q, X] using L-Star
+3st in whileLoop
+	Learn the component [G] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [q, X] using L-Star
+	Learn the component [p, X] using L-Star
+4st in whileLoop
+	Learn the component [G] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [q, X] using L-Star
+	Learn the component [p, X] using L-Star
+	Learn the component [i, X] using L-Star
+5st in whileLoop
+	Learn the component [h] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [q, X] using L-Star
+	Learn the component [p, X] using L-Star
+	Learn the component [i, X] using L-Star
+	Learn the component [G, X] using L-Star
+6st in whileLoop
+	Learn the component [h] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [q, X] using L-Star
+	Learn the component [p, X] using L-Star
+	Learn the component [i, X] using L-Star
+	Learn the component [G, X] using L-Star
+	Learn the component [x, X] using L-Star
+7st in whileLoop
+	Learn the component [K] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [q, X] using L-Star
+	Learn the component [p, X] using L-Star
+	Learn the component [i, X] using L-Star
+	Learn the component [G, X] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [h, X] using L-Star
+1st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [G] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [x, X] using L-Star
+2st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [G, X] using L-Star
+3st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [G, X] using L-Star
+	Learn the component [h, X] using L-Star
+4st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [G, X] using L-Star
+	Learn the component [h, X] using L-Star
+	Learn the component [c, X] using L-Star
+5st in whileLoop
+	Learn the component [p] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [G, X] using L-Star
+	Learn the component [h, X] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [q, X] using L-Star
+6st in whileLoop
+	Learn the component [K] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [G, X] using L-Star
+	Learn the component [h, X] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [q, X] using L-Star
+	Learn the component [p, X] using L-Star
+7st in whileLoop
+	Learn the component [K] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [G, X] using L-Star
+	Learn the component [h, X] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [q, X] using L-Star
+	Learn the component [p, X] using L-Star
+	Learn the component [i, X] using L-Star
+1st in whileLoop
+	Learn the component [h] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [G] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [i] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [q, X] using L-Star
+2st in whileLoop
+	Learn the component [h] using L-Star
+1st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [z, S] using L-Star
+2st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [z, S] using L-Star
+	Learn the component [u, S] using L-Star
+3st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [z, S] using L-Star
+	Learn the component [u, S] using L-Star
+	Learn the component [y, S] using L-Star
+4st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [z, S] using L-Star
+	Learn the component [u, S] using L-Star
+	Learn the component [y, S] using L-Star
+	Learn the component [s, S] using L-Star
+5st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [z, S] using L-Star
+	Learn the component [u, S] using L-Star
+	Learn the component [y, S] using L-Star
+	Learn the component [s, S] using L-Star
+	Learn the component [t, S] using L-Star
+6st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [z, S] using L-Star
+	Learn the component [u, S] using L-Star
+	Learn the component [y, S] using L-Star
+	Learn the component [s, S] using L-Star
+	Learn the component [t, S] using L-Star
+	Learn the component [v, S] using L-Star
+1st in whileLoop
+	Learn the component [z] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [u, S] using L-Star
+2st in whileLoop
+	Learn the component [z] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [u, S] using L-Star
+	Learn the component [s, S] using L-Star
+3st in whileLoop
+	Learn the component [z] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [u, S] using L-Star
+	Learn the component [s, S] using L-Star
+	Learn the component [y, S] using L-Star
+4st in whileLoop
+	Learn the component [z] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [u, S] using L-Star
+	Learn the component [s, S] using L-Star
+	Learn the component [y, S] using L-Star
+	Learn the component [t, S] using L-Star
+5st in whileLoop
+	Learn the component [z] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [u, S] using L-Star
+	Learn the component [s, S] using L-Star
+	Learn the component [y, S] using L-Star
+	Learn the component [t, S] using L-Star
+	Learn the component [v, S] using L-Star
+6st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [u, S] using L-Star
+	Learn the component [s, S] using L-Star
+	Learn the component [y, S] using L-Star
+	Learn the component [t, S] using L-Star
+	Learn the component [v, S] using L-Star
+	Learn the component [z, S] using L-Star
+1st in whileLoop
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [z] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [t, S] using L-Star
+2st in whileLoop
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [z] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [t, S] using L-Star
+	Learn the component [y, S] using L-Star
+3st in whileLoop
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [z] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [t, S] using L-Star
+	Learn the component [y, S] using L-Star
+	Learn the component [s, S] using L-Star
+4st in whileLoop
+	Learn the component [v] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [z] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [t, S] using L-Star
+	Learn the component [y, S] using L-Star
+	Learn the component [s, S] using L-Star
+	Learn the component [u, S] using L-Star
+5st in whileLoop
+	Learn the component [a] using L-Star
+	Learn the component [z] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [t, S] using L-Star
+	Learn the component [y, S] using L-Star
+	Learn the component [s, S] using L-Star
+	Learn the component [u, S] using L-Star
+	Learn the component [v, S] using L-Star
+6st in whileLoop
+	Learn the component [a] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [t, S] using L-Star
+	Learn the component [y, S] using L-Star
+	Learn the component [s, S] using L-Star
+	Learn the component [u, S] using L-Star
+	Learn the component [v, S] using L-Star
+	Learn the component [z, S] using L-Star
+1st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [v, i] using L-Star
+2st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [v, i] using L-Star
+	Learn the component [O, i] using L-Star
+3st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [v, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [x, i] using L-Star
+4st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [v, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [J, i] using L-Star
+5st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [v, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [J, i] using L-Star
+	Learn the component [b, i] using L-Star
+6st in whileLoop
+	Learn the component [u] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [v, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [J, i] using L-Star
+	Learn the component [b, i] using L-Star
+	Learn the component [e, i] using L-Star
+7st in whileLoop
+	Learn the component [u] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [v, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [J, i] using L-Star
+	Learn the component [b, i] using L-Star
+	Learn the component [e, i] using L-Star
+	Learn the component [D, i] using L-Star
+1st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [x, i] using L-Star
+2st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [J, i] using L-Star
+3st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [J, i] using L-Star
+	Learn the component [v, i] using L-Star
+4st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [J, i] using L-Star
+	Learn the component [v, i] using L-Star
+	Learn the component [O, i] using L-Star
+5st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [J, i] using L-Star
+	Learn the component [v, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [b, i] using L-Star
+6st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [u] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [J, i] using L-Star
+	Learn the component [v, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [b, i] using L-Star
+	Learn the component [D, i] using L-Star
+7st in whileLoop
+	Learn the component [u] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [J, i] using L-Star
+	Learn the component [v, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [b, i] using L-Star
+	Learn the component [D, i] using L-Star
+	Learn the component [e, i] using L-Star
+1st in whileLoop
+	Learn the component [u] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [x, i] using L-Star
+2st in whileLoop
+	Learn the component [u] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [D] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [O, i] using L-Star
+3st in whileLoop
+	Learn the component [u] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [D, i] using L-Star
+4st in whileLoop
+	Learn the component [u] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [D, i] using L-Star
+	Learn the component [J, i] using L-Star
+5st in whileLoop
+	Learn the component [u] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [D, i] using L-Star
+	Learn the component [J, i] using L-Star
+	Learn the component [e, i] using L-Star
+6st in whileLoop
+	Learn the component [u] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [D, i] using L-Star
+	Learn the component [J, i] using L-Star
+	Learn the component [e, i] using L-Star
+	Learn the component [v, i] using L-Star
+7st in whileLoop
+	Learn the component [u] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [x, i] using L-Star
+	Learn the component [O, i] using L-Star
+	Learn the component [D, i] using L-Star
+	Learn the component [J, i] using L-Star
+	Learn the component [e, i] using L-Star
+	Learn the component [v, i] using L-Star
+	Learn the component [b, i] using L-Star
+1st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [U, V] using L-Star
+2st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [U, V] using L-Star
+	Learn the component [T, V] using L-Star
+3st in whileLoop
+	Learn the component [f] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [U, V] using L-Star
+	Learn the component [T, V] using L-Star
+	Learn the component [B, V] using L-Star
+4st in whileLoop
+	Learn the component [f] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [U, V] using L-Star
+	Learn the component [T, V] using L-Star
+	Learn the component [B, V] using L-Star
+	Learn the component [Q, V] using L-Star
+5st in whileLoop
+	Learn the component [f] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [U, V] using L-Star
+	Learn the component [T, V] using L-Star
+	Learn the component [B, V] using L-Star
+	Learn the component [Q, V] using L-Star
+	Learn the component [q, V] using L-Star
+6st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [U, V] using L-Star
+	Learn the component [T, V] using L-Star
+	Learn the component [B, V] using L-Star
+	Learn the component [Q, V] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [f, V] using L-Star
+7st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [U, V] using L-Star
+	Learn the component [T, V] using L-Star
+	Learn the component [B, V] using L-Star
+	Learn the component [Q, V] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [f, V] using L-Star
+	Learn the component [M, V] using L-Star
+1st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [f, V] using L-Star
+2st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [f, V] using L-Star
+	Learn the component [q, V] using L-Star
+3st in whileLoop
+	Learn the component [T] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [f, V] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [Q, V] using L-Star
+4st in whileLoop
+	Learn the component [T] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [f, V] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [Q, V] using L-Star
+	Learn the component [M, V] using L-Star
+5st in whileLoop
+	Learn the component [T] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [f, V] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [Q, V] using L-Star
+	Learn the component [M, V] using L-Star
+	Learn the component [B, V] using L-Star
+6st in whileLoop
+	Learn the component [T] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [f, V] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [Q, V] using L-Star
+	Learn the component [M, V] using L-Star
+	Learn the component [B, V] using L-Star
+	Learn the component [U, V] using L-Star
+7st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [f, V] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [Q, V] using L-Star
+	Learn the component [M, V] using L-Star
+	Learn the component [B, V] using L-Star
+	Learn the component [U, V] using L-Star
+	Learn the component [T, V] using L-Star
+1st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [q, V] using L-Star
+2st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [U] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [M, V] using L-Star
+3st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [M, V] using L-Star
+	Learn the component [U, V] using L-Star
+4st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [M, V] using L-Star
+	Learn the component [U, V] using L-Star
+	Learn the component [Q, V] using L-Star
+5st in whileLoop
+	Learn the component [f] using L-Star
+	Learn the component [T] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [M, V] using L-Star
+	Learn the component [U, V] using L-Star
+	Learn the component [Q, V] using L-Star
+	Learn the component [B, V] using L-Star
+6st in whileLoop
+	Learn the component [f] using L-Star
+	Learn the component [e] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [M, V] using L-Star
+	Learn the component [U, V] using L-Star
+	Learn the component [Q, V] using L-Star
+	Learn the component [B, V] using L-Star
+	Learn the component [T, V] using L-Star
+7st in whileLoop
+	Learn the component [e] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [q, V] using L-Star
+	Learn the component [M, V] using L-Star
+	Learn the component [U, V] using L-Star
+	Learn the component [Q, V] using L-Star
+	Learn the component [B, V] using L-Star
+	Learn the component [T, V] using L-Star
+	Learn the component [f, V] using L-Star
+1st in whileLoop
+	Learn the component [M] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [t, h] using L-Star
+2st in whileLoop
+	Learn the component [M] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [t, h] using L-Star
+	Learn the component [p, h] using L-Star
+3st in whileLoop
+	Learn the component [M] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [t, h] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [y, h] using L-Star
+4st in whileLoop
+	Learn the component [M] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [t, h] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [y, h] using L-Star
+	Learn the component [F, h] using L-Star
+5st in whileLoop
+	Learn the component [M] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [t, h] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [y, h] using L-Star
+	Learn the component [F, h] using L-Star
+	Learn the component [Z, h] using L-Star
+6st in whileLoop
+	Learn the component [M] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [t, h] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [y, h] using L-Star
+	Learn the component [F, h] using L-Star
+	Learn the component [Z, h] using L-Star
+	Learn the component [r, h] using L-Star
+7st in whileLoop
+	Learn the component [M] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [t, h] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [y, h] using L-Star
+	Learn the component [F, h] using L-Star
+	Learn the component [Z, h] using L-Star
+	Learn the component [r, h] using L-Star
+	Learn the component [c, h] using L-Star
+1st in whileLoop
+	Learn the component [y] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [p, h] using L-Star
+2st in whileLoop
+	Learn the component [y] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [F, h] using L-Star
+3st in whileLoop
+	Learn the component [y] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [F, h] using L-Star
+	Learn the component [c, h] using L-Star
+4st in whileLoop
+	Learn the component [y] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [F, h] using L-Star
+	Learn the component [c, h] using L-Star
+	Learn the component [Z, h] using L-Star
+5st in whileLoop
+	Learn the component [r] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [F, h] using L-Star
+	Learn the component [c, h] using L-Star
+	Learn the component [Z, h] using L-Star
+	Learn the component [y, h] using L-Star
+6st in whileLoop
+	Learn the component [M] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [F, h] using L-Star
+	Learn the component [c, h] using L-Star
+	Learn the component [Z, h] using L-Star
+	Learn the component [y, h] using L-Star
+	Learn the component [r, h] using L-Star
+7st in whileLoop
+	Learn the component [M] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [F, h] using L-Star
+	Learn the component [c, h] using L-Star
+	Learn the component [Z, h] using L-Star
+	Learn the component [y, h] using L-Star
+	Learn the component [r, h] using L-Star
+	Learn the component [t, h] using L-Star
+1st in whileLoop
+	Learn the component [y] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [p, h] using L-Star
+2st in whileLoop
+	Learn the component [c] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [y, h] using L-Star
+3st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [y, h] using L-Star
+	Learn the component [c, h] using L-Star
+4st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [Z] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [y, h] using L-Star
+	Learn the component [c, h] using L-Star
+	Learn the component [F, h] using L-Star
+5st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [P] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [y, h] using L-Star
+	Learn the component [c, h] using L-Star
+	Learn the component [F, h] using L-Star
+	Learn the component [Z, h] using L-Star
+6st in whileLoop
+	Learn the component [P] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [r] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [y, h] using L-Star
+	Learn the component [c, h] using L-Star
+	Learn the component [F, h] using L-Star
+	Learn the component [Z, h] using L-Star
+	Learn the component [t, h] using L-Star
+7st in whileLoop
+	Learn the component [P] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [p, h] using L-Star
+	Learn the component [y, h] using L-Star
+	Learn the component [c, h] using L-Star
+	Learn the component [F, h] using L-Star
+	Learn the component [Z, h] using L-Star
+	Learn the component [t, h] using L-Star
+	Learn the component [r, h] using L-Star
+1st in whileLoop
+	Learn the component [d] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [r, b] using L-Star
+2st in whileLoop
+	Learn the component [d] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [r, b] using L-Star
+	Learn the component [x, b] using L-Star
+3st in whileLoop
+	Learn the component [d] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [r, b] using L-Star
+	Learn the component [x, b] using L-Star
+	Learn the component [y, b] using L-Star
+4st in whileLoop
+	Learn the component [d] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [r, b] using L-Star
+	Learn the component [x, b] using L-Star
+	Learn the component [y, b] using L-Star
+	Learn the component [C, b] using L-Star
+5st in whileLoop
+	Learn the component [d] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [r, b] using L-Star
+	Learn the component [x, b] using L-Star
+	Learn the component [y, b] using L-Star
+	Learn the component [C, b] using L-Star
+	Learn the component [l, b] using L-Star
+1st in whileLoop
+	Learn the component [r] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [y, b] using L-Star
+2st in whileLoop
+	Learn the component [r] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [y, b] using L-Star
+	Learn the component [x, b] using L-Star
+3st in whileLoop
+	Learn the component [r] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [y, b] using L-Star
+	Learn the component [x, b] using L-Star
+	Learn the component [C, b] using L-Star
+4st in whileLoop
+	Learn the component [r] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [y, b] using L-Star
+	Learn the component [x, b] using L-Star
+	Learn the component [C, b] using L-Star
+	Learn the component [l, b] using L-Star
+5st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [y, b] using L-Star
+	Learn the component [x, b] using L-Star
+	Learn the component [C, b] using L-Star
+	Learn the component [l, b] using L-Star
+	Learn the component [r, b] using L-Star
+1st in whileLoop
+	Learn the component [r] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [x, b] using L-Star
+2st in whileLoop
+	Learn the component [r] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [x, b] using L-Star
+	Learn the component [y, b] using L-Star
+3st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [C] using L-Star
+	Learn the component [x, b] using L-Star
+	Learn the component [y, b] using L-Star
+	Learn the component [r, b] using L-Star
+4st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [x, b] using L-Star
+	Learn the component [y, b] using L-Star
+	Learn the component [r, b] using L-Star
+	Learn the component [C, b] using L-Star
+5st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [x, b] using L-Star
+	Learn the component [y, b] using L-Star
+	Learn the component [r, b] using L-Star
+	Learn the component [C, b] using L-Star
+	Learn the component [l, b] using L-Star
+1st in whileLoop
+	Learn the component [f] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [p, J] using L-Star
+2st in whileLoop
+	Learn the component [f] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [q, J] using L-Star
+3st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [q, J] using L-Star
+	Learn the component [f, J] using L-Star
+4st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [q, J] using L-Star
+	Learn the component [f, J] using L-Star
+	Learn the component [j, J] using L-Star
+5st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [q, J] using L-Star
+	Learn the component [f, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [B, J] using L-Star
+6st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [w] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [q, J] using L-Star
+	Learn the component [f, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [B, J] using L-Star
+	Learn the component [s, J] using L-Star
+7st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [q, J] using L-Star
+	Learn the component [f, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [B, J] using L-Star
+	Learn the component [s, J] using L-Star
+	Learn the component [w, J] using L-Star
+8st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [q, J] using L-Star
+	Learn the component [f, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [B, J] using L-Star
+	Learn the component [s, J] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [F, J] using L-Star
+1st in whileLoop
+	Learn the component [j] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [w, J] using L-Star
+2st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [j, J] using L-Star
+3st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [f, J] using L-Star
+4st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [f, J] using L-Star
+	Learn the component [s, J] using L-Star
+5st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [f, J] using L-Star
+	Learn the component [s, J] using L-Star
+	Learn the component [p, J] using L-Star
+6st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [f, J] using L-Star
+	Learn the component [s, J] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [B, J] using L-Star
+7st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [f, J] using L-Star
+	Learn the component [s, J] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [B, J] using L-Star
+	Learn the component [F, J] using L-Star
+8st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [f, J] using L-Star
+	Learn the component [s, J] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [B, J] using L-Star
+	Learn the component [F, J] using L-Star
+	Learn the component [q, J] using L-Star
+1st in whileLoop
+	Learn the component [q] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [w, J] using L-Star
+2st in whileLoop
+	Learn the component [q] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [p] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [s, J] using L-Star
+3st in whileLoop
+	Learn the component [q] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [j] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [s, J] using L-Star
+	Learn the component [p, J] using L-Star
+4st in whileLoop
+	Learn the component [q] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [s, J] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [j, J] using L-Star
+5st in whileLoop
+	Learn the component [F] using L-Star
+	Learn the component [f] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [s, J] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [q, J] using L-Star
+6st in whileLoop
+	Learn the component [F] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [s, J] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [q, J] using L-Star
+	Learn the component [f, J] using L-Star
+7st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [s, J] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [q, J] using L-Star
+	Learn the component [f, J] using L-Star
+	Learn the component [F, J] using L-Star
+8st in whileLoop
+	Learn the component [x] using L-Star
+	Learn the component [w, J] using L-Star
+	Learn the component [s, J] using L-Star
+	Learn the component [p, J] using L-Star
+	Learn the component [j, J] using L-Star
+	Learn the component [q, J] using L-Star
+	Learn the component [f, J] using L-Star
+	Learn the component [F, J] using L-Star
+	Learn the component [B, J] using L-Star
+1st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [m] using L-Star
+	Learn the component [G] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [X] using L-Star
+	Learn the component [B, l] using L-Star
+2st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [m] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [X] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [G, l] using L-Star
+3st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [m] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [G, l] using L-Star
+	Learn the component [X, l] using L-Star
+4st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [G, l] using L-Star
+	Learn the component [X, l] using L-Star
+	Learn the component [m, l] using L-Star
+5st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [G, l] using L-Star
+	Learn the component [X, l] using L-Star
+	Learn the component [m, l] using L-Star
+	Learn the component [q, l] using L-Star
+6st in whileLoop
+	Learn the component [R] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [G, l] using L-Star
+	Learn the component [X, l] using L-Star
+	Learn the component [m, l] using L-Star
+	Learn the component [q, l] using L-Star
+	Learn the component [t, l] using L-Star
+7st in whileLoop
+	Learn the component [M] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [G, l] using L-Star
+	Learn the component [X, l] using L-Star
+	Learn the component [m, l] using L-Star
+	Learn the component [q, l] using L-Star
+	Learn the component [t, l] using L-Star
+	Learn the component [R, l] using L-Star
+1st in whileLoop
+	Learn the component [G] using L-Star
+	Learn the component [t] using L-Star
+	Learn the component [m] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [X] using L-Star
+	Learn the component [R, l] using L-Star
+2st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [m] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [X] using L-Star
+	Learn the component [R, l] using L-Star
+	Learn the component [G, l] using L-Star
+3st in whileLoop
+	Learn the component [t] using L-Star
+	Learn the component [m] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [X] using L-Star
+	Learn the component [R, l] using L-Star
+	Learn the component [G, l] using L-Star
+	Learn the component [B, l] using L-Star
+4st in whileLoop
+	Learn the component [m] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [X] using L-Star
+	Learn the component [R, l] using L-Star
+	Learn the component [G, l] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [t, l] using L-Star
+5st in whileLoop
+	Learn the component [m] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [X] using L-Star
+	Learn the component [R, l] using L-Star
+	Learn the component [G, l] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [t, l] using L-Star
+	Learn the component [q, l] using L-Star
+6st in whileLoop
+	Learn the component [m] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [R, l] using L-Star
+	Learn the component [G, l] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [t, l] using L-Star
+	Learn the component [q, l] using L-Star
+	Learn the component [X, l] using L-Star
+7st in whileLoop
+	Learn the component [M] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [R, l] using L-Star
+	Learn the component [G, l] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [t, l] using L-Star
+	Learn the component [q, l] using L-Star
+	Learn the component [X, l] using L-Star
+	Learn the component [m, l] using L-Star
+1st in whileLoop
+	Learn the component [m] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [G] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [X] using L-Star
+	Learn the component [q] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [t, l] using L-Star
+2st in whileLoop
+	Learn the component [m] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [G] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [X] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [t, l] using L-Star
+	Learn the component [q, l] using L-Star
+3st in whileLoop
+	Learn the component [m] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [G] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [t, l] using L-Star
+	Learn the component [q, l] using L-Star
+	Learn the component [X, l] using L-Star
+4st in whileLoop
+	Learn the component [m] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [G] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [t, l] using L-Star
+	Learn the component [q, l] using L-Star
+	Learn the component [X, l] using L-Star
+	Learn the component [B, l] using L-Star
+5st in whileLoop
+	Learn the component [m] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [t, l] using L-Star
+	Learn the component [q, l] using L-Star
+	Learn the component [X, l] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [G, l] using L-Star
+6st in whileLoop
+	Learn the component [W] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [t, l] using L-Star
+	Learn the component [q, l] using L-Star
+	Learn the component [X, l] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [G, l] using L-Star
+	Learn the component [m, l] using L-Star
+7st in whileLoop
+	Learn the component [W] using L-Star
+	Learn the component [M] using L-Star
+	Learn the component [t, l] using L-Star
+	Learn the component [q, l] using L-Star
+	Learn the component [X, l] using L-Star
+	Learn the component [B, l] using L-Star
+	Learn the component [G, l] using L-Star
+	Learn the component [m, l] using L-Star
+	Learn the component [R, l] using L-Star
+1st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [Y, H] using L-Star
+2st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [Y, H] using L-Star
+	Learn the component [y, H] using L-Star
+3st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [Y, H] using L-Star
+	Learn the component [y, H] using L-Star
+	Learn the component [S, H] using L-Star
+4st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [Y, H] using L-Star
+	Learn the component [y, H] using L-Star
+	Learn the component [S, H] using L-Star
+	Learn the component [I, H] using L-Star
+1st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [I, H] using L-Star
+2st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [I, H] using L-Star
+	Learn the component [S, H] using L-Star
+3st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [I, H] using L-Star
+	Learn the component [S, H] using L-Star
+	Learn the component [Y, H] using L-Star
+4st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [I, H] using L-Star
+	Learn the component [S, H] using L-Star
+	Learn the component [Y, H] using L-Star
+	Learn the component [y, H] using L-Star
+1st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [Y, H] using L-Star
+2st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [y] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [Y, H] using L-Star
+	Learn the component [I, H] using L-Star
+3st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [S] using L-Star
+	Learn the component [Y, H] using L-Star
+	Learn the component [I, H] using L-Star
+	Learn the component [y, H] using L-Star
+4st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [O] using L-Star
+	Learn the component [Y, H] using L-Star
+	Learn the component [I, H] using L-Star
+	Learn the component [y, H] using L-Star
+	Learn the component [S, H] using L-Star
+1st in whileLoop
+	Learn the component [s] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Q, r] using L-Star
+2st in whileLoop
+	Learn the component [s] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [J] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Q, r] using L-Star
+	Learn the component [v, r] using L-Star
+3st in whileLoop
+	Learn the component [s] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Q, r] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [J, r] using L-Star
+4st in whileLoop
+	Learn the component [s] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Q, r] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [J, r] using L-Star
+	Learn the component [I, r] using L-Star
+5st in whileLoop
+	Learn the component [s] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Q, r] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [J, r] using L-Star
+	Learn the component [I, r] using L-Star
+	Learn the component [F, r] using L-Star
+6st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [Q, r] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [J, r] using L-Star
+	Learn the component [I, r] using L-Star
+	Learn the component [F, r] using L-Star
+	Learn the component [s, r] using L-Star
+1st in whileLoop
+	Learn the component [J] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [v, r] using L-Star
+2st in whileLoop
+	Learn the component [I] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [J, r] using L-Star
+3st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [J, r] using L-Star
+	Learn the component [I, r] using L-Star
+4st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [Q] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [J, r] using L-Star
+	Learn the component [I, r] using L-Star
+	Learn the component [F, r] using L-Star
+5st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [J, r] using L-Star
+	Learn the component [I, r] using L-Star
+	Learn the component [F, r] using L-Star
+	Learn the component [Q, r] using L-Star
+6st in whileLoop
+	Learn the component [b] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [J, r] using L-Star
+	Learn the component [I, r] using L-Star
+	Learn the component [F, r] using L-Star
+	Learn the component [Q, r] using L-Star
+	Learn the component [s, r] using L-Star
+1st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [v] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [J, r] using L-Star
+2st in whileLoop
+	Learn the component [Q] using L-Star
+	Learn the component [Y] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [J, r] using L-Star
+	Learn the component [v, r] using L-Star
+3st in whileLoop
+	Learn the component [Y] using L-Star
+	Learn the component [s] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [J, r] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [Q, r] using L-Star
+4st in whileLoop
+	Learn the component [Y] using L-Star
+	Learn the component [F] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [J, r] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [Q, r] using L-Star
+	Learn the component [s, r] using L-Star
+5st in whileLoop
+	Learn the component [Y] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [I] using L-Star
+	Learn the component [J, r] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [Q, r] using L-Star
+	Learn the component [s, r] using L-Star
+	Learn the component [F, r] using L-Star
+6st in whileLoop
+	Learn the component [Y] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [l] using L-Star
+	Learn the component [J, r] using L-Star
+	Learn the component [v, r] using L-Star
+	Learn the component [Q, r] using L-Star
+	Learn the component [s, r] using L-Star
+	Learn the component [F, r] using L-Star
+	Learn the component [I, r] using L-Star
+1st in whileLoop
+	Learn the component [n] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [U, X] using L-Star
+2st in whileLoop
+	Learn the component [n] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [W, X] using L-Star
+3st in whileLoop
+	Learn the component [n] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [W, X] using L-Star
+	Learn the component [x, X] using L-Star
+4st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [W, X] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [n, X] using L-Star
+5st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [W, X] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [d, X] using L-Star
+6st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [W, X] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [d, X] using L-Star
+	Learn the component [a, X] using L-Star
+7st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [W, X] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [d, X] using L-Star
+	Learn the component [a, X] using L-Star
+	Learn the component [c, X] using L-Star
+1st in whileLoop
+	Learn the component [d] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [n] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [U, X] using L-Star
+2st in whileLoop
+	Learn the component [d] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [n, X] using L-Star
+3st in whileLoop
+	Learn the component [d] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [c, X] using L-Star
+4st in whileLoop
+	Learn the component [d] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [x, X] using L-Star
+5st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [d, X] using L-Star
+6st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [d, X] using L-Star
+	Learn the component [a, X] using L-Star
+7st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [c, X] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [d, X] using L-Star
+	Learn the component [a, X] using L-Star
+	Learn the component [W, X] using L-Star
+1st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [n] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [U, X] using L-Star
+2st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [a] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [n, X] using L-Star
+3st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [x] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [a, X] using L-Star
+4st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [W] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [a, X] using L-Star
+	Learn the component [x, X] using L-Star
+5st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [d] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [a, X] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [W, X] using L-Star
+6st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [c] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [a, X] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [W, X] using L-Star
+	Learn the component [d, X] using L-Star
+7st in whileLoop
+	Learn the component [V] using L-Star
+	Learn the component [b] using L-Star
+	Learn the component [U, X] using L-Star
+	Learn the component [n, X] using L-Star
+	Learn the component [a, X] using L-Star
+	Learn the component [x, X] using L-Star
+	Learn the component [W, X] using L-Star
+	Learn the component [d, X] using L-Star
+	Learn the component [c, X] using L-Star
+1st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [X, t] using L-Star
+2st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [X, t] using L-Star
+	Learn the component [h, t] using L-Star
+3st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [X, t] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [K, t] using L-Star
+1st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [X] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [h, t] using L-Star
+2st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [X] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [K, t] using L-Star
+3st in whileLoop
+	Learn the component [B] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [k] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [K, t] using L-Star
+	Learn the component [X, t] using L-Star
+1st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [h] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [X, t] using L-Star
+2st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [K] using L-Star
+	Learn the component [X, t] using L-Star
+	Learn the component [h, t] using L-Star
+3st in whileLoop
+	Learn the component [k] using L-Star
+	Learn the component [R] using L-Star
+	Learn the component [B] using L-Star
+	Learn the component [E] using L-Star
+	Learn the component [V] using L-Star
+	Learn the component [X, t] using L-Star
+	Learn the component [h, t] using L-Star
+	Learn the component [K, t] using L-Star

@@ -1,35 +1,34 @@
 Calling CE-Distilation for the 1st time:
 	CE before minimizing:
-		H w e K K Y Y v K v q w w Y w Z H r e q t e H Y H q Y K q w Y K q e w Y H Z t t H e K Z Y r v K Y w Z w e v Y v K e Z Y Z Z Y r Z w q H e H Y w t v Z q Z Y H q Z Z r Z e e w w r H Y q r t r H Z Z Z q q w e w H Y e r q r r Z Z r v Z r H t w H Z H e H q t Z K e v Z e Y r r
+		E V h h k k V k h B t V E X t h V k t V B K K B K k E V t V X K t h K E B E X h k R t B h k h h k V k K E t k k h t t K t V R X B B K B K t X h E E E X R t R k R t K B h V V E K h K k E k h t X B B t V
 	CE after cut_ce:
-		H w e K K Y Y v K v q w w Y w Z H r
+		E V h h k k V k h B t V E X t h
 	CE after minimizing:
-		Z r
+		h h h t t h
 
 Calling CE-Distilation for the 2st time:
 	CE before minimizing:
-		w Z K Z Z w v K q q w w e t v t H e v w r w v e v e H w e q H r q q t r v r Y Z Z Y K v v e w r H v q v Y K r r H q v Y Y e t H t r r Y Y q Y Y H e Z v w v v Z v t Z Z Y t w r K w Z Z H t Z q w K r H K q Z r e w q w Z e K t H Z v v t r t Z v q K w Z w v Y r K H t r Z Z t t r Z r Y e e Y e Z q q
+		X h t h k V t t t t V K h R B t k B h t E V h h k K V K R X k E t h X h K B K h h E E k K X h k B h k t K t h K V V X K R X k E h E X E E k t X E V R k K X E X h R B k t E k E h t E t K X k B E E V B V R K R B X V K B K K X X K V h R B B X k k B R t k X B E h K B K k K E k X E X X E R X k k k E B V h t V V B X V t
 	CE after cut_ce:
-		w Z K Z Z w v K q q w w e t v t H e v w r w v e v e H w e q H r q q t
+		X h t h k V t t t t V K
 	CE after minimizing:
-		Z Z Z t t t
+		t t t t t K
 
 Calling CE-Distilation for the 3st time:
 	CE before minimizing:
-		v e Z K Z Y t t Z q Z e K w Z K Z e Y v H H K e t v w q v K e t Z r v Y Z H q r q Y Y v H Z Y K Y v e v r H w t K Y Z v K r t t e r r w v v e v v H e Y e H v H Y r H r v e w q H r r e Z v q Z Y t e e H w Z q q t q Z w t w e K q Y H K v Z H H r K
+		K E t K t k K V t k h R K R K K t X t R t V X h V V X R t R R K K K R h B R E B k V h V V R h X k V t h R K X X V B E V X K t k R X K E R t R R K K k k K V B X t V K X E R t E X t R t V X E k t V V V V K E B t X t B E E V X k E K B t t V B t V E k B t K t K K B B X R h B R t k V E B h R R X k k E
 	CE after cut_ce:
-		v e Z K Z Y t t Z q Z e K w Z K
+		K E t K t k K V t k h R K R K K t X t R t V X h V V X R t R R K K K R h B R E B k V h V V R h X k V t h R K X
 	CE after minimizing:
-		Z K Z Z Z K Z K
+		t t t t X t t X X t X t X
 
 	The result:
-		  - component with 1 inputs: [e]
-		  - component with 1 inputs: [w]
-		  - component with 1 inputs: [q]
-		  - component with 1 inputs: [Y]
-		  - component with 1 inputs: [H]
-		  - component with 1 inputs: [v]
-		  - component with 2 inputs: [r, Z]
-		  - component with 2 inputs: [t, Z]
-		  - component with 2 inputs: [K, Z]
-Sync Actions: [e, w, q, Y, H, v, Z]
+		  - component with 1 inputs: [B]
+		  - component with 1 inputs: [R]
+		  - component with 1 inputs: [E]
+		  - component with 1 inputs: [V]
+		  - component with 1 inputs: [k]
+		  - component with 2 inputs: [h, t]
+		  - component with 2 inputs: [K, t]
+		  - component with 2 inputs: [X, t]
+Sync Actions: [B, R, V, k, t]
