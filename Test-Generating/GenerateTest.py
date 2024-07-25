@@ -14,7 +14,7 @@ class GenerateTest:
         self.maxStates: Final[int] = 11
         self.minComponents: Final[int] = 3
         self.maxComponents: Final[int] = 9
-        self.numOfTests: Final[int] = 1000
+        self.numOfTests: Final[int] = 500
         self.componentCounter = 0
         self.experimentInput = ''
         
@@ -127,7 +127,7 @@ class GenerateTest:
     def generateBus(self, testCounter):
         self.writeTheInput(testCounter, self.BUS)
         
-        numOfComponents = random.randint(self.minComponents, self.maxComponents)
+        numOfComponents = 9
         currentSynchs = self.generateActs()
         currentOutSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)] 
         self.generateSynchComponents(currentSynchs, currentOutSynchs, numOfComponents, self.BUS, testCounter, numOfComponents)

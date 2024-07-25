@@ -250,7 +250,7 @@ public class RunExperiment {
 //                            break;
 
                     }
-                    if(size < 29000) {
+                    if(size < 100) {
                         System.out.println("This one is too small (" + size + " States)");
                         continue;
                     }
