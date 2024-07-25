@@ -15,6 +15,7 @@ class GenerateTest:
         self.maxStates: Final[int] = 11
         self.minComponents: Final[int] = 3
         self.maxComponents: Final[int] = 9
+        self.numOfTests: Final[int] = 1000
         self.componentCounter = 0
         self.experimentInput = ''
         
@@ -27,7 +28,8 @@ class GenerateTest:
         self.TYPES: Final[list] = [self.POINT_TO_POINT, self.MESH,
                                    self.STAR, self.RING,
                                    self.BUS]
-        self.TYPESFUNCS: Final[list] = [self.generatePointTPoint]
+        self.TYPE_FUNCS: Final[list] = [self.generatePointTPoint, self.generateMesh,
+                                        self.generateStar, self.generateRing, self.generateBus]
         
     def generateSynchComponents(self, synchActions, synchOuts, numOfComponents, type, testCounter, allComponentsCount):
         for i in range(numOfComponents):
@@ -182,21 +184,10 @@ class GenerateTest:
         self.componentCounter = 0  
             
     def generateAllTests(self):
-        for i in range(1000):
-            self.resetVars(self.POINT_TO_POINT, i+1)
-            self.generatePointTPoint(i+1)
-            
-            self.resetVars(self.MESH, i+1)
-            self.generateMesh(i+1)
-            
-            self.resetVars(self.STAR, i+1)
-            self.generateStar(i+1)
-            
-            self.resetVars(self.BUS, i+1)
-            self.generateBus(i+1)
-            
-            self.resetVars(self.RING, i+1)
-            self.generateRing(i+1)
+        for i in range(self.numOfTests):
+            for j in range(len(self.TYPES)):
+                self.resetVars(self.TYPES[j], i + 1)
+                self.TYPE_FUNCS[j](i + 1)
         
         
     def clearFolder(self, folder):
