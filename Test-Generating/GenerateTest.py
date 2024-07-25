@@ -1,7 +1,6 @@
 import string
 import random
 from typing import Final
-import pydot
 import GenerateComponent as gc
 from itertools import product
 from string import ascii_letters
@@ -26,8 +25,7 @@ class GenerateTest:
         self.BUS: Final[string] = 'Bus'
         
         self.TYPES: Final[list] = [self.POINT_TO_POINT, self.MESH,
-                                   self.STAR, self.RING,
-                                   self.BUS]
+                                   self.STAR, self.RING, self.BUS]
         self.TYPE_FUNCS: Final[list] = [self.generatePointTPoint, self.generateMesh,
                                         self.generateStar, self.generateRing, self.generateBus]
         
@@ -173,6 +171,14 @@ class GenerateTest:
             for j in range(len(self.TYPES)):
                 self.resetVars(self.TYPES[j], i + 1)
                 self.TYPE_FUNCS[j](i + 1)
+                
+    def deletePrevTests(self):
+        targetFolders = ['resources', 'data']
+        for target in targetFolders:
+            self.clearFolder(target)
+            for CurrentType in self.TYPES:
+                os.makedirs(target + '/' + CurrentType)
+        
         
         
     def clearFolder(self, folder):
@@ -191,6 +197,7 @@ class GenerateTest:
         
             
 gt = GenerateTest()
+gt.deletePrevTests()
 gt.generateAllTests()
     
 
