@@ -39,21 +39,6 @@ class GenerateTest:
             if(type != self.MESH):
                 numOfStates = random.randint(2, 5)
             else:
-                # possibleStates = [i for i in range(max(self.minStates - allComponentsCount - 2, 2),\
-                #     self.maxStates - allComponentsCount + 1)] 
-                # if(allComponentsCount >= 7):
-                #     numOfStates = 3
-                # # if(allComponentsCount >= 5):
-                # #     possibleStates = possibleStates[0:4]
-                # #     numOfStates = (random.choices(possibleStates, weights=(4, 3, 2, 1)))[0]
-                # # else:
-                # else:
-                #     possibleStates = possibleStates[-7:-3]
-                #     # numOfStates = (random.choices(possibleStates, weights=(1, 2, 3, 4)))[0]
-                #     numOfStates = (random.choices(possibleStates))[0]
-                
-                # diff = int((allComponentsCount - 2) * 1.5)
-                # numOfStates = random.randint(self.minStates - diff, self.maxStates - diff)
                 numOfStates = random.randint(3, 6)
                 
             
