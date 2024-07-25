@@ -198,9 +198,5 @@ class GenerateTest:
             
 gt = GenerateTest()
 gt.deletePrevTests()
-gt.generateAllTests()
-    
-
-         
-    
+gt.generateAllTests()   
     
