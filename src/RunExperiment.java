@@ -45,7 +45,7 @@ import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
-public class Run_experiment {
+public class RunExperiment {
     public static String FILE_NAME = "FILE_NAME";
     public static String STATES = "STATES";
     public static String INPUTS = "INPUTS";
