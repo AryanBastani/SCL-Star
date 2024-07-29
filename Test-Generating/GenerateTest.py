@@ -23,11 +23,13 @@ class GenerateTest:
         self.STAR: Final[string] = 'Star'
         self.RING: Final[string] = 'Ring'
         self.BUS: Final[string] = 'Bus'
+        self.BIPARTITE: Final[string] = 'Bipartite'
         
         self.TYPES: Final[list] = [self.POINT_TO_POINT, self.MESH,
-                                   self.STAR, self.RING, self.BUS]
+                                   self.STAR, self.RING, self.BUS, self.BIPARTITE]
         self.TYPE_FUNCS: Final[list] = [self.generatePointTPoint, self.generateMesh,
-                                        self.generateStar, self.generateRing, self.generateBus]
+                                        self.generateStar, self.generateRing,
+                                        self.generateBus, self.generateBipartite]
         
     def generateSynchComponents(self, synchActions, synchOuts, numOfComponents, type, testCounter, allComponentsCount):
         for i in range(numOfComponents):
@@ -158,6 +160,9 @@ class GenerateTest:
         
         for component in range(numOfComponents):
             self.generateSynchComponents(synchsActs[component], outSynchs[component], 1, self.RING, testCounter, numOfComponents)
+            
+    def generateBipartite(self):
+        pass
         
         
     def resetVars(self, type, testCounter):
