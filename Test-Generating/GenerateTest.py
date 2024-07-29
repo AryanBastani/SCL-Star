@@ -161,9 +161,32 @@ class GenerateTest:
         for component in range(numOfComponents):
             self.generateSynchComponents(synchsActs[component], outSynchs[component], 1, self.RING, testCounter, numOfComponents)
             
-    def generateBipartite(self):
-        pass
+    def generateBipartite(self, testCounter):
+        self.writeTheInput(testCounter, self.BIPARTITE)
         
+        possibleNumbers = [2, 4, 6, 8]
+        numOfComponents = random.choice(possibleNumbers)
+        synchsActs = [0] * numOfComponents 
+        outSynchs = [0] * numOfComponents 
+        for i in range(numOfComponents):
+            synchsActs[i] = [0] * (int(numOfComponents / 2) * self.numOfEachActs)
+            outSynchs[i] = [0] * (int(numOfComponents / 2) * self.numOfEachActs)
+        
+        for component in range(numOfComponents):
+            if component < numOfComponents/2:
+                for part2Comp in range(int(numOfComponents/2) , numOfComponents):
+                    currentSynchs = self.generateActs()
+                    currentOutSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)]
+                
+                    for synchNum in range(len(currentSynchs)):
+                        synchsActs[component][((part2Comp-int(numOfComponents/2))*self.numOfEachActs) +\
+                                            synchNum] = currentSynchs[synchNum]
+                        outSynchs[component][((part2Comp-int(numOfComponents/2))*self.numOfEachActs) +\
+                            synchNum] = currentOutSynchs[synchNum]
+                        
+                        synchsActs[part2Comp][(component*self.numOfEachActs) + synchNum] = currentSynchs[synchNum]
+                        outSynchs[part2Comp][(component*self.numOfEachActs) + synchNum] = currentOutSynchs[synchNum]
+            self.generateSynchComponents(synchsActs[component], outSynchs[component], 1, self.BIPARTITE, testCounter, numOfComponents)
         
     def resetVars(self, type, testCounter):
         self.clearFolder('resources/' + type + '/' + str(testCounter))
