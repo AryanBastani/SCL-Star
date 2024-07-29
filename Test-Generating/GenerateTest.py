@@ -164,8 +164,9 @@ class GenerateTest:
     def generateBipartite(self, testCounter):
         self.writeTheInput(testCounter, self.BIPARTITE)
         
-        possibleNumbers = [2, 4, 6, 8]
-        numOfComponents = random.choice(possibleNumbers)
+        # possibleNumbers = [2, 4, 6, 8]
+        # numOfComponents = random.choice(possibleNumbers)
+        numOfComponents = 4
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):

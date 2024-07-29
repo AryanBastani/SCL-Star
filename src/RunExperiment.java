@@ -122,7 +122,7 @@ public class RunExperiment {
                 isGenratedTests = true;
                 System.out.println("Please choose the type of generated-benchmark (Enter 1 or 2 or ... or 8):");
                 System.out.println("\t1- Point-To-Point\n\t2- Mesh\n\t3- Star\n\t4- Ring");
-                System.out.println("\t5- Tree\n\t6- Bus\n\t7- Hybrid\n\t8- All types" );
+                System.out.println("\t5- Tree\n\t6- Bus\n\t7- Hybrid\n\t8- Bipartite\n\t9- All types" );
                 benckmarkId = myObj.nextLine();
                 file_path = "Test-Generating/data/";
                 if(benckmarkId.equals("1"))
@@ -139,6 +139,8 @@ public class RunExperiment {
                     file_path += "Bus-All-Tests.txt";
                 else if(benckmarkId.equals("7"))
                     file_path += "Hybrid-All-Tests.txt";
+                else if(benckmarkId.equals("8"))
+                    file_path += "Bipartite-All-Tests.txt";
                 else{
                     file_path = "data/Generated_Benchmarks.txt";
                 }
@@ -217,7 +219,7 @@ public class RunExperiment {
             int componentsCount = 0;
             if(isGenratedTests && isNastedTests) {
                 int numOfTests = 1;
-                while (br.ready() && numOfTests <= 1) {
+                while (br.ready() && numOfTests <= 10) {
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
@@ -250,7 +252,7 @@ public class RunExperiment {
 //                            break;
 
                     }
-                    if(size < 29000) {
+                    if(size < 100) {
                         System.out.println("This one is too small (" + size + " States)");
                         continue;
                     }
