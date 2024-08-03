@@ -5,7 +5,6 @@ import GenerateComponent as gc
 from itertools import product
 from string import ascii_letters
 import os, shutil
-import math
 
 class GenerateTest:
     def __init__(self):
@@ -166,7 +165,7 @@ class GenerateTest:
         self.writeTheInput(testCounter, self.BIPARTITE)
         
         # numOfComponents = random.randint(self.minComponents, self.maxComponents)
-        numOfComponents = 3
+        numOfComponents = 9
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):

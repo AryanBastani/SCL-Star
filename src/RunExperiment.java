@@ -219,7 +219,7 @@ public class RunExperiment {
             int componentsCount = 0;
             if(isGenratedTests && isNastedTests) {
                 int numOfTests = 1;
-                while (br.ready() && numOfTests <= 1) {
+                while (br.ready() && numOfTests <= 7) {
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
@@ -289,27 +289,32 @@ public class RunExperiment {
                     data[csvProperties.getIndex(STATES)] = Integer.toString(target.size());
                     data[csvProperties.getIndex(INPUTS)] = Integer.toString(target.numInputs());
                     Alphabet<String> alphabet = target.getInputAlphabet();
+                    try {
+                        for (int rep = 0; rep < repeat; rep++) {
+                            //   Shuffle the alphabet
+                            String[] alphArr = alphabet.toArray(new String[alphabet.size()]);
+                            Collections.shuffle(Arrays.asList(alphArr));
+                            alphabet = Alphabets.fromArray(alphArr);
+                            data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
 
-                    for (int rep = 0; rep < repeat; rep++) {
-                        //   Shuffle the alphabet
-                        String[] alphArr = alphabet.toArray(new String[alphabet.size()]);
-                        Collections.shuffle(Arrays.asList(alphArr));
-                        alphabet = Alphabets.fromArray(alphArr);
-                        data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
+                            Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
+                            learnProductMealy(target, alphabet, equivalence_method, final_check_mode, inputCounter, rep + 1);
 
-                        Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
-                        learnProductMealy(target, alphabet, equivalence_method, final_check_mode, inputCounter, rep + 1);
+                            //             RUN SCL*
+                            @Nullable CompactMealy result = null;
+                            data[csvProperties.getIndex(LIP + COMPONENTS)] = String.valueOf(componentsCount);
+                            result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId);
 
-                        //             RUN SCL*
-                        @Nullable CompactMealy result = null;
-                        data[csvProperties.getIndex(LIP+COMPONENTS)] = String.valueOf(componentsCount);
-                        result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId);
-
-                        if (result == null) {
-                            System.out.println("the  SUL is not learned completely (CL-Star)");
-                        } else {
-                            Utils.writeDataLineByLine(RESULTS_PATH, data);
+                            if (result == null) {
+                                System.out.println("the  SUL is not learned completely (CL-Star)");
+                            } else {
+                                Utils.writeDataLineByLine(RESULTS_PATH, data);
+                            }
                         }
+                    }
+                    catch (OutOfMemoryError e){
+                        numOfTests--;
+                        inputCounter--;
                     }
                 }
             }
