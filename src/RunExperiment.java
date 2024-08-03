@@ -219,7 +219,7 @@ public class RunExperiment {
             int componentsCount = 0;
             if(isGenratedTests && isNastedTests) {
                 int numOfTests = 1;
-                while (br.ready() && numOfTests <= 10) {
+                while (br.ready() && numOfTests <= 1) {
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));

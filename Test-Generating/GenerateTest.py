@@ -5,6 +5,7 @@ import GenerateComponent as gc
 from itertools import product
 from string import ascii_letters
 import os, shutil
+import math
 
 class GenerateTest:
     def __init__(self):
@@ -14,7 +15,7 @@ class GenerateTest:
         self.maxStates: Final[int] = 11
         self.minComponents: Final[int] = 3
         self.maxComponents: Final[int] = 9
-        self.numOfTests: Final[int] = 1000
+        self.numOfTests: Final[int] = 300
         self.componentCounter = 0
         self.experimentInput = ''
         
@@ -164,18 +165,18 @@ class GenerateTest:
     def generateBipartite(self, testCounter):
         self.writeTheInput(testCounter, self.BIPARTITE)
         
-        # possibleNumbers = [2, 4, 6, 8]
-        # numOfComponents = random.choice(possibleNumbers)
-        numOfComponents = 4
+        # numOfComponents = random.randint(self.minComponents, self.maxComponents)
+        numOfComponents = 3
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):
-            synchsActs[i] = [0] * (int(numOfComponents / 2) * self.numOfEachActs)
-            outSynchs[i] = [0] * (int(numOfComponents / 2) * self.numOfEachActs)
+            numOfSynchActs = (numOfComponents // 2) + int((numOfComponents % 2) and (i < (numOfComponents // 2)))
+            synchsActs[i] = [0] * (numOfSynchActs * self.numOfEachActs)
+            outSynchs[i] = [0] * (numOfSynchActs * self.numOfEachActs)
         
         for component in range(numOfComponents):
-            if component < numOfComponents/2:
-                for part2Comp in range(int(numOfComponents/2) , numOfComponents):
+            if component < numOfComponents//2:
+                for part2Comp in range(numOfComponents//2 , numOfComponents):
                     currentSynchs = self.generateActs()
                     currentOutSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)]
                 
