@@ -219,7 +219,7 @@ public class RunExperiment {
             int componentsCount = 0;
             if(isGenratedTests && isNastedTests) {
                 int numOfTests = 1;
-                while (br.ready() && numOfTests <= 7) {
+                while (br.ready() && numOfTests <= 200) {
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
@@ -228,6 +228,7 @@ public class RunExperiment {
                     productMealy = null;
                     int size = 0;
                     componentsCount = 0;
+                    List<Alphabet<String>> inputComponentsActs = new ArrayList<>();
                     while (br2.ready()) {
                         componentsCount++;
                         String c2 = br2.readLine();
@@ -235,6 +236,7 @@ public class RunExperiment {
                         File file = new File(c2);
                         try {
                             currentTarget = Utils.getInstance().loadMealyMachineFromDot(file);
+                            inputComponentsActs.add(currentTarget.getInputAlphabet());
                         } catch (Exception e) {
                             System.out.println(file);
                             System.out.println("problem in loading file");
@@ -252,11 +254,11 @@ public class RunExperiment {
 //                            break;
 
                     }
-                    if(size < 100) {
-                        System.out.println("This one is too small (" + size + " States)");
-                        continue;
-                    }
-                    else if(size > 30000) {
+//                    if(size < 100) {
+//                        System.out.println("This one is too small (" + size + " States)");
+//                        continue;
+//                    }
+                    if(size > 30000) {
                         System.out.println("This one is too big (" + size + " States)");
                         System.out.println( componentsCount + " Cmpnss");
                         continue;
@@ -303,7 +305,7 @@ public class RunExperiment {
                             //             RUN SCL*
                             @Nullable CompactMealy result = null;
                             data[csvProperties.getIndex(LIP + COMPONENTS)] = String.valueOf(componentsCount);
-                            result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId);
+                            result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId, inputComponentsActs);
 
                             if (result == null) {
                                 System.out.println("the  SUL is not learned completely (CL-Star)");
@@ -318,139 +320,139 @@ public class RunExperiment {
                     }
                 }
             }
-            else if(isGenratedTests){
-                while (br.ready()) {
-                    c = br.readLine();
-                    CompactMealy<String, Word<String>> currentTarget;
-                    File file = new File(c);
-                    data = new String[dataLen];
-                    data[csvProperties.getIndex(FILE_NAME)] = c;
-                    try {
-                        currentTarget = Utils.getInstance().loadMealyMachineFromDot(file);
-                    } catch (Exception e) {
-                        System.out.println(file);
-                        System.out.println("problem in loading file");
-                        System.out.println(e.toString());
-                        System.out.println(c);
-                        continue;
-                    }
-                    if (productMealy == null) {
-                        productMealy = new ProductMealy(currentTarget);
-                    } else productMealy.mergeFSMs(currentTarget, 1);
-
-                }
-                assert productMealy != null;
-                CompactMealy<String, Word<String>> target = productMealy.getMachine();
-
-                inputCounter++;
-                new File("Results/FSMs/CL-Star/For input" + inputCounter).mkdirs();
-                new File("Results/FSMs/SCL-Star/For input" + inputCounter).mkdirs();
-                new File("Results/FSMs/L-Star/For input" + inputCounter).mkdirs();
-
-                try {
-                    FileWriter inputWriter = new FileWriter("Results/FSMs/INPUTs/input" + inputCounter + "txt");
-                    Utils.printMachine(target, false, inputWriter);
-                    inputWriter.close();
-                } catch (IOException e) {
-                    System.out.println("An error occurred.");
-                    e.printStackTrace();
-                }
-
-
-                //logger.info("#States: " + target.size());
-                data[csvProperties.getIndex(STATES)] = Integer.toString(target.size());
-                data[csvProperties.getIndex(INPUTS)] = Integer.toString(target.numInputs());
-                Alphabet<String> alphabet = target.getInputAlphabet();
-
-                for (int rep = 0; rep < repeat; rep++) {
-                    //   Shuffle the alphabet
-                    String[] alphArr = alphabet.toArray(new String[alphabet.size()]);
-                    Collections.shuffle(Arrays.asList(alphArr));
-                    alphabet = Alphabets.fromArray(alphArr);
-                    data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
-
-                    Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
-                    learnProductMealy(target, alphabet, equivalence_method, final_check_mode, inputCounter, rep + 1);
-
-                    //             RUN SCL*
-                    @Nullable CompactMealy result = null;
-                    result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId);
-
-                    if (result == null) {
-                        System.out.println("the  SUL is not learned completely (CL-Star)");
-                    } else {
-                        Utils.writeDataLineByLine(RESULTS_PATH, data);
-                    }
-                }
-            }
-            else {
-                while (br.ready()) {
-                    inputCounter++;
-                    new File("Results/FSMs/CL-Star/For input" + inputCounter).mkdirs();
-                    new File("Results/FSMs/SCL-Star/For input" + inputCounter).mkdirs();
-                    if (benckmarkId.equals("1"))
-                        new File("Results/FSMs/L-Star/For input" + inputCounter).mkdirs();
-                    c = br.readLine();
-                    data = new String[dataLen];
-                    File file = new File(c);
-                    data[csvProperties.getIndex(FILE_NAME)] = c;
-                    CompactMealy<String, Word<String>> target;
-                    try {
-                        target = Utils.getInstance().loadMealyMachineFromDot(file);
-                    } catch (Exception e) {
-                        System.out.println(file);
-                        System.out.println("problem in loading file");
-                        System.out.println(e.toString());
-                        System.out.println(c);
-                        continue;
-                    }
-
-                    try {
-                        FileWriter inputWriter = new FileWriter("Results/FSMs/INPUTs/input" + inputCounter + "txt");
-                        Utils.printMachine(target, false, inputWriter);
-                        inputWriter.close();
-                    } catch (IOException e) {
-                        System.out.println("An error occurred.");
-                        e.printStackTrace();
-                    }
-
-
-                    //logger.info("#States: " + target.size());
-                    data[csvProperties.getIndex(STATES)] = Integer.toString(target.size());
-                    data[csvProperties.getIndex(INPUTS)] = Integer.toString(target.numInputs());
-                    Alphabet<String> alphabet = target.getInputAlphabet();
-
-
-                    for (int rep = 0; rep < repeat; rep++) {
-                        //   Shuffle the alphabet
-                        String[] alphArr = alphabet.toArray(new String[alphabet.size()]);
-                        Collections.shuffle(Arrays.asList(alphArr));
-                        alphabet = Alphabets.fromArray(alphArr);
-                        data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
-
-                        //             RUN L*
-                        Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
-                        learnProductMealy(target, alphabet, equivalence_method, final_check_mode, inputCounter, rep + 1);
-
-                        //             RUN SCL*
-                        @Nullable CompactMealy result = null;
-                        result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId);
-
-                        if (result == null) {
-                            System.out.println("the  SUL is not learned completely (CL-Star)");
-                        } else {
-                            Utils.writeDataLineByLine(RESULTS_PATH, data);
-                        }
-                    }
-                }
-            }
+//            else if(isGenratedTests){
+//                while (br.ready()) {
+//                    c = br.readLine();
+//                    CompactMealy<String, Word<String>> currentTarget;
+//                    File file = new File(c);
+//                    data = new String[dataLen];
+//                    data[csvProperties.getIndex(FILE_NAME)] = c;
+//                    try {
+//                        currentTarget = Utils.getInstance().loadMealyMachineFromDot(file);
+//                    } catch (Exception e) {
+//                        System.out.println(file);
+//                        System.out.println("problem in loading file");
+//                        System.out.println(e.toString());
+//                        System.out.println(c);
+//                        continue;
+//                    }
+//                    if (productMealy == null) {
+//                        productMealy = new ProductMealy(currentTarget);
+//                    } else productMealy.mergeFSMs(currentTarget, 1);
+//
+//                }
+//                assert productMealy != null;
+//                CompactMealy<String, Word<String>> target = productMealy.getMachine();
+//
+//                inputCounter++;
+//                new File("Results/FSMs/CL-Star/For input" + inputCounter).mkdirs();
+//                new File("Results/FSMs/SCL-Star/For input" + inputCounter).mkdirs();
+//                new File("Results/FSMs/L-Star/For input" + inputCounter).mkdirs();
+//
+//                try {
+//                    FileWriter inputWriter = new FileWriter("Results/FSMs/INPUTs/input" + inputCounter + "txt");
+//                    Utils.printMachine(target, false, inputWriter);
+//                    inputWriter.close();
+//                } catch (IOException e) {
+//                    System.out.println("An error occurred.");
+//                    e.printStackTrace();
+//                }
+//
+//
+//                //logger.info("#States: " + target.size());
+//                data[csvProperties.getIndex(STATES)] = Integer.toString(target.size());
+//                data[csvProperties.getIndex(INPUTS)] = Integer.toString(target.numInputs());
+//                Alphabet<String> alphabet = target.getInputAlphabet();
+//
+//                for (int rep = 0; rep < repeat; rep++) {
+//                    //   Shuffle the alphabet
+//                    String[] alphArr = alphabet.toArray(new String[alphabet.size()]);
+//                    Collections.shuffle(Arrays.asList(alphArr));
+//                    alphabet = Alphabets.fromArray(alphArr);
+//                    data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
+//
+//                    Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
+//                    learnProductMealy(target, alphabet, equivalence_method, final_check_mode, inputCounter, rep + 1);
+//
+//                    //             RUN SCL*
+//                    @Nullable CompactMealy result = null;
+//                    result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId);
+//
+//                    if (result == null) {
+//                        System.out.println("the  SUL is not learned completely (CL-Star)");
+//                    } else {
+//                        Utils.writeDataLineByLine(RESULTS_PATH, data);
+//                    }
+//                }
+//            }
+//            else {
+//                while (br.ready()) {
+//                    inputCounter++;
+//                    new File("Results/FSMs/CL-Star/For input" + inputCounter).mkdirs();
+//                    new File("Results/FSMs/SCL-Star/For input" + inputCounter).mkdirs();
+//                    if (benckmarkId.equals("1"))
+//                        new File("Results/FSMs/L-Star/For input" + inputCounter).mkdirs();
+//                    c = br.readLine();
+//                    data = new String[dataLen];
+//                    File file = new File(c);
+//                    data[csvProperties.getIndex(FILE_NAME)] = c;
+//                    CompactMealy<String, Word<String>> target;
+//                    try {
+//                        target = Utils.getInstance().loadMealyMachineFromDot(file);
+//                    } catch (Exception e) {
+//                        System.out.println(file);
+//                        System.out.println("problem in loading file");
+//                        System.out.println(e.toString());
+//                        System.out.println(c);
+//                        continue;
+//                    }
+//
+//                    try {
+//                        FileWriter inputWriter = new FileWriter("Results/FSMs/INPUTs/input" + inputCounter + "txt");
+//                        Utils.printMachine(target, false, inputWriter);
+//                        inputWriter.close();
+//                    } catch (IOException e) {
+//                        System.out.println("An error occurred.");
+//                        e.printStackTrace();
+//                    }
+//
+//
+//                    //logger.info("#States: " + target.size());
+//                    data[csvProperties.getIndex(STATES)] = Integer.toString(target.size());
+//                    data[csvProperties.getIndex(INPUTS)] = Integer.toString(target.numInputs());
+//                    Alphabet<String> alphabet = target.getInputAlphabet();
+//
+//
+//                    for (int rep = 0; rep < repeat; rep++) {
+//                        //   Shuffle the alphabet
+//                        String[] alphArr = alphabet.toArray(new String[alphabet.size()]);
+//                        Collections.shuffle(Arrays.asList(alphArr));
+//                        alphabet = Alphabets.fromArray(alphArr);
+//                        data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
+//
+//                        //             RUN L*
+//                        Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
+//                        learnProductMealy(target, alphabet, equivalence_method, final_check_mode, inputCounter, rep + 1);
+//
+//                        //             RUN SCL*
+//                        @Nullable CompactMealy result = null;
+//                        result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId);
+//
+//                        if (result == null) {
+//                            System.out.println("the  SUL is not learned completely (CL-Star)");
+//                        } else {
+//                            Utils.writeDataLineByLine(RESULTS_PATH, data);
+//                        }
+//                    }
+//                }
+//            }
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(e.getStackTrace()[0].getLineNumber());
         }
     }
 
-    public static CompactMealy learnMealyInParts(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, String partial_eq_method, boolean test_mode, int rep, int inCounter, String benchmarkId){
+    public static CompactMealy learnMealyInParts(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, String partial_eq_method, boolean test_mode, int rep, int inCounter, String benchmarkId, List<Alphabet<String>> inputComponentsActs){
 
         Utils.getInstance();
         // SUL simulator
@@ -501,10 +503,10 @@ public class RunExperiment {
         testEqOracle = buildEqOracle(eq_sul, "wp");
         @Nullable CompactMealy sclResult;
         try {
-            FileWriter sclWriter = new FileWriter("Results/FSMs/SCL-Star/For input" + inCounter + "/Run for the " + rep + "st time.txt");
-            SclStar sclStar = new SclStar(alphabet, membShipCounter, eqOracle, partialEqOracle);
+            String sclFileName = "Results/FSMs/SCL-Star/For input" + inCounter + "/Run for the " + rep + "st time";
+            SclStar sclStar = new SclStar(alphabet, membShipCounter, eqOracle, partialEqOracle, inputComponentsActs);
             if (!test_mode ){
-                sclResult = sclStar.run(mealyss, eq_sym, null, rep, sclWriter);
+                sclResult = sclStar.run(mealyss, eq_sym, null, rep, sclFileName);
             }
             else{
 //        create check eq oracle for random search
@@ -512,11 +514,11 @@ public class RunExperiment {
 //            MembershipOracle<String, Word<Word<String>>> testOracleForEQoracle = new SULOracle<>(testSul);
 //            EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle =
 //                    new WpMethodEQOracle<>(testOracleForEQoracle, 2);
-                sclResult = sclStar.run(mealyss, eq_sym, testEqOracle, rep, sclWriter);
+                sclResult = sclStar.run(mealyss, eq_sym, testEqOracle, rep, sclFileName);
             }
 
-            Utils.printMachine(sclResult, true, sclWriter);
-            sclWriter.close();
+            Utils.printMachine(sclResult, true, sclStar.getSclWriter());
+            sclStar.closeSclWriter();
 
             data[csvProperties.getIndex(LIP+ROUNDS)] = String.valueOf(sclStar.getRound_counter().getCount());
             data[csvProperties.getIndex(LIP+MQ_RST)] = Utils.ExtractValue(mq_rst.getStatisticalData().getSummary());

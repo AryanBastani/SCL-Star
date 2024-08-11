@@ -38,12 +38,15 @@ public class SclStar {
     private Counter round_counter;
     private Counter eq_counter;
     private Logger logger;
+    private List<Alphabet<String>> inputComponentsActs;
+    private FileWriter sclWriter;
 
 
     public SclStar(Alphabet<String> alphabet,
                   MembershipOracle<String, Word<Word<String>>> mqOracle,
                   EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> eqOracle,
-                  EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> partialEqOracle){
+                  EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> partialEqOracle,
+                   List<Alphabet<String>> inputComponentsActs){
 
         this.eqOracle = eqOracle;
         this.partialEqOracle = partialEqOracle;
@@ -53,11 +56,13 @@ public class SclStar {
 
         this.round_counter = new Counter("Decomposed Learning  rounds", "#");
         this.eq_counter = new Counter("Total number of equivalence queries", "#");
+
+        this.inputComponentsActs = inputComponentsActs;
     }
 
     public CompactMealy<String, Word<String>> run(CompactMealy<String, Word<String>> mealyss, StatisticSUL<String, Word<String>> eq_sym_counter,
                                                   EquivalenceOracle<MealyMachine<?, String, ?, Word<String>>, String, Word<Word<String>>> testEqOracle,
-                                                  int runCounter, FileWriter sclWriter){
+                                                  int runCounter, String sclFileName){
 
     //Initialize starts:
         List<Alphabet<String>> initialSimaF = new ArrayList<>();
@@ -336,11 +341,21 @@ public class SclStar {
         CompactMealy final_H = productMealy.getMachine();
         String result = "";
         //result += "___ Synchronous Compositional Learning Algorithm finished ___\n";
-        result += "\tThe result:\n";
+
+        result += "\tThe input components:\n";
+        for(Alphabet act: inputComponentsActs){
+            result += "\t\t  - components with " + act.size() + " inputs: " + act + "\n";
+        }
+
+        result += "\n\n\tThe result:\n";
         for (Alphabet s: sigmaFamily){
             result += "\t\t  - component with " + s.size() + " inputs: " + s + "\n";
         }
         result += "Sync Actions: " + sync;
+        if(inputComponentsActs.size() < sigmaFamily.size())
+            sclFileName += "(Buggy)";
+        sclFileName += ".txt";
+        sclWriter =  new FileWriter(sclFileName);
         sclWriter.write(result + "\n\n");
         myWriter.write(result);
         myWriter.close();
@@ -656,7 +671,12 @@ public class SclStar {
     public List<Alphabet<String>> getSigmaFamily() {
         return sigmaFamily;
     }
-
+    public FileWriter getSclWriter(){
+        return sclWriter;
+    }
+    public void closeSclWriter() throws IOException{
+        sclWriter.close();
+    }
     public void setSigmaFamily(List<Alphabet<String>> sigmaFamily) {
         this.sigmaFamily = sigmaFamily;
     }
