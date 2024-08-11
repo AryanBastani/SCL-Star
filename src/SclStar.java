@@ -352,8 +352,10 @@ public class SclStar {
             result += "\t\t  - component with " + s.size() + " inputs: " + s + "\n";
         }
         result += "Sync Actions: " + sync;
-        if(inputComponentsActs.size() < sigmaFamily.size())
-            sclFileName += "(Buggy)";
+        if (inputComponentsActs.size() < sigmaFamily.size())
+            throw new OutOfMemoryError();
+//            sclFileName += "(Buggy)";
+
         sclFileName += ".txt";
         sclWriter =  new FileWriter(sclFileName);
         sclWriter.write(result + "\n\n");

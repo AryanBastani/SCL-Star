@@ -21,6 +21,7 @@ import de.learnlib.util.statistics.SimpleProfiler;
 import net.automatalib.automata.transducers.MealyMachine;
 import net.automatalib.automata.transducers.impl.compact.CompactMealy;
 import net.automatalib.commons.util.Pair;
+import net.automatalib.incremental.ConflictException;
 import net.automatalib.serialization.InputModelDeserializer;
 import net.automatalib.serialization.dot.DOTParsers;
 import net.automatalib.serialization.dot.GraphDOT;
@@ -219,7 +220,7 @@ public class RunExperiment {
             int componentsCount = 0;
             if(isGenratedTests && isNastedTests) {
                 int numOfTests = 1;
-                while (br.ready() && numOfTests <= 200) {
+                while (br.ready() && numOfTests <= 50) {
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
@@ -254,10 +255,10 @@ public class RunExperiment {
 //                            break;
 
                     }
-//                    if(size < 100) {
-//                        System.out.println("This one is too small (" + size + " States)");
-//                        continue;
-//                    }
+                    if(size < 100) {
+                        System.out.println("This one is too small (" + size + " States)");
+                        continue;
+                    }
                     if(size > 30000) {
                         System.out.println("This one is too big (" + size + " States)");
                         System.out.println( componentsCount + " Cmpnss");
@@ -314,7 +315,7 @@ public class RunExperiment {
                             }
                         }
                     }
-                    catch (OutOfMemoryError e){
+                    catch (OutOfMemoryError | ConflictException e){
                         numOfTests--;
                         inputCounter--;
                     }

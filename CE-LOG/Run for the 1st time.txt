@@ -1,25 +1,9 @@
 Calling CE-Distilation for the 1st time:
 	CE before minimizing:
-		T T D T T T f D f D D D T f f T f f f f T D D f D D T T f f T T f D T f f f T D T f f T T f D T D T f T D T f T T D f T D f D f T T T T D T T T f f T D T f D f f f D f T D f T D D T T T f f T f f T T T f D T f f D f D T T f D
+		g g h g w w g d d w h h w d d h y w g w h w h d d y h h h h h y y h g y d h h g y w d g h g g d y y g d g w y h g g w g w w h h w h w d y h h h h y d w g h w d d d h g d d d y g d d w y w d g g y g g y g h y y w d g y w w
 	CE after cut_ce:
-		T T D
+		g g h g
 	CE after minimizing:
-		T T D
+		g g h g
 
 Calling CE-Distilation for the 2st time:
-	CE before minimizing:
-		D f f D f T f f D D D D D f f T f D T D T f D D f T T D T f D D D f f D T f f f f D D T D T T D D T f D f D f D D D T f f T f f D D f D T T D D T f f f f T T D f D f f T T D T T D f D T D T T D T f T f f D T T T T D T T T f D T f f D f f T T D f f f D T f D f T f D D T f D T f T T f T f D D T D D f D T D
-	CE after cut_ce:
-		D f f D f T f f D D D D D f f T f D T D T f D D f
-	CE after minimizing:
-		f f f T f f f f T f T T f f
-
-	The input components:
-		  - components with 2 inputs: [T, f]
-		  - components with 2 inputs: [D, T]
-
-
-	The result:
-		  - component with 2 inputs: [D, T]
-		  - component with 2 inputs: [f, T]
-Sync Actions: [T]

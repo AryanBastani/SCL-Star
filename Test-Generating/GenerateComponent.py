@@ -2,7 +2,6 @@ import string
 import random
 from typing import Final
 from decimal import Decimal
-import pydot
 
 class ComponentGenerator:
     def __init__(self, synchActions, synchOuts, unsynchActs, numOfStates):
@@ -104,11 +103,64 @@ class ComponentGenerator:
         assert sinkState != -1
             
                 
-
     def makeStatesReachable(self):
         for stateId in range(self.numOfStates):
             if(not self.isReachable[stateId]):
                 self.makeReachable(stateId)
+                
+    def areFunctionallySameStates(self, state1, state2, determinantAct):
+        visitedStates = [False] * ((self.numOfStates-1)*10 + self.numOfStates)
+        currentS1 = state1
+        currentS2 = state2
+        currentStates = (currentS1 * 10) + currentS2
+        
+        while (not visitedStates[currentStates]) and (currentS1 != currentS2):
+            visitedStates[currentStates] = True
+            if self.transitions[currentS1][determinantAct][1] !=\
+                self.transitions[currentS2][determinantAct][1]:
+                return False
+            currentS1 = self.transitions[currentS1][determinantAct][0]
+            currentS2 = self.transitions[currentS2][determinantAct][0]
+            currentStates = (currentS1 * 10) + currentS2
+        return True
+                
+    def doesAct1EffectOnAct2(self, act1, act2):
+        for state in range(self.numOfStates):
+            if not self.areFunctionallySameStates(state, self.transitions[state][act1][0], act2):
+                return True
+        return False
+                
+    def areIndependentActs(self, act1, act2):
+        if self.doesAct1EffectOnAct2(act1=act1, act2=act2) or\
+            self.doesAct1EffectOnAct2(act1=act2, act2=act1):
+            return True
+        return False
+                
+    def isGraphMinimal(self):
+        allActs = self.synchActions + self.unsynchActs
+        isEffective = [False] * len(allActs)
+        effectives = [-1] * len(allActs)
+        
+        isEffective[0] = True
+        effectives[0] = 0
+        firstEmptyIndex = 1
+        
+        for effectiveActIndex in effectives:
+            if effectiveActIndex == -1:
+                return False
+            for uncheckedActIndex in range(len(allActs)):
+                if isEffective[uncheckedActIndex]:
+                    continue
+                if self.areIndependentActs(allActs[effectiveActIndex], allActs[uncheckedActIndex]):
+                    if firstEmptyIndex == (len(allActs) - 1):
+                        return True
+                    effectives[firstEmptyIndex] = uncheckedActIndex
+                    firstEmptyIndex += 1
+                    isEffective[uncheckedActIndex] = True
+        return True
+                
+                
+                    
         
     def generateAll(self, isForTransitions):
         for stateNum in range(self.numOfStates):
@@ -121,17 +173,16 @@ class ComponentGenerator:
                 if(isForTransitions):
                     self.generateTransition(stateNum, self.unsynchActs[unsynchNum], random.randint(0, 1))
                 else:
-                    self.generateLine(stateNum, self.unsynchActs[unsynchNum], random.randint(0, 1))
+                    self.generateLine(stateNum, self.unsynchActs[unsynchNum], self.transitions[stateNum][self.unsynchActs[unsynchNum]][1])
 
     def generate(self):
-        self.generateAll(isForTransitions = True)
-        while(not self.isEveryStateReachable()):
+        while True:
             self.generateAll(isForTransitions = True)
-        while(not self.isGraphMinimum()):       
-            self.refactorGraph()
-        
-        assert self.isEveryStateReachable()
             
+            while(not self.isGraphMinimum()):       
+                self.refactorGraph()
+            if (self.isEveryStateReachable()) and (self.isGraphMinimal()):
+                break
         self.generateGraphStr()
         return(self.graph)
 
@@ -145,4 +196,19 @@ class ComponentGenerator:
         
     def generateGraphStr(self):
         self.generateAll(isForTransitions = False)
+
+# cg = ComponentGenerator(['N'], [1], ['Q'], 2)
+# cg.transitions[0]['N'] = [0, 1]
+
+# cg.transitions[0]['Q'] = [1, 1]
+
+# cg.transitions[1]['N'] = [0, 1]
+
+# cg.transitions[1]['Q'] = [0, 1]
+
+# temp = cg.isGraphMinimal()
+# print(temp)
+
+
+
             
