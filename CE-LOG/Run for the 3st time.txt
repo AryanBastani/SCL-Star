@@ -1,45 +1,95 @@
 Calling CE-Distilation for the 1st time:
 	CE before minimizing:
-		J J u I e J Q Q I I u u u Q u Q u u e Q u I J I e J u I Q I u Q J u Q I I J u J I J u u J J e u e e J Q I J e Q u e Q e I u u e e u e I I u J u Q J I u I I u I u u J u Q u J e e J Q Q e u J J J u I u u u e Q I Q I Q u u I I e e I I J u e Q Q I Q I J e u I Q e Q Q Q I J Q Q Q e e u Q J u u I J e J J I u J Q I I
+		Z w W t J b o Z o S Z e w o O Z o y e J e Z t o Z y b J t y S o e y Z y W A O O W e t O t B t E t o t y t Z E e B t o Z A t o S B W e W y O A w y O Z t E t J E e W B y o b t w y t E e B W S w e w B b t w W E A b S O W J Z o w O t y B S S S Z e y W w
 	CE after cut_ce:
-		J J u I e J Q Q I I u u u Q u Q u u e
+		Z w W t J b o Z o S
 	CE after minimizing:
-		J J e J e
+		b S
 
 Calling CE-Distilation for the 2st time:
 	CE before minimizing:
-		u J I Q I Q e Q Q u u e I u J Q u Q e I J Q Q e e e Q J e J J Q Q J J Q e J I J e Q u u u u J Q Q I e Q e e I e e J J e Q Q I Q J u J e J Q u Q J Q e e I u Q e e u e I Q e e I e Q I u Q I Q u Q I e e J e I J Q J e e J u Q I I Q I e Q e J I J u I J Q Q J u I u I u I J e e I J J I u
+		E o w y S o e w Z J Z e W e e e t e t S B A O A A t w E J o t y e Z w e Z S b B O B E o E W A b W O B b W E t W O e b E e t B w e W w y J b e E o O b E b W Z O J w O S B y w e O S S O e J w A S y y O w e w t W t t E A S B B A e e b o w J J B b J W B w E w W J o B S t b b y W O W J O
 	CE after cut_ce:
-		u J I Q
+		E o w y S o e w Z J Z e W
 	CE after minimizing:
-		J Q
+		J W
 
 Calling CE-Distilation for the 3st time:
 	CE before minimizing:
-		e J I I J u u Q u I e u Q e Q Q I e e u J I J J Q Q u I u I Q Q J Q J e Q u J e u J Q e Q J Q u u Q e u u J I I Q e I J e u e J u Q Q J e u J J J e u Q u I u Q e Q u I e Q Q J I e I u I I I Q Q u Q Q e J u J I J e I Q u I Q I I I I I u J e u J Q J I I e I J J J u u u I I u u e u u Q Q I Q J e e e e J u I e u Q J u e u Q Q e u u I e J e
+		J A J E B E W e O E O W Z E E o b B B O Z S t e A J e J S W O y E w o o W A A o b B B S A W b J o S E o b O S o t J b t e o B B O y W Z y Z t W S B W W b Z b B J Z y A W Z y w O Z W A w b y b E o A Z W O A o J b W o o t J E J y b o w t y S y B o B W O e t w Z J W A y t
 	CE after cut_ce:
-		e J I I J u u Q u I
+		J A J E B E
 	CE after minimizing:
-		J I I J I
+		E B E
 
 Calling CE-Distilation for the 4st time:
 	CE before minimizing:
-		I u I u I J e I e I e J J Q J u I J J e Q Q e e Q Q e e J e I u u Q Q u u u u I J Q Q u u J J J J I I Q u Q e I J Q e Q u e u Q u I Q e J J J u u I Q e e J u e I I I Q e Q u u J I e e I u e J J e u e J I Q u J I Q u u u u u Q I u e I J I I Q e
+		y O y w B t o Z o Z t J Z W S e J y t b A Z E J b S o Z J t J e y Z S w A S y e S O w o w w B w e J J b A Z B S B b b Z w w t Z B A e o w w S Z Z y W J y t S E W y o b A J b A y A o B W O W b e B Z Z A E S A J O o e Z O t e y W o E y y J Z S A A J
 	CE after cut_ce:
-		I u I u I J e I e I e J J Q J u
+		y O y w B t o Z o Z t J Z W S e J y t b A Z
 	CE after minimizing:
-		u u J J J J u
+		Z Z Z A Z
+
+Calling CE-Distilation for the 5st time:
+	CE before minimizing:
+		e W A S B t O E S t B W J Z w b o o y O B B b w W W w J O w W b J S b J A Z y A b b O Z B Z t A b J b B y B W B w w B A w b S Z o o J B y w e y o A b y E o e J J y t Z W Z J E S w o y S B J E o W e B A B B w S B o B A e A A e b J e A A w b y S y A J A W S e o E e Z W O A S b W
+	CE after cut_ce:
+		e W A S B t O E S t B W J Z w b o
+	CE after minimizing:
+		e o
+
+Calling CE-Distilation for the 6st time:
+	CE before minimizing:
+		e b E A B A S Z Z J w w O w o O o Z w o e Z J e b J t Z S e t b w S E Z W J o E Z o A y A e e S A A b y e t A B A e O J B Z t J w B w w o W w B W y w J y w b t W y o y A o O y e J S Z O w S w b y t w W J y B S b y e y E y J t b J Z B y y E W Z W J o E O w B B y t A t w y E t o y t o e b w Z A e S O E A b b e O O S E S e A A y o E B S w O E S b E e b W S o A y y J A O J Z E w t o O y Z B E A
+	CE after cut_ce:
+		e b E A B A S Z Z J w
+	CE after minimizing:
+		A A w
+
+Calling CE-Distilation for the 7st time:
+	CE before minimizing:
+		t o B o o t o Z S J o J b O Z Z A o W w b O O O e b J e B S E y b o A e J A e J J E t O J w Z o Z W J E W w e b S Z E y w O B e E y Z J w Z y Z O J J b O J y y W o e Z o E Z J B W O t O J e A t O B e B e t b O E B B Z o w B b b w W Z S y e e t o y O t B A W A y S e O y o J w e A W O B J A S
+	CE after cut_ce:
+		t o B o o t o Z S J o J b O Z Z A o W w b O
+	CE after minimizing:
+		B O O
+
+Calling CE-Distilation for the 8st time:
+	CE before minimizing:
+		J e E B y e t e O A e w E S O O o J O O b E e t w y E b b Z E A y o e W S t e O B o O E w S w w B y O A W e J y B y W S y o O o E E O J y e t O W e w S J W A E O B S w t Z e Z S y t J A y b W W W A A o E W y y t y o S y A B e B w J Z A b Z o y w J O J W J J e A J Z o A B A w
+	CE after cut_ce:
+		J e E B y e t e O A e w E S O O o J O O b E e t w y E b b Z E A y o e W S t e O B o O E w S w w B y O A W e J y B y W S y o O o E E O J y e t O W e w S J W A E O B S w t
+	CE after minimizing:
+		J t J t t J J t J t
+
+Calling CE-Distilation for the 9st time:
+	CE before minimizing:
+		B Z E e O t O O O W Z J E o B E y W y S J b Z y W B y W E b y W Z Z E E y o b w B Z b S b A b e E o e J t A e w o A A y t y y w E S E t y t b B S o b w e O E Z S E A W B b Z t E t O W b t b J A E t t e Z J e S B S e y w E o b O
+	CE after cut_ce:
+		B Z E e O t O O O W Z J E o B E y W y S J b Z y W B y
+	CE after minimizing:
+		y y b y y
 
 	The input components:
-		  - components with 2 inputs: [J, e]
-		  - components with 2 inputs: [I, J]
-		  - components with 2 inputs: [J, u]
-		  - components with 2 inputs: [J, Q]
+		  - components with 2 inputs: [A, w]
+		  - components with 2 inputs: [A, Z]
+		  - components with 2 inputs: [S, b]
+		  - components with 2 inputs: [b, y]
+		  - components with 2 inputs: [J, W]
+		  - components with 2 inputs: [J, t]
+		  - components with 2 inputs: [B, O]
+		  - components with 2 inputs: [B, E]
+		  - components with 2 inputs: [e, o]
 
 
 	The result:
-		  - component with 2 inputs: [e, J]
-		  - component with 2 inputs: [Q, J]
-		  - component with 2 inputs: [I, J]
-		  - component with 2 inputs: [u, J]
-Sync Actions: [J]
+		  - component with 2 inputs: [S, b]
+		  - component with 2 inputs: [W, J]
+		  - component with 2 inputs: [E, B]
+		  - component with 2 inputs: [Z, A]
+		  - component with 2 inputs: [e, o]
+		  - component with 2 inputs: [w, A]
+		  - component with 2 inputs: [O, B]
+		  - component with 2 inputs: [t, J]
+		  - component with 2 inputs: [y, b]
+Sync Actions: [J, B, b, A]

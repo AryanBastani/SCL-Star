@@ -220,7 +220,7 @@ public class RunExperiment {
             int componentsCount = 0;
             if(isGenratedTests && isNastedTests) {
                 int numOfTests = 1;
-                while (br.ready() && numOfTests <= 300) {
+                while (br.ready() && numOfTests <= 10) {
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
@@ -255,10 +255,10 @@ public class RunExperiment {
 //                            break;
 
                     }
-//                    if(size < 100) {
-//                        System.out.println("This one is too small (" + size + " States)");
-//                        continue;
-//                    }
+                    if(size < 100) {
+                        System.out.println("This one is too small (" + size + " States)");
+                        continue;
+                    }
                     if(size > 30000) {
                         System.out.println("This one is too big (" + size + " States)");
                         System.out.println( componentsCount + " Cmpnss");
