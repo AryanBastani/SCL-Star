@@ -12,6 +12,7 @@ import de.learnlib.util.Experiment;
 import net.automatalib.automata.transducers.MealyMachine;
 import net.automatalib.automata.transducers.impl.compact.CompactMealy;
 import net.automatalib.automata.transducers.impl.compact.CompactMealyTransition;
+import net.automatalib.incremental.ConflictException;
 import net.automatalib.words.Alphabet;
 import net.automatalib.words.Word;
 import net.automatalib.words.impl.Alphabets;
@@ -23,6 +24,7 @@ import java.util.List;
 import de.learnlib.api.oracle.MembershipOracle;
 
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
 import java.io.File;  // Import the File class
@@ -296,11 +298,18 @@ public class SclStar {
                     try {
                         FileWriter componentsWriter = new FileWriter( "Results/Log.txt", true);
                         componentsWriter.write("\tLearn the component " + sigmai.toString() + " using L-Star\n");
+                        componentsWriter.write("WhileCounter: "+ counter + "\n");
+
+                        if(sigmai.toString().equals("[h]") && counter == 2){
+                            componentsWriter.write("WhileCounter: "+ counter + "\n");
+                            componentsWriter.write("WhileCounter: "+ counter + "\n");
+                        }
                         componentsWriter.close();
                     } catch (IOException e) {
                         System.out.println("An error occurred.");
                         e.printStackTrace();
                     }
+
                     experiment.run();
 
                     // get learned model
@@ -352,9 +361,8 @@ public class SclStar {
             result += "\t\t  - component with " + s.size() + " inputs: " + s + "\n";
         }
         result += "Sync Actions: " + sync;
-        if (inputComponentsActs.size() < sigmaFamily.size())
-            throw new OutOfMemoryError();
-//            sclFileName += "(Buggy)";
+        if (inputComponentsActs.size() != sigmaFamily.size())
+            throw new RuntimeException();
 
         sclFileName += ".txt";
         sclWriter =  new FileWriter(sclFileName);
@@ -412,6 +420,22 @@ public class SclStar {
     //     return ce;
     // }
 
+//    private boolean runThisExperiment(Experiment.MealyExperiment<String, Word<String>> experiment)throws OutOfMemoryError{
+//        Timer timer = new Timer(true);
+//        Thread thread = new Thread(experiment);
+//        InterruptTimerTask interruptTimerTask = new InterruptTimerTask(Thread.currentThread());
+//        long delay = 60000;
+//        timer.schedule(interruptTimerTask, delay);
+//        try {
+//            experiment.run();
+//        }
+//        catch (InterruptedException e) {
+//            throw new OutOfMemoryError();
+//        }
+//        finally {
+//            timer.cancel();
+//        }
+//    }
     private Word<String> ceDistillation(Word<String> ce, List<Alphabet<String>> sigmaFamily, CompactMealy hypothesis, ArrayList<String> sync, FileWriter myWriter){
         try {
             myWriter.write("\tCE before minimizing:\n\t\t" + ce + "\n");

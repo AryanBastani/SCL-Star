@@ -1,9 +1,45 @@
 Calling CE-Distilation for the 1st time:
 	CE before minimizing:
-		g g h g w w g d d w h h w d d h y w g w h w h d d y h h h h h y y h g y d h h g y w d g h g g d y y g d g w y h g g w g w w h h w h w d y h h h h y d w g h w d d d h g d d d y g d d w y w d g g y g g y g h y y w d g y w w
+		L V P B B P P O P B P V P O L B B L B P B O O O O V P L O L V V O L L O B B B L V V P B V V V V B V L L V L O B O O P L O V V B O B B B V V O P L V B P L P P L V B O O O P P O O V O O P V O O P V L B L B P L L O V V P B O O B O B B V B P L P L V L L O O P O L P B B P O V P V O V O P V P V B P L P O V B O L L B V B L V L P L V P B B B O P O V V P V V P P O B V P
 	CE after cut_ce:
-		g g h g
+		L V P B B P P O P B
 	CE after minimizing:
-		g g h g
+		P B B P P P B
 
 Calling CE-Distilation for the 2st time:
+	CE before minimizing:
+		P L B B P P P P L L O L V B L B P B V L P P B L V L L B P P B P B P L B B B V B P O P L V L O B B P O O V L L O V B O L V B V P L O B P B L P V P O B P V B B L O P V V L B O V B B B L B B B L O O O B P P O O P O P B P O O O L L L L O B V P O O P V B O B O B O L V O V B B B L V B V P P O L V B L V B O V V L V B P B L L O L L B B O V O L B O L B V L L L L L P V P L V L O O B V B P
+	CE after cut_ce:
+		P L B B P P P P L L O
+	CE after minimizing:
+		P P P P P O
+
+Calling CE-Distilation for the 3st time:
+	CE before minimizing:
+		L O P L O V B O B O L V L O L P L B V O V O B B O B B P P B V L V L B P B L L L O B L V O O B P P P O V L P V L O L P P O P P P L B P O V O L V O L P V L V V O P P L L V B O P O O V P L P B V P B V V O V O O O P B P B B B V O L P V L B O O P L O B P P O O P B V O L P L V L B V V B P L V B B O B L V P B O B V O B P L V B V P L O P B O V B P P B O B P B P B L L O B B O
+	CE after cut_ce:
+		L O P L O V B O B O L V L O L P L B V O V O B B O B B P P B V L
+	CE after minimizing:
+		L P L L L L P L P P L
+
+Calling CE-Distilation for the 4st time:
+	CE before minimizing:
+		B P O L V P V L B O O L V O L O O B P O P P B O V L B B P P B L O O O B O B O O L V B B L O O P L L L L P V B L B L B V V V L V V L O V B P O B O L B B V L O O L P L P V P B L V V V V L O L P L V B O L L O O B O B O P P V O L B V L B L O P V P P O
+	CE after cut_ce:
+		B P O L V P V
+	CE after minimizing:
+		P V P V
+
+	The input components:
+		  - components with 2 inputs: [O, P]
+		  - components with 2 inputs: [B, P]
+		  - components with 2 inputs: [L, P]
+		  - components with 2 inputs: [P, V]
+
+
+	The result:
+		  - component with 2 inputs: [B, P]
+		  - component with 2 inputs: [O, P]
+		  - component with 2 inputs: [L, P]
+		  - component with 2 inputs: [V, P]
+Sync Actions: [P]
