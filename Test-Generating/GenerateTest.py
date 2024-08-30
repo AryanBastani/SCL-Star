@@ -77,7 +77,7 @@ class GenerateTest:
     def generatePointTPoint(self, testCounter):
         self.writeTheInput(testCounter, self.POINT_TO_POINT)
 
-        numOfComponents = 9
+        numOfComponents = random.randint(5, 9)
         
         for twoComponents in range(0, numOfComponents - 1, 2):
             synchActs = self.generateActs()
