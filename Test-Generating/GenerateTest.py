@@ -14,7 +14,7 @@ class GenerateTest:
         self.maxStates: Final[int] = 11
         self.minComponents: Final[int] = 3
         self.maxComponents: Final[int] = 9
-        self.numOfTests: Final[int] = 300
+        self.numOfTests: Final[int] = 500
         self.componentCounter = 0
         self.experimentInput = ''
         
@@ -139,7 +139,7 @@ class GenerateTest:
     def generateRing(self, testCounter):
         self.writeTheInput(testCounter, self.RING)
         
-        numOfComponents = 4
+        numOfComponents = random.randint(6, 9)
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):

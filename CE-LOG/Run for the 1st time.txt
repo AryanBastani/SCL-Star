@@ -1,85 +1,141 @@
 Calling CE-Distilation for the 1st time:
 	CE before minimizing:
-		I W Z A G I W N N c o I V I A T N o o T N I T o N c S N c N T N G Z o A S G o x I W A A V Z x Z A c I I N G G W V c o V V V I N N G G N Z N W Z N W W x V Z N W Z x N c W T N S W o o c c G S G A W Z A Z o V o o o c c x A S o S W T o I W x S x S N W x S x T S Z x T o V N c I S V W T Z A Z G N o Z A V W S W I o A S x W c A c
+		C j J J I l l t C Q w J r t r A U J F r d d B u d C U w r J w A F F w J C I j B C r F r d H u C t U I j u t j B r Q C Q H t Q J I l u u t J F u U C J u Q r d w w w J U A C l Q Q I U J Q r l w U u I B B A j B J d C d l t j F l C I C u w d F d C j B u Q
 	CE after cut_ce:
-		I W Z A G I
+		C j J J I l
 	CE after minimizing:
-		I A I
+		J J l
 
 Calling CE-Distilation for the 2st time:
 	CE before minimizing:
-		A I I I c x N N S W A A Z x c I N N I S S Z G o W I x T W W N x c W S T o I A W N x Z Z I W c c W W I W x V W x G Z c S Z x I N x x A Z o c S V W G c I W x S V x V A S Z I o T W o V T A V I x x G T S W o V o S T c G x c x G I T N x N N S G x I S N N A W T T x T S G c W o N I T Z Z T T c A o Z V I W o S N V S W
+		H B B I r B H Q l C Q I I Q J t d t J u r l J r t F j H A d d l j w U F r C U u Q w I Q d r j d J t C j u u j A A w t u r r w j J d t C d d F C Q d w H U j l u U u H l w C j I w I I j r d Q Q I t C C w J B d Q C u d l t u u H J C u B l A l I u U r B Q U d A l t d
 	CE after cut_ce:
-		A I I I c x N N S W A A Z x c I N
+		H B B I r B H Q l C Q I I
 	CE after minimizing:
-		N N S N
+		I C I I
 
 Calling CE-Distilation for the 3st time:
 	CE before minimizing:
-		c Z o c x A T S N x A o A W N c W o o Z c V T V c N T V S V N S c Z c S V W G o c o S Z A G S A S G S Z I c o W S c o I c A T I A o o T V x W I c x N x x W x o G W I I T I T c o W V x N W S N o Z Z G G o A N G G c c S o G W c G W x A I A o W c I A I W N N W V W N W G A c A c T G x x S I
+		B U u Q d d A u F w U l H l B u u F H r l w U d w I F t u B r F F U l C l J J C H F l U w l d J A w w Q l F t A r j r A A d l r r F I A H j l A l Q d w F A t F B H d A A A H U J d A l H t J J C l U B d A Q J t B t A w I F Q C t C j C r J U j j w l U J l r J d J j F J t u d l C C u F B Q C U A J J w I l F I U u B r A j l J A t B U C u j Q H w A l Q l H r U A Q U t Q u I Q F j H F F
 	CE after cut_ce:
-		c Z o c x A T S N x A o A W
+		B U u Q
 	CE after minimizing:
-		T W
+		U Q
 
 Calling CE-Distilation for the 4st time:
 	CE before minimizing:
-		W o G S x o G A c G G G A W N N S x S A V I Z o Z I T V A A Z I I G N T Z o W V I I N G Z x I I o T Z A N Z T S S c A A Z S V I c x o V W o T o W V A I S o G N G G V o W A Z G V T N x T x x A I T W o c I c N x x A T G x I S A o S I N S T W T T T W T A W x W
+		d l H A t A l j C r r J t r u u H d d Q d B l I d w d U C U I F l t l t B C C I w u J I r F B j A U t A I J B B F r Q C Q d F Q l u Q d F Q B Q U J I r A F Q u C Q I t j t I A J B A w t r I B B Q F u J Q d Q w C J Q U u A Q u U I j u u B r J H t C I U J F A H u I t w C U U B A j t U j B Q d A l t l r H J r F w H F H C I F U F d l t C l t r B I I Q
 	CE after cut_ce:
-		W o G S x o
+		d l
 	CE after minimizing:
-		o G o
+		d l
 
 Calling CE-Distilation for the 5st time:
 	CE before minimizing:
-		A S c V N N N T T A Z c c I V V W W o o N A N G Z o G A Z o c Z W c I T c Z c G S c A A A Z x c I x A T o W S Z c A o A T N Z N Z T N G G W I G T S S N V c N W W W N o o Z T o S I o o N N T x G T A A x G G T V T I x N N N x o I Z G S o V I T G A c T W T o I A c o Z T G o A T c I A T o x W I S V W x x Z I Z N o V S I c c V G S T o V Z c G c
+		J u A d t A C J t C U l F J w u d J w B t u Q r l Q d J B C H H I r Q U t C l j J t A j u r J j F d A t U t t d F I A d r r C F H t A r d l B B d t H U l U H A C Q u H t F l l I Q F u B d A B A j U Q I r j F B H H F d I U Q t t A U I t t I C Q F j t w F C
 	CE after cut_ce:
-		A S c V N N N T T A Z c
+		J u A d t A C J t C U l F J w u d J w B
 	CE after minimizing:
-		c T T c
+		C C F
 
 Calling CE-Distilation for the 6st time:
 	CE before minimizing:
-		T Z Z A o V V c T o S T I G G A W G T N S V A c I x A o W c I G S I A A T Z A V x c x V o S x T A c o x W T Z A c S N G N Z V W T G G T T S A c I G c I N N I T T N W o I N Z Z x A A x Z N W x N V I c x W W T V N G Z G Z A Z N o T N o S S T S A Z A A G S G S S W T x Z A x c V W c G W T o A G N c I G A T N I N I c N c W c V Z N T A V x x V G I Z x G N o I
+		t Q H Q B C B t w t w U u I u U w l r w Q Q I I B I B r U H j H l d U C w u d U H w Q r J j J B j U A w Q j r H w u r C w F j j Q u r l H J w B w F t l U j B I r J H t F I I U Q u r Q H w A I H d J d H l u t r d d t w U F H u H B C
 	CE after cut_ce:
-		T Z Z A o V V c T o S T I G G A W G T N S V A c I x A o W c I G S I A A T Z A V x
+		t Q H Q B C B t w t w U u I u U w l r
 	CE after minimizing:
-		G G G x G x
+		w w w r
 
 Calling CE-Distilation for the 7st time:
 	CE before minimizing:
-		S x I Z I Z c c N W c c x V N V N A x Z G V A G x S o x o c G o W x A T V x c c G V x Z W N W x c T I x x I c c I G G V V W G A x W G S W o A A S x c V I V o V T V S V o Z o o x T N T V I V S G G o T T x T Z T I V I A V I Z c V x T c A N T c x S S V I V
+		w w A r C Q A Q w C r I I d U j u B B t F l F A C B t w r F I C H j U d j r r r F l j t u C t d F B B t U r j t l J Q t j J t l l r t F J t B u r d A I J t Q j I B B C J t H d F u J A d r U I d d u J d w Q j U C w I l C F A j w t t l F Q B j I U l l r r B J B Q
 	CE after cut_ce:
-		S x I Z I Z
+		w w A r C Q A Q w C r I I d U j u B B t F
 	CE after minimizing:
-		S Z Z
+		A A B B
 
 Calling CE-Distilation for the 8st time:
 	CE before minimizing:
-		o T c T A x T N I Z T V o N I W N o W T W W A x Z x x o V G T A o I W T x V A Z o c x G A x I o Z I o x N G Z V V W o V S V Z A A G Z x W T G Z I I S o W W G G A T x N W N V T V V G W A S c Z S V S G W W W W W W S N N I c Z I N V W S c T N S c V x G x o T I S A S x o N G x G Z G W T V c S
+		A j I A d F u J t t C A I J t Q t F I F u u r t C t w B U J J d F F H w U Q B C t j I r B B d j j A C w w d A l A I d l w I w I l u B U J u d I U l r Q C H U C C u j C r t j F B l t Q d u t l U I Q F j J F B J H r u F r H A Q w B r l d U U B l l r t C J l A w I I t w F B H I
 	CE after cut_ce:
-		o T c T A x T N I Z T V o N I W N o W T W W A x Z x x o V
+		A j I A d F u J t t C A I J t Q t F I F u u r t C t w B U J J d F F
 	CE after minimizing:
-		A V A V
+		F C F F C U F F
+
+Calling CE-Distilation for the 9st time:
+	CE before minimizing:
+		r t j Q J B u H r I I Q J J u A w j C H C U U l u U w I A A H F u r B Q Q r J B r j H A Q Q B F t C d A U j d F U w U H w F l r l H l F w C B U r r A B I r B J w j d J Q J w H U A d F C r w l F I C B l C j F u l I u l Q F F d t j r I t U F U A t t J H C r u C r A U l H j j U U J H r u d B w C J A w B B U w u r J I I H d C t r u B d U j B Q U J j Q u
+	CE after cut_ce:
+		r t j Q J B u H r I
+	CE after minimizing:
+		u H
+
+Calling CE-Distilation for the 10st time:
+	CE before minimizing:
+		B l U u d l H r B t H U w u C A l A t Q t I t B u j j Q I d Q d j Q B r d U B j J Q l A F r F d Q B B A H I j B A l w B t l F F J w d j j t C B B J r B H r U Q H F w t A H F U H I C Q r u J U H B d d l J A u F l d d U r t u U d A J U C Q B B H B l t C j C r t U l F A j C C I C l A j C U B B j A Q A w u u t B d l w t t C t j
+	CE after cut_ce:
+		B l U u d l H r B t H U w u C A l A t Q t I t B u j j Q I d Q d j Q B r
+	CE after minimizing:
+		u r w u u r
+
+Calling CE-Distilation for the 11st time:
+	CE before minimizing:
+		j u A I J F r I w d d C t t C J l C B r U u U r u H u B H B H J t r B w U F Q w B U F l U A d Q A B H A u u u l r A u F I w A l B j t F F u A C t d J H t t H I Q r j I J I B t I u B d d B J t d A d j B I u u d B J A I l Q F w j Q F t J r I I u w w U d C l Q Q d I j A B J u Q J t r B I d I w u l H B U J Q l A t l u A B u H C j F t t j I C J l u Q H I C d
+	CE after cut_ce:
+		j u A I J F r I
+	CE after minimizing:
+		I J I
+
+Calling CE-Distilation for the 12st time:
+	CE before minimizing:
+		F r U F r t A A H I U Q t H A u Q B Q F t l C Q l I H d A j J d d U U U I l t r j r r d C Q t l I Q u d d u U I B F l F H Q A r w B Q U t H A w B F J u A t j H B F l I I B J Q u J B j d l I C j Q u I w j u w H l F C d J A l r u r u H B t j j d U d J H l U C I F w A U U u B C A C d t J B w d U B r F r H Q B I A A J l J A l
+	CE after cut_ce:
+		F r U F r t A A H I U Q t H A u Q B Q F t l C Q l I H d A j J d d U U U I l t
+	CE after minimizing:
+		t A A t A t d A d d t
+
+Calling CE-Distilation for the 13st time:
+	CE before minimizing:
+		J t d C I H C w l j J U J F j u w w j F u Q U B J l I t j r B A Q I w j B I Q u t r C I Q B r B B U l w J A F U w u F A C r F U t B l d Q w I A J A l u U C d C u r t Q C r A C A r B j H F u I H w H Q r B r F w r l U u d r I t A u t B d t B j J t l l C J r H C r r Q Q w H d C F U B r C H F F l w d u C Q j F d w J H C w F C t C l d F C Q J t d t U F Q r t A U t t d A u u
+	CE after cut_ce:
+		J t d C I H C w l j J U J F j u w w j F u Q
+	CE after minimizing:
+		w U w w Q
+
+Calling CE-Distilation for the 14st time:
+	CE before minimizing:
+		j C j t j w r J I H F F C t u U j U r A C B C w B H r w Q t w t j w r F l B j w j r U I J I J w Q H U u A u I r j j d J Q A B J J l F A H H U I r B j H J U B A A C A Q B j F w F t l Q j l H Q t t B u j t C B l J J J F t j Q A U u l F B C A d A I t d F U u B J l B r t I F r r C U H U J A A Q l J w j r j u d H w I H d F w A u Q B j H w l w Q d t A
+	CE after cut_ce:
+		j C j t j w r J I H
+	CE after minimizing:
+		j j j H
+
+Calling CE-Distilation for the 15st time:
+	CE before minimizing:
+		t t j j r t F r t Q A U C J l J J I F w C d t A H w F J I d I B F B F Q I t u j Q C B F d I j F U r Q H u I F B I F I r d U j U l Q B j u w F U U Q d U U J u r r j d B B F J C j H t I B I B Q F I F J u I U u t d l r t B u l A Q B A u U F r H F l B U J F w Q B F d j Q H t d I A J j F u H H J w w B C l I C I H Q I l t u U Q I j j F t A A j d C w j d U I B d I U u F w J C
+	CE after cut_ce:
+		t t j j r t F r t Q A U C J l J J I F w C d t A H w F J I d I B F B F Q I t u j Q C B
+	CE after minimizing:
+		j j A A B B j B
 
 	The input components:
-		  - components with 2 inputs: [S, Z]
-		  - components with 2 inputs: [N, S]
-		  - components with 2 inputs: [G, x]
-		  - components with 2 inputs: [G, o]
-		  - components with 2 inputs: [T, W]
-		  - components with 2 inputs: [T, c]
-		  - components with 2 inputs: [A, I]
-		  - components with 2 inputs: [A, V]
+		  - components with 3 inputs: [J, d, l]
+		  - components with 3 inputs: [C, I, J]
+		  - components with 3 inputs: [C, F, U]
+		  - components with 3 inputs: [Q, U, w]
+		  - components with 3 inputs: [r, u, w]
+		  - components with 3 inputs: [H, j, u]
+		  - components with 3 inputs: [A, B, j]
+		  - components with 3 inputs: [A, d, t]
 
 
 	The result:
-		  - component with 2 inputs: [I, A]
-		  - component with 2 inputs: [N, S]
-		  - component with 2 inputs: [W, T]
-		  - component with 2 inputs: [o, G]
-		  - component with 2 inputs: [c, T]
-		  - component with 2 inputs: [x, G]
-		  - component with 2 inputs: [Z, S]
-		  - component with 2 inputs: [V, A]
-Sync Actions: [A, T, S, G]
+		  - component with 3 inputs: [l, J, d]
+		  - component with 3 inputs: [F, C, U]
+		  - component with 3 inputs: [r, w, u]
+		  - component with 3 inputs: [I, C, J]
+		  - component with 3 inputs: [t, d, A]
+		  - component with 3 inputs: [Q, U, w]
+		  - component with 3 inputs: [H, u, j]
+		  - component with 3 inputs: [B, A, j]
+Sync Actions: [d, A, w, C, U, u, J, j]
