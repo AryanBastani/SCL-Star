@@ -14,7 +14,7 @@ class GenerateTest:
         self.maxStates: Final[int] = 11
         self.minComponents: Final[int] = 3
         self.maxComponents: Final[int] = 9
-        self.numOfTests: Final[int] = 500
+        self.numOfTests: Final[int] = 300
         self.componentCounter = 0
         self.experimentInput = ''
         
@@ -115,7 +115,7 @@ class GenerateTest:
     def generateStar(self, testCounter):
         self.writeTheInput(testCounter, self.STAR)
         
-        numOfComponents = 4
+        numOfComponents = 9
         centerSynchsActs = []
         centerOutSynchs = []
         for component in range(numOfComponents - 1):
