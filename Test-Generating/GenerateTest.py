@@ -14,7 +14,7 @@ class GenerateTest:
         self.maxStates: Final[int] = 11
         self.minComponents: Final[int] = 3
         self.maxComponents: Final[int] = 9
-        self.numOfTests: Final[int] = 300
+        self.numOfTests: Final[int] = 1000
         self.componentCounter = 0
         self.experimentInput = ''
         
@@ -115,7 +115,7 @@ class GenerateTest:
     def generateStar(self, testCounter):
         self.writeTheInput(testCounter, self.STAR)
         
-        numOfComponents = 9
+        numOfComponents = random.randint(4, 9)
         centerSynchsActs = []
         centerOutSynchs = []
         for component in range(numOfComponents - 1):
@@ -131,7 +131,7 @@ class GenerateTest:
     def generateBus(self, testCounter):
         self.writeTheInput(testCounter, self.BUS)
         
-        numOfComponents = 4
+        numOfComponents = random.randint(5, 9)
         currentSynchs = self.generateActs()
         currentOutSynchs = [random.randint(0, 1) for i in range(self.numOfEachActs)] 
         self.generateSynchComponents(currentSynchs, currentOutSynchs, numOfComponents, self.BUS, testCounter, numOfComponents)
@@ -139,7 +139,7 @@ class GenerateTest:
     def generateRing(self, testCounter):
         self.writeTheInput(testCounter, self.RING)
         
-        numOfComponents = random.randint(6, 9)
+        numOfComponents = random.randint(4, 9)
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):
@@ -167,7 +167,7 @@ class GenerateTest:
         self.writeTheInput(testCounter, self.BIPARTITE)
         
         # numOfComponents = random.randint(self.minComponents, self.maxComponents)
-        numOfComponents = 4
+        numOfComponents = random.randint(5, 7)
         synchsActs = [0] * numOfComponents 
         outSynchs = [0] * numOfComponents 
         for i in range(numOfComponents):

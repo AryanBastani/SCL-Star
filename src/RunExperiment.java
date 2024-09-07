@@ -220,7 +220,7 @@ public class RunExperiment {
             int componentsCount = 0;
             if(isGenratedTests && isNastedTests) {
                 int numOfTests = 1;
-                while (br.ready() && numOfTests <= 10) {
+                while (br.ready() && numOfTests <= 1) {
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
@@ -255,7 +255,7 @@ public class RunExperiment {
 //                            break;
 
                     }
-                    if(size < 100) {
+                    if(size < 29000) {
                         System.out.println("This one is too small (" + size + " States)");
                         continue;
                     }
@@ -315,7 +315,7 @@ public class RunExperiment {
                             }
                         }
                     }
-                    catch (OutOfMemoryError | ConflictException e){
+                    catch (OutOfMemoryError | ConflictException | ArrayIndexOutOfBoundsException e){
                         numOfTests--;
                         inputCounter--;
                     }
