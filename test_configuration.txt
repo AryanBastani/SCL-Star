@@ -8,3 +8,18 @@ Final Check Mode: Disabled
 Repetitions: 3
 Tests Type: Real Tests
 ---------------------------
+Equivalence Query: rndWords
+Final Check Mode: Disabled
+Repetitions: 3
+Tests Type: Real Tests
+---------------------------
+Equivalence Query: rndWords
+Final Check Mode: Disabled
+Repetitions: 3
+Tests Type: Real Tests
+---------------------------
+Equivalence Query: rndWords
+Final Check Mode: Disabled
+Repetitions: 3
+Tests Type: Real Tests
+---------------------------

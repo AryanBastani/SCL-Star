@@ -18,7 +18,11 @@ public class TestConfigurationUI extends JFrame {
     public TestConfigurationUI() {
         // Frame Configuration
         setTitle("Test Configuration");
-        setSize(600, 400); // Initial window size
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int frameWidth = (int) (screenSize.width * 0.5);  // 50% of screen width
+        int frameHeight = (int) (screenSize.height * 0.4);  // 40% of screen height
+        setSize(frameWidth, frameHeight);
+//        setSize(600, 400); // Initial window size
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
@@ -164,7 +168,7 @@ public class TestConfigurationUI extends JFrame {
         gbc.gridy = 4;
         gbc.weightx = 1.0;
         gbc.weighty = 0.5;  // Give the button more vertical growth space
-        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.anchor = GridBagConstraints.BELOW_BASELINE_LEADING;
         add(nextButton, gbc);
     }
 
