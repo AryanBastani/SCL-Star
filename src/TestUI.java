@@ -1,147 +1,142 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class TestUI extends JFrame {
-    // Declare components
+public class TestUI extends JPanel {
     private JSpinner testSpinner;
     private JSpinner componentSpinnerMin;
     private JSpinner componentSpinnerMax;
     private JSpinner stateSpinnerMin;
     private JSpinner stateSpinnerMax;
     private JButton runButton;
+    private JPanel panel;
 
     public TestUI() {
-        // Frame configuration
-        setTitle("Test Parameters Configuration");
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        int frameWidth = (int) (screenSize.width * 0.5);  // 50% of screen width
-        int frameHeight = (int) (screenSize.height * 0.4);  // 40% of screen height
-        setSize(frameWidth, frameHeight);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); // Center on screen
-
-        // Layout configuration
         setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(30, 20, 15, 20);
-        gbc.fill = GridBagConstraints.HORIZONTAL;
+        gbc.insets = new Insets(10, 10, 10, 10); // Padding
+        gbc.fill = GridBagConstraints.BOTH; // Fill both horizontally and vertically
 
-        // Panel for "Number of Tests"
+        // Set up panel properties
+        setBackground(Color.WHITE);
+        setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        // Font settings
+        Font labelFont = new Font("Arial", Font.BOLD, 14);
+        Font componentFont = new Font("Arial", Font.PLAIN, 12);
+        Font buttonFont = new Font("Arial", Font.BOLD, 14); // Adjusted for better fitting
+
+        // Number of Tests Spinner
         testSpinner = new JSpinner(new SpinnerNumberModel(1, 1, 100, 1));
-        alignSpinnerTextLeft(testSpinner);
-        JPanel componentPanel1 = new JPanel(new FlowLayout(FlowLayout.LEFT, 15, 0)); // Increase space between Min and Max
-        componentPanel1.add(testSpinner);
+        testSpinner.setFont(componentFont);
+
+        // Align number in the spinner
+        JComponent testEditor = testSpinner.getEditor();
+        JFormattedTextField testField = ((JSpinner.DefaultEditor) testEditor).getTextField();
+        testField.setHorizontalAlignment(JTextField.CENTER); // Center number
+        testField.setFont(new Font("Arial", Font.PLAIN, 16)); // Increase font size
+
         gbc.gridx = 0;
         gbc.gridy = 0;
-        gbc.weightx = 0.5;
-        add(new JLabel("Number of Tests for each Component:"), gbc);
+        gbc.weightx = 1.0;
+        gbc.weighty = 0.1;
+        JLabel testLabel = new JLabel("Number of Tests for each Component:");
+        testLabel.setFont(labelFont);
+        add(testLabel, gbc);
 
         gbc.gridx = 1;
-        gbc.weightx = 0.5;
-        add(componentPanel1, gbc);
+        add(testSpinner, gbc);
 
-        // Panel for "Number of Components"
+        // Component Min/Max Spinners
         componentSpinnerMin = new JSpinner(new SpinnerNumberModel(3, 1, 12, 1));
         componentSpinnerMax = new JSpinner(new SpinnerNumberModel(9, 1, 12, 1));
-        alignSpinnerTextLeft(componentSpinnerMin);
-        alignSpinnerTextLeft(componentSpinnerMax);
-        JPanel componentPanel2 = new JPanel(new FlowLayout(FlowLayout.LEFT, 15, 0)); // Increase space between Min and Max
-        componentPanel2.add(new JLabel("Min:"));
-        componentPanel2.add(componentSpinnerMin);
-        componentPanel2.add(Box.createHorizontalStrut(20)); // Add space between Min and Max
-        componentPanel2.add(new JLabel("Max:"));
-        componentPanel2.add(componentSpinnerMax);
+        componentSpinnerMin.setFont(componentFont);
+        componentSpinnerMax.setFont(componentFont);
+
+        JPanel componentPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 0));
+        componentPanel.add(new JLabel("Min:"));
+        componentPanel.add(componentSpinnerMin);
+        componentPanel.add(Box.createHorizontalStrut(20));
+        componentPanel.add(new JLabel("Max:"));
+        componentPanel.add(componentSpinnerMax);
 
         gbc.gridx = 0;
         gbc.gridy = 1;
-        add(new JLabel("Number of Components (3 to 9 recommended):"), gbc);
+        JLabel componentLabel = new JLabel("Number of Components (3 to 9 recommended):");
+        componentLabel.setFont(labelFont);
+        add(componentLabel, gbc);
 
         gbc.gridx = 1;
-        add(componentPanel2, gbc);
+        add(componentPanel, gbc);
 
-        // Panel for "Number of States"
+        // State Min/Max Spinners
         stateSpinnerMin = new JSpinner(new SpinnerNumberModel(100, 0, 30000, 100));
         stateSpinnerMax = new JSpinner(new SpinnerNumberModel(30000, 1, 30000, 100));
-        alignSpinnerTextLeft(stateSpinnerMin);
-        alignSpinnerTextLeft(stateSpinnerMax);
-        JPanel statePanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 15, 0)); // Increase space between Min and Max
+        stateSpinnerMin.setFont(componentFont);
+        stateSpinnerMax.setFont(componentFont);
+
+        JPanel statePanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 0));
         statePanel.add(new JLabel("Min:"));
         statePanel.add(stateSpinnerMin);
-        statePanel.add(Box.createHorizontalStrut(20)); // Add space between Min and Max
+        statePanel.add(Box.createHorizontalStrut(20));
         statePanel.add(new JLabel("Max:"));
         statePanel.add(stateSpinnerMax);
 
         gbc.gridx = 0;
         gbc.gridy = 2;
-        add(new JLabel("Number of States (100 to 30000 recommended):"), gbc);
+        JLabel stateLabel = new JLabel("Number of States (100 to 30000 recommended):");
+        stateLabel.setFont(labelFont);
+        add(stateLabel, gbc);
 
         gbc.gridx = 1;
         add(statePanel, gbc);
 
-        // "Run" button
+        // Run Button
         runButton = new JButton("Run");
-        gbc.gridx = 1;
+        runButton.setFont(new Font("Arial", Font.BOLD, 50));
+        runButton.setBackground(new Color(0x007BFF)); // Bootstrap blue
+        runButton.setForeground(Color.WHITE);
+        runButton.setFocusPainted(false);
+        runButton.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 0)); // No border
+        runButton.setOpaque(true);
+
+        gbc.gridx = 0;
         gbc.gridy = 3;
-        gbc.weighty = 0.5;  // Pushes the button toward the bottom
+        gbc.gridwidth = 2;
+        gbc.weightx = 0.01;
+        gbc.weighty = 0.1;
+        gbc.anchor = GridBagConstraints.CENTER;
+        gbc.insets = new Insets(10, 250, 10, 250); // Horizontal padding for centering
         add(runButton, gbc);
 
-        // Action Listener for button
-        runButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int numberOfTests = (int) testSpinner.getValue();
-                int componentMin = (int) componentSpinnerMin.getValue();
-                int componentMax = (int) componentSpinnerMax.getValue();
-                int stateMin = (int) stateSpinnerMin.getValue();
-                int stateMax = (int) stateSpinnerMax.getValue();
-
-                // Save the configuration and show result
-                saveConfigurationToFile(numberOfTests, componentMin, componentMax, stateMin, stateMax);
-
-                // Display result in a new window
-                JFrame resultFrame = new JFrame("Result");
-                resultFrame.setSize(400, 300);
-                resultFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
-                JLabel resultLabel = new JLabel("<html>Number of Tests: " + numberOfTests +
-                        "<br>Components: " + componentMin + " to " + componentMax +
-                        "<br>States: " + stateMin + " to " + stateMax + "</html>");
-                resultFrame.add(resultLabel);
-                resultFrame.setVisible(true);
-            }
+        // Action listener for the "Run" button
+        runButton.addActionListener(e -> {
+            int numberOfTests = (int) testSpinner.getValue();
+            int componentMin = (int) componentSpinnerMin.getValue();
+            int componentMax = (int) componentSpinnerMax.getValue();
+            int stateMin = (int) stateSpinnerMin.getValue();
+            int stateMax = (int) stateSpinnerMax.getValue();
+            saveTestConfiguration(numberOfTests, componentMin, componentMax, stateMin, stateMax);
         });
     }
 
-    // Method to save configuration to a file
-    private void saveConfigurationToFile(int numberOfTests, int componentMin, int componentMax, int stateMin, int stateMax) {
+    public JPanel getPanel() {
+        return this;
+    }
+
+    // Method to save test configuration to a file
+    private void saveTestConfiguration(int numTests, int componentMin, int componentMax, int stateMin, int stateMax) {
         try {
-            FileWriter writer = new FileWriter("test_parameters.txt", true); // Append mode
-            writer.write("Number of Tests: " + numberOfTests + "\n");
-            writer.write("Components: " + componentMin + " to " + componentMax + "\n");
-            writer.write("States: " + stateMin + " to " + stateMax + "\n");
+            FileWriter writer = new FileWriter("test_results.txt", true);
+            writer.write("Number of Tests: " + numTests + "\n");
+            writer.write("Components: " + componentMin + " - " + componentMax + "\n");
+            writer.write("States: " + stateMin + " - " + stateMax + "\n");
             writer.write("---------------------------\n");
             writer.close();
-            System.out.println("Configuration saved to file.");
+            System.out.println("Test configuration saved to file.");
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-    }
-
-    private void alignSpinnerTextLeft(JSpinner spinner) {
-        JComponent editor = spinner.getEditor();
-        if (editor instanceof JSpinner.DefaultEditor) {
-            ((JSpinner.DefaultEditor) editor).getTextField().setHorizontalAlignment(JTextField.LEFT); // Align text to the left
-        }
-    }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            TestUI ui = new TestUI();
-            ui.setVisible(true);
-        });
     }
 }
