@@ -24,8 +24,6 @@ import net.automatalib.commons.util.Pair;
 import net.automatalib.incremental.ConflictException;
 import net.automatalib.serialization.InputModelDeserializer;
 import net.automatalib.serialization.dot.DOTParsers;
-import net.automatalib.serialization.dot.GraphDOT;
-import net.automatalib.visualization.Visualization;
 import net.automatalib.visualization.VisualizationHelper;
 import net.automatalib.words.Alphabet;
 import net.automatalib.words.Word;
@@ -42,11 +40,9 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.function.Function;
-import java.util.logging.FileHandler;
 import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
 
-public class RunExperiment {
+public class FsmLearner {
     public static String FILE_NAME = "FILE_NAME";
     public static String STATES = "STATES";
     public static String INPUTS = "INPUTS";
@@ -82,7 +78,7 @@ public class RunExperiment {
     public static final String EXPERIMENT_REPEAT = "repeat";
 
 
-    public static void main(String[] args) throws IOException {
+    public static void FsmLearner(String[] args) throws IOException {
         csvProperties = CSVProperties.getInstance();
         experimentProperties = Experimentproperties.getInstance();
         try {
@@ -108,13 +104,13 @@ public class RunExperiment {
             String file_path = "";
             Scanner myObj = new Scanner(System.in);
             String benckmarkId = myObj.nextLine();
-            if(benckmarkId.equals("1"))
-                file_path = "data/CL_Benchmarks.txt";
-            else if(benckmarkId.equals("2"))
-                file_path = "data/SmallTest_Benchmarks.txt";
-            else if(benckmarkId.equals("3"))
-                file_path = "data/Mealy_Benchmarks.txt";
-            else if(benckmarkId.equals("4")) {
+//            if(benckmarkId.equals("1"))
+//                file_path = "data/CL_Benchmarks.txt";
+//            else if(benckmarkId.equals("2"))
+//                file_path = "data/SmallTest_Benchmarks.txt";
+//            else if(benckmarkId.equals("3"))
+//                file_path = "data/Mealy_Benchmarks.txt";
+            if(args[0].equals("Real Tests")) {
                 file_path = "Real-Tests/data/Reals.txt";
                 isGenratedTests = true;
                 isNastedTests = true;
@@ -154,17 +150,8 @@ public class RunExperiment {
                 file_path = experimentProperties.getProp("benchmarks_file");
             }*/
             String equivalence_method;
-            if (line.hasOption(EQUIVALENCE_METHOD)) {
-                equivalence_method = line.getOptionValue(EQUIVALENCE_METHOD);
-            } else {
-                equivalence_method = experimentProperties.getProp("eq_query");
-            }
-            int repeat;
-            if (line.hasOption(EXPERIMENT_REPEAT)) {
-                repeat = Integer.parseInt(line.getOptionValue(EXPERIMENT_REPEAT));
-            } else {
-                repeat = Integer.parseInt(experimentProperties.getProp(EXPERIMENT_REPEAT));
-            }
+            equivalence_method = args[1];
+            int repeat = Integer.parseInt(args[2]);
 
 //        initial the experiment properties
             benchmarks_base_dir = experimentProperties.getProp("benchmarks_base_dir");
@@ -300,7 +287,7 @@ public class RunExperiment {
                             alphabet = Alphabets.fromArray(alphArr);
                             data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
 
-                            Boolean final_check_mode = Boolean.valueOf(experimentProperties.getProp("final_check_mode"));
+                            Boolean final_check_mode = Boolean.parseBoolean(args[3]);
                             learnProductMealy(target, alphabet, equivalence_method, final_check_mode, inputCounter, rep + 1);
 
                             //             RUN SCL*

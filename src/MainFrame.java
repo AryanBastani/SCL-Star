@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class MainFrame extends JFrame {
     private CardLayout cardLayout;
@@ -9,12 +8,15 @@ public class MainFrame extends JFrame {
     private TestConfigurationUI firstPage;
     private TestUI secondPage;
 
+    private ArrayList<String> firstPageInfo = new ArrayList<>();
+    private ArrayList<String> secondPageInfo = new ArrayList<>();
+
     public MainFrame() {
         // Set up the frame
         setTitle("Test Configuration");
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        int frameWidth = (int) (screenSize.width * 0.7);  // 80% of screen width
-        int frameHeight = (int) (screenSize.height * 0.7);  // 80% of screen height
+        int frameWidth = (int) (screenSize.width * 0.8);  // 80% of screen width
+        int frameHeight = (int) (screenSize.height * 0.8);  // 80% of screen height
         setSize(frameWidth, frameHeight);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -35,24 +37,34 @@ public class MainFrame extends JFrame {
         // Add main panel to the frame
         add(mainPanel);
 
-        // Set up next button action to switch to the second page
-        firstPage.getNextButton().addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                cardLayout.show(mainPanel, "SecondPage");  // Switch to second page
-            }
-        });
-
         // Styling the main frame
         getContentPane().setBackground(Color.WHITE);  // Consistent background color
         setResizable(true);
         setMinimumSize(new Dimension(800, 600));  // Set a minimum size for better usability
     }
 
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            MainFrame mainFrame = new MainFrame();
-            mainFrame.setVisible(true);
+    // Method to get the information from the first page
+    public ArrayList<String> getFirstPageInfo() {
+        return firstPage.getInfo();
+    }
+
+    // Method to get the information from the second page
+    public ArrayList<String> getSecondPageInfo() {
+        return secondPage.getInfo();
+    }
+
+    // Set listener for the "Next" button on the first page
+    public void setNextButtonListener(Runnable listener) {
+        firstPage.getNextButton().addActionListener(e -> {
+            cardLayout.show(mainPanel, "SecondPage");  // Switch to the second page
+            listener.run();
+        });
+    }
+
+    // Set listener for the "Next" button on the second page
+    public void setSecondNextButtonListener(Runnable listener) {
+        secondPage.getRunButton().addActionListener(e -> {
+            listener.run();  // Run listener after second page "Next" is pressed
         });
     }
 }

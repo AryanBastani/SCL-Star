@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+
 
 public class TestConfigurationUI extends JPanel {
     private JComboBox<String> equivalenceQueryCombo;
@@ -125,6 +127,7 @@ public class TestConfigurationUI extends JPanel {
 
 // Next Button
         nextButton = new JButton("Next");
+
         nextButton.setFont(new Font("Arial", Font.BOLD, 50)); // Font size
         nextButton.setPreferredSize(new Dimension(20, 10)); // Fixed size for button
         nextButton.setBackground(new Color(0x007BFF)); // Bootstrap blue
@@ -152,6 +155,19 @@ public class TestConfigurationUI extends JPanel {
 
     public JPanel getPanel() {
         return this;
+    }
+
+    public ArrayList<String> getInfo(){
+        ArrayList<String> info = new ArrayList<>();
+        info.add((String) equivalenceQueryCombo.getSelectedItem());
+        info.add(String.valueOf(finalCheckModeCheckBox.isSelected()));
+        info.add(String.valueOf(repetitionSpinner.getValue()));
+        if (realTestsRadio.isSelected())
+            info.add("Real Tests");
+        else
+            info.add("Generated Tests");
+
+        return info;
     }
 
     // Method to save configuration data to a file

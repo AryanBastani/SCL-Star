@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class TestUI extends JPanel {
     private JSpinner testSpinner;
@@ -138,5 +139,20 @@ public class TestUI extends JPanel {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+
+    public JButton getRunButton(){
+        return runButton;
+    }
+
+    public ArrayList<String> getInfo(){
+        ArrayList<String> info = new ArrayList<>();
+        info.add(String.valueOf(testSpinner.getValue()));
+        info.add(String.valueOf(componentSpinnerMin.getValue()));
+        info.add(String.valueOf(componentSpinnerMax.getValue()));
+        info.add(String.valueOf(stateSpinnerMin.getValue()));
+        info.add(String.valueOf(stateSpinnerMax.getValue()));
+
+        return info;
     }
 }
