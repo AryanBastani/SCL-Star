@@ -1,149 +1,89 @@
 Calling CE-Distilation for the 1st time:
 	CE before minimizing:
-		l n n T n r b F Q b l r H T l l J i r n r N N F i J i n n m i J l n M M T T N N Q l i Q m r l Q b F l Q i m l l l B m d M Q r m R J i Q n B H M M N r m R Q F H H B d l B B R F n F H B B B F n i r J l F n b b F r Q Q M J F b i R H i r r B
+		receiveMsg apw_stop fp_off pw_but_dn pw_but_dn mpw_stop pw_pos_up fp_off a_pw_msg pw_pos_dn receiveMsg pw_but_up pw_pos_dn m_pw_msg pw_pos_dn a_pw_msg receiveMsg fp_on fp_off fp_on apw_stop pw_but_dn pw_but_dn pw_but_dn apw_stop receiveMsg receiveMsg pw_pos_up pw_but_up fp_off apw_stop mpw_stop a_pw_msg pw_pos_up a_pw_msg pw_but_up pw_but_dn pw_pos_dn pw_but_up fp_off pw_but_up mpw_stop a_pw_msg mpw_stop apw_stop pw_but_up m_pw_msg apw_stop fp_on pw_pos_up fp_on fp_off pw_but_dn m_pw_msg mpw_stop pw_pos_dn apw_stop mpw_stop pw_but_dn fp_on receiveMsg pw_pos_dn pw_but_up fp_on fp_off pw_pos_dn pw_pos_dn receiveMsg mpw_stop fp_on mpw_stop a_pw_msg pw_pos_up m_pw_msg m_pw_msg pw_but_up pw_but_up mpw_stop pw_but_dn pw_pos_dn fp_on m_pw_msg receiveMsg apw_stop fp_on fp_on apw_stop fp_off m_pw_msg apw_stop a_pw_msg receiveMsg pw_but_up pw_pos_dn apw_stop a_pw_msg m_pw_msg receiveMsg a_pw_msg pw_but_dn a_pw_msg pw_pos_up fp_on pw_pos_up apw_stop pw_pos_up pw_pos_up fp_on pw_but_dn apw_stop receiveMsg receiveMsg pw_but_up fp_on a_pw_msg m_pw_msg apw_stop pw_but_up pw_but_dn pw_but_dn fp_on mpw_stop apw_stop mpw_stop fp_off pw_pos_up mpw_stop m_pw_msg m_pw_msg apw_stop m_pw_msg
 	CE after cut_ce:
-		l n n T n
+		receiveMsg apw_stop fp_off pw_but_dn pw_but_dn mpw_stop pw_pos_up fp_off a_pw_msg
 	CE after minimizing:
-		n n T n
+		receiveMsg a_pw_msg
 
 Calling CE-Distilation for the 2st time:
 	CE before minimizing:
-		r l J i N l l b H n T N J J Q b B T F F B n N m r Q i J m b r m n M B m i l N l M M i T d Q r T N d M r M i M r m l F i r N n F r T l N d T N R J B T l F r H T m F r r Q T N B M Q B n J r B r B J b R l Q N F n n b d Q d r T n F B B d m J F M i
+		receiveMsg fp_off mpw_stop receiveMsg pw_pos_up receiveMsg receiveMsg fp_on apw_stop m_pw_msg pw_pos_up pw_pos_dn m_pw_msg m_pw_msg a_pw_msg receiveMsg pw_pos_up pw_but_dn m_pw_msg mpw_stop fp_on fp_on pw_but_dn pw_pos_dn pw_but_up m_pw_msg a_pw_msg m_pw_msg mpw_stop receiveMsg pw_but_dn pw_but_up a_pw_msg receiveMsg fp_on a_pw_msg pw_pos_up m_pw_msg fp_on fp_off receiveMsg pw_pos_dn fp_off mpw_stop pw_but_dn fp_off m_pw_msg pw_pos_dn receiveMsg mpw_stop receiveMsg a_pw_msg mpw_stop mpw_stop a_pw_msg pw_pos_up pw_but_dn fp_on pw_pos_dn mpw_stop pw_but_up a_pw_msg a_pw_msg receiveMsg fp_on pw_pos_dn m_pw_msg a_pw_msg pw_but_up pw_pos_up pw_but_up fp_on pw_but_dn fp_on pw_pos_up pw_but_dn pw_pos_dn pw_pos_dn pw_pos_dn m_pw_msg pw_but_dn pw_but_dn pw_but_dn fp_on apw_stop fp_on pw_pos_up m_pw_msg fp_on m_pw_msg apw_stop receiveMsg pw_pos_dn receiveMsg a_pw_msg pw_pos_up fp_off fp_off pw_but_dn mpw_stop mpw_stop pw_pos_up
 	CE after cut_ce:
-		r l J i N
+		receiveMsg fp_off mpw_stop receiveMsg pw_pos_up receiveMsg receiveMsg fp_on apw_stop m_pw_msg
 	CE after minimizing:
-		i N
+		receiveMsg receiveMsg receiveMsg receiveMsg m_pw_msg
 
 Calling CE-Distilation for the 3st time:
 	CE before minimizing:
-		M d l r R i M R m B b n T R J H N T r d M m T F F i B M r r d N F F m r J T Q n l d J n T d r r i N J T Q Q Q N B F H F R r n F J H d N b r R H i l B B R N T i J T m F r R l Q m r n H F M b i B F m J N M J n R B R i J b B H N T T n B m H B b F i F Q R r d n J n l n d r T m M m m H i n F F n F m N Q
+		a_pw_msg pw_but_dn pw_pos_dn pw_pos_up apw_stop receiveMsg a_pw_msg pw_but_dn pw_pos_dn pw_pos_up pw_but_up pw_but_dn pw_but_up fp_on a_pw_msg apw_stop pw_pos_dn mpw_stop pw_pos_up receiveMsg pw_but_up mpw_stop apw_stop pw_but_up m_pw_msg fp_off mpw_stop m_pw_msg m_pw_msg fp_on m_pw_msg a_pw_msg m_pw_msg pw_but_up pw_but_dn fp_on a_pw_msg pw_but_dn fp_on a_pw_msg fp_off pw_pos_up fp_on fp_on pw_pos_up apw_stop m_pw_msg pw_but_dn apw_stop fp_on a_pw_msg apw_stop mpw_stop m_pw_msg m_pw_msg pw_pos_up a_pw_msg pw_but_dn pw_but_dn pw_but_up receiveMsg fp_off receiveMsg receiveMsg a_pw_msg apw_stop receiveMsg pw_pos_up mpw_stop fp_on fp_on pw_pos_dn fp_on fp_off pw_pos_dn fp_on pw_pos_dn pw_but_dn mpw_stop fp_off apw_stop apw_stop fp_on pw_but_up m_pw_msg pw_pos_up a_pw_msg receiveMsg fp_off pw_but_up fp_on pw_but_up pw_pos_dn a_pw_msg apw_stop apw_stop pw_but_dn m_pw_msg a_pw_msg a_pw_msg apw_stop apw_stop a_pw_msg a_pw_msg pw_pos_dn pw_pos_up m_pw_msg fp_off fp_on pw_but_up apw_stop fp_on a_pw_msg fp_off fp_on pw_but_dn receiveMsg pw_pos_up apw_stop mpw_stop mpw_stop pw_pos_dn fp_on fp_on
 	CE after cut_ce:
-		M d l r R i M R
+		a_pw_msg pw_but_dn pw_pos_dn pw_pos_up apw_stop receiveMsg a_pw_msg pw_but_dn
 	CE after minimizing:
-		R i R
+		a_pw_msg pw_but_dn receiveMsg a_pw_msg pw_but_dn
 
 Calling CE-Distilation for the 4st time:
 	CE before minimizing:
-		i R R J m m l b M N Q l H J R m r N N F H M R R F M m r Q l R M T Q J n H m B B d n b Q J R i T i Q b n l r Q N F b H d T B T N N N d J r N n n l N B i r i r N R H i R R l N H T R d i B R H i N Q i n R F l F J M i m H d i F R d R R H F b n Q M l Q M n n B J N H F J H F H Q T m M i R m T l b M b m N H H d J R B B T d M M T l b n T d r M m T T J m r F i n l F M M J m B i M
+		fp_off m_pw_msg a_pw_msg apw_stop pw_but_dn fp_on mpw_stop fp_off fp_on apw_stop m_pw_msg apw_stop m_pw_msg apw_stop mpw_stop pw_but_dn a_pw_msg apw_stop pw_pos_dn mpw_stop pw_pos_dn pw_but_dn pw_pos_dn mpw_stop apw_stop fp_on m_pw_msg pw_but_up mpw_stop apw_stop mpw_stop m_pw_msg pw_pos_up pw_pos_up fp_on receiveMsg m_pw_msg fp_off fp_off pw_pos_up pw_pos_up fp_off fp_on receiveMsg pw_but_up fp_on apw_stop fp_on pw_but_dn a_pw_msg pw_pos_dn mpw_stop pw_but_up pw_pos_dn pw_but_dn apw_stop fp_off pw_but_up m_pw_msg apw_stop a_pw_msg pw_but_dn receiveMsg pw_but_up fp_off pw_but_up pw_but_up pw_pos_up pw_pos_dn m_pw_msg receiveMsg pw_but_dn pw_pos_dn pw_but_up pw_but_up pw_pos_dn apw_stop pw_pos_up pw_but_up pw_pos_up pw_pos_dn fp_on mpw_stop receiveMsg fp_off pw_but_dn fp_on apw_stop pw_pos_up m_pw_msg pw_but_dn pw_pos_dn fp_on apw_stop fp_off apw_stop m_pw_msg pw_but_up m_pw_msg apw_stop receiveMsg pw_but_dn mpw_stop a_pw_msg a_pw_msg mpw_stop pw_but_dn pw_pos_dn pw_but_up fp_on a_pw_msg pw_but_dn pw_but_dn pw_pos_up apw_stop a_pw_msg m_pw_msg pw_but_dn fp_on fp_off pw_pos_up receiveMsg m_pw_msg apw_stop mpw_stop fp_on pw_pos_dn a_pw_msg pw_pos_up m_pw_msg pw_pos_up pw_pos_dn m_pw_msg a_pw_msg pw_pos_up pw_but_up a_pw_msg pw_but_dn fp_on pw_pos_up mpw_stop fp_off pw_but_up m_pw_msg receiveMsg pw_pos_dn pw_but_up m_pw_msg apw_stop pw_but_up pw_but_up apw_stop pw_pos_dn fp_off fp_on pw_pos_up pw_pos_up a_pw_msg a_pw_msg pw_pos_dn receiveMsg apw_stop receiveMsg fp_off m_pw_msg fp_off
 	CE after cut_ce:
-		i R R J m m l b
+		fp_off m_pw_msg a_pw_msg apw_stop pw_but_dn fp_on mpw_stop fp_off fp_on apw_stop m_pw_msg apw_stop m_pw_msg apw_stop mpw_stop pw_but_dn a_pw_msg apw_stop pw_pos_dn mpw_stop pw_pos_dn pw_but_dn pw_pos_dn mpw_stop apw_stop fp_on m_pw_msg pw_but_up mpw_stop apw_stop mpw_stop m_pw_msg pw_pos_up pw_pos_up fp_on receiveMsg m_pw_msg fp_off fp_off pw_pos_up pw_pos_up fp_off fp_on receiveMsg pw_but_up fp_on apw_stop fp_on pw_but_dn a_pw_msg pw_pos_dn
 	CE after minimizing:
-		m m b
+		m_pw_msg a_pw_msg pw_but_dn m_pw_msg m_pw_msg pw_but_dn a_pw_msg pw_pos_dn pw_pos_dn pw_but_dn pw_pos_dn m_pw_msg m_pw_msg receiveMsg m_pw_msg receiveMsg pw_but_dn a_pw_msg pw_pos_dn
 
 Calling CE-Distilation for the 5st time:
 	CE before minimizing:
-		R H l d m B i R M R M R i R r B B H i Q T r m F Q i b m m R n T H B J l n J m b d m m J i J R b H T H m i m N Q n m M T B R m d l l J F l b d J d n H R Q i b l m T r R l n d b r b J n M i N b i J m H R F R l N H l T R N l B F J M F Q r F M n B N J F n N T B Q b J d H R J M M J n n J N B d T b i b Q F i N Q T Q d T N M N Q M Q H i N d N r i R m J M n R n M R n F M M d n b n R
+		pw_but_up m_pw_msg a_pw_msg pw_but_up pw_but_up fp_on pw_but_dn apw_stop fp_off pw_but_dn m_pw_msg pw_but_dn fp_on receiveMsg receiveMsg fp_off fp_on pw_pos_dn fp_on a_pw_msg apw_stop mpw_stop m_pw_msg m_pw_msg apw_stop fp_on fp_on pw_pos_dn pw_pos_up mpw_stop mpw_stop receiveMsg apw_stop mpw_stop pw_but_up fp_on receiveMsg apw_stop mpw_stop fp_on mpw_stop mpw_stop mpw_stop pw_pos_dn fp_on pw_pos_dn receiveMsg m_pw_msg pw_pos_dn a_pw_msg apw_stop receiveMsg mpw_stop pw_but_up fp_on pw_but_up mpw_stop fp_off pw_but_dn a_pw_msg apw_stop m_pw_msg pw_but_dn apw_stop apw_stop pw_but_up pw_but_up pw_but_dn fp_on pw_pos_dn mpw_stop pw_but_up apw_stop m_pw_msg mpw_stop pw_but_up pw_but_dn apw_stop apw_stop pw_pos_dn a_pw_msg pw_pos_up m_pw_msg a_pw_msg m_pw_msg mpw_stop pw_pos_dn fp_on receiveMsg fp_on fp_on fp_on m_pw_msg fp_on pw_but_dn mpw_stop receiveMsg pw_but_up m_pw_msg fp_on fp_off pw_pos_up pw_pos_dn receiveMsg a_pw_msg a_pw_msg pw_pos_up pw_pos_dn fp_on receiveMsg pw_pos_dn pw_but_dn fp_on pw_pos_dn pw_but_up mpw_stop pw_but_up apw_stop pw_but_dn m_pw_msg pw_pos_up pw_pos_up fp_off fp_on pw_pos_up pw_pos_dn receiveMsg pw_pos_dn apw_stop a_pw_msg a_pw_msg receiveMsg pw_pos_dn pw_pos_dn m_pw_msg fp_on pw_but_up pw_pos_dn pw_pos_dn apw_stop pw_but_up pw_pos_dn fp_on a_pw_msg pw_pos_dn fp_on pw_but_dn pw_pos_up a_pw_msg fp_on fp_on m_pw_msg fp_on pw_but_up pw_but_dn receiveMsg mpw_stop m_pw_msg pw_pos_dn apw_stop pw_but_dn apw_stop m_pw_msg a_pw_msg m_pw_msg pw_pos_up fp_on pw_pos_dn a_pw_msg mpw_stop pw_but_dn receiveMsg pw_pos_dn pw_but_dn apw_stop fp_on pw_pos_dn pw_pos_up pw_but_up
 	CE after cut_ce:
-		R H l d m B i R
+		pw_but_up m_pw_msg a_pw_msg pw_but_up pw_but_up fp_on pw_but_dn apw_stop fp_off pw_but_dn m_pw_msg pw_but_dn fp_on receiveMsg receiveMsg fp_off fp_on pw_pos_dn fp_on a_pw_msg apw_stop
 	CE after minimizing:
-		R l i R
+		m_pw_msg a_pw_msg pw_but_dn apw_stop pw_but_dn m_pw_msg pw_but_dn receiveMsg receiveMsg pw_pos_dn a_pw_msg apw_stop
 
 Calling CE-Distilation for the 6st time:
 	CE before minimizing:
-		b Q m r n d n l l H H n l r T l d r H n r N J n n r J H B J T b M r Q N N N d n F n i T l m J T n H H n R m b m b d N F r T n l m r B B M R r J N M b R Q Q J H d F i H T r N N n d l N b n N J l n n r b R m i H d n T N r r i H n F l M b l J N l J B T T Q n r B Q R F H l B T b l F T T B N b M N l M Q M r m B r n M T F l m B Q d
+		apw_stop fp_off m_pw_msg fp_off pw_but_dn receiveMsg m_pw_msg pw_pos_dn mpw_stop pw_but_up mpw_stop pw_but_up pw_but_up a_pw_msg receiveMsg pw_but_dn m_pw_msg apw_stop pw_but_dn pw_pos_up m_pw_msg m_pw_msg pw_but_up pw_pos_dn pw_pos_dn pw_pos_up fp_off m_pw_msg pw_but_up fp_off fp_off pw_but_dn pw_pos_up pw_but_up pw_but_dn apw_stop pw_pos_up a_pw_msg pw_but_up pw_pos_up pw_pos_up apw_stop pw_pos_dn pw_pos_dn pw_but_up fp_off pw_pos_up a_pw_msg receiveMsg fp_off m_pw_msg pw_but_dn fp_off pw_but_up apw_stop mpw_stop fp_off m_pw_msg receiveMsg m_pw_msg pw_but_up apw_stop receiveMsg fp_on apw_stop pw_but_up fp_on receiveMsg fp_on a_pw_msg pw_pos_dn fp_off pw_pos_up mpw_stop a_pw_msg fp_off a_pw_msg mpw_stop pw_pos_up pw_but_dn receiveMsg fp_on a_pw_msg apw_stop receiveMsg fp_on receiveMsg fp_on apw_stop apw_stop fp_off pw_pos_up pw_pos_dn fp_off pw_but_up mpw_stop pw_pos_up fp_on a_pw_msg a_pw_msg m_pw_msg pw_pos_dn pw_pos_dn m_pw_msg m_pw_msg m_pw_msg fp_off pw_but_up pw_but_up mpw_stop apw_stop pw_but_dn fp_off pw_but_dn apw_stop pw_but_dn receiveMsg mpw_stop pw_but_up fp_off pw_but_dn apw_stop m_pw_msg m_pw_msg fp_on pw_pos_up m_pw_msg pw_but_up fp_on fp_off fp_on m_pw_msg pw_pos_up apw_stop pw_but_up mpw_stop receiveMsg a_pw_msg mpw_stop pw_pos_up fp_on apw_stop pw_pos_up apw_stop pw_pos_up pw_pos_up fp_off mpw_stop apw_stop pw_but_dn apw_stop pw_but_dn pw_pos_dn mpw_stop receiveMsg pw_pos_up m_pw_msg mpw_stop pw_pos_dn pw_but_dn pw_pos_dn receiveMsg pw_but_up apw_stop receiveMsg m_pw_msg m_pw_msg m_pw_msg pw_but_dn pw_pos_dn fp_off apw_stop
 	CE after cut_ce:
-		b Q m r n
+		apw_stop fp_off m_pw_msg fp_off pw_but_dn receiveMsg m_pw_msg pw_pos_dn mpw_stop
 	CE after minimizing:
-		m n
+		apw_stop m_pw_msg pw_but_dn receiveMsg m_pw_msg pw_pos_dn mpw_stop
 
 Calling CE-Distilation for the 7st time:
 	CE before minimizing:
-		H T J r R r Q m r m Q Q l B H R i R r R r d B N n T N l l N H J n B T Q T F m l F Q M J H T F Q Q d Q R Q b r M m T H b H Q d F B b d Q r T H B N T b H M M m Q T R N F R d l r l M N J d T d H r Q R M m Q Q T H R l N J T F Q d N M n i B M d b r F F
+		receiveMsg fp_off fp_off receiveMsg receiveMsg fp_on apw_stop receiveMsg receiveMsg pw_pos_up pw_pos_up pw_pos_dn pw_pos_dn pw_but_up receiveMsg pw_but_up mpw_stop m_pw_msg pw_but_dn pw_but_up receiveMsg receiveMsg apw_stop mpw_stop fp_off m_pw_msg m_pw_msg a_pw_msg m_pw_msg m_pw_msg apw_stop fp_on mpw_stop mpw_stop pw_but_up pw_but_up pw_pos_up pw_but_up pw_but_dn mpw_stop fp_off pw_but_dn apw_stop receiveMsg receiveMsg m_pw_msg pw_pos_dn pw_but_dn fp_on m_pw_msg receiveMsg a_pw_msg pw_but_up fp_on a_pw_msg fp_off fp_off pw_but_dn pw_but_dn mpw_stop pw_but_up apw_stop pw_but_dn receiveMsg fp_on a_pw_msg receiveMsg apw_stop pw_pos_dn pw_pos_up fp_on a_pw_msg pw_pos_up pw_pos_dn a_pw_msg mpw_stop pw_but_dn a_pw_msg mpw_stop pw_but_up pw_but_dn receiveMsg fp_off pw_pos_dn apw_stop apw_stop pw_pos_dn apw_stop m_pw_msg fp_off mpw_stop pw_but_up pw_but_up fp_off receiveMsg apw_stop mpw_stop pw_but_dn pw_pos_up m_pw_msg receiveMsg apw_stop pw_pos_dn pw_pos_dn apw_stop m_pw_msg apw_stop mpw_stop apw_stop apw_stop receiveMsg pw_pos_up apw_stop pw_but_dn pw_but_up fp_off apw_stop mpw_stop fp_off pw_but_dn a_pw_msg fp_on fp_on fp_off pw_pos_up a_pw_msg pw_pos_up pw_pos_dn apw_stop mpw_stop pw_pos_dn pw_but_dn receiveMsg pw_but_up fp_on apw_stop fp_off receiveMsg a_pw_msg m_pw_msg mpw_stop m_pw_msg pw_but_dn pw_but_up apw_stop receiveMsg fp_off pw_pos_up a_pw_msg receiveMsg m_pw_msg pw_pos_up pw_but_dn m_pw_msg fp_off fp_off a_pw_msg pw_pos_dn pw_but_dn receiveMsg fp_on pw_but_dn pw_but_dn fp_off m_pw_msg pw_but_up fp_off m_pw_msg fp_off m_pw_msg fp_off fp_off pw_pos_up pw_pos_dn pw_pos_dn receiveMsg m_pw_msg pw_but_up mpw_stop pw_pos_up a_pw_msg m_pw_msg fp_on pw_but_up mpw_stop apw_stop receiveMsg a_pw_msg pw_but_up apw_stop fp_off a_pw_msg
 	CE after cut_ce:
-		H T J r R r Q m r m Q Q l B H R i R r R r d B
+		receiveMsg fp_off fp_off receiveMsg receiveMsg fp_on apw_stop receiveMsg receiveMsg pw_pos_up pw_pos_up pw_pos_dn pw_pos_dn pw_but_up receiveMsg pw_but_up mpw_stop m_pw_msg pw_but_dn pw_but_up
 	CE after minimizing:
-		r r r B r r B
+		receiveMsg receiveMsg receiveMsg apw_stop receiveMsg receiveMsg pw_pos_dn pw_pos_dn pw_but_up receiveMsg pw_but_up mpw_stop m_pw_msg pw_but_dn pw_but_up
 
 Calling CE-Distilation for the 8st time:
 	CE before minimizing:
-		i r J n d F m b N m b l i d F M n d B N Q R Q M T l J l J b T n N Q T N l b n r M d i Q i N n F i R B r T Q b B d Q b Q b n T m B B i R l n F H N M n M Q m J m M R d N R r Q d T r J J b F b Q T T F d n r r F n M R J d
+		pw_but_dn pw_but_up pw_pos_dn mpw_stop pw_pos_up pw_but_up m_pw_msg pw_but_dn pw_pos_up m_pw_msg fp_on pw_but_dn apw_stop pw_pos_up apw_stop pw_but_up receiveMsg pw_but_dn m_pw_msg apw_stop receiveMsg mpw_stop fp_off pw_but_dn pw_pos_dn m_pw_msg apw_stop apw_stop pw_pos_dn mpw_stop receiveMsg receiveMsg pw_pos_dn pw_pos_up pw_pos_up pw_pos_dn apw_stop fp_on pw_but_up receiveMsg pw_but_dn pw_but_up pw_pos_up fp_off fp_off pw_pos_up pw_pos_dn pw_pos_up pw_pos_dn apw_stop pw_pos_dn apw_stop pw_pos_up apw_stop m_pw_msg fp_off pw_pos_dn m_pw_msg pw_pos_dn pw_but_up fp_off pw_but_dn fp_off pw_but_up mpw_stop pw_pos_up apw_stop receiveMsg fp_off a_pw_msg pw_pos_dn fp_off fp_on pw_pos_dn pw_pos_dn pw_but_dn m_pw_msg receiveMsg receiveMsg pw_pos_up receiveMsg fp_off pw_pos_up pw_pos_up receiveMsg m_pw_msg a_pw_msg pw_pos_up receiveMsg fp_off pw_but_dn mpw_stop receiveMsg pw_but_up m_pw_msg pw_but_dn mpw_stop receiveMsg fp_off fp_off fp_off receiveMsg a_pw_msg a_pw_msg a_pw_msg mpw_stop pw_but_up pw_pos_up apw_stop pw_pos_dn pw_pos_up fp_on fp_off pw_but_dn pw_but_up pw_pos_up receiveMsg pw_pos_up pw_pos_dn fp_on apw_stop mpw_stop mpw_stop fp_off pw_but_up pw_pos_up fp_off receiveMsg fp_on apw_stop pw_but_up pw_pos_up pw_pos_up pw_but_up m_pw_msg pw_but_dn fp_off fp_on pw_but_dn fp_off a_pw_msg receiveMsg pw_but_dn fp_on apw_stop pw_but_dn a_pw_msg mpw_stop pw_but_up pw_but_dn receiveMsg fp_on mpw_stop mpw_stop apw_stop pw_but_dn fp_on pw_but_up pw_pos_up pw_pos_dn receiveMsg apw_stop fp_on
 	CE after cut_ce:
-		i r J n d F m b
+		pw_but_dn pw_but_up pw_pos_dn mpw_stop pw_pos_up pw_but_up m_pw_msg pw_but_dn pw_pos_up m_pw_msg fp_on pw_but_dn apw_stop pw_pos_up apw_stop pw_but_up receiveMsg pw_but_dn m_pw_msg apw_stop receiveMsg mpw_stop fp_off pw_but_dn pw_pos_dn m_pw_msg apw_stop apw_stop pw_pos_dn mpw_stop receiveMsg receiveMsg pw_pos_dn pw_pos_up pw_pos_up pw_pos_dn apw_stop fp_on pw_but_up receiveMsg pw_but_dn pw_but_up pw_pos_up fp_off fp_off pw_pos_up pw_pos_dn pw_pos_up pw_pos_dn apw_stop pw_pos_dn apw_stop pw_pos_up apw_stop m_pw_msg fp_off pw_pos_dn m_pw_msg pw_pos_dn pw_but_up fp_off pw_but_dn fp_off pw_but_up mpw_stop pw_pos_up
 	CE after minimizing:
-		r m b
+		pw_but_dn pw_but_up pw_pos_dn mpw_stop pw_pos_up pw_but_up m_pw_msg pw_but_dn pw_pos_up m_pw_msg pw_but_dn apw_stop pw_pos_up apw_stop pw_but_up receiveMsg pw_but_dn m_pw_msg apw_stop receiveMsg mpw_stop pw_but_dn pw_pos_dn m_pw_msg apw_stop apw_stop pw_pos_dn mpw_stop receiveMsg receiveMsg pw_pos_dn pw_pos_up pw_pos_up pw_pos_dn apw_stop pw_but_up receiveMsg pw_but_dn pw_but_up pw_pos_up pw_pos_up pw_pos_dn pw_pos_up pw_pos_dn apw_stop pw_pos_dn apw_stop pw_pos_up apw_stop m_pw_msg pw_pos_dn m_pw_msg pw_pos_dn pw_but_up pw_but_dn pw_but_up mpw_stop pw_pos_up
 
 Calling CE-Distilation for the 9st time:
 	CE before minimizing:
-		l d H i M N b B N M m b r H F J r l b N H i b r H i R r i d d F l F i B l r i B m M H d d l J r b d n n b r Q H m J R m m m F J r R i l J H b l M T T n R n R d J r d T N Q J H n N J R J d T b b d M F H F M b i J N l J n Q Q r R T T N i N i Q i l T b J J d J F N B N M i r F B r B r d B n R b b R T b d m F Q R M R d m n l T Q M n Q R J B M r R T Q N Q d l m n F H
+		pw_but_dn pw_but_dn fp_on pw_pos_dn m_pw_msg fp_on a_pw_msg pw_but_up pw_but_dn fp_on receiveMsg pw_pos_up fp_off pw_but_up pw_pos_up a_pw_msg m_pw_msg apw_stop m_pw_msg pw_pos_up fp_on a_pw_msg fp_on m_pw_msg pw_pos_dn fp_on a_pw_msg fp_off m_pw_msg fp_on receiveMsg fp_off fp_on mpw_stop pw_but_up fp_off apw_stop m_pw_msg pw_pos_up pw_pos_up pw_pos_dn fp_off pw_pos_up m_pw_msg pw_pos_dn apw_stop pw_but_dn pw_pos_up mpw_stop fp_off mpw_stop pw_pos_dn fp_off fp_off fp_on pw_but_dn a_pw_msg pw_pos_dn a_pw_msg a_pw_msg fp_on fp_on apw_stop receiveMsg apw_stop apw_stop pw_pos_dn pw_pos_dn a_pw_msg pw_but_up a_pw_msg mpw_stop receiveMsg m_pw_msg fp_on pw_but_dn pw_but_dn m_pw_msg pw_pos_up a_pw_msg fp_off fp_on fp_off pw_but_dn pw_but_up m_pw_msg m_pw_msg pw_but_dn mpw_stop pw_but_up pw_but_dn mpw_stop fp_on pw_pos_dn mpw_stop m_pw_msg pw_but_up a_pw_msg apw_stop a_pw_msg m_pw_msg m_pw_msg fp_on fp_on fp_off pw_pos_up receiveMsg mpw_stop pw_pos_dn pw_but_up a_pw_msg fp_on receiveMsg pw_pos_up pw_but_dn a_pw_msg mpw_stop a_pw_msg pw_pos_dn pw_pos_up pw_pos_dn m_pw_msg pw_pos_up mpw_stop pw_pos_up receiveMsg mpw_stop apw_stop pw_but_dn pw_pos_dn fp_on fp_off m_pw_msg fp_on receiveMsg receiveMsg apw_stop fp_on fp_on pw_pos_dn apw_stop pw_pos_up apw_stop mpw_stop receiveMsg m_pw_msg receiveMsg pw_pos_dn fp_on pw_but_up fp_off pw_but_up apw_stop pw_pos_up pw_but_up pw_pos_up pw_but_up pw_but_up pw_but_dn m_pw_msg m_pw_msg apw_stop a_pw_msg pw_pos_dn fp_on pw_pos_up pw_pos_up fp_off pw_pos_dn a_pw_msg receiveMsg m_pw_msg receiveMsg receiveMsg mpw_stop mpw_stop mpw_stop fp_on pw_but_up receiveMsg pw_pos_up
 	CE after cut_ce:
-		l d H
+		pw_but_dn pw_but_dn fp_on pw_pos_dn m_pw_msg fp_on a_pw_msg pw_but_up pw_but_dn fp_on receiveMsg pw_pos_up fp_off pw_but_up pw_pos_up a_pw_msg m_pw_msg apw_stop m_pw_msg pw_pos_up fp_on a_pw_msg fp_on m_pw_msg pw_pos_dn fp_on a_pw_msg fp_off m_pw_msg fp_on receiveMsg fp_off fp_on mpw_stop pw_but_up fp_off apw_stop m_pw_msg pw_pos_up pw_pos_up pw_pos_dn fp_off pw_pos_up m_pw_msg pw_pos_dn apw_stop pw_but_dn pw_pos_up mpw_stop fp_off mpw_stop pw_pos_dn fp_off fp_off fp_on pw_but_dn a_pw_msg pw_pos_dn a_pw_msg a_pw_msg fp_on fp_on apw_stop receiveMsg apw_stop apw_stop pw_pos_dn pw_pos_dn a_pw_msg pw_but_up a_pw_msg mpw_stop receiveMsg m_pw_msg fp_on pw_but_dn pw_but_dn m_pw_msg pw_pos_up a_pw_msg fp_off fp_on fp_off pw_but_dn pw_but_up m_pw_msg m_pw_msg pw_but_dn mpw_stop pw_but_up pw_but_dn mpw_stop fp_on pw_pos_dn mpw_stop m_pw_msg pw_but_up a_pw_msg apw_stop a_pw_msg m_pw_msg m_pw_msg fp_on
 	CE after minimizing:
-		d H
+		pw_but_dn pw_but_dn fp_on pw_pos_dn m_pw_msg fp_on a_pw_msg pw_but_up pw_but_dn fp_on receiveMsg pw_pos_up pw_but_up pw_pos_up a_pw_msg m_pw_msg apw_stop m_pw_msg pw_pos_up fp_on a_pw_msg fp_on m_pw_msg pw_pos_dn fp_on a_pw_msg m_pw_msg fp_on receiveMsg fp_on mpw_stop pw_but_up apw_stop m_pw_msg pw_pos_up pw_pos_up pw_pos_dn pw_pos_up m_pw_msg pw_pos_dn apw_stop pw_but_dn pw_pos_up mpw_stop mpw_stop pw_pos_dn fp_on pw_but_dn a_pw_msg pw_pos_dn a_pw_msg a_pw_msg fp_on fp_on apw_stop receiveMsg apw_stop apw_stop pw_pos_dn pw_pos_dn a_pw_msg pw_but_up a_pw_msg mpw_stop receiveMsg m_pw_msg fp_on pw_but_dn pw_but_dn m_pw_msg pw_pos_up a_pw_msg fp_on pw_but_dn pw_but_up m_pw_msg m_pw_msg pw_but_dn mpw_stop pw_but_up pw_but_dn mpw_stop fp_on pw_pos_dn mpw_stop m_pw_msg pw_but_up a_pw_msg apw_stop a_pw_msg m_pw_msg m_pw_msg fp_on
 
 Calling CE-Distilation for the 10st time:
 	CE before minimizing:
-		n i d m T n i l J b b B m b R R i Q b N n r b T d b b d H n T d b r d H N l n m b R T d Q Q Q n r r b i J b d m H N N m J b l l F T d b d J Q J J r m l i J i n F b H H Q J r Q T Q d m N R l b T Q F F n R M F d m H J
+		receiveMsg apw_stop pw_pos_up fp_on pw_pos_up fp_off pw_pos_dn apw_stop pw_pos_dn apw_stop m_pw_msg pw_but_dn mpw_stop apw_stop pw_but_up fp_on pw_but_dn pw_but_dn receiveMsg fp_on receiveMsg m_pw_msg pw_but_up apw_stop mpw_stop fp_on receiveMsg m_pw_msg pw_but_dn m_pw_msg pw_but_up m_pw_msg a_pw_msg pw_pos_dn pw_pos_dn a_pw_msg pw_but_dn m_pw_msg m_pw_msg m_pw_msg m_pw_msg a_pw_msg mpw_stop fp_on pw_pos_up pw_but_up pw_but_up pw_but_dn mpw_stop receiveMsg apw_stop apw_stop m_pw_msg pw_pos_dn pw_pos_dn a_pw_msg mpw_stop mpw_stop pw_pos_dn pw_but_up fp_off fp_off pw_pos_up pw_pos_up apw_stop mpw_stop pw_but_dn pw_pos_up a_pw_msg fp_off apw_stop fp_on m_pw_msg pw_but_dn pw_pos_up pw_pos_up pw_but_dn fp_on pw_but_dn pw_pos_up pw_pos_up apw_stop pw_pos_dn mpw_stop a_pw_msg a_pw_msg apw_stop pw_but_up pw_but_up pw_pos_dn pw_but_up fp_off receiveMsg fp_on fp_off mpw_stop fp_off receiveMsg mpw_stop m_pw_msg apw_stop fp_off pw_pos_up pw_but_dn a_pw_msg fp_off fp_off m_pw_msg pw_pos_up apw_stop mpw_stop receiveMsg mpw_stop pw_pos_dn fp_off pw_but_dn pw_but_up fp_on fp_on fp_off fp_off a_pw_msg pw_pos_dn pw_but_up pw_but_dn pw_pos_dn m_pw_msg pw_pos_dn fp_off receiveMsg pw_pos_up pw_but_dn pw_but_up pw_pos_dn pw_but_dn fp_on mpw_stop fp_off receiveMsg pw_pos_dn pw_but_dn pw_but_up pw_pos_dn fp_off apw_stop m_pw_msg a_pw_msg receiveMsg a_pw_msg pw_but_up m_pw_msg pw_but_up pw_pos_up fp_on fp_off a_pw_msg fp_off fp_off fp_on mpw_stop receiveMsg fp_off apw_stop a_pw_msg pw_but_up pw_but_dn receiveMsg pw_but_up pw_but_up fp_off pw_pos_dn m_pw_msg pw_but_dn a_pw_msg mpw_stop a_pw_msg a_pw_msg fp_on fp_off m_pw_msg m_pw_msg apw_stop fp_on apw_stop mpw_stop a_pw_msg pw_pos_dn a_pw_msg
 	CE after cut_ce:
-		n i d m T n i l J b b B m b R R i Q b N
+		receiveMsg apw_stop pw_pos_up fp_on pw_pos_up fp_off pw_pos_dn apw_stop pw_pos_dn apw_stop m_pw_msg pw_but_dn mpw_stop apw_stop pw_but_up fp_on pw_but_dn pw_but_dn receiveMsg fp_on receiveMsg m_pw_msg pw_but_up apw_stop mpw_stop fp_on receiveMsg m_pw_msg pw_but_dn m_pw_msg pw_but_up m_pw_msg a_pw_msg pw_pos_dn pw_pos_dn a_pw_msg pw_but_dn m_pw_msg m_pw_msg m_pw_msg m_pw_msg a_pw_msg mpw_stop fp_on pw_pos_up pw_but_up pw_but_up pw_but_dn mpw_stop receiveMsg apw_stop apw_stop m_pw_msg pw_pos_dn pw_pos_dn a_pw_msg mpw_stop mpw_stop pw_pos_dn pw_but_up fp_off fp_off pw_pos_up pw_pos_up apw_stop mpw_stop pw_but_dn pw_pos_up a_pw_msg fp_off apw_stop fp_on m_pw_msg pw_but_dn pw_pos_up pw_pos_up pw_but_dn fp_on pw_but_dn pw_pos_up pw_pos_up apw_stop pw_pos_dn
 	CE after minimizing:
-		i i i Q N
-
-Calling CE-Distilation for the 11st time:
-	CE before minimizing:
-		H F n d M i B n l n i m d l Q N m m N J Q F J l n H i J n d b M m Q m B l Q l n n d l d Q R r F B n N T M Q T R i m N M M l R b m H M i R b N J i N R T J N b d T B T J m Q R N J l i Q r H n d T J H F B i n H r B M d n M Q d M b d H r l b M r l l J Q l n Q M M T Q N T d M d n i B n J B n l H F J b H B r d d T n M R F d n N R i M M T m Q F l d n m M n T n R J T T
-	CE after cut_ce:
-		H F n d M
-	CE after minimizing:
-		d M
-
-Calling CE-Distilation for the 12st time:
-	CE before minimizing:
-		T H i l B n H N r M H d r l d r J T r m T F d F B H T M R M b R b N H M r m F m Q J F n H i R i T N M Q i n J r r H l T J l d Q m n l n J J F r Q F b R r r b b Q H i i T i Q B n R R J m M N l M R N l H n B b n m B R i B b N l r F d M i J R F R H F R R d m F b m Q i N J M b i M R T b m l F J J l M B Q M m N R M b n F n m F H Q M Q N d b d F n d l i J R d Q i d b H d d i r
-	CE after cut_ce:
-		T H i l B n H N r M H d r l d r J
-	CE after minimizing:
-		l l J
-
-Calling CE-Distilation for the 13st time:
-	CE before minimizing:
-		d R n n i r n Q d M T m r n J r d d H H R N d l F m b n H d F J R R i M d B i F i R B N R Q T J Q b m m d l N Q i M H m M R r n N N d F J d Q r d M m T l Q b R Q H B i N B l N r R l m l i b J T H Q Q M m J i M l n l B Q n Q T T l F i F F B T N M d d m F Q l T b r J B N B d Q M Q Q n i F B l R F r r b M T r R m b l Q F Q l Q n J R n N b Q M l H R R d B B d n m B n T J l l Q m H Q N H d b r d
-	CE after cut_ce:
-		d R n n i r n Q d M T m r n J r d d H H R N d l F m b n H d F J R R i M d B
-	CE after minimizing:
-		r r r F F B
-
-Calling CE-Distilation for the 14st time:
-	CE before minimizing:
-		B b F n d r i T r H l T r m m d R b l M R i Q n B b H R J T m H r B b m J B N r J i M i F F b M m b b r d b d T r R N l l i H T H d r T b R n T T N B l R r R m r m F N i n d R B i R B i F T T Q d n J F T b H R B T r i Q R T m b F F B N d M T b N b F H H J n m Q r H J M R R b r R F m H d H r J M J R R F J F R Q r Q d R i R F B T r F i F M F J Q F r H l F Q d N d n B l i T i
-	CE after cut_ce:
-		B b F n d r i T r H l T r m m d R b l M R i Q n B b H R J T m H r B b m J B N r J i M
-	CE after minimizing:
-		d d M Q M
-
-Calling CE-Distilation for the 15st time:
-	CE before minimizing:
-		M b i r d B N J M l m B i Q R l B N d N T b l r B M m T r N F R b l J F J d m M T i r N r b Q J b r b H r H n R i r H i d Q Q Q b d l H d R N T d B d n d m n m r N i J Q r R F B F N b N F Q i i R d T i M H B r N B d F F M d F M B N N M H i J J B J H B R b m l Q n i n N F M Q l B l l H b H r N M F b T R m J H i r b M
-	CE after cut_ce:
-		M b i r d B N J M l m B i Q R l B N d N T b l r B M m T r N F R b l J
-	CE after minimizing:
-		J l l T l T l J
-
-Calling CE-Distilation for the 16st time:
-	CE before minimizing:
-		R m r N M b n J n n N i l M F J B b M H Q b B M Q J d F N M m J l R b H M n M n i n i F B R l r l m B b B H M M R H m M m r J F m n Q R Q r d R r R d T d i n B T H H n n b m d H d d n J r m M n N b Q M m i R H b F N N F M Q M H Q d i F l d R r l N H Q F m H R J J M F T Q l J d M R B i l J l T m R B l Q J b M b T N n M M N l r B M b B B b J d d b Q r H J N J b d b R d
-	CE after cut_ce:
-		R m r N M b n J n n N i l M F J B b M H
-	CE after minimizing:
-		F H
+		receiveMsg apw_stop pw_pos_up fp_on pw_pos_up fp_off pw_pos_dn apw_stop pw_pos_dn apw_stop m_pw_msg pw_but_dn mpw_stop apw_stop pw_but_up fp_on pw_but_dn pw_but_dn receiveMsg fp_on receiveMsg m_pw_msg pw_but_up apw_stop mpw_stop fp_on receiveMsg m_pw_msg pw_but_dn m_pw_msg pw_but_up m_pw_msg a_pw_msg pw_pos_dn pw_pos_dn a_pw_msg pw_but_dn m_pw_msg m_pw_msg m_pw_msg m_pw_msg a_pw_msg mpw_stop fp_on pw_pos_up pw_but_up pw_but_up pw_but_dn mpw_stop receiveMsg apw_stop apw_stop m_pw_msg pw_pos_dn pw_pos_dn a_pw_msg mpw_stop mpw_stop pw_pos_dn pw_but_up fp_off fp_off pw_pos_up pw_pos_up apw_stop mpw_stop pw_but_dn pw_pos_up a_pw_msg fp_off apw_stop fp_on m_pw_msg pw_but_dn pw_pos_up pw_pos_up pw_but_dn fp_on pw_but_dn pw_pos_up pw_pos_up apw_stop pw_pos_dn
 
 	The input components:
-		  - components with 3 inputs: [B, F, r]
-		  - components with 3 inputs: [F, H, d]
-		  - components with 3 inputs: [M, Q, d]
-		  - components with 3 inputs: [N, Q, i]
-		  - components with 3 inputs: [R, i, l]
-		  - components with 3 inputs: [J, T, l]
-		  - components with 3 inputs: [T, m, n]
-		  - components with 3 inputs: [b, m, r]
+		  - components with 2 inputs: [fp_off, fp_on]
+		  - components with 11 inputs: [a_pw_msg, apw_stop, fp_off, fp_on, m_pw_msg, mpw_stop, pw_but_dn, pw_but_up, pw_pos_dn, pw_pos_up, receiveMsg]
+		  - components with 9 inputs: [a_pw_msg, apw_stop, fp_off, fp_on, pw_but_dn, pw_but_up, pw_pos_dn, pw_pos_up, receiveMsg]
 
 
 	The result:
-		  - component with 3 inputs: [R, i, l]
-		  - component with 3 inputs: [n, T, m]
-		  - component with 3 inputs: [b, m, r]
-		  - component with 3 inputs: [N, i, Q]
-		  - component with 3 inputs: [B, r, F]
-		  - component with 3 inputs: [M, d, Q]
-		  - component with 3 inputs: [J, l, T]
-		  - component with 3 inputs: [H, d, F]
-Sync Actions: [T, d, Q, r, l, i, m, F]
+		  - component with 11 inputs: [receiveMsg, a_pw_msg, m_pw_msg, pw_but_dn, pw_pos_dn, apw_stop, mpw_stop, pw_but_up, pw_pos_up, fp_on, fp_off]
+Sync Actions: [fp_off]

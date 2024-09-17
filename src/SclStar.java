@@ -361,8 +361,8 @@ public class SclStar {
             result += "\t\t  - component with " + s.size() + " inputs: " + s + "\n";
         }
         result += "Sync Actions: " + sync;
-        if (inputComponentsActs.size() != sigmaFamily.size())
-            throw new RuntimeException();
+//        if (inputComponentsActs.size() != sigmaFamily.size())
+//            throw new RuntimeException();
 
         sclFileName += ".txt";
         sclWriter =  new FileWriter(sclFileName);

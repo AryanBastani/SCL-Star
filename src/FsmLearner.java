@@ -77,8 +77,38 @@ public class FsmLearner {
     public static final String EQUIVALENCE_METHOD = "eq";
     public static final String EXPERIMENT_REPEAT = "repeat";
 
+    private String filePath;
+    private String equivalenceMethod;
+    private int repeat;
+    private int minNumOfStates;
+    private int maxNumOfStates;
+    private boolean finalCheckMode;
 
-    public static void FsmLearner(String[] args) throws IOException {
+    public FsmLearner(ArrayList<String> args) throws IOException{
+        if(args.get(3).equals("Real Tests"))
+            filePath = "Real-Tests/data/Reals.txt";
+        else if(args.get(3).equals("Point-To-Point Tests"))
+            filePath += "Point-To-Point-All-Tests.txt";
+        else if(args.get(3).equals("Mesh Tests"))
+            filePath += "Mesh-All-Tests.txt";
+        else if(args.get(3).equals("Star Tests"))
+            filePath += "Star-All-Tests.txt";
+        else if(args.get(3).equals("Ring Tests"))
+            filePath += "Ring-All-Tests.txt";
+        else if(args.get(3).equals("Bus Tests"))
+            filePath += "Bus-All-Tests.txt";
+        else
+            filePath += "Bipartite-All-Tests.txt";
+
+        equivalenceMethod = args.get(0);
+        repeat = Integer.parseInt(args.get(2));
+        minNumOfStates = Integer.parseInt(args.getLast());
+        maxNumOfStates = Integer.parseInt(args.get(args.size() - 2));
+        finalCheckMode = Boolean.parseBoolean(args.get(1));
+    }
+
+
+    public void learn() throws IOException {
         csvProperties = CSVProperties.getInstance();
         experimentProperties = Experimentproperties.getInstance();
         try {
@@ -92,71 +122,71 @@ public class FsmLearner {
             HelpFormatter formatter = new HelpFormatter();
 
             // parse the command line arguments
-            CommandLine line = parser.parse(options, args);
+//            CommandLine line = parser.parse(options, args);
 
-            boolean isGenratedTests = false;
-            boolean isNastedTests = false;
+//            boolean isGenratedTests = false;
+//            boolean isNastedTests = false;
 
-            System.out.println("Please choose a benchmarck to run(Enter 1 or 2 or ... or 5):");
-            System.out.println("\t1- CL-Star-Benchmarks\n\t2- SmallTest-Benchmarks");
-            System.out.println("\t3- Mealy-benchmarks\n\t4- Real-Tests\n\t5- Generated-Benchmarks");
+//            System.out.println("Please choose a benchmarck to run(Enter 1 or 2 or ... or 5):");
+//            System.out.println("\t1- CL-Star-Benchmarks\n\t2- SmallTest-Benchmarks");
+//            System.out.println("\t3- Mealy-benchmarks\n\t4- Real-Tests\n\t5- Generated-Benchmarks");
 
-            String file_path = "";
-            Scanner myObj = new Scanner(System.in);
-            String benckmarkId = myObj.nextLine();
+//            String file_path = "";
+//            Scanner myObj = new Scanner(System.in);
+//            String benckmarkId = myObj.nextLine();
 //            if(benckmarkId.equals("1"))
 //                file_path = "data/CL_Benchmarks.txt";
 //            else if(benckmarkId.equals("2"))
 //                file_path = "data/SmallTest_Benchmarks.txt";
 //            else if(benckmarkId.equals("3"))
 //                file_path = "data/Mealy_Benchmarks.txt";
-            if(args[0].equals("Real Tests")) {
-                file_path = "Real-Tests/data/Reals.txt";
-                isGenratedTests = true;
-                isNastedTests = true;
-            }
-            else{
-                isGenratedTests = true;
-                System.out.println("Please choose the type of generated-benchmark (Enter 1 or 2 or ... or 8):");
-                System.out.println("\t1- Point-To-Point\n\t2- Mesh\n\t3- Star\n\t4- Ring");
-                System.out.println("\t5- Tree\n\t6- Bus\n\t7- Hybrid\n\t8- Bipartite\n\t9- All types" );
-                benckmarkId = myObj.nextLine();
-                file_path = "Test-Generating/data/";
-                if(benckmarkId.equals("1"))
-                    file_path += "Point-To-Point-All-Tests.txt";
-                else if(benckmarkId.equals("2"))
-                    file_path += "Mesh-All-Tests.txt";
-                else if(benckmarkId.equals("3"))
-                    file_path += "Star-All-Tests.txt";
-                else if(benckmarkId.equals("4"))
-                    file_path += "Ring-All-Tests.txt";
-                else if(benckmarkId.equals("5"))
-                    file_path += "Tree-All-Tests.txt";
-                else if(benckmarkId.equals("6"))
-                    file_path += "Bus-All-Tests.txt";
-                else if(benckmarkId.equals("7"))
-                    file_path += "Hybrid-All-Tests.txt";
-                else if(benckmarkId.equals("8"))
-                    file_path += "Bipartite-All-Tests.txt";
-                else{
-                    file_path = "data/Generated_Benchmarks.txt";
-                }
-                isNastedTests = true;
-            }
+//            if(args.get(3).equals("Real Tests")) {
+//                file_path = "Real-Tests/data/Reals.txt";
+//                isGenratedTests = true;
+//                isNastedTests = true;
+//            }
+//            else{
+//                isGenratedTests = true;
+//                System.out.println("Please choose the type of generated-benchmark (Enter 1 or 2 or ... or 8):");
+//                System.out.println("\t1- Point-To-Point\n\t2- Mesh\n\t3- Star\n\t4- Ring");
+//                System.out.println("\t5- Tree\n\t6- Bus\n\t7- Hybrid\n\t8- Bipartite\n\t9- All types" );
+//                benckmarkId = myObj.nextLine();
+//                file_path = "Test-Generating/data/";
+//                if(benckmarkId.equals("1"))
+//                    file_path += "Point-To-Point-All-Tests.txt";
+//                else if(benckmarkId.equals("2"))
+//                    file_path += "Mesh-All-Tests.txt";
+//                else if(benckmarkId.equals("3"))
+//                    file_path += "Star-All-Tests.txt";
+//                else if(benckmarkId.equals("4"))
+//                    file_path += "Ring-All-Tests.txt";
+//                else if(benckmarkId.equals("5"))
+//                    file_path += "Tree-All-Tests.txt";
+//                else if(benckmarkId.equals("6"))
+//                    file_path += "Bus-All-Tests.txt";
+//                else if(benckmarkId.equals("7"))
+//                    file_path += "Hybrid-All-Tests.txt";
+//                else if(benckmarkId.equals("8"))
+//                    file_path += "Bipartite-All-Tests.txt";
+//                else{
+//                    file_path = "data/Generated_Benchmarks.txt";
+////                }
+//                isNastedTests = true;
+//            }
             /*
             if (line.hasOption(SRC_DIR)) {
                 file_path = line.getOptionValue(SRC_DIR);
             } else {
                 file_path = experimentProperties.getProp("benchmarks_file");
             }*/
-            String equivalence_method;
-            equivalence_method = args[1];
-            int repeat = Integer.parseInt(args[2]);
+//            String equivalence_method;
+//            equivalence_method = args.get(0);
+//            int repeat = Integer.parseInt(args.get(2));
 
 //        initial the experiment properties
             benchmarks_base_dir = experimentProperties.getProp("benchmarks_base_dir");
             RESULTS_PATH = experimentProperties.getProp("result_path");
-            File f = new File(file_path);
+            File f = new File(filePath);
             BufferedReader br = new BufferedReader(new FileReader(f));
 
             // initial a results file
@@ -196,16 +226,15 @@ public class FsmLearner {
 
             File lFolder = new File("Results/FSMs/L-Star");
             Utils.clearFolder(lFolder);
-            if(benckmarkId.equals("1")) {
-                new File("Results/FSMs/L-Star").mkdirs();
-            }
+//            if(benckmarkId.equals("1")) {
+//                new File("Results/FSMs/L-Star").mkdirs();
+//            }
 
             File clFolder = new File("Results/FSMs/CL-Star");
             Utils.clearFolder(clFolder);
             new File("Results/FSMs/CL-Star").mkdirs();
 
             int componentsCount = 0;
-            if(isGenratedTests && isNastedTests) {
                 int numOfTests = 1;
                 while (br.ready() && numOfTests <= 1) {
                     c = br.readLine();
@@ -236,17 +265,17 @@ public class FsmLearner {
                             productMealy = new ProductMealy(currentTarget);
                         } else productMealy.mergeFSMs(currentTarget, componentsCount);
                         size = productMealy.getMachine().getStates().size();
-                        if(size > 30000)
+                        if(size > maxNumOfStates)
                             break;
 //                        if(componentsCount < 8 && size > 16000)
 //                            break;
 
                     }
-                    if(size < 29000) {
+                    if(size < minNumOfStates) {
                         System.out.println("This one is too small (" + size + " States)");
                         continue;
                     }
-                    if(size > 30000) {
+                    if(size > maxNumOfStates) {
                         System.out.println("This one is too big (" + size + " States)");
                         System.out.println( componentsCount + " Cmpnss");
                         continue;
@@ -287,13 +316,12 @@ public class FsmLearner {
                             alphabet = Alphabets.fromArray(alphArr);
                             data[csvProperties.getIndex(CACHE)] = CACHE_ENABLE.toString();
 
-                            Boolean final_check_mode = Boolean.parseBoolean(args[3]);
-                            learnProductMealy(target, alphabet, equivalence_method, final_check_mode, inputCounter, rep + 1);
+                            learnProductMealy(target, alphabet, equivalenceMethod, finalCheckMode, inputCounter, rep + 1);
 
                             //             RUN SCL*
                             @Nullable CompactMealy result = null;
                             data[csvProperties.getIndex(LIP + COMPONENTS)] = String.valueOf(componentsCount);
-                            result = learnMealyInParts(target, alphabet, equivalence_method, "rndWords", final_check_mode, rep + 1, inputCounter, benckmarkId, inputComponentsActs);
+                            result = learnMealyInParts(target, alphabet, equivalenceMethod, "rndWords", finalCheckMode, rep + 1, inputCounter, inputComponentsActs);
 
                             if (result == null) {
                                 System.out.println("the  SUL is not learned completely (CL-Star)");
@@ -306,8 +334,9 @@ public class FsmLearner {
                         numOfTests--;
                         inputCounter--;
                     }
+                    br2.close();
                 }
-            }
+                br.close();
 //            else if(isGenratedTests){
 //                while (br.ready()) {
 //                    c = br.readLine();
@@ -440,7 +469,7 @@ public class FsmLearner {
         }
     }
 
-    public static CompactMealy learnMealyInParts(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, String partial_eq_method, boolean test_mode, int rep, int inCounter, String benchmarkId, List<Alphabet<String>> inputComponentsActs){
+    public static CompactMealy learnMealyInParts(CompactMealy mealyss, Alphabet<String> alphabet, String eq_method, String partial_eq_method, boolean test_mode, int rep, int inCounter, List<Alphabet<String>> inputComponentsActs){
 
         Utils.getInstance();
         // SUL simulator

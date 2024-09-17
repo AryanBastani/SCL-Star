@@ -1,4 +1,6 @@
+import os
 import random
+import shutil
 from typing import Final
 import copy
 
@@ -47,44 +49,54 @@ SYNCHS: Final[list] = [
 
 TESTS_FOLDER = "Real-Tests/resources/"
 
-# numOfComponents = 3
-for outerRepeat in range(0, 1000, 5):
-    numOfComponents = random.randint(2, 9)
-    for repeat in range(5):
-        remaindedComponents = numOfComponents
-        numOfSynchs = random.randint(1, min(int(numOfComponents/2), 4))
-        curSynchs = copy.copy(SYNCHS)
-        curComponents = copy.copy(COMPONENTS)
-        chosen = ''
-        biggestSynch = 4
-        while(numOfSynchs):
-            if((2 * numOfSynchs) < biggestSynch):
-                curSynchs.pop(0)
-                biggestSynch = 0
-            currentSynchIndex = random.randint(0, len(curSynchs) - 1)
-            currentSynch = curSynchs[currentSynchIndex]
-            for component in currentSynch:
-                if(component in curComponents):
-                    curComponents.remove(component)
-                    chosen += TESTS_FOLDER + "Synchs/" + component + '\n'
-                    remaindedComponents-= 1
+for filename in os.listdir("Real-Tests/data"):
+    
+    file_path = os.path.join("Real-Tests/data", filename)
+    try:
+        if os.path.isfile(file_path) or os.path.islink(file_path):
+            os.unlink(file_path)
+        elif os.path.isdir(file_path):
+            shutil.rmtree(file_path)
+    except Exception as e:
+        print('Failed to delete %s. Reason: %s' % (file_path, e))
+f = open("Real-Tests/Props.txt", "r")
+numOfComponents = int (f.readline())
+numOfTests = int(f.readline())
+for outerRepeat in range(0, numOfTests):
+    remaindedComponents = numOfComponents
+    numOfSynchs = random.randint(1, min(int(numOfComponents/2), 4))
+    curSynchs = copy.copy(SYNCHS)
+    curComponents = copy.copy(COMPONENTS)
+    chosen = ''
+    biggestSynch = 4
+    while(numOfSynchs):
+        if((2 * numOfSynchs) < biggestSynch):
+            curSynchs.pop(0)
+            biggestSynch = 0
+        currentSynchIndex = random.randint(0, len(curSynchs) - 1)
+        currentSynch = curSynchs[currentSynchIndex]
+        for component in currentSynch:
+            if(component in curComponents):
+                curComponents.remove(component)
+                chosen += TESTS_FOLDER + "Synchs/" + component + '\n'
+                remaindedComponents-= 1
 
-                    if biggestSynch != 0 and component in curSynchs[0]:
-                        biggestSynch -= 1
+                if biggestSynch != 0 and component in curSynchs[0]:
+                    biggestSynch -= 1
 
-            curSynchs.remove(currentSynch)
+        curSynchs.remove(currentSynch)
 
-            numOfSynchs -= 1
+        numOfSynchs -= 1
         while(remaindedComponents > 0):
             componentIndex = random.randint(0, len(curComponents) - 1)
             chosen += TESTS_FOLDER + curComponents[componentIndex] + '\n'
             curComponents.pop(componentIndex)
             remaindedComponents -= 1
 
-        outerInput = 'data/Reals.txt'
-        innerInput = 'data/Reals_With_' + str(numOfComponents) + '_Components' + str(outerRepeat + repeat + 1) + '.txt'
+        outerInput = 'Real-Tests/data/Reals.txt'
+        innerInput = 'Real-Tests/data/Reals_With_' + str(numOfComponents) + '_Components' + str(outerRepeat + 1) + '.txt'
         with open(outerInput, 'a') as writingfile:
-            writingfile.write('Real-Tests/' + innerInput + '\n')
+            writingfile.write(innerInput + '\n')
             writingfile.close()
         with open( innerInput, 'w') as writingfile:
             writingfile.write(chosen)

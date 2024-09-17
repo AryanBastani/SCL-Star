@@ -1,149 +1,41 @@
 Calling CE-Distilation for the 1st time:
 	CE before minimizing:
-		Q F Q B M b m i i H H i m F b T H n b l N H T i b r d r n d b l T d l n Q l n H n H Q M T R N l F l H n i m Q T b J l r H B r n J M B T M r F T F Q M H l b H H T M i T B N N M n H l B H F T Q Q n N l Q J H B H b n Q M m m b R M T n R r Q d b b T Q R n i Q M Q r M M m r N R F b T l T M Q H Q M H Q r r l J d
+		apw_stop pw_but_dn pw_pos_dn pw_but_up fp_off receiveMsg receiveMsg as_alarm_was_confirmed pw_mv_dn pw_but_up as_alarm_detected apw_stop pw_mv_dn time_alarm_elapsed a_pw_msg key_pos_unlock fp_on pw_mv_dn release_pw_but pw_mv_dn pw_pos_dn release_pw_but release_pw_but as_alarm_detected as_alarm_detected as_alarm_detected receiveMsg receiveMsg release_pw_but fp_on as_activated as_alarm_was_confirmed time_alarm_elapsed as_alarm_was_confirmed as_activated as_activated key_pos_unlock time_alarm_elapsed pw_but_dn pw_pos_up as_alarm_was_detected receiveMsg release_pw_but as_activated key_pos_lock fp_on as_deactvated key_pos_unlock pw_pos_dn as_alarm_was_detected release_pw_but pw_pos_dn as_activated as_alarm_detected as_alarm_was_detected pw_pos_dn as_alarm_detected as_alarm_detected apw_stop pw_mv_up as_activated as_activated pw_pos_dn as_alarm_was_detected time_alarm_elapsed fp_off fp_off release_pw_but pw_pos_up pw_pos_dn fp_on receiveMsg time_alarm_elapsed pw_mv_dn as_deactvated key_pos_unlock pw_but_dn fp_on a_pw_msg key_pos_unlock pw_but_up as_alarm_was_detected as_alarm_was_detected a_pw_msg pw_mv_up as_activated fp_off receiveMsg key_pos_unlock time_alarm_elapsed as_alarm_was_confirmed as_alarm_was_confirmed fp_on fp_off as_activated pw_pos_dn apw_stop as_alarm_detected as_activated as_alarm_was_detected pw_mv_up apw_stop pw_but_up as_activated as_alarm_detected key_pos_lock pw_but_up as_deactvated as_activated as_alarm_was_detected a_pw_msg fp_off pw_but_up apw_stop pw_but_up fp_on pw_pos_up time_alarm_elapsed key_pos_lock pw_pos_dn as_activated release_pw_but a_pw_msg
 	CE after cut_ce:
-		Q F Q B M
+		apw_stop pw_but_dn pw_pos_dn pw_but_up fp_off receiveMsg receiveMsg as_alarm_was_confirmed pw_mv_dn pw_but_up as_alarm_detected apw_stop pw_mv_dn time_alarm_elapsed a_pw_msg
 	CE after minimizing:
-		Q Q M
+		receiveMsg receiveMsg a_pw_msg
 
 Calling CE-Distilation for the 2st time:
 	CE before minimizing:
-		J R r d Q d l i N N R Q i m M l Q B R N T F Q i H m Q B r N d d T Q i R b T F r T b T r m M R N T i J H N H B d N i M F r T B l T r d n r r M J m m r H i d n r R i H d M T T N N r r M l M l J F Q B N r b J M J H Q
+		release_pw_but apw_stop pw_mv_up pw_but_dn pw_pos_dn as_deactvated pw_pos_dn fp_off key_pos_lock as_alarm_was_detected as_deactvated pw_but_dn key_pos_lock as_alarm_was_confirmed time_alarm_elapsed as_alarm_detected apw_stop pw_but_dn pw_pos_up a_pw_msg as_deactvated key_pos_unlock apw_stop time_alarm_elapsed time_alarm_elapsed apw_stop apw_stop as_alarm_was_confirmed apw_stop as_alarm_was_confirmed release_pw_but as_alarm_detected pw_but_up pw_but_dn pw_mv_up pw_but_up pw_pos_up fp_on fp_on as_activated pw_but_dn release_pw_but release_pw_but key_pos_unlock a_pw_msg release_pw_but receiveMsg time_alarm_elapsed time_alarm_elapsed pw_but_up apw_stop as_alarm_was_confirmed key_pos_unlock pw_mv_up as_alarm_detected time_alarm_elapsed apw_stop as_activated pw_mv_up a_pw_msg key_pos_lock apw_stop pw_pos_up pw_pos_up pw_mv_dn a_pw_msg key_pos_unlock key_pos_lock as_activated release_pw_but fp_off as_activated pw_mv_up as_alarm_detected receiveMsg fp_on release_pw_but release_pw_but pw_pos_up fp_off key_pos_lock fp_off as_alarm_detected a_pw_msg time_alarm_elapsed key_pos_unlock as_deactvated as_alarm_was_confirmed time_alarm_elapsed key_pos_unlock fp_off fp_on fp_on fp_on key_pos_lock pw_but_dn pw_pos_dn fp_on apw_stop key_pos_lock time_alarm_elapsed pw_mv_up fp_on a_pw_msg receiveMsg as_alarm_detected pw_mv_up fp_off as_alarm_was_detected pw_mv_up fp_off as_deactvated time_alarm_elapsed as_alarm_was_confirmed pw_but_dn key_pos_lock key_pos_lock as_deactvated pw_pos_dn as_alarm_was_detected pw_but_up fp_off
 	CE after cut_ce:
-		J R r d Q d l i N N R Q i m M l Q B R N
+		release_pw_but apw_stop pw_mv_up pw_but_dn pw_pos_dn as_deactvated pw_pos_dn fp_off key_pos_lock as_alarm_was_detected as_deactvated pw_but_dn key_pos_lock as_alarm_was_confirmed
 	CE after minimizing:
-		i N N i N
+		as_alarm_was_detected as_alarm_was_confirmed
 
 Calling CE-Distilation for the 3st time:
 	CE before minimizing:
-		b T n m r H N M M r r N M i d n B R R R J M i m b n M J H r m T n d b M r m d T H J b R J b M b R H l R R F M n N B l H T r N H N Q Q H H r l B M m B b m n M i r F l l n d r n Q m F R m B Q b m m d r n R d B R B F m b m B M n n N d m R H i d d M R m m F i b F R T R T i r N l Q N r i T r R d R M r m B m r
+		release_pw_but apw_stop pw_mv_up as_alarm_was_confirmed a_pw_msg pw_mv_up as_deactvated pw_mv_up pw_pos_dn pw_but_up apw_stop pw_pos_dn release_pw_but apw_stop fp_off a_pw_msg as_deactvated receiveMsg key_pos_unlock pw_but_up fp_off key_pos_lock fp_off fp_off pw_mv_up as_deactvated time_alarm_elapsed key_pos_lock as_alarm_detected receiveMsg as_activated apw_stop pw_but_dn pw_mv_up pw_but_dn key_pos_unlock apw_stop release_pw_but as_deactvated apw_stop fp_on time_alarm_elapsed pw_mv_up as_activated key_pos_lock fp_off time_alarm_elapsed as_alarm_detected pw_but_dn key_pos_unlock release_pw_but as_deactvated as_alarm_was_detected release_pw_but pw_pos_dn fp_on pw_mv_up pw_pos_up release_pw_but pw_pos_up pw_pos_up as_alarm_detected receiveMsg as_alarm_was_detected fp_on key_pos_lock pw_pos_dn as_alarm_detected pw_but_dn as_alarm_was_confirmed as_activated pw_but_up as_alarm_detected a_pw_msg key_pos_lock pw_pos_up pw_pos_dn as_alarm_was_confirmed as_alarm_detected fp_on apw_stop pw_mv_dn as_alarm_detected apw_stop key_pos_unlock pw_mv_dn pw_but_up pw_but_dn pw_but_up pw_pos_up pw_pos_dn key_pos_lock pw_mv_up key_pos_unlock as_alarm_was_confirmed as_alarm_detected pw_but_up pw_pos_up as_deactvated pw_mv_up pw_mv_dn as_alarm_detected receiveMsg pw_mv_dn pw_but_dn key_pos_unlock fp_off as_alarm_was_detected receiveMsg time_alarm_elapsed fp_off as_alarm_detected as_activated pw_mv_dn as_alarm_was_detected receiveMsg pw_mv_up a_pw_msg key_pos_lock as_activated pw_but_up
 	CE after cut_ce:
-		b T n m r H N M M r r N M i d n B R
+		release_pw_but apw_stop pw_mv_up as_alarm_was_confirmed a_pw_msg pw_mv_up as_deactvated pw_mv_up pw_pos_dn pw_but_up apw_stop pw_pos_dn release_pw_but
 	CE after minimizing:
-		i R
+		release_pw_but pw_mv_up pw_mv_up pw_mv_up release_pw_but
 
 Calling CE-Distilation for the 4st time:
 	CE before minimizing:
-		m l F l N M M m m Q N J N N b H b n J M d T T m i F i B H r d J r n l l B Q R M F J R T F m m i d m r F l r l m M J R n Q l b N B d N B N l d H r i J M l d N l Q l Q J i d l m Q d d n i M R M R H M m d d H B F R n r B T M r J i F F M d n R F r b B F N J J l b d M N J r M n J B l m l J T Q i l d m N i l d R d d R Q Q N
+		pw_but_dn release_pw_but as_alarm_was_confirmed pw_pos_up pw_mv_up key_pos_unlock pw_pos_up pw_but_up pw_pos_dn pw_mv_dn as_activated a_pw_msg as_activated time_alarm_elapsed key_pos_lock as_deactvated as_alarm_detected pw_but_up key_pos_lock release_pw_but as_alarm_was_detected as_deactvated pw_but_dn key_pos_unlock key_pos_lock pw_mv_dn time_alarm_elapsed fp_off as_alarm_detected as_activated a_pw_msg pw_mv_dn as_alarm_was_confirmed pw_but_dn as_activated pw_but_up time_alarm_elapsed apw_stop receiveMsg pw_but_up pw_mv_dn as_activated pw_mv_dn pw_but_dn pw_but_dn fp_on pw_but_dn pw_but_dn time_alarm_elapsed pw_pos_dn as_alarm_detected fp_on as_alarm_was_confirmed key_pos_lock release_pw_but release_pw_but fp_off as_deactvated key_pos_unlock as_deactvated pw_but_up a_pw_msg time_alarm_elapsed pw_mv_up apw_stop pw_pos_dn pw_mv_up key_pos_unlock pw_pos_dn pw_but_dn pw_pos_up fp_on release_pw_but fp_on pw_but_dn receiveMsg as_activated receiveMsg pw_but_up fp_off key_pos_lock receiveMsg key_pos_unlock receiveMsg key_pos_unlock pw_mv_dn receiveMsg as_deactvated fp_off as_alarm_was_detected pw_mv_up release_pw_but apw_stop pw_mv_dn time_alarm_elapsed apw_stop apw_stop as_alarm_was_detected pw_mv_up as_activated pw_mv_dn pw_but_dn as_alarm_was_confirmed as_activated pw_but_up as_alarm_was_confirmed pw_mv_up as_alarm_was_detected pw_mv_up fp_off apw_stop as_alarm_detected pw_mv_dn fp_off as_activated key_pos_unlock pw_pos_dn apw_stop receiveMsg fp_off pw_mv_up as_deactvated pw_mv_dn fp_on apw_stop as_alarm_was_confirmed pw_but_up pw_mv_up apw_stop
 	CE after cut_ce:
-		m l F l N M M m m Q N J
+		pw_but_dn release_pw_but as_alarm_was_confirmed pw_pos_up pw_mv_up key_pos_unlock pw_pos_up pw_but_up pw_pos_dn pw_mv_dn
 	CE after minimizing:
-		l l J
+		release_pw_but pw_mv_up pw_mv_dn
 
 Calling CE-Distilation for the 5st time:
 	CE before minimizing:
-		b n r M R n M T l n R J l F T i H F i Q B H Q m T B d T r H b Q n H T N n r H R M M J b T T Q i b F m m J d J F l M B J l Q b Q F b m m J Q r l R J R Q Q R H n i N n r N T T T b F M T R Q l m r m H T i m M l F d Q n F l m B d F B R m N l R N T J F i R J m J n Q i M N r N M r F d F m R n m M M l T
+		release_pw_but receiveMsg pw_but_dn pw_pos_up as_alarm_was_detected key_pos_unlock a_pw_msg pw_mv_dn a_pw_msg as_activated as_deactvated fp_on release_pw_but a_pw_msg a_pw_msg receiveMsg key_pos_unlock pw_mv_dn pw_mv_up as_alarm_was_detected time_alarm_elapsed apw_stop pw_but_up as_alarm_was_detected pw_pos_dn apw_stop fp_off key_pos_unlock pw_mv_up fp_on pw_pos_dn as_alarm_was_confirmed pw_pos_up as_alarm_detected apw_stop as_alarm_was_confirmed key_pos_lock key_pos_unlock pw_but_dn key_pos_unlock receiveMsg pw_pos_up time_alarm_elapsed a_pw_msg as_alarm_was_detected as_alarm_detected receiveMsg key_pos_unlock as_alarm_was_confirmed fp_on pw_pos_up time_alarm_elapsed pw_but_dn release_pw_but pw_but_up key_pos_unlock a_pw_msg key_pos_lock fp_off receiveMsg receiveMsg pw_pos_dn as_alarm_was_detected as_alarm_was_confirmed pw_but_up as_deactvated as_alarm_was_confirmed apw_stop pw_pos_up pw_but_up pw_but_up fp_off key_pos_lock key_pos_unlock as_alarm_was_confirmed time_alarm_elapsed pw_but_dn fp_off pw_but_dn as_deactvated time_alarm_elapsed fp_on key_pos_lock pw_mv_up as_deactvated as_alarm_detected key_pos_lock as_alarm_detected as_alarm_was_detected release_pw_but release_pw_but key_pos_unlock apw_stop pw_mv_up key_pos_unlock key_pos_unlock pw_pos_up key_pos_lock fp_on release_pw_but fp_off fp_on receiveMsg pw_but_dn key_pos_unlock apw_stop pw_pos_up as_activated as_deactvated as_activated key_pos_unlock as_alarm_was_confirmed fp_off pw_mv_up as_alarm_was_detected release_pw_but pw_pos_dn as_deactvated release_pw_but as_alarm_was_confirmed apw_stop apw_stop pw_pos_dn as_alarm_detected key_pos_lock as_activated as_deactvated pw_pos_dn pw_but_up release_pw_but release_pw_but as_activated a_pw_msg release_pw_but fp_on key_pos_lock as_deactvated receiveMsg pw_but_dn receiveMsg key_pos_lock pw_mv_dn key_pos_unlock time_alarm_elapsed as_alarm_detected as_alarm_was_confirmed fp_on pw_but_dn release_pw_but as_deactvated as_activated as_alarm_was_detected release_pw_but pw_but_up as_alarm_was_detected as_alarm_detected as_activated a_pw_msg as_deactvated pw_mv_dn apw_stop pw_mv_up pw_mv_up receiveMsg a_pw_msg
 	CE after cut_ce:
-		b n r M R n M T l n
+		release_pw_but receiveMsg pw_but_dn pw_pos_up as_alarm_was_detected key_pos_unlock a_pw_msg pw_mv_dn a_pw_msg as_activated as_deactvated fp_on release_pw_but a_pw_msg a_pw_msg receiveMsg key_pos_unlock pw_mv_dn pw_mv_up as_alarm_was_detected time_alarm_elapsed apw_stop
 	CE after minimizing:
-		n n T n
+		receiveMsg a_pw_msg a_pw_msg a_pw_msg a_pw_msg receiveMsg apw_stop
 
 Calling CE-Distilation for the 6st time:
-	CE before minimizing:
-		M J i n r n M M T T l b d B Q B H N R m r b R n i Q J B F B l H N N J T i l H H H l d b i d R m d R M r F N F J B H B B J i l T m m M m n Q H R N N d R M J i R T F l r N F d J n T d N b l N T J J n B b F l B B m n R l N B Q r M b J n F R Q Q M N l n Q T d m T i R R b H n J N d T R i b N N m F l B m i T l r T i R B M F F M n N
-	CE after cut_ce:
-		M J i n r n M M T T l b
-	CE after minimizing:
-		r b
-
-Calling CE-Distilation for the 7st time:
-	CE before minimizing:
-		b i N T B H r H H d b d R R T m T l r T n B r M R n r r N Q n r Q n J m m l T H r H b d b n F Q R Q m i T Q d T R m m n R J R R J m F M l H m m Q B M b r r n J m H R Q m M R M J l m B Q B l l n F N d H N B n i d R Q M Q F R l J m l N Q b M R B N R F n m B F J n T M R n r T m m Q B i d i H b n J l b b T r T
-	CE after cut_ce:
-		b i N T B H r H H d b d R R T m T l r T n B
-	CE after minimizing:
-		B r r B
-
-Calling CE-Distilation for the 8st time:
-	CE before minimizing:
-		n i b i H R J H m R r i R M l d n N b R H l F d F F d R B d H i r m T M m m d i T M Q n N b F B i J b m n r l m m m N d F r n H i B i d T H l J M n d M N J F B J b b R R n H l H N l M b l m Q H H R T J R m H B R J l n
-	CE after cut_ce:
-		n i b i H R J H m R r i R M l d n N b
-	CE after minimizing:
-		b m r b
-
-Calling CE-Distilation for the 9st time:
-	CE before minimizing:
-		l r T b J J J H m R M Q R i i d i b r B M F F n l l i Q N l i R T R r r r l b R R d J m J b N m M n H d n M T d H m r R i m b Q m l d F Q b i n B m b M N i J M T T N b T l r i M M M d N M T i M B B Q R H F l b H l R R R n r m R i R J M M H J J B n M N J F B H R i m T N N F
-	CE after cut_ce:
-		l r T b J J J H m R M Q R i i d i b r B M F F n
-	CE after minimizing:
-		T m n
-
-Calling CE-Distilation for the 10st time:
-	CE before minimizing:
-		r l i J Q b d r M R H H l b H b i r i H T d R l l B M B r T T i R r J J i l N B n B N l m r i F Q T F Q d H l B H b Q M N d T R N F R d J R R b n M n M r N r R F H Q B H m r l d R R R H r R Q b F Q m F B N b
-	CE after cut_ce:
-		r l i J Q b d r M R
-	CE after minimizing:
-		l i R
-
-Calling CE-Distilation for the 11st time:
-	CE before minimizing:
-		Q T r n r r F F N l M r r n r Q J H R d N b Q l i B l l n r l J B J J T b H i J H B m n T R i Q T r J m H l d T m l m r J b T B r J Q d d l R N N b B T Q M H R l H l T i d T R N H R B T Q n M R m n H m B n M n i b d Q i l d l m Q Q l F m m B J F H Q R H b T N i T T R d Q r N b d N H l l N N J R J m R T J Q m r m i m i i H
-	CE after cut_ce:
-		Q T r n r r F F N
-	CE after minimizing:
-		Q N
-
-Calling CE-Distilation for the 12st time:
-	CE before minimizing:
-		r N B N b T R n l F T l m n B N m R H l R n R M l B b Q l b M d n m m i N F N d J B i H J T Q R T T m N Q d F T i i F l J d i Q N F l m r N i m N r N b i m m b r M H J F l i T i d n M F R d r l r b d m B B b r n H B N N l n d J l l M m N n
-	CE after cut_ce:
-		r N B N b T R n l F T l m n B
-	CE after minimizing:
-		r B F B
-
-Calling CE-Distilation for the 13st time:
-	CE before minimizing:
-		J i l i H d N m d n i M T F F i T d T T d Q J R M F B m l B d Q Q M B M r l T R R F m T B T n l l n Q T i n d n J l B b d n T M R H r M J m R i l b i i m H F B b F R T Q d F F b J N Q Q r N d Q Q Q M B n Q J b F d B N N i l d F B r N T n M R m b R T H M M i n b B Q F Q F B d H m d M M H J m T b R J T M R T B F M d
-	CE after cut_ce:
-		J i l i H d N m d n i M
-	CE after minimizing:
-		d d M
-
-Calling CE-Distilation for the 14st time:
-	CE before minimizing:
-		l d J H l m R T H i b N Q b H Q r d F l N B H m n i l F M F J F m b J B R n i r H N F r d J d r n N m m T m d b i b Q i d Q M b b F i T H B Q R T J r Q d l Q N Q N T r F B n J i m R J Q b R i H N B n F B M b d d F B M Q J B Q R H R b d R r l T n H F b F l m N T
-	CE after cut_ce:
-		l d J H
-	CE after minimizing:
-		d H
-
-Calling CE-Distilation for the 15st time:
-	CE before minimizing:
-		d J T l M M m T B F R J B i T N r B N i r d i l B B l M J l N d i B i m r T N m Q J d i F B l H N T n r B l M r r B R F B i l F H r Q B B F d B d T N N d Q l B l J n b H F T F d R r N M M i J Q B N r N N F R H F J F Q Q r l B R b l F m m R H r r T m H i B Q R i m l m l R H d R J m J r T Q i M n d r T Q B B B l i b F d H r M d R i H Q M B l J n J J M i l r r J J d l R r l F J T R Q R N B Q i M J
-	CE after cut_ce:
-		d J T l M M m T B F R J B i T N r B N i r d i l B B l M J l N d i B i m r T N m Q J d i F B l H N T n r B l M r r B R F B i l F H r Q B B F d B d T N N d Q l B l J
-	CE after minimizing:
-		J T l T J T l l J l T J l T l l T l l J
-
-Calling CE-Distilation for the 16st time:
-	CE before minimizing:
-		N n F J B l Q b H F F M J i r Q T d i J n d l B r T m R T b m Q d r H B T H M l n m l R F H B i d F F l R i H F Q H l F R i J l F r r F R M b B l m F m N n b m Q l N N Q d B M r N T F r H T n r R n d J B N b l i N H M J H B i l F b d B n H m m Q T R J m l n m i d n F J n Q n T Q M T i T N l F B Q i Q Q Q m R i b b m J N T N N m l R T R m J T
-	CE after cut_ce:
-		N n F J B l Q b H
-	CE after minimizing:
-		F H
-
-	The input components:
-		  - components with 3 inputs: [B, F, r]
-		  - components with 3 inputs: [F, H, d]
-		  - components with 3 inputs: [M, Q, d]
-		  - components with 3 inputs: [N, Q, i]
-		  - components with 3 inputs: [R, i, l]
-		  - components with 3 inputs: [J, T, l]
-		  - components with 3 inputs: [T, m, n]
-		  - components with 3 inputs: [b, m, r]
-
-
-	The result:
-		  - component with 3 inputs: [b, r, m]
-		  - component with 3 inputs: [n, T, m]
-		  - component with 3 inputs: [R, i, l]
-		  - component with 3 inputs: [N, i, Q]
-		  - component with 3 inputs: [B, r, F]
-		  - component with 3 inputs: [M, Q, d]
-		  - component with 3 inputs: [J, l, T]
-		  - component with 3 inputs: [H, d, F]
-Sync Actions: [l, F, i, Q, r, d, m, T]

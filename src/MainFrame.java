@@ -7,6 +7,7 @@ public class MainFrame extends JFrame {
     private JPanel mainPanel;
     private TestConfigurationUI firstPage;
     private TestUI secondPage;
+    private LoadingPage loadingPage;
 
     private ArrayList<String> firstPageInfo = new ArrayList<>();
     private ArrayList<String> secondPageInfo = new ArrayList<>();
@@ -29,10 +30,12 @@ public class MainFrame extends JFrame {
         // Create first page and second page
         firstPage = new TestConfigurationUI();
         secondPage = new TestUI();  // Assuming TestUI is similarly updated for a cohesive look
+        loadingPage = new LoadingPage();
 
         // Add the two pages to the main panel
         mainPanel.add(firstPage.getPanel(), "FirstPage");
         mainPanel.add(secondPage.getPanel(), "SecondPage");
+        mainPanel.add(loadingPage.getPanel(), "LoadingPage");
 
         // Add main panel to the frame
         add(mainPanel);
@@ -62,9 +65,28 @@ public class MainFrame extends JFrame {
     }
 
     // Set listener for the "Next" button on the second page
+// Set listener for the "Next" button on the second page
     public void setSecondNextButtonListener(Runnable listener) {
         secondPage.getRunButton().addActionListener(e -> {
-            listener.run();  // Run listener after second page "Next" is pressed
+            cardLayout.show(mainPanel, "LoadingPage");  // Switch to the loading page immediately
+
+            // Use a SwingWorker for background processing
+            SwingWorker<Void, Void> worker = new SwingWorker<Void, Void>() {
+                @Override
+                protected Void doInBackground() throws Exception {
+                    listener.run();  // Run the long-running task in the background
+                    return null;
+                }
+
+                @Override
+                protected void done() {
+                    // Optionally, you can update the UI once the task is completed
+                    // For example, show a result page or return to the second page
+                }
+            };
+
+            worker.execute();  // Start the background task
         });
     }
+
 }

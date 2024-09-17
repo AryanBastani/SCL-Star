@@ -1,2 +1,0 @@
-resources/new_FSMs/Component1.dot
-resources/new_FSMs/Component2.dot
