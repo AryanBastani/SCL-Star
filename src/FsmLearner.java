@@ -83,6 +83,8 @@ public class FsmLearner {
     private int minNumOfStates;
     private int maxNumOfStates;
     private boolean finalCheckMode;
+    private boolean initializeResults;
+    private int numberOfTests;
 
     public FsmLearner(ArrayList<String> args) throws IOException{
         if(args.get(3).equals("Real Tests"))
@@ -102,9 +104,11 @@ public class FsmLearner {
 
         equivalenceMethod = args.get(0);
         repeat = Integer.parseInt(args.get(2));
-        minNumOfStates = Integer.parseInt(args.getLast());
-        maxNumOfStates = Integer.parseInt(args.get(args.size() - 2));
+        minNumOfStates = Integer.parseInt(args.get(args.size() - 3));
+        maxNumOfStates = Integer.parseInt(args.get(args.size() - 4));
         finalCheckMode = Boolean.parseBoolean(args.get(1));
+        numberOfTests = Integer.parseInt(args.get(args.size() - 2));
+        initializeResults = Boolean.parseBoolean(args.getLast());
     }
 
 
@@ -190,7 +194,8 @@ public class FsmLearner {
             BufferedReader br = new BufferedReader(new FileReader(f));
 
             // initial a results file
-            Utils.writeDataHeader(RESULTS_PATH, csvProperties.getResults_header());
+            if(initializeResults)
+                Utils.writeDataHeader(RESULTS_PATH, csvProperties.getResults_header());
 
             DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
             LocalDateTime now = LocalDateTime.now();
@@ -235,8 +240,8 @@ public class FsmLearner {
             new File("Results/FSMs/CL-Star").mkdirs();
 
             int componentsCount = 0;
-                int numOfTests = 1;
-                while (br.ready() && numOfTests <= 1) {
+                int testsCounter = 1;
+                while (br.ready() && testsCounter <= numberOfTests) {
                     c = br.readLine();
                     File f2 = new File(c);
                     BufferedReader br2 = new BufferedReader(new FileReader(f2));
@@ -281,7 +286,7 @@ public class FsmLearner {
                         continue;
                     }
                     System.out.println(" (" + size + " States)");
-                    numOfTests++;
+                    testsCounter++;
                     assert productMealy != null;
                     CompactMealy<String, Word<String>> target = productMealy.getMachine();
 
@@ -331,7 +336,7 @@ public class FsmLearner {
                         }
                     }
                     catch (OutOfMemoryError | ConflictException | ArrayIndexOutOfBoundsException e){
-                        numOfTests--;
+                        testsCounter--;
                         inputCounter--;
                     }
                     br2.close();

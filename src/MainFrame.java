@@ -8,6 +8,7 @@ public class MainFrame extends JFrame {
     private TestConfigurationUI firstPage;
     private TestUI secondPage;
     private LoadingPage loadingPage;
+    private ResultsPage resultsPage;
 
     private ArrayList<String> firstPageInfo = new ArrayList<>();
     private ArrayList<String> secondPageInfo = new ArrayList<>();
@@ -16,8 +17,8 @@ public class MainFrame extends JFrame {
         // Set up the frame
         setTitle("Test Configuration");
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        int frameWidth = (int) (screenSize.width * 0.8);  // 80% of screen width
-        int frameHeight = (int) (screenSize.height * 0.8);  // 80% of screen height
+        int frameWidth = (int) (1000);  // 80% of screen width
+        int frameHeight = (int) (800);  // 80% of screen height
         setSize(frameWidth, frameHeight);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -31,11 +32,13 @@ public class MainFrame extends JFrame {
         firstPage = new TestConfigurationUI();
         secondPage = new TestUI();  // Assuming TestUI is similarly updated for a cohesive look
         loadingPage = new LoadingPage();
+        resultsPage = new ResultsPage(frameWidth, frameHeight);
 
         // Add the two pages to the main panel
         mainPanel.add(firstPage.getPanel(), "FirstPage");
         mainPanel.add(secondPage.getPanel(), "SecondPage");
         mainPanel.add(loadingPage.getPanel(), "LoadingPage");
+        mainPanel.add(resultsPage.getPanel(), "ResultsPage");
 
         // Add main panel to the frame
         add(mainPanel);
@@ -80,8 +83,17 @@ public class MainFrame extends JFrame {
 
                 @Override
                 protected void done() {
-                    // Optionally, you can update the UI once the task is completed
-                    // For example, show a result page or return to the second page
+                    // After background task finishes, show two images
+
+                    // Load the images
+                    ImageIcon img1 = new ImageIcon("Results/Plots/Resets.png");  // Replace with actual paths
+                    ImageIcon img2 = new ImageIcon("Results/Plots/Symbols.png");  // Replace with actual paths
+
+                    // Set the images in the pictures page
+                    resultsPage.setImages(img1, img2);
+
+                    // Switch to the pictures page after the task is done
+                    cardLayout.show(mainPanel, "ResultsPage");
                 }
             };
 

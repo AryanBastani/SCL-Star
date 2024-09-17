@@ -87,17 +87,17 @@ for outerRepeat in range(0, numOfTests):
         curSynchs.remove(currentSynch)
 
         numOfSynchs -= 1
-        while(remaindedComponents > 0):
-            componentIndex = random.randint(0, len(curComponents) - 1)
-            chosen += TESTS_FOLDER + curComponents[componentIndex] + '\n'
-            curComponents.pop(componentIndex)
-            remaindedComponents -= 1
+    while(remaindedComponents > 0):
+        componentIndex = random.randint(0, len(curComponents) - 1)
+        chosen += TESTS_FOLDER + curComponents[componentIndex] + '\n'
+        curComponents.pop(componentIndex)
+        remaindedComponents -= 1
 
-        outerInput = 'Real-Tests/data/Reals.txt'
-        innerInput = 'Real-Tests/data/Reals_With_' + str(numOfComponents) + '_Components' + str(outerRepeat + 1) + '.txt'
-        with open(outerInput, 'a') as writingfile:
-            writingfile.write(innerInput + '\n')
-            writingfile.close()
-        with open( innerInput, 'w') as writingfile:
-            writingfile.write(chosen)
-            writingfile.close()
+    outerInput = 'Real-Tests/data/Reals.txt'
+    innerInput = 'Real-Tests/data/Reals_With_' + str(numOfComponents) + '_Components' + str(outerRepeat + 1) + '.txt'
+    with open(outerInput, 'a') as writingfile:
+        writingfile.write(innerInput + '\n')
+        writingfile.close()
+    with open( innerInput, 'w') as writingfile:
+        writingfile.write(chosen)
+        writingfile.close()
