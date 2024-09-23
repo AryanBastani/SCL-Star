@@ -122,15 +122,24 @@ public class UnifiedTestUI extends JPanel {
         testsTypeLabel.setFont(labelFont);
         add(testsTypeLabel, gbc);
 
-        // Arrange radio buttons into 2 rows
-        JPanel testsTypePanel = new JPanel(new GridLayout(2, 4)); // 2 rows, 4 columns
-        testsTypePanel.add(realTestsRadio);
-        testsTypePanel.add(p2pTestsRadio);
-        testsTypePanel.add(ringTestsRadio);
-        testsTypePanel.add(starTestsRadio);
-        testsTypePanel.add(busTestsRadio);
-        testsTypePanel.add(bipartiteTestsRadio);
-        testsTypePanel.add(meshTestsRadio);
+        // Arrange radio buttons into 2 rows, and center the panel
+        JPanel testsTypePanel = new JPanel(new GridBagLayout());
+        GridBagConstraints testsGbc = new GridBagConstraints();
+        testsGbc.gridx = 0;
+        testsGbc.gridy = 0;
+        testsGbc.gridwidth = 4; // Span across the center
+        testsGbc.insets = new Insets(10, 10, 10, 10);
+
+        JPanel radioPanel = new JPanel(new GridLayout(2, 4)); // 2 rows, 4 columns
+        radioPanel.add(realTestsRadio);
+        radioPanel.add(p2pTestsRadio);
+        radioPanel.add(ringTestsRadio);
+        radioPanel.add(starTestsRadio);
+        radioPanel.add(busTestsRadio);
+        radioPanel.add(bipartiteTestsRadio);
+        radioPanel.add(meshTestsRadio);
+
+        testsTypePanel.add(radioPanel, testsGbc);
 
         gbc.gridx = 1;
         gbc.weightx = 0.7;
@@ -166,7 +175,7 @@ public class UnifiedTestUI extends JPanel {
         componentsLabel.setFont(labelFont);
         add(componentsLabel, gbc);
 
-    // Create a panel with extra spacing between Min and Max
+        // Create a panel with extra spacing between Min and Max
         JPanel componentPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 0)); // 30 px horizontal gap
         componentPanel.add(new JLabel("Min:"));
         componentPanel.add(componentSpinnerMin);
@@ -191,7 +200,7 @@ public class UnifiedTestUI extends JPanel {
         statesLabel.setFont(labelFont);
         add(statesLabel, gbc);
 
-    // Create a panel with extra spacing between Min and Max
+        // Create a panel with extra spacing between Min and Max
         JPanel statePanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 0)); // 30 px horizontal gap
         statePanel.add(new JLabel("Min:"));
         statePanel.add(stateSpinnerMin);
@@ -201,6 +210,9 @@ public class UnifiedTestUI extends JPanel {
         gbc.gridx = 1;
         gbc.weightx = 0.7;
         add(statePanel, gbc);
+
+        // Add listeners to update spinners based on Test Type
+        addTestTypeListeners();
 
         // Run Button
         runButton = new JButton("Run");
@@ -221,6 +233,23 @@ public class UnifiedTestUI extends JPanel {
 
         // Action listener for the "Run" button
         runButton.addActionListener(e -> saveConfigurationToFile());
+    }
+
+    private void addTestTypeListeners() {
+        realTestsRadio.addActionListener(e -> setComponentAndStateValues(3, 9, 100, 30000));
+        p2pTestsRadio.addActionListener(e -> setComponentAndStateValues(3, 9, 100, 30000));
+        ringTestsRadio.addActionListener(e -> setComponentAndStateValues(3, 9, 100, 30000));
+        starTestsRadio.addActionListener(e -> setComponentAndStateValues(3, 9, 100, 30000));
+        busTestsRadio.addActionListener(e -> setComponentAndStateValues(3, 9, 100, 30000));
+        bipartiteTestsRadio.addActionListener(e -> setComponentAndStateValues(3, 7, 100, 30000));
+        meshTestsRadio.addActionListener(e -> setComponentAndStateValues(3, 6, 100, 20000));
+    }
+
+    private void setComponentAndStateValues(int minComponents, int maxComponents, int minStates, int maxStates) {
+        componentSpinnerMin.setValue(minComponents);
+        componentSpinnerMax.setValue(maxComponents);
+        stateSpinnerMin.setValue(minStates);
+        stateSpinnerMax.setValue(maxStates);
     }
 
     // Method to configure spinner size and center text
