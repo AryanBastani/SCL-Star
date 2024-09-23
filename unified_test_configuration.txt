@@ -1,0 +1,8 @@
+Equivalence Query: rndWords
+Final Check Mode: Disabled
+Repetitions: 4
+Tests Type: Real Tests
+Number of Tests: 1
+Components: 3 - 9
+States: 100 - 30000
+---------------------------
