@@ -59,7 +59,7 @@ class ComponentGenerator:
                 return(False)
         return(True)
             
-    def isGraphMinimum(self):
+    def isEveryActEffective(self):
         if(not self.checkMinForActs(self.unsynchActs)):
             return(False)
         if(not self.checkMinForActs(self.synchActions)):
@@ -179,8 +179,10 @@ class ComponentGenerator:
         while True:
             self.generateAll(isForTransitions = True)
             
-            while(not self.isGraphMinimum()):       
+            if (not self.isEveryActEffective()):       
                 self.refactorGraph()
+            assert(self.isEveryActEffective())
+            
             if (self.isEveryStateReachable()) and (self.isGraphMinimal()):
                 break
         self.generateGraphStr()
