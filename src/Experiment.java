@@ -20,22 +20,28 @@ public class Experiment {
                     int maxNumOfComponents = Integer.parseInt(infoPageInfo.get(8));
                     for(int numOfComponents = minNumOfComponents;
                         numOfComponents<=maxNumOfComponents; numOfComponents++) {
-
-                        if (infoPageInfo.get(3).equals("Real Tests")) {
-                            try {
+                    try {
+                        if (infoPageInfo.get(3).equals("Real")) {
                                 FileWriter myWriter = new FileWriter("Real-Tests/Props.txt");
                                 myWriter.write(numOfComponents + "\n");
                                 myWriter.write(String.valueOf(Integer.parseInt(infoPageInfo.get(6)) * 1000));
                                 myWriter.close();
 
-                               runFile("python", "Real-Tests/ChooseTests.py");
-                            } catch (IOException e) {
-                                System.out.println("An error occurred.");
-                                e.printStackTrace();
-                            }
+                                runFile("python", "Real-Tests/ChooseTests.py");
                         } else {
+                            FileWriter myWriter = new FileWriter("Test-Generating/Props.txt");
+                            myWriter.write(infoPageInfo.get(3) + '\n');
+                            myWriter.write(numOfComponents + "\n");
+                            myWriter.write(String.valueOf(Integer.parseInt(infoPageInfo.get(6)) * 1000));
+                            myWriter.close();
 
+                            runFile("python", "Test-Generating/GenerateTest.py");
                         }
+                    }catch (IOException e) {
+                        System.out.println("An error occurred.");
+                        e.printStackTrace();
+                    }
+
                         try {
                             FsmLearner learner = new FsmLearner(info);
                             learner.learn();

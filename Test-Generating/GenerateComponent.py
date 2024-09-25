@@ -179,9 +179,8 @@ class ComponentGenerator:
         while True:
             self.generateAll(isForTransitions = True)
             
-            if (not self.isEveryActEffective()):       
+            while (not self.isEveryActEffective()):       
                 self.refactorGraph()
-            assert(self.isEveryActEffective())
             
             if (self.isEveryStateReachable()) and (self.isGraphMinimal()):
                 break

@@ -77,7 +77,7 @@ public class FsmLearner {
     public static final String EQUIVALENCE_METHOD = "eq";
     public static final String EXPERIMENT_REPEAT = "repeat";
 
-    private String filePath;
+    private String filePath = "";
     private String equivalenceMethod;
     private int repeat;
     private int minNumOfStates;
@@ -87,20 +87,20 @@ public class FsmLearner {
     private int numberOfTests;
 
     public FsmLearner(ArrayList<String> args) throws IOException{
-        if(args.get(3).equals("Real Tests"))
+        if(args.get(3).equals("Real"))
             filePath = "Real-Tests/data/Reals.txt";
-        else if(args.get(3).equals("Point-To-Point Tests"))
-            filePath += "Point-To-Point-All-Tests.txt";
-        else if(args.get(3).equals("Mesh Tests"))
-            filePath += "Mesh-All-Tests.txt";
-        else if(args.get(3).equals("Star Tests"))
-            filePath += "Star-All-Tests.txt";
-        else if(args.get(3).equals("Ring Tests"))
-            filePath += "Ring-All-Tests.txt";
-        else if(args.get(3).equals("Bus Tests"))
-            filePath += "Bus-All-Tests.txt";
+        else if(args.get(3).equals("P2P"))
+            filePath += "Test-Generating/data/P2P-All-Tests.txt";
+        else if(args.get(3).equals("Mesh"))
+            filePath += "Test-Generating/data/Mesh-All-Tests.txt";
+        else if(args.get(3).equals("Star"))
+            filePath += "Test-Generating/data/Star-All-Tests.txt";
+        else if(args.get(3).equals("Ring"))
+            filePath += "Test-Generating/data/Ring-All-Tests.txt";
+        else if(args.get(3).equals("Bus"))
+            filePath += "Test-Generating/data/Bus-All-Tests.txt";
         else
-            filePath += "Bipartite-All-Tests.txt";
+            filePath += "Test-Generating/data/Bipartite-All-Tests.txt";
 
         equivalenceMethod = args.get(0);
         repeat = Integer.parseInt(args.get(2));
@@ -278,11 +278,13 @@ public class FsmLearner {
                     }
                     if(size < minNumOfStates) {
                         System.out.println("This one is too small (" + size + " States)");
+                        br2.close();
                         continue;
                     }
                     if(size > maxNumOfStates) {
                         System.out.println("This one is too big (" + size + " States)");
                         System.out.println( componentsCount + " Cmpnss");
+                        br2.close();
                         continue;
                     }
                     System.out.println(" (" + size + " States)");

@@ -233,7 +233,7 @@ public class InfoPage extends JPanel {
         add(runButton, gbc);
 
         // Action listener for the "Run" button
-        runButton.addActionListener(e -> saveConfigurationToFile());
+        runButton.addActionListener(e -> printConfiguration());
     }
 
     private void addTestTypeListeners() {
@@ -261,7 +261,7 @@ public class InfoPage extends JPanel {
         tf.setFont(font);  // Set custom font size
     }
 
-    private void saveConfigurationToFile() {
+    private void printConfiguration() {
         String query = (String) equivalenceQueryCombo.getSelectedItem();
         boolean finalCheckMode = finalCheckModeCheckBox.isSelected();
         int repetitions = (int) repetitionSpinner.getValue();
@@ -272,20 +272,15 @@ public class InfoPage extends JPanel {
         int minStates = (int) stateSpinnerMin.getValue();
         int maxStates = (int) stateSpinnerMax.getValue();
 
-        try (FileWriter writer = new FileWriter("unified_test_config.txt")) {
-            writer.write("Equivalence Query: " + query + "\n");
-            writer.write("Final Check Mode: " + finalCheckMode + "\n");
-            writer.write("Repetitions: " + repetitions + "\n");
-            writer.write("Test Type: " + testType + "\n");
-            writer.write("Number of Tests: " + numTests + "\n");
-            writer.write("Min Components: " + minComponents + "\n");
-            writer.write("Max Components: " + maxComponents + "\n");
-            writer.write("Min States: " + minStates + "\n");
-            writer.write("Max States: " + maxStates + "\n");
-            writer.write("Configuration saved successfully.\n");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
+        System.out.println("Equivalence Query: " + query + "\n");
+        System.out.println("Final Check Mode: " + finalCheckMode + "\n");
+        System.out.println("Repetitions: " + repetitions + "\n");
+        System.out.println("Test Type: " + testType + "\n");
+        System.out.println("Number of Tests: " + numTests + "\n");
+        System.out.println("Min Components: " + minComponents + "\n");
+        System.out.println("Max Components: " + maxComponents + "\n");
+        System.out.println("Min States: " + minStates + "\n");
+        System.out.println("Max States: " + maxStates + "\n");
     }
 
     private String getSelectedTestType() {
@@ -308,18 +303,12 @@ public class InfoPage extends JPanel {
         info.add((String) equivalenceQueryCombo.getSelectedItem());
         info.add(String.valueOf(finalCheckModeCheckBox.isSelected()));
         info.add(String.valueOf(repetitionSpinner.getValue()));
-        if (realTestsRadio.isSelected())
-            info.add("Real Tests");
-        else
-            info.add("Generated Tests");
-
+        info.add(getSelectedTestType());
         info.add(String.valueOf(stateSpinnerMax.getValue()));
         info.add(String.valueOf(stateSpinnerMin.getValue()));
         info.add(String.valueOf(testSpinner.getValue()));
         info.add(String.valueOf(componentSpinnerMin.getValue()));
         info.add(String.valueOf(componentSpinnerMax.getValue()));
-
-
 
         return info;
     }
