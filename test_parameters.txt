@@ -1,8 +1,0 @@
-Number of Tests: 1
-Components: 3 to 9
-States: 100 to 30000
----------------------------
-Number of Tests: 1
-Components: 3 to 9
-States: 100 to 30000
----------------------------

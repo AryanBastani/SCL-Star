@@ -5,13 +5,11 @@ import java.util.ArrayList;
 public class MainFrame extends JFrame {
     private CardLayout cardLayout;
     private JPanel mainPanel;
-    private TestConfigurationUI firstPage;
-    private TestUI secondPage;
+    private InfoPage infoPage;
     private LoadingPage loadingPage;
     private ResultsPage resultsPage;
 
-    private ArrayList<String> firstPageInfo = new ArrayList<>();
-    private ArrayList<String> secondPageInfo = new ArrayList<>();
+    private ArrayList<String> infoPageInfo = new ArrayList<>();
 
     public MainFrame() {
         // Set up the frame
@@ -29,14 +27,12 @@ public class MainFrame extends JFrame {
         mainPanel.setBackground(Color.WHITE);  // Consistent background color
 
         // Create first page and second page
-        firstPage = new TestConfigurationUI();
-        secondPage = new TestUI();  // Assuming TestUI is similarly updated for a cohesive look
+        infoPage = new InfoPage();
         loadingPage = new LoadingPage();
         resultsPage = new ResultsPage(frameWidth, frameHeight);
 
         // Add the two pages to the main panel
-        mainPanel.add(firstPage.getPanel(), "FirstPage");
-        mainPanel.add(secondPage.getPanel(), "SecondPage");
+        mainPanel.add(infoPage.getPanel(), "InfoPage");
         mainPanel.add(loadingPage.getPanel(), "LoadingPage");
         mainPanel.add(resultsPage.getPanel(), "ResultsPage");
 
@@ -49,28 +45,14 @@ public class MainFrame extends JFrame {
         setMinimumSize(new Dimension(800, 600));  // Set a minimum size for better usability
     }
 
-    // Method to get the information from the first page
-    public ArrayList<String> getFirstPageInfo() {
-        return firstPage.getInfo();
-    }
-
-    // Method to get the information from the second page
-    public ArrayList<String> getSecondPageInfo() {
-        return secondPage.getInfo();
-    }
-
-    // Set listener for the "Next" button on the first page
-    public void setNextButtonListener(Runnable listener) {
-        firstPage.getNextButton().addActionListener(e -> {
-            cardLayout.show(mainPanel, "SecondPage");  // Switch to the second page
-            listener.run();
-        });
+    public ArrayList<String> getInfoPageInfo() {
+        return infoPage.getInfo();
     }
 
     // Set listener for the "Next" button on the second page
 // Set listener for the "Next" button on the second page
-    public void setSecondNextButtonListener(Runnable listener) {
-        secondPage.getRunButton().addActionListener(e -> {
+    public void setRunButtonListener(Runnable listener) {
+        infoPage.getRunButton().addActionListener(e -> {
             cardLayout.show(mainPanel, "LoadingPage");  // Switch to the loading page immediately
 
             // Use a SwingWorker for background processing

@@ -8,31 +8,24 @@ public class Experiment {
             MainFrame mainFrame = new MainFrame();
             mainFrame.setVisible(true);
 
-            // First page: Register an event listener for the first page's "Next" button
-            mainFrame.setNextButtonListener(() -> {
-                ArrayList<String> firstPageInfo = mainFrame.getFirstPageInfo();
-                System.out.println("First Page Info: " + firstPageInfo);
-
-                // Second page: Register a new listener for the second page's "Next" button
-                mainFrame.setSecondNextButtonListener(() -> {
-                    ArrayList<String> secondPageInfo = mainFrame.getSecondPageInfo();
-                    System.out.println("Second Page Info: " + secondPageInfo);
+                mainFrame.setRunButtonListener(() -> {
+                    ArrayList<String> infoPageInfo = mainFrame.getInfoPageInfo();
+                    writeStatesInfo(Integer.parseInt(infoPageInfo.get(5)), Integer.parseInt(infoPageInfo.get(4)));
                     ArrayList<String> info = new ArrayList<>();
-                    info.addAll(firstPageInfo);
-                    info.add(secondPageInfo.getLast());
-                    info.add(secondPageInfo.get(secondPageInfo.size() - 2));
-                    info.add(secondPageInfo.get(0));
+                    info.addAll(infoPageInfo);
+                    info.removeLast();
+                    info.removeLast();
                     info.add(String.valueOf(true));
-                    int minNumOfComponents = Integer.parseInt(secondPageInfo.get(1));
-                    int maxNumOfComponents = Integer.parseInt(secondPageInfo.get(2));
+                    int minNumOfComponents = Integer.parseInt(infoPageInfo.get(7));
+                    int maxNumOfComponents = Integer.parseInt(infoPageInfo.get(8));
                     for(int numOfComponents = minNumOfComponents;
                         numOfComponents<=maxNumOfComponents; numOfComponents++) {
 
-                        if (firstPageInfo.getLast().equals("Real Tests")) {
+                        if (infoPageInfo.get(3).equals("Real Tests")) {
                             try {
                                 FileWriter myWriter = new FileWriter("Real-Tests/Props.txt");
                                 myWriter.write(numOfComponents + "\n");
-                                myWriter.write(String.valueOf(Integer.parseInt(secondPageInfo.getFirst()) * 1000));
+                                myWriter.write(String.valueOf(Integer.parseInt(infoPageInfo.get(6)) * 1000));
                                 myWriter.close();
 
                                runFile("python", "Real-Tests/ChooseTests.py");
@@ -60,7 +53,6 @@ public class Experiment {
 
                 });
             });
-        });
     }
 
     private static void runFile(String type, String filePath) throws IOException {
@@ -83,6 +75,19 @@ public class Experiment {
             int exitCode = process.waitFor();
             System.out.println("Process exited with code: " + exitCode);
         } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void writeStatesInfo(int minNumOfStates, int maxNumOfStates){
+        try {
+            FileWriter myWriter = new FileWriter("data/States Info.txt");
+            myWriter.write(minNumOfStates + "\n");
+            myWriter.write(String.valueOf(maxNumOfStates));
+            myWriter.close();
+        }
+        catch (IOException e) {
+            System.out.println("An error occurred.");
             e.printStackTrace();
         }
     }
