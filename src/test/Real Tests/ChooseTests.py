@@ -59,7 +59,7 @@ for filename in os.listdir("src/test/Real Tests/data"):
             shutil.rmtree(file_path)
     except Exception as e:
         print('Failed to delete %s. Reason: %s' % (file_path, e))
-f = open("Configs/Real-Tests Config.txt", "r")
+f = open("Configs/Real Tests.txt", "r")
 numOfComponents = int (f.readline())
 numOfTests = int(f.readline())
 for outerRepeat in range(0, numOfTests):

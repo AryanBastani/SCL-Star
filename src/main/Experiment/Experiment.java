@@ -24,14 +24,14 @@ public class Experiment {
                         numOfComponents<=maxNumOfComponents; numOfComponents++) {
                     try {
                         if (infoPageInfo.get(3).equals("Real")) {
-                                FileWriter myWriter = new FileWriter("Configs/Real-Tests Config.txt");
+                                FileWriter myWriter = new FileWriter("Configs/Real Tests.txt");
                                 myWriter.write(numOfComponents + "\n");
                                 myWriter.write(String.valueOf(Integer.parseInt(infoPageInfo.get(6)) * 1000));
                                 myWriter.close();
 
                                 runFile("python", "src/test/Real Tests/ChooseTests.py");
                         } else {
-                            FileWriter myWriter = new FileWriter("Configs/Generated-Tests Config.txt");
+                            FileWriter myWriter = new FileWriter("Configs/Generated Tests.txt");
                             myWriter.write(infoPageInfo.get(3) + '\n');
                             myWriter.write(numOfComponents + "\n");
                             myWriter.write(String.valueOf(Integer.parseInt(infoPageInfo.get(6)) * 1000));
@@ -89,7 +89,7 @@ public class Experiment {
 
     private static void writeStatesInfo(int minNumOfStates, int maxNumOfStates){
         try {
-            FileWriter myWriter = new FileWriter("data/States Info.txt");
+            FileWriter myWriter = new FileWriter("data/States.txt");
             myWriter.write(minNumOfStates + "\n");
             myWriter.write(String.valueOf(maxNumOfStates));
             myWriter.close();

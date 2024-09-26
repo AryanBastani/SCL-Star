@@ -23,7 +23,7 @@ class GenerateTest:
         self.RING: Final[string] = 'Ring'
         self.BUS: Final[string] = 'Bus'
         self.BIPARTITE: Final[string] = 'Bipartite'
-        f = open("Configs/Generated-Tests Config.txt", "r")
+        f = open("Configs/Generated Tests.txt", "r")
         self.testType = f.readline().replace('\n', '')
         self.numOfComponents = int (f.readline())
         self.numOfTests = int(f.readline())
