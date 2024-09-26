@@ -1,10 +1,10 @@
 /target/
-/out/
+/out/*
 /bin/
-/Log/
-/src/test/Generated Tests/data/
-/src/test/Generated Tests/resources/
-/src/test/Real Tests/data/
+/Log/*
+/src/test/Generated Tests/data/*
+/src/test/Generated Tests/resources/*
+/src/test/Real Tests/data/*
 
 *.smt2
 .Rhistory
