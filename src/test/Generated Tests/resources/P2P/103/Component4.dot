@@ -1,0 +1,10 @@
+s0 -> s0 [label="y  /  0"];
+s0 -> s2 [label="v  /  0"];
+s1 -> s3 [label="y  /  0"];
+s1 -> s3 [label="v  /  0"];
+s2 -> s4 [label="y  /  0"];
+s2 -> s3 [label="v  /  0"];
+s3 -> s0 [label="y  /  0"];
+s3 -> s1 [label="v  /  0"];
+s4 -> s3 [label="y  /  0"];
+s4 -> s4 [label="v  /  1"];

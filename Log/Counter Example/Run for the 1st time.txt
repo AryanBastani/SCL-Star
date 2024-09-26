@@ -1,0 +1,35 @@
+Calling CE-Distilation for the 1st time:
+	CE before minimizing:
+		j G G q X X q L L j L q q L L j L L q L j X G L j G X q X X L j q X L X X j j q L G G q L X j X q G X L X L j G L L X q q q L q G G G L L L G q L j q j q j j L q L j j G X X j L j G X X X L q j q q j j L j G X j X q X L X L j X L L G q q G j G L G L G
+	CE after cut_ce:
+		j G G q X X q
+	CE after minimizing:
+		q X X q
+
+Calling CE-Distilation for the 2st time:
+	CE before minimizing:
+		j L X G q L L X j G G j j q X L q L X L G q q X q q X G G G G X X q X G q X L G X X j j q q q L X L G j G L q q X q G L j L j q q X X j j j G G j q j j X L j j L X j G j X j q j L j L q L L L G L q q q q L j j X L X j q q X G X L X G L
+	CE after cut_ce:
+		j L X G q L L X j
+	CE after minimizing:
+		j L L L j
+
+Calling CE-Distilation for the 3st time:
+	CE before minimizing:
+		L L G q q q G q X G G G q q L X L X q q j L j X j j L G q G G L j L j q X j G j X q q q j j q G L X X X j j G X L j G q L L q L X q j L q X X L G X G L G G q q q G L L L G q j L X L X X L q G G X q j L X G L q X L j q j X q X X q L G j q q L q X j X G j L L j j j X X q q G q G L j L L L L q X G X G L j G L G X X q G j L j j q L j j j j X X q L j j
+	CE after cut_ce:
+		L L G q q q G q X G
+	CE after minimizing:
+		L L G G G
+
+	The input components:
+		  - components with 2 inputs: [L, j]
+		  - components with 2 inputs: [G, L]
+		  - components with 2 inputs: [X, q]
+
+
+	The result:
+		  - component with 2 inputs: [X, q]
+		  - component with 2 inputs: [j, L]
+		  - component with 2 inputs: [G, L]
+Sync Actions: [L]

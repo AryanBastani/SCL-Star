@@ -1,0 +1,6 @@
+s0 -> s1 [label="T  /  1"];
+s0 -> s2 [label="z  /  1"];
+s1 -> s2 [label="T  /  1"];
+s1 -> s1 [label="z  /  1"];
+s2 -> s2 [label="T  /  1"];
+s2 -> s2 [label="z  /  0"];

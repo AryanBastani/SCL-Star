@@ -1,0 +1,4 @@
+s0 -> s1 [label="n  /  0"];
+s0 -> s1 [label="P  /  0"];
+s1 -> s0 [label="n  /  0"];
+s1 -> s1 [label="P  /  1"];

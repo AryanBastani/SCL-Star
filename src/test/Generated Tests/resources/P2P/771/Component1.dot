@@ -1,0 +1,10 @@
+s0 -> s3 [label="r  /  1"];
+s0 -> s4 [label="T  /  1"];
+s1 -> s3 [label="r  /  1"];
+s1 -> s4 [label="T  /  0"];
+s2 -> s3 [label="r  /  1"];
+s2 -> s2 [label="T  /  1"];
+s3 -> s4 [label="r  /  1"];
+s3 -> s3 [label="T  /  0"];
+s4 -> s1 [label="r  /  1"];
+s4 -> s2 [label="T  /  0"];

@@ -1,0 +1,8 @@
+s0 -> s0 [label="u  /  1"];
+s0 -> s1 [label="W  /  0"];
+s1 -> s3 [label="u  /  1"];
+s1 -> s1 [label="W  /  1"];
+s2 -> s2 [label="u  /  1"];
+s2 -> s0 [label="W  /  0"];
+s3 -> s1 [label="u  /  1"];
+s3 -> s2 [label="W  /  1"];

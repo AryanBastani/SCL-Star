@@ -1,0 +1,10 @@
+s0 -> s2 [label="Y  /  1"];
+s0 -> s3 [label="m  /  0"];
+s1 -> s4 [label="Y  /  1"];
+s1 -> s2 [label="m  /  1"];
+s2 -> s0 [label="Y  /  1"];
+s2 -> s1 [label="m  /  1"];
+s3 -> s1 [label="Y  /  1"];
+s3 -> s2 [label="m  /  1"];
+s4 -> s3 [label="Y  /  1"];
+s4 -> s2 [label="m  /  0"];
