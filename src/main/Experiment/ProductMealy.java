@@ -19,21 +19,6 @@ public class ProductMealy{
     public ProductMealy( CompactMealy<String, Word<String>> m1) {
         this.fsm = m1;
     }
-//    public static void main(String[] args) throws IOException {
-//        String c = "resources/Benchmarks/BCS_SPL/Complete_FSM_files/products/2wise_1.txt";
-//        File file = new File(c);
-//        CompactMealy<String, Word<String>> target;
-//        try {
-//            target = Utils.getInstance().loadProductMealy(file, "BCS_SPL/Complete_FSM_files/").fsm;
-//            System.out.println(target.size());
-////            data[STATES] = Integer.toString(target.size());
-//            System.out.println(target.getInputAlphabet().toString());
-//            Visualization.visualize(target, target.getInputAlphabet());
-//        } catch (Exception e) {
-//            System.out.println("problem in loading file");
-//            throw new RuntimeException(e);
-//        }
-//    }
 
     public ProductMealy mergeFSMs(CompactMealy<String, Word<String>> mealy_2, int componentsCount){
         // TODO Auto-generated method stub

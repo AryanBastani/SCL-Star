@@ -56,14 +56,5 @@ public class LoadingPage extends JPanel {
         return this;
     }
 
-    // Main method to show the loading page in a frame
-//    public static void main(String[] args) {
-//        JFrame frame = new JFrame("Loading Page");
-//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        frame.setSize(400, 300);
-//        frame.setLocationRelativeTo(null); // Center the frame
-//        frame.add(new LoadingPage());
-//        frame.setVisible(true);
-//    }
 }
 

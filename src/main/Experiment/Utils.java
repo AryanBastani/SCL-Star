@@ -76,19 +76,11 @@ public class Utils {
         List<String> abc = new ArrayList<>();
         List<Integer> final_states = new ArrayList<>();
 
-        //		int count = 0;
-
         while (br.ready()) {
             String line = br.readLine();
             Matcher m = kissLine.matcher(line);
             Matcher m2 = pattern.matcher(line);
             if (m.matches()) {
-//                System.out.println(m.group(0));
-//                System.out.println(m.group(1));
-//                System.out.println(m.group(2));
-//                System.out.println(m.group(3));
-//                System.out.println(m.group(4));
-
                 String[] tr = new String[3];
                 tr[0] = m.group(1);
                 tr[1] = m.group(3);//.replace("/", "");
@@ -99,10 +91,7 @@ public class Utils {
                 tr[2] = m.group(2);
                 trs.add(tr);
             }
-            //			count++;
             else if (m2.matches()){
-//                System.out.println(m2.group(0));
-//                System.out.println(m2.group(1));
                 String stateId = m2.group(1);
                 final_states.add(Integer.parseInt(stateId));
 
@@ -164,19 +153,11 @@ public class Utils {
         List<String> abc = new ArrayList<>();
         List<Integer> final_states = new ArrayList<>();
 
-        //		int count = 0;
-
         while (br.ready()) {
             String line = br.readLine();
             Matcher m = kissLine.matcher(line);
             Matcher m2 = pattern.matcher(line);
             if (m.matches()) {
-//                System.out.println(m.group(0));
-//                System.out.println(m.group(1));
-//                System.out.println(m.group(2));
-//                System.out.println(m.group(3));
-//                System.out.println(m.group(4));
-
                 String[] tr = new String[3];
                 tr[0] = m.group(1);
                 tr[1] = m.group(2);
@@ -187,10 +168,7 @@ public class Utils {
                 tr[2] = m.group(3);
                 trs.add(tr);
             }
-            //			count++;
             else if (m2.matches()){
-//                System.out.println(m2.group(0));
-//                System.out.println(m2.group(1));
                 String stateId = m2.group(1);
                 final_states.add(Integer.parseInt(stateId));
 
@@ -251,19 +229,11 @@ public class Utils {
         List<String> abc = new ArrayList<>();
         List<Integer> final_states = new ArrayList<>();
 
-        //		int count = 0;
-
         while (br.ready()) {
             String line = br.readLine();
             Matcher m = kissLine.matcher(line);
             Matcher m2 = pattern.matcher(line);
             if (m.matches()) {
-//                System.out.println(m.group(0));
-//                System.out.println(m.group(1));
-//                System.out.println(m.group(2));
-//                System.out.println(m.group(3));
-//                System.out.println(m.group(4));
-
                 String[] tr = new String[3];
                 tr[0] = m.group(1);
                 tr[1] = "c" + num + "_" + m.group(2);
@@ -274,10 +244,7 @@ public class Utils {
                 tr[2] = m.group(3);
                 trs.add(tr);
             }
-            //			count++;
             else if (m2.matches()){
-//                System.out.println(m2.group(0));
-//                System.out.println(m2.group(1));
                 String stateId = m2.group(1);
                 final_states.add(Integer.parseInt(stateId));
 
@@ -329,7 +296,6 @@ public class Utils {
         BufferedReader br = new BufferedReader(new FileReader(f));
         ProductDFA<String> productDFA = null;
         int comp_num = 1;
-//        Pattern kissLine = Pattern.compile("\\s*(\\S+)\\s+--\\s+(\\S+)\\s+->\\s+(\\S+)\\s*.txt");
         while (br.ready()) {
             String line = br.readLine();
             line = BenchmarksDir + dir + line;
@@ -342,7 +308,6 @@ public class Utils {
             else
                 throw (new IOException("File format not supported"));
 
-//            Visualization.visualize(component, component.getInputAlphabet());
             if (productDFA == null) productDFA = new ProductDFA<>(component);
             else productDFA.interleaving_parallel_composition(component);
             comp_num++;
@@ -361,25 +326,13 @@ public class Utils {
 
         HashSet<String> abcSet = new HashSet<>();
 
-        //		int count = 0;
-
         while(br.ready()){
             String line = br.readLine();
             Matcher m = kissLine.matcher(line);
             if(m.matches()){
-                //				System.out.println(m.group(0));
-                //				System.out.println(m.group(1));
-                //				System.out.println(m.group(2));
-                //				System.out.println(m.group(3));
-                //				System.out.println(m.group(4));
-
                 String[] tr = new String[4];
                 tr[0] = m.group(1);
                 tr[1] = m.group(3);
-//				if(!abc.contains(tr[1])){
-//					abc.add(tr[1]);
-//				}
-//				tr[2] = m.group(4);
                 tr[3] = m.group(2);
                 if(tr[1].contains("<br />")){
                     String trr[] = tr[1].split("<br />");
@@ -451,7 +404,6 @@ public class Utils {
 
         for (Integer st : mealym.getStates()) {
             for (String in : alphabet) {
-                //				System.out.println(mealym.getTransition(st, in));
                 if(mealym.getTransition(st, in)==null){
                     mealym.addTransition(st, in, st, OMEGA_SYMBOL);
                 }
@@ -481,12 +433,6 @@ public class Utils {
             String line = br.readLine();
             Matcher m = kissLine.matcher(line);
             if(m.matches()){
-                //				System.out.println(m.group(0));
-                //				System.out.println(m.group(1));
-                //				System.out.println(m.group(2));
-                //				System.out.println(m.group(3));
-                //				System.out.println(m.group(4));
-
                 String[] tr = new String[4];
                 tr[0] = m.group(1);
                 tr[1] = m.group(2);
@@ -544,7 +490,6 @@ public class Utils {
 
         for (Integer st : mealym.getStates()) {
             for (String in : alphabet) {
-                //				System.out.println(mealym.getTransition(st, in));
                 if(mealym.getTransition(st, in)==null){
                     mealym.addTransition(st, in, st, OMEGA_SYMBOL);
                 }
@@ -561,7 +506,6 @@ public class Utils {
         BufferedReader br = new BufferedReader(new FileReader(f));
         ProductMealy productMealy = null;
         int comp_num = 0;
-//        Pattern kissLine = Pattern.compile("\\s*(\\S+)\\s+--\\s+(\\S+)\\s+->\\s+(\\S+)\\s*.txt");
         while (br.ready()) {
             String line = br.readLine();
             line = BenchmarksDir + dir + line;
@@ -574,7 +518,6 @@ public class Utils {
             else
                 throw (new IOException("File format not supported"));
 
-//            Visualization.visualize(component, component.getInputAlphabet());
             if (productMealy == null) productMealy = new ProductMealy(component);
             else productMealy.mergeFSMs(component, 1);
             comp_num++;
@@ -594,7 +537,6 @@ public class Utils {
                 CompactMealyTransition<Word<String>> tr = mealy.getTransition(si,in);
                 Word<String> out = tr.getOutput();
                 int sj = tr.getSuccId();
-//                bw.append(String.format("%d -- %s / %s -> %d\n", si,in,out,sj));
                 bw.append(String.format("s%d -> s%d [label=\"%s  /  %s\"];\n", si,sj,in,out));
             }
         }

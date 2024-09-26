@@ -130,8 +130,6 @@ public class SclStar {
                 for(Integer sj : states){
                     output_1 = hypothesis.getTransition(si, m).getOutput();
                     output_2 = hypothesis.getTransition(sj, m).getOutput();
-                    //System.out.println("\t output1 = " + output_1);
-                    //System.out.println("\t output2 = " + output_2 + '\n');
                     if(!output_1.equals(output_2)){
                         syncToRemove.add(m);
                         isSync = false;
@@ -351,7 +349,6 @@ public class SclStar {
 
         CompactMealy final_H = productMealy.getMachine();
         String result = "";
-        //result += "___ Synchronous Compositional Learning Algorithm finished ___\n";
 
         result += "\tThe input components:\n";
         for(Alphabet act: inputComponentsActs){
@@ -390,54 +387,6 @@ public class SclStar {
         return (false);
     }
 
-    // private Word<String> preCeDistillation(Word<String> ce, List<Alphabet<String>> sigmaFamily, CompactMealy hypothesis, ArrayList<String> sync, FileWriter myWriter){
-    //     try {
-    //         myWriter.write("\tCE before minimizing:\n\t\t" + ce + "\n");
-
-    //         ce = this.cut_ce(ce, hypothesis);
-    //         myWriter.write("\tCE after cut_ce:\n\t\t" + ce + "\n");
-    //         List<Alphabet<String>> iD = involved_sets(ce, sigmaFamily);
-    //         List<ArrayList> subsets = new ArrayList();
-
-    //         for (int k = 2; k < iD.size(); k++) {
-    //             subsets = k_combinations(k, iD);
-    //             for (ArrayList list : subsets) {
-    //                 Alphabet<String> merged_list = merge_parts(list);
-    //                 Word<String> ce_prime = projection(ce, merged_list);
-    //                 if (check_for_ce(ce_prime, hypothesis)) {
-    //                     myWriter.write("\tCE after minimizing:\n\t\t" + ce_prime + "\n\n");
-    //                     System.out.println("Successfully wrote to the file.");
-    //                     return ce_prime;
-    //                 }
-    //             }
-    //         }
-    //         myWriter.write("\tCE after minimizing:\n\t\t" + ce + "\n\n");
-    //         System.out.println("Successfully wrote to the file.");
-    //         return ce;
-    //     }
-    //     catch (IOException e) {
-    //         System.out.println("An error occurred.");
-    //         e.printStackTrace();
-    //     }
-    //     return ce;
-    // }
-
-//    private boolean runThisExperiment(Experiment.MealyExperiment<String, Word<String>> experiment)throws OutOfMemoryError{
-//        Timer timer = new Timer(true);
-//        Thread thread = new Thread(experiment);
-//        InterruptTimerTask interruptTimerTask = new InterruptTimerTask(Thread.currentThread());
-//        long delay = 60000;
-//        timer.schedule(interruptTimerTask, delay);
-//        try {
-//            experiment.run();
-//        }
-//        catch (InterruptedException e) {
-//            throw new OutOfMemoryError();
-//        }
-//        finally {
-//            timer.cancel();
-//        }
-//    }
     private Word<String> ceDistillation(Word<String> ce, List<Alphabet<String>> sigmaFamily, CompactMealy hypothesis, ArrayList<String> sync, FileWriter myWriter){
         try {
             myWriter.write("\tCE before minimizing:\n\t\t" + ce + "\n");
@@ -492,7 +441,6 @@ public class SclStar {
     private List<ArrayList<Alphabet<String>>> sortSubsets(List<ArrayList<Alphabet<String>>> subsets){
         List<ArrayList<Alphabet<String>>> sortedSubsets = new ArrayList<>();
         List<Integer> subsetsSizes = new ArrayList<Integer>();
-//        System.out.println("Loging sizes:");
         for(int i = 0; i < subsets.size(); i++){
             int len = 0;
             for(int j = 0; j < subsets.get(i).size(); j++){
@@ -500,7 +448,6 @@ public class SclStar {
             }
             subsetsSizes.add(len);
 
-//            System.out.println("\t" + subsets.get(i) + ": " + len);
         }
 
         for(int i = 0; i < subsets.size(); i++){
@@ -514,7 +461,6 @@ public class SclStar {
             }
             subsetsSizes.set(minIndex, Integer.MAX_VALUE);
             sortedSubsets.add(subsets.get(minIndex));
-//            System.out.println("MINIMUM: " + subsets.get(minIndex));
         }
         return(sortedSubsets);
     }
@@ -615,7 +561,6 @@ public class SclStar {
     private Boolean check_for_ce(Word<String> ce, CompactMealy hypothesis){
         Word<Word<String>> sul_answer = this.mqOracle.answerQuery(ce);
         Word<Word<String>> hypothesis_answer = hypothesis.computeStateOutput(hypothesis.getInitialState(), ce);
-//        TODO check is equality works properly
         if (!sul_answer.equals(hypothesis_answer)){
             return true;
         }

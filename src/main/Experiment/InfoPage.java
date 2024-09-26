@@ -319,13 +319,4 @@ public class InfoPage extends JPanel {
         return runButton;
     }
 
-//    public static void main(String[] args) {
-//        JFrame frame = new JFrame("Unified Test UI");
-//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        frame.add(new UnifiedTestUI());
-//        frame.pack();
-//        frame.setSize(1000, 800); // Increased window size to 1000x800
-//        frame.setLocationRelativeTo(null);
-//        frame.setVisible(true);
-//    }
 }
