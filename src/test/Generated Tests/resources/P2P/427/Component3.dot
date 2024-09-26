@@ -1,8 +1,0 @@
-s0 -> s3 [label="X  /  0"];
-s0 -> s0 [label="O  /  1"];
-s1 -> s2 [label="X  /  0"];
-s1 -> s2 [label="O  /  0"];
-s2 -> s2 [label="X  /  0"];
-s2 -> s0 [label="O  /  0"];
-s3 -> s1 [label="X  /  0"];
-s3 -> s1 [label="O  /  1"];

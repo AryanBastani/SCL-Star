@@ -1,4 +1,0 @@
-Test-Generating/resources/P2P/713/Component1.dot
-Test-Generating/resources/P2P/713/Component2.dot
-Test-Generating/resources/P2P/713/Component3.dot
-Test-Generating/resources/P2P/713/Component4.dot

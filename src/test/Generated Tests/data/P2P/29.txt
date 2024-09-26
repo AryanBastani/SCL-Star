@@ -1,4 +1,0 @@
-Test-Generating/resources/P2P/29/Component1.dot
-Test-Generating/resources/P2P/29/Component2.dot
-Test-Generating/resources/P2P/29/Component3.dot
-Test-Generating/resources/P2P/29/Component4.dot

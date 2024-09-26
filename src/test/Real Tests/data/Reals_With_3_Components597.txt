@@ -1,3 +1,0 @@
-Real-Tests/resources/Synchs/4_6_BCS_CLS.dot
-Real-Tests/resources/Synchs/4_21_BCS_AS.dot
-Real-Tests/resources/4_11_BCS_LED_APW.dot

@@ -1,4 +1,0 @@
-s0 -> s1 [label="s  /  1"];
-s0 -> s1 [label="T  /  1"];
-s1 -> s1 [label="s  /  1"];
-s1 -> s1 [label="T  /  0"];

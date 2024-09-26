@@ -53,7 +53,7 @@ public class Experiment {
                         }
                     }
                     try {
-                        runFile("python", "JupyterRunner.py");
+                        runFile("python", "src/main/ResultsHandler/JupyterRunner.py");
                     } catch (IOException e) {
                         System.out.println("An error occurred.");
                         e.printStackTrace();
@@ -89,7 +89,7 @@ public class Experiment {
 
     private static void writeStatesInfo(int minNumOfStates, int maxNumOfStates){
         try {
-            FileWriter myWriter = new FileWriter("data/States.txt");
+            FileWriter myWriter = new FileWriter("Configs/States.txt");
             myWriter.write(minNumOfStates + "\n");
             myWriter.write(String.valueOf(maxNumOfStates));
             myWriter.close();
