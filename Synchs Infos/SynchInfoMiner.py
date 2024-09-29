@@ -20,12 +20,12 @@ def decodeOut(phrase, sign):
     
 
 actions = {}
-synchsCounter = 0
 synchs = []
-differentOutCounter = 0
-differentOuts = []
+severalOutSynchs = []
+severalOut = []
 
 currentComponentId = 0
+synchRepeatCounter = 0
 
 dir = "Complete_FSM_files/"
  
@@ -47,22 +47,39 @@ for file in os.listdir(dir):
                 currentAct = decodeAct(splittedLine[3], '"')
                 currentOut = decodeOut(splittedLine[5], '"')
                 
+
+                    
                 if not(currentAct in actions):
                     actions[currentAct] = [currentComponentId, False, currentOut, False]
                     
+                elif (actions[currentAct][0] != currentComponentId) and actions[currentAct][1]:
+                    synchRepeatCounter += 1
+                    actions[currentAct][0] = currentComponentId
+                    
                 elif (actions[currentAct][0] != currentComponentId) and (not actions[currentAct][1]):
                     actions[currentAct][1] = True
-                    synchsCounter += 1
+                    synchRepeatCounter += 1
                     synchs.append(currentAct)
+                    actions[currentAct][0] = currentComponentId
                     if actions[currentAct][3]:
-                        differentOutCounter += 1
-                        differentOuts.append(currentAct)
+                        severalOutSynchs.append(currentAct)
                 
                 elif (actions[currentAct][2] != currentOut) and (not actions[currentAct][3]):
                     actions[currentAct][3] = True
+                    severalOut.append(currentAct)
                     if actions[currentAct][1]:
-                        differentOutCounter += 1
-                        differentOuts.append(currentAct)
+                        severalOutSynchs.append(currentAct)
                         
-print(float((synchsCounter - differentOutCounter) / (synchsCounter * 100)))
-                    
+print(float(((len(synchs) - len(severalOutSynchs)) * 100) / len(synchs)))
+print(len(synchs))
+print(synchs)
+
+print('\n')
+
+print(synchRepeatCounter)
+
+print('\n')
+
+print(float(((len(actions) - len(severalOut)) * 100) / len(actions)))
+print(len(actions))
+print(severalOut)
