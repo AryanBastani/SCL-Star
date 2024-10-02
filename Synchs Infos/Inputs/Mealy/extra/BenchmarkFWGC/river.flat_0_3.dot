@@ -1,0 +1,27 @@
+digraph {
+0
+1
+2
+3
+4
+0 -> 0 [label="IIN_0/ONOK"]
+0 -> 0 [label="IIN_1/OEATEN"]
+0 -> 0 [label="IIN_2/OEATEN"]
+0 -> 3 [label="IIN_3/OOK"]
+1 -> 1 [label="IIN_0/ONOK"]
+1 -> 0 [label="IIN_1/OEATEN"]
+1 -> 1 [label="IIN_2/ONOK"]
+1 -> 2 [label="IIN_3/OOK"]
+2 -> 2 [label="IIN_0/ONOK"]
+2 -> 0 [label="IIN_1/OEATEN"]
+2 -> 4 [label="IIN_2/OOK"]
+2 -> 1 [label="IIN_3/OOK"]
+3 -> 3 [label="IIN_0/ONOK"]
+3 -> 4 [label="IIN_1/OOK"]
+3 -> 3 [label="IIN_2/ONOK"]
+3 -> 0 [label="IIN_3/OOK"]
+4 -> 4 [label="IIN_0/ONOK"]
+4 -> 3 [label="IIN_1/OOK"]
+4 -> 2 [label="IIN_2/OOK"]
+4 -> 4 [label="IIN_3/ONOK"]
+}

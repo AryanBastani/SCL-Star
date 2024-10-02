@@ -1,0 +1,17 @@
+Percentage of synch action with single output: The machine has no synch actions
+Percentage of Actions with single output: 0.0
+
+
+Number of components: 1
+
+
+Number of actions: 4
+Actions: ['WATER', 'POD', 'BUTTON', 'CLEAN']
+Number of actions with single output: 0
+Actions with single output: []
+
+
+Number of synch actions: 0
+Synch actions: []
+Number of synch actions with single output: []
+Synch actions with single output: []

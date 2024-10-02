@@ -1,0 +1,14 @@
+Percentage of synch action with single output: 0.0
+Percentage of Actions with single output: 0.0
+
+
+Number of actions: 50
+Actions: ['pw_mv_dn', 'release_pw_but', 'pw_mv_up', 'pw_auto_mv_up', 'pw_auto_mv_stop', 'pw_auto_mv_dn', 'em_pos_vert_pend', 'em_pos_vert_top', 'em_pos_hor_left', 'em_pos_hor_pend', 'em_pos_vert_bottom', 'em_pos_hor_right', 'heating_on', 'heating_off', 'as_active_off', 'as_active_on', 'as_alarm_off', 'as_alarm_on', 'as_alarm_was_confirmed', 'as_alarm_was_detected', 'mpw_stop', 'pw_pos_up', 'pw_but_up', 'pw_pos_dn', 'pw_but_dn', 'fp_on', 'm_pw_msg', 'receiveMsg', 'fp_off', 'as_im_alarm_off', 'as_im_alarm_on', 'time_alarm_elapsed', 'as_deactvated', 'as_alarm_detected', 'as_activated', 'key_pos_unlock', 'key_pos_lock', 'apw_stop', 'a_pw_msg', 'finger_detected', 'em_but_down', 'em_pos_bottom', 'em_pos_left', 'em_but_up', 'em_but_left', 'em_pos_top', 'em_but_right', 'em_pos_right', 'cls_lock', 'cls_unlock']
+Number of actions with single output: 0
+Actions with single output: []
+
+
+Number of synch actions: 15
+Synch actions: ['em_pos_vert_pend', 'em_pos_hor_pend', 'pw_pos_up', 'pw_but_up', 'pw_pos_dn', 'pw_but_dn', 'fp_on', 'receiveMsg', 'fp_off', 'key_pos_unlock', 'key_pos_lock', 'mpw_stop', 'apw_stop', 'm_pw_msg', 'a_pw_msg']
+Number of synch actions with single output: []
+Synch actions with single output: []

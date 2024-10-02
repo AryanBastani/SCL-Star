@@ -1,0 +1,26 @@
+digraph G {
+initialized [peripheries=2];
+PIN_verified [label=<PIN verified>];
+waiting_for_confirmation [label=<waiting for confirmation>];
+unconfirmed_cryptogram [label=<unconfirmed cryptogram>];
+initialized -> initialized  [label="SIGNDATA/LONG_ERROR"];
+initialized -> initialized  [label="DISPLAY_TEXT/LONG_ERROR"];
+initialized -> initialized  [label="USB8_CRYPTOGRAM/LONG_ERROR"];
+initialized -> initialized  [label="ROBOT_OK/TIMEOUT"];
+initialized -> PIN_verified  [label="COMBINED_PIN/OK"];
+PIN_verified -> initialized  [label="USB8_CRYPTOGRAM/CRYPTOGRAM"];
+PIN_verified -> PIN_verified  [label="ROBOT_OK/TIMEOUT"];
+PIN_verified -> PIN_verified  [label="COMBINED_PIN/OK"];
+PIN_verified -> waiting_for_confirmation  [label="SIGNDATA/OK"];
+PIN_verified -> waiting_for_confirmation  [label="DISPLAY_TEXT/TIMEOUT"];
+waiting_for_confirmation -> PIN_verified  [label="COMBINED_PIN/OK"];
+waiting_for_confirmation -> PIN_verified  [label="ROBOT_OK/OK"];
+waiting_for_confirmation -> waiting_for_confirmation  [label="SIGNDATA/OK"];
+waiting_for_confirmation -> waiting_for_confirmation  [label="DISPLAY_TEXT/TIMEOUT"];
+waiting_for_confirmation -> unconfirmed_cryptogram  [label="USB8_CRYPTOGRAM/CRYPTOGRAM"];
+unconfirmed_cryptogram -> initialized  [label="ROBOT_OK/OK"];
+unconfirmed_cryptogram -> PIN_verified  [label="COMBINED_PIN/OK"];
+unconfirmed_cryptogram -> unconfirmed_cryptogram  [label="SIGNDATA/LONG_ERROR"];
+unconfirmed_cryptogram -> unconfirmed_cryptogram  [label="DISPLAY_TEXT/LONG_ERROR"];
+unconfirmed_cryptogram -> unconfirmed_cryptogram  [label="USB8_CRYPTOGRAM/LONG_ERROR"];
+}

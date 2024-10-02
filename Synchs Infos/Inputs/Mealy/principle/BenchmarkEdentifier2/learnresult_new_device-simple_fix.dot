@@ -1,0 +1,20 @@
+digraph G {
+initialized [peripheries=2];
+PIN_verified [label="PIN verified"];
+waiting_for_confirmation [label="waiting for confirmation"];
+initialized -> initialized  [label="SIGNDATA/LONG_ERROR"];
+initialized -> initialized  [label="DISPLAY_TEXT/LONG_ERROR"];
+initialized -> initialized  [label="GEN_CRYPTOGRAM/LONG_ERROR"];
+initialized -> initialized  [label="ROBOT_OK/TIMEOUT"];
+initialized -> PIN_verified  [label="COMBINED_PIN/OK"];
+PIN_verified -> waiting_for_confirmation  [label="SIGNDATA/OK"];
+PIN_verified -> waiting_for_confirmation  [label="DISPLAY_TEXT/TIMEOUT"];
+PIN_verified -> initialized  [label="GEN_CRYPTOGRAM/CRYPTOGRAM"];
+PIN_verified -> PIN_verified  [label="COMBINED_PIN/OK"];
+PIN_verified -> PIN_verified  [label="ROBOT_OK/TIMEOUT"];
+waiting_for_confirmation -> waiting_for_confirmation  [label="SIGNDATA/LONG_ERROR"];
+waiting_for_confirmation -> waiting_for_confirmation  [label="DISPLAY_TEXT/LONG_ERROR"];
+waiting_for_confirmation -> PIN_verified  [label="COMBINED_PIN/OK"];
+waiting_for_confirmation -> PIN_verified  [label="ROBOT_OK/OK"];
+waiting_for_confirmation -> waiting_for_confirmation  [label="GEN_CRYPTOGRAM/LONG_ERROR"];
+}

@@ -1,0 +1,17 @@
+Percentage of synch action with single output: 0.0
+Percentage of Actions with single output: 25.0
+
+
+Number of components: 4
+
+
+Number of actions: 4
+Actions: ['a', 'b', '0', '1']
+Number of actions with single output: 1
+Actions with single output: ['1']
+
+
+Number of synch actions: 2
+Synch actions: ['a', 'b']
+Number of synch actions with single output: []
+Synch actions with single output: []

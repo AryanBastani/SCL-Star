@@ -1,0 +1,17 @@
+Percentage of synch action with single output: 50.0
+Percentage of Actions with single output: 40.0
+
+
+Number of components: 2
+
+
+Number of actions: 5
+Actions: ['INIT-CHLO', 'GET', 'CLOSE', 'FULL-CHLO', '0RTT-CHLO']
+Number of actions with single output: 2
+Actions with single output: ['INIT-CHLO', 'CLOSE']
+
+
+Number of synch actions: 4
+Synch actions: ['INIT-CHLO', 'GET', 'CLOSE', 'FULL-CHLO']
+Number of synch actions with single output: ['INIT-CHLO', 'CLOSE']
+Synch actions with single output: ['INIT-CHLO', 'CLOSE']

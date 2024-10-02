@@ -1,0 +1,17 @@
+Percentage of synch action with single output: 41.666666666666664
+Percentage of Actions with single output: 41.666666666666664
+
+
+Number of components: 6
+
+
+Number of actions: 12
+Actions: ['|Pds(StateSystemOn)|', '|Pds(StateSystemOff)|', '|Pds(ButtonSystemOff)|', '|Host(goToOpenProfile)|', '|Host(goToClosedProfile)|', '|Host(openProfileStartApplication)|', '|Host(openProfileStopApplication)|', '|OS(StartPcs)|', '|OS(StopPcs)|', '|Pds(StateVideoOn)|', '|Host(stopForInstallation)|', '|Host(startAfterInstallation)|']
+Number of actions with single output: 5
+Actions with single output: ['|Pds(StateSystemOn)|', '|Pds(StateSystemOff)|', '|Host(goToOpenProfile)|', '|Host(goToClosedProfile)|', '|Pds(StateVideoOn)|']
+
+
+Number of synch actions: 12
+Synch actions: ['|Pds(StateSystemOn)|', '|Pds(StateSystemOff)|', '|Pds(ButtonSystemOff)|', '|Host(goToOpenProfile)|', '|Host(goToClosedProfile)|', '|Host(openProfileStartApplication)|', '|Host(openProfileStopApplication)|', '|OS(StartPcs)|', '|OS(StopPcs)|', '|Pds(StateVideoOn)|', '|Host(stopForInstallation)|', '|Host(startAfterInstallation)|']
+Number of synch actions with single output: ['|Pds(StateSystemOn)|', '|Pds(StateSystemOff)|', '|Host(goToOpenProfile)|', '|Host(goToClosedProfile)|', '|Pds(StateVideoOn)|']
+Synch actions with single output: ['|Pds(StateSystemOn)|', '|Pds(StateSystemOff)|', '|Host(goToOpenProfile)|', '|Host(goToClosedProfile)|', '|Pds(StateVideoOn)|']

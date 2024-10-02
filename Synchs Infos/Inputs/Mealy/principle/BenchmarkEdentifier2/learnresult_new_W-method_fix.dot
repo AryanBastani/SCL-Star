@@ -1,0 +1,83 @@
+digraph G {
+label=""
+s0 [color="red"]
+s1
+s2
+s3
+s4
+s5
+s6
+s7
+s0 [label="s0"];
+s0 -> s0[label="USB6_SIGNDATA/TIMEOUT"]
+s0 -> s0[label="ROBOT_OK/TIMEOUT"]
+s0 -> s2[label="COMBINED_PIN/TIMEOUT"]
+s0 -> s0[label="ROBOT_CANCEL/TIMEOUT"]
+s0 -> s0[label="USB7_DISPLAY_TEXT/TIMEOUT"]
+s0 -> s1[label="SHIELD/CARD_INSERTED"]
+s0 -> s1[label="INSERT_CARD/INSERT_OK"]
+s0 -> s0[label="USB8_CRYPTOGRAM/TIMEOUT"]
+s1 [label="s1"];
+s1 -> s1[label="USB6_SIGNDATA/LONG_ERROR"]
+s1 -> s1[label="ROBOT_OK/TIMEOUT"]
+s1 -> s3[label="COMBINED_PIN/OK"]
+s1 -> s1[label="ROBOT_CANCEL/TIMEOUT"]
+s1 -> s1[label="USB7_DISPLAY_TEXT/LONG_ERROR"]
+s1 -> s1[label="SHIELD/CARD_INSERTED"]
+s1 -> s1[label="INSERT_CARD/INSERT_OK"]
+s1 -> s1[label="USB8_CRYPTOGRAM/LONG_ERROR"]
+s2 [label="s2"];
+s2 -> s2[label="USB6_SIGNDATA/TIMEOUT"]
+s2 -> s2[label="ROBOT_OK/TIMEOUT"]
+s2 -> s2[label="COMBINED_PIN/TIMEOUT"]
+s2 -> s2[label="ROBOT_CANCEL/TIMEOUT"]
+s2 -> s4[label="USB7_DISPLAY_TEXT/TIMEOUT"]
+s2 -> s1[label="SHIELD/CARD_INSERTED"]
+s2 -> s1[label="INSERT_CARD/INSERT_OK"]
+s2 -> s0[label="USB8_CRYPTOGRAM/TIMEOUT"]
+s3 [label="s3"];
+s3 -> s5[label="USB6_SIGNDATA/OK"]
+s3 -> s3[label="ROBOT_OK/TIMEOUT"]
+s3 -> s3[label="COMBINED_PIN/OK"]
+s3 -> s3[label="ROBOT_CANCEL/TIMEOUT"]
+s3 -> s6[label="USB7_DISPLAY_TEXT/TIMEOUT"]
+s3 -> s1[label="SHIELD/CARD_INSERTED"]
+s3 -> s1[label="INSERT_CARD/INSERT_OK"]
+s3 -> s1[label="USB8_CRYPTOGRAM/EMPTY_CRYPTOGRAM"]
+s4 [label="s4"];
+s4 -> s4[label="USB6_SIGNDATA/TIMEOUT"]
+s4 -> s2[label="ROBOT_OK/TIMEOUT"]
+s4 -> s2[label="COMBINED_PIN/TIMEOUT"]
+s4 -> s0[label="ROBOT_CANCEL/SHORT_ERROR"]
+s4 -> s4[label="USB7_DISPLAY_TEXT/TIMEOUT"]
+s4 -> s7[label="SHIELD/CARD_INSERTED"]
+s4 -> s7[label="INSERT_CARD/INSERT_OK"]
+s4 -> s4[label="USB8_CRYPTOGRAM/TIMEOUT"]
+s5 [label="s5"];
+s5 -> s5[label="USB6_SIGNDATA/OK"]
+s5 -> s5[label="ROBOT_OK/TIMEOUT"]
+s5 -> s3[label="COMBINED_PIN/OK"]
+s5 -> s5[label="ROBOT_CANCEL/TIMEOUT"]
+s5 -> s6[label="USB7_DISPLAY_TEXT/TIMEOUT"]
+s5 -> s1[label="SHIELD/CARD_INSERTED"]
+s5 -> s1[label="INSERT_CARD/INSERT_OK"]
+s5 -> s1[label="USB8_CRYPTOGRAM/CRYPTOGRAM"]
+s6 [label="s6"];
+s6 -> s7[label="USB6_SIGNDATA/LONG_ERROR"]
+s6 -> s5[label="ROBOT_OK/OK"]
+s6 -> s3[label="COMBINED_PIN/OK"]
+s6 -> s1[label="ROBOT_CANCEL/SHORT_ERROR"]
+s6 -> s7[label="USB7_DISPLAY_TEXT/LONG_ERROR"]
+s6 -> s7[label="SHIELD/CARD_INSERTED"]
+s6 -> s7[label="INSERT_CARD/INSERT_OK"]
+s6 -> s7[label="USB8_CRYPTOGRAM/LONG_ERROR"]
+s7 [label="s7"];
+s7 -> s7[label="USB6_SIGNDATA/LONG_ERROR"]
+s7 -> s1[label="ROBOT_OK/OK"]
+s7 -> s3[label="COMBINED_PIN/OK"]
+s7 -> s1[label="ROBOT_CANCEL/SHORT_ERROR"]
+s7 -> s7[label="USB7_DISPLAY_TEXT/LONG_ERROR"]
+s7 -> s7[label="SHIELD/CARD_INSERTED"]
+s7 -> s7[label="INSERT_CARD/INSERT_OK"]
+s7 -> s7[label="USB8_CRYPTOGRAM/LONG_ERROR"]
+}

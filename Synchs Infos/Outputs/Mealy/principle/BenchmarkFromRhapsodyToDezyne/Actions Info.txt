@@ -1,0 +1,17 @@
+Percentage of synch action with single output: 0.0
+Percentage of Actions with single output: 49.18032786885246
+
+
+Number of components: 4
+
+
+Number of actions: 61
+Actions: ['EVT_A', 'EVT_B', 'EVT_C', 'EVT_D', 'EVT_E', 'EVT_F', 'EVT_G', 'EVT_H', 'EVT_I', 'EVT_J', 'EVT_K', 'EVT_L', 'EVT_M', 'EVT_N', 'EVT_O', 'Configuration02', 'Configuration06', 'Configuration10', 'Configuration14', 'state|0|b', 'state|0|a', 'state|1|b', 'state|1|a', 'state|2|b', 'state|2|a', 'state|3|b', 'state|3|a', 'state|4|b', 'state|4|a', 'A', 'B', 'C', 'D', 'Guard11:On', 'Guard11:Off', 'Guard10:On', 'Guard10:Off', 'Guard6:On', 'Guard6:Off', 'Guard5:On', 'Guard5:Off', 'Guard12:On', 'Guard12:Off', 'Guard9:On', 'Guard9:Off', 'Guard7:On', 'Guard7:Off', 'Guard13:On', 'Guard13:Off', 'Guard8:On', 'Guard8:Off', 'E', 'F', 'Guard0:On', 'Guard0:Off', 'Guard2:On', 'Guard2:Off', 'Guard1:On', 'Guard1:Off', 'Guard4:On', 'Guard4:Off']
+Number of actions with single output: 30
+Actions with single output: ['Configuration02', 'Configuration06', 'Configuration10', 'Configuration14', 'Guard11:On', 'Guard11:Off', 'Guard10:On', 'Guard10:Off', 'Guard6:On', 'Guard6:Off', 'Guard5:On', 'Guard5:Off', 'Guard12:On', 'Guard12:Off', 'Guard9:On', 'Guard9:Off', 'Guard7:On', 'Guard7:Off', 'Guard13:On', 'Guard13:Off', 'Guard8:On', 'Guard8:Off', 'Guard0:On', 'Guard0:Off', 'Guard2:On', 'Guard2:Off', 'Guard1:On', 'Guard1:Off', 'Guard4:On', 'Guard4:Off']
+
+
+Number of synch actions: 4
+Synch actions: ['A', 'B', 'C', 'D']
+Number of synch actions with single output: []
+Synch actions with single output: []

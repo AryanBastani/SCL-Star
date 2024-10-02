@@ -1,0 +1,17 @@
+Percentage of synch action with single output: 6.666666666666667
+Percentage of Actions with single output: 6.666666666666667
+
+
+Number of components: 11
+
+
+Number of actions: 15
+Actions: ['generateACSecondARQC', 'generateACSecondTC', 'generateACFirstAAC', 'getValidData', 'getProcessingOptionsInvalid', 'generateACSecondAAC', 'generateACFirstTC', 'getInvalidData', 'selectApplication', 'generateACFirstARQC', 'readValidRecord', 'getProcessingOptions', 'readInvalidRecord', 'internalAuthenticate', 'verifyPINPlaintextCorrect']
+Number of actions with single output: 1
+Actions with single output: ['selectApplication']
+
+
+Number of synch actions: 15
+Synch actions: ['generateACSecondTC', 'generateACSecondARQC', 'generateACFirstAAC', 'getValidData', 'getProcessingOptionsInvalid', 'generateACSecondAAC', 'generateACFirstTC', 'getInvalidData', 'selectApplication', 'generateACFirstARQC', 'readValidRecord', 'getProcessingOptions', 'readInvalidRecord', 'internalAuthenticate', 'verifyPINPlaintextCorrect']
+Number of synch actions with single output: ['selectApplication']
+Synch actions with single output: ['selectApplication']

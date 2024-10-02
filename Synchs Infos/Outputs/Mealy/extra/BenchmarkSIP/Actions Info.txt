@@ -1,0 +1,17 @@
+Percentage of synch action with single output: 32.25806451612903
+Percentage of Actions with single output: 32.35294117647059
+
+
+Number of components: 10
+
+
+Number of actions: 34
+Actions: ['IACK_0', 'IACK_1', 'IINVITE_0', 'IINVITE_1', 'INIL', 'IPRACK_0', 'IPRACK_1', 'IACK_10', 'IACK_2', 'IACK_3', 'IACK_4', 'IACK_5', 'IACK_6', 'IACK_7', 'IACK_8', 'IACK_9', 'IINVITE_10', 'IINVITE_2', 'IINVITE_3', 'IINVITE_4', 'IINVITE_5', 'IINVITE_6', 'IINVITE_7', 'IINVITE_8', 'IINVITE_9', 'IPRACK_10', 'IPRACK_2', 'IPRACK_3', 'IPRACK_4', 'IPRACK_5', 'IPRACK_6', 'IPRACK_7', 'IPRACK_8', 'IPRACK_9']
+Number of actions with single output: 11
+Actions with single output: ['IACK_0', 'IACK_1', 'IACK_10', 'IACK_2', 'IACK_3', 'IACK_4', 'IACK_5', 'IACK_6', 'IACK_7', 'IACK_8', 'IACK_9']
+
+
+Number of synch actions: 31
+Synch actions: ['IACK_0', 'IACK_1', 'IINVITE_0', 'IINVITE_1', 'INIL', 'IPRACK_0', 'IPRACK_1', 'IACK_2', 'IINVITE_2', 'IPRACK_2', 'IACK_3', 'IINVITE_3', 'IPRACK_3', 'IACK_4', 'IINVITE_4', 'IPRACK_4', 'IACK_5', 'IINVITE_5', 'IPRACK_5', 'IACK_6', 'IINVITE_6', 'IPRACK_6', 'IACK_7', 'IINVITE_7', 'IPRACK_7', 'IACK_8', 'IINVITE_8', 'IPRACK_8', 'IACK_9', 'IINVITE_9', 'IPRACK_9']
+Number of synch actions with single output: 10
+Synch actions with single output: ['IACK_0', 'IACK_1', 'IACK_2', 'IACK_3', 'IACK_4', 'IACK_5', 'IACK_6', 'IACK_7', 'IACK_8', 'IACK_9']

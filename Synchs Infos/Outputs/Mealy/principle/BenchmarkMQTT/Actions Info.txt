@@ -1,0 +1,17 @@
+Percentage of synch action with single output: 2.5641025641025643
+Percentage of Actions with single output: 2.5641025641025643
+
+
+Number of components: 32
+
+
+Number of actions: 39
+Actions: ['Connect', 'ConnectNonClean', 'PublishQoS0Dup', 'PublishQoSMinus1', 'PublishWildCard', 'SubscribeWildMatch', 'UnSubscribeWildMatch', 'Subscribe', 'SubscribeMinus1', 'UnSubScribe', 'Disconnect', 'ConnectC2', 'ConnectC1', 'PublishQoS1C1', 'SubscribeC2QoS1', 'UnSubscribeC2', 'DisconnectC2', 'Publish', 'Ping', 'DisconnectTCP', 'PublishQoS0', 'PublishQoS1', 'PublishRetain', 'DeleteRetained', 'SubscribeRetained', 'UnSubScribeRetained', 'ConnectC1WithWill', 'ConnectC1WithWillRetain', 'DeleteRetainedC1', 'DeleteRetainedC2', 'SubscribeC2', 'UnSubScribeC2', 'DisconnectTCPC1', 'DisconnectC1', 'PublishQoS0C2', 'SubscribeC1', 'UnSubScribeC1', 'PublishC1', 'PublishC2']
+Number of actions with single output: 1
+Actions with single output: ['DisconnectTCP']
+
+
+Number of synch actions: 39
+Synch actions: ['Connect', 'Subscribe', 'UnSubScribe', 'Disconnect', 'DisconnectTCP', 'ConnectC2', 'ConnectNonClean', 'PublishQoS0Dup', 'PublishQoSMinus1', 'PublishWildCard', 'SubscribeWildMatch', 'UnSubscribeWildMatch', 'SubscribeMinus1', 'ConnectC1', 'PublishQoS1C1', 'SubscribeC2QoS1', 'UnSubscribeC2', 'DisconnectC2', 'Publish', 'Ping', 'PublishQoS0', 'PublishQoS1', 'PublishRetain', 'DeleteRetained', 'SubscribeRetained', 'UnSubScribeRetained', 'ConnectC1WithWill', 'SubscribeC2', 'UnSubScribeC2', 'DisconnectTCPC1', 'SubscribeC1', 'UnSubScribeC1', 'DisconnectC1', 'ConnectC1WithWillRetain', 'DeleteRetainedC1', 'DeleteRetainedC2', 'PublishQoS0C2', 'PublishC1', 'PublishC2']
+Number of synch actions with single output: ['DisconnectTCP']
+Synch actions with single output: ['DisconnectTCP']

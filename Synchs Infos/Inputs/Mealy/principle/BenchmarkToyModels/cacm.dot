@@ -1,0 +1,15 @@
+digraph g {
+        __start0 [label="" shape="none"];
+        __start0 -> q0;
+
+    	q0 [shape="circle" label="q0"];
+    	q1 [shape="circle" label="q1"];
+    	q2 [shape="circle" label="q2"];
+
+    	q0 -> q0 [label="a / A"];
+    	q0 -> q1 [label="b / B"];
+    	q1 -> q0 [label="a / A"];
+    	q1 -> q2 [label="b / B"];
+    	q2 -> q1 [label="a / C"];
+    	q2 -> q2 [label="b / B"];
+    }

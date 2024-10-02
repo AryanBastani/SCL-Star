@@ -1,0 +1,17 @@
+Percentage of synch action with single output: 60.0
+Percentage of Actions with single output: 63.63636363636363
+
+
+Number of components: 10
+
+
+Number of actions: 11
+Actions: ['IIN_0', 'IIN_1', 'IIN_10', 'IIN_2', 'IIN_3', 'IIN_4', 'IIN_5', 'IIN_6', 'IIN_7', 'IIN_8', 'IIN_9']
+Number of actions with single output: 7
+Actions with single output: ['IIN_0', 'IIN_10', 'IIN_5', 'IIN_6', 'IIN_7', 'IIN_8', 'IIN_9']
+
+
+Number of synch actions: 10
+Synch actions: ['IIN_0', 'IIN_1', 'IIN_2', 'IIN_3', 'IIN_4', 'IIN_5', 'IIN_6', 'IIN_7', 'IIN_8', 'IIN_9']
+Number of synch actions with single output: ['IIN_0', 'IIN_5', 'IIN_6', 'IIN_7', 'IIN_8', 'IIN_9']
+Synch actions with single output: ['IIN_0', 'IIN_5', 'IIN_6', 'IIN_7', 'IIN_8', 'IIN_9']

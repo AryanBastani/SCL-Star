@@ -1,0 +1,6 @@
+digraph {
+0
+0 -> 0 [label="IIN_0/ONOK"]
+0 -> 0 [label="IIN_1/OEATEN"]
+0 -> 0 [label="IIN_2/OEATEN"]
+}

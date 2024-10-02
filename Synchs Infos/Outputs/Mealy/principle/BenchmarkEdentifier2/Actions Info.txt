@@ -1,0 +1,17 @@
+Percentage of synch action with single output: 20.0
+Percentage of Actions with single output: 18.181818181818183
+
+
+Number of components: 5
+
+
+Number of actions: 11
+Actions: ['SIGNDATA', 'DISPLAY_TEXT', 'GEN_CRYPTOGRAM', 'ROBOT_OK', 'COMBINED_PIN', 'USB6_SIGNDATA', 'ROBOT_CANCEL', 'USB7_DISPLAY_TEXT', 'SHIELD', 'INSERT_CARD', 'USB8_CRYPTOGRAM']
+Number of actions with single output: 2
+Actions with single output: ['SHIELD', 'INSERT_CARD']
+
+
+Number of synch actions: 10
+Synch actions: ['ROBOT_OK', 'COMBINED_PIN', 'USB6_SIGNDATA', 'ROBOT_CANCEL', 'USB7_DISPLAY_TEXT', 'SHIELD', 'INSERT_CARD', 'USB8_CRYPTOGRAM', 'SIGNDATA', 'DISPLAY_TEXT']
+Number of synch actions with single output: ['SHIELD', 'INSERT_CARD']
+Synch actions with single output: ['SHIELD', 'INSERT_CARD']

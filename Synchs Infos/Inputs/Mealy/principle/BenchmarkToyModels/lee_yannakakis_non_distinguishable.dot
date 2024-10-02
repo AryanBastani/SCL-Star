@@ -1,0 +1,9 @@
+digraph non_distinguishable {
+	s1 -> s1 [label="a / 0"];
+	s2 -> s1 [label="a / 0"];
+	s3 -> s3 [label="a / 1"];
+
+	s1 -> s3 [label="b / 0"];
+	s2 -> s2 [label="b / 1"];
+	s3 -> s2 [label="b / 1"];
+}
