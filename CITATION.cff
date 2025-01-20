@@ -1,0 +1,19 @@
+cff-version: 2.0.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Samadi
+    given-names: Mahboubeh
+  - family-names: Bastany
+    given-names: Aryan
+  - family-names: Hossein
+    given-names: Hojjat
+title: Compositional Learning for Synchronous Parallel Automata
+version: 2.0
+date-released: 2025-01-20
+doi: 10.5281/zenodo.1234567
+repository-code: https://github.com/AryanBastani/SCL-Star
+license: MIT
+keywords:
+  - software
+  - research
+  - citation
