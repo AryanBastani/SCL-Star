@@ -10,7 +10,7 @@ SCL-Star provides tools for learning and comparing Finite State Machines (FSMs) 
 
 Install Docker using the appropriate method for your platform:
 
-- **Debian & Ubuntu:**  
+- **Ubuntu:**  
   ```bash
   sudo apt-get install docker.io
   ```  
@@ -19,14 +19,17 @@ Install Docker using the appropriate method for your platform:
   sudo apt-get install docker-ce
   ```  
 
-- **Arch:**  
+- **Windows:**  
+  install Docker Desktop from [here](https://www.docker.com/products/docker-desktop/).
+
+Verify installation using:
   ```bash
-  sudo pacman -S docker
+  docker --version
   ```  
 
-- **Other platforms:** Refer to the [Docker installation guide](https://docs.docker.com/install/).
+<!-- - **Other platforms:** Refer to the [Docker installation guide](https://docs.docker.com/install/). -->
 
-#### Install `openjdk:21-oracle`:  
+<!-- #### Install `openjdk:21-oracle`:  
 ```bash
 docker pull openjdk:21-oracle
 ```
@@ -44,51 +47,82 @@ docker pull openjdk:21-oracle
 You can download docker-buildx for other platforms [here](https://github.com/docker/buildx/releases)
 > **Note:** Windows users are advised to use WSL for Docker.
 
-#### Login to Docker:  
-Sign up at [Docker](https://www.docker.com) if you don't have an account, then log in:  
-```bash
-docker login
-```
-
-#### Build the Docker container:  
-1. Download and unzip the artifact file.  
-2. Navigate to the artifact directory and build the Docker image:  
-   ```bash
-   docker build --tag scl-star .
-   ```  
-   If you encounter the following error:
-   ```bash
-   ERROR: permission denied while trying to connect to the Docker daemon socket
-   ```
-   You can resolve it by running:
-   ```bash
-   sudo chmod 666 /var/run/docker.sock
-   ```
-
-Run the container and access its shell:
-
-- **Linux:**  
-  ```bash
-  docker run -v "$(pwd)"/data:/app/data -it --entrypoint=/bin/bash scl-star -i
-  ```  
-- **Windows (PowerShell):**  
-  ```bash
-  docker run -v ${pwd}/data:/app/data -it --entrypoint=/bin/bash scl-star -i
-  ```  
-- **Windows (Git Bash):**  
-  ```bash
-  docker run -v  "${PWD}/data/":/app/data/ -it --entrypoint bash scl-star -i
-  ```  
-> **Note:** If you are using mintty, try prefixing the command with `winpty`
-
-
-<br>
-
 ### Java version verification:  
   ```bash
   java -version
   ```  
-  Expected output: Java version 21 or later.
+  Expected output: Java version 21 or later. -->
+
+### Login to Docker:  
+Sign up at [Docker](https://www.docker.com) if you don't have an account, then log in:  
+
+- **Ubuntu:**  
+  ```bash
+  docker login
+  ```
+
+  > **Note:** If you encounter a permission error such as:  
+  >  
+  > ```
+  > Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock
+  > ```
+  >  
+  > or  
+  >  
+  > ```
+  > Cannot connect to the Docker daemon. Is the daemon running?
+  > ```
+  >  
+  > you may need to add **sudo** to the command.   
+    >  
+    > ```bash
+    > sudo docker login
+    > ```  
+
+- **Windows:**
+  1. Open **Docker Desktop** and log in to your account.  
+  2. Keep Docker Desktop running.  
+  3. Open **PowerShell**, and execute the following command to log in via the terminal:  
+      ```bash
+      docker login
+      ```
+      > **Note:** On windows, Use only PowerShell!
+
+### Reassembe the Docker image:  
+```bash
+cat part_* > scl-star.tar
+```
+
+### Load the Docker image:  
+1. Download and unzip the artifact file.  
+2. Navigate to the artifact directory and load the Docker image:  
+   ```bash
+   docker load -i scl-star.tar
+   ```  
+
+    > **Note:** On windows, Use only PowerShell!
+
+    > **Note:** If you are using ubuntu and encounter a permission error such as:  
+    >  
+    > ```
+    > Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock
+    > ```
+    >  
+    > or  
+    >  
+    > ```
+    > open /var/lib/docker/tmp/docker-import-XXXXXX: permission denied
+    > ```
+    >  
+    > you may need to add **sudo** to the command:  
+    >  
+    > ```bash
+    > sudo docker load -i scl-star.tar
+    > ```  
+
+
+
+<br>
 
 ---
 
@@ -96,11 +130,34 @@ Run the container and access its shell:
 
 ### Running Experiments
 
-Execute the experiment:  
-Inside the Docker shell, run:  
-```bash
-java -cp ./libs/learnlib-distribution-0.16.0-dependencies-bundle.jar:./libs/opencsv-5.6.jar:./libs/slf4j-jdk14-1.7.36.jar:./libs/commons-cli-1.4.jar:scl-star.jar main/Experiment
-``` 
+- **Ubuntu:**  
+  ```bash
+  docker run -it -v "$(pwd)":/app scl-star
+  ```   
+
+  > **Note:** If you encounter a permission error such as:  
+  >  
+  > ```
+  > Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock
+  > ```
+  >  
+  > or  
+  >  
+  > ```
+  > docker: Error response from daemon: Mounts denied: 
+  > The path "$(pwd)" is not shared from the host and is not known to Docker.
+  > ```
+  >  
+  > you may need to add **sudo** to the command:  
+  >  
+  > ```bash
+  > sudo docker run -it -v "$(pwd)":/app scl-star
+  > ```  
+- **Windows (PowerShell):**  
+  ```bash
+  docker run -it -v "${PWD}:/app" scl-star
+  ```  
+  > **Note:** Use only PowerShell!
 
 ### Tips for Running the Program:
 #### 1. Choosing Equivalence Query:
@@ -179,7 +236,7 @@ I should mention again that you can skip running the Mesh and Bus test.
 --- 
 
 > **Note:** 
-If the learning process takes too long (e.g., if the learning round number in the terminal exceeds 1000), save `Results.csv`, restart the experiment, and merge new data later:  
+If the learning process takes too long (e.g., if the learning round number in the terminal exceeds 1000, such as "INFO: Starting round 1001"), save `Results.csv`, restart the experiment, and merge new data later:  
 > - Place the previous `Results.csv` as `1.csv` in the `Merging Tool` folder.  
 > - Place the new `Results.csv` as `2.csv`.  
 > - Run `Merge Results.ipynb` to generate a merged `Results.csv`.  
@@ -230,7 +287,7 @@ exit
 
 ## Additional Notes
 
-- Save `Results.csv` and restart if experiments run too long.  
+
 - Runtime varies based on test configurations.  
 - Ensure directory mounting permissions are granted.  
 - On Windows, `winpty` may be required before Docker commands.  

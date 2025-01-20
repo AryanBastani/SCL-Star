@@ -60,6 +60,7 @@ public class Experiment {
                     myWriter.write(String.valueOf(Integer.parseInt(infoPageInfo.get(6)) * 1000));
                     myWriter.close();
 
+                    System.out.println("Choosing the Real tests components...");
                     runFile("python", "src/test/Real Tests/ChooseTests.py");
                 } else {
                     FileWriter myWriter = new FileWriter("Configs/Generated Tests.txt");
@@ -68,6 +69,7 @@ public class Experiment {
                     myWriter.write(String.valueOf(Integer.parseInt(infoPageInfo.get(6)) * 1000));
                     myWriter.close();
 
+                    System.out.println("Generating the tests...");
                     runFile("python", "src/test/Generated Tests/GenerateTests.py");
                 }
             } catch (IOException e) {
